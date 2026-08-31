@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>划线回廊 · 设计稿预览 v0.1（2026-08-31）</title>
+<style>
+:root{
+  --ground:#2B2320; --card:#F7F2E7; --red:#B3402E; --marker:#FFDE7A;
+  --ink:#2A2622; --gray:#8A8177; --paper:#FAF7F0; --hairline:#E3DAC5;
+  --kai:'KaiTi','STKaiti','楷体',serif;
+  --song:'FangSong','STFangsong','仿宋',serif;
+  --mono:'Cascadia Mono','Consolas',monospace;
+  --sans:system-ui,'Segoe UI','Microsoft YaHei',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{background:#141010;font-family:var(--sans);overflow:hidden}
+
+/* ── 预览工具条（非设计稿内容，?shot=1 时隐藏） ── */
+#pv{display:flex;align-items:center;gap:14px;height:54px;padding:0 18px;background:#171210;border-bottom:1px solid #2E2620;flex-wrap:nowrap}
+#pv .pv-title{font:600 13px/1 var(--sans);color:#C9BFA9;letter-spacing:.04em;white-space:nowrap}
+#pv .pv-group{display:flex;gap:4px}
+#pv button{font:12px/1 var(--mono);padding:7px 12px;border-radius:4px;border:1px solid #3A322B;background:transparent;color:#B7AC9C;cursor:pointer}
+#pv button:hover{border-color:#5C5145;color:#E8E0D2}
+#pv button.on{background:var(--red);border-color:var(--red);color:#F7F2E7}
+#pv label{display:flex;align-items:center;gap:6px;font:12px var(--mono);color:#B7AC9C;cursor:pointer;margin-left:auto}
+#pv .pv-note{font:10.5px var(--mono);color:#5C5145;white-space:nowrap}
+body.shot #pv{display:none}
+
+/* ── 舞台 1440×900 ── */
+#wrap{overflow:hidden}
+#stage{width:1440px;height:900px;position:relative;transform-origin:0 0;background:var(--ground)}
+.scr{position:absolute;inset:0;display:none}
+.scr.on{display:block}
+.grain{position:absolute;inset:0;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 42%,transparent 55%,rgba(12,8,6,.5) 100%)}
+body.lofi .grain,body.lofi .vig{display:none}
+
+/* ── 顶栏＝标签架 G-13 ── */
+.topbar{position:absolute;top:0;left:0;right:0;height:64px;padding:0 48px;display:flex;align-items:center;gap:12px}
+.logo{width:26px;height:26px;border:1.5px solid #D8CFC2;border-radius:5px;position:relative;flex:none}
+.logo i{position:absolute;left:5px;right:5px;height:1.5px;background:#D8CFC2}
+.logo i:nth-child(1){top:7px}.logo i:nth-child(2){top:12px}.logo i:nth-child(3){top:17px;left:5px;right:11px;background:var(--red)}
+.tb-name{font:600 16px var(--sans);color:#E8E0D2;margin-right:6px}
+.tb-sub{font:12px var(--mono);color:#9A9086;letter-spacing:.02em}
+.tb-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.sel{font:13px var(--sans);color:#D8CFC2;border:1px solid #4A4038;border-radius:4px;padding:7px 14px;display:flex;gap:8px;align-items:center;cursor:default}
+.sel b{font:11.5px var(--mono);color:#857A6D;font-weight:400}
+.sel u{text-decoration:none;color:#857A6D;font-size:10px}
+.btn-mine{font:13px var(--sans);color:#D8CFC2;border:1px solid #4A4038;border-radius:4px;padding:7px 14px;background:transparent;cursor:pointer}
+.btn-mine:hover{border-color:var(--red);color:#F2E6DA}
+
+/* ── 卡片区 ── */
+.card-zone{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:26px}
+.card{width:560px;background:var(--card);border-radius:6px;padding:44px 46px 28px;position:relative;
+  box-shadow:0 24px 48px rgba(10,6,4,.5),0 3px 10px rgba(10,6,4,.35)}
+body.lofi .card{box-shadow:none;border:1px solid #4A4038}
+.rule-red{position:absolute;top:20px;left:46px;right:46px;height:7px;border-top:2px solid var(--red);border-bottom:1px solid var(--red)}
+.cover-box{position:absolute;top:36px;right:38px;transform:rotate(1.5deg);background:#FFFDF8;padding:3px;border:1px solid #CFC5AE;box-shadow:0 2px 6px rgba(40,30,20,.18)}
+.cover-box img{display:block;height:74px;width:auto}
+.cover-ph{display:none;position:absolute;top:36px;right:38px;width:54px;height:74px;background:repeating-linear-gradient(45deg,#EFE8D8,#EFE8D8 6px,#E6DECB 6px,#E6DECB 12px);border:1px dashed #B3A78D;font:10px var(--mono);color:#8A8177;text-align:center;line-height:74px}
+body.lofi .cover-box{display:none}
+body.lofi .cover-ph{display:block}
+body.lofi .hook{padding-right:0}
+.hook{font:27px/1.9 var(--kai);color:var(--ink);padding-right:66px;cursor:pointer}
+.hook .mk{background:var(--marker);padding:1px 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.meta{font:11.5px var(--mono);color:var(--gray);margin-top:26px;letter-spacing:.02em}
+.stamp{position:absolute;right:20px;bottom:50px;width:56px;height:56px;display:grid;place-items:center;
+  font:28px var(--kai);border-radius:8px;transform:rotate(-8deg);opacity:0;pointer-events:none}
+.stamp.st-abs{color:#57503F;border:3px solid #57503F;outline:1.5px solid #57503F;outline-offset:-9px}
+.stamp.st-fav{color:var(--red);border:3px solid var(--red);outline:1.5px solid var(--red);outline-offset:-9px}
+.stamp.on{animation:stampIn .12s ease-out forwards}
+@keyframes stampIn{0%{opacity:0;transform:rotate(-16deg) scale(1.6)}100%{opacity:.92;transform:rotate(-8deg) scale(1)}}
+body.lofi .stamp{opacity:.92;animation:none;transform:rotate(-8deg)}
+body.lofi .stamp.st-fav,body.lofi .stamp.st-abs{opacity:0}
+.card.flip-out{transition:transform .15s ease-in,opacity .15s ease-in;transform:translateY(-10px);opacity:0}
+.card.flip-in{transition:transform .15s ease-out,opacity .15s ease-out}
+
+.actions{display:flex;gap:12px;margin-top:30px}
+.abtn{font:14.5px var(--sans);padding:11px 20px;border-radius:4px;cursor:pointer;transition:all .15s}
+.abtn.primary{background:#221B16;color:#F2EBDC;border:1px solid #5C5145}
+.abtn.primary:hover{border-color:var(--red);transform:translateY(-1px)}
+.abtn.ghost{background:transparent;color:#D8CFC2;border:1px solid #4A4038}
+.abtn.ghost:hover{border-color:var(--red);color:#F2E6DA}
+body.lofi .abtn{transition:none;transform:none}
+.keys{font:11.5px var(--mono);color:#7E7468;margin-top:20px;letter-spacing:.03em}
+
+/* ── 原文视图 G-15 ── */
+.scr.reader{background:var(--paper)}
+.rd-bar{position:absolute;top:0;left:0;right:0;height:64px;background:#F4EEE1;border-bottom:1px solid var(--hairline);display:flex;align-items:center;gap:14px;padding:0 40px}
+.rd-bar img{height:42px;width:auto;border:1px solid #D5CCB6}
+.rd-title{font:600 14.5px var(--sans);color:var(--ink)}
+.rd-sub{font:11.5px var(--mono);color:var(--gray);margin-top:3px;letter-spacing:.02em}
+.btn-back{margin-left:auto;font:13.5px var(--sans);color:#6B6154;background:transparent;border:1px solid #C9BFA9;border-radius:4px;padding:8px 16px;cursor:pointer}
+.btn-back:hover{border-color:var(--red);color:var(--red)}
+.rd-scroll{position:absolute;top:64px;left:0;right:0;bottom:0;overflow:auto}
+.rd-col{max-width:680px;margin:52px auto 90px;padding:0 24px}
+.rd-col p{font:18px/2.05 var(--song);color:#33291F;text-indent:2em;text-align:justify;margin-bottom:.55em}
+.rd-col mark{background:var(--marker);padding:1px 2px;color:inherit}
+.rd-col mark.breath{animation:breath .4s ease-out 1}
+@keyframes breath{0%{filter:brightness(1)}35%{filter:brightness(1.14)}100%{filter:brightness(1)}}
+.rd-more{display:block;margin:34px auto 0;font:13.5px var(--sans);color:#6B6154;background:transparent;border:1px solid #C9BFA9;border-radius:4px;padding:9px 20px;cursor:pointer}
+.rd-more:hover{border-color:var(--red);color:var(--red)}
+body.lofi .rd-col mark.breath{animation:none}
+
+/* ── 弹层（记录 / 我的记录） ── */
+.overlay{position:absolute;inset:0;background:rgba(20,15,11,.55);display:grid;place-items:center}
+.panel{background:var(--card);border-radius:6px;box-shadow:0 30px 70px rgba(8,5,3,.6);padding:26px 32px 24px;position:relative}
+.panel .p-label{font:11px var(--mono);color:var(--gray);letter-spacing:.02em}
+.p-quote{font:16.5px/1.85 var(--kai);color:var(--ink);margin-top:14px}
+.p-quote .mk{background:var(--marker);padding:0 2px}
+.panel textarea{width:100%;height:108px;margin-top:16px;background:#FFFDF7;border:1px solid #CFC5AE;border-radius:4px;padding:12px;font:14px/1.7 var(--sans);color:var(--ink);resize:none}
+.panel textarea:focus{outline:none;border-color:#B3A78D}
+.p-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:16px}
+.btn-light{font:13.5px var(--sans);color:#6B6154;background:transparent;border:1px solid #C9BFA9;border-radius:4px;padding:9px 16px;cursor:pointer}
+.btn-light:hover{border-color:#B3A78D}
+.btn-ink{font:13.5px var(--sans);color:#F2EBDC;background:#2A2622;border:1px solid #2A2622;border-radius:4px;padding:9px 18px;cursor:pointer}
+.btn-ink:hover{background:var(--red);border-color:var(--red)}
+
+/* 我的记录 */
+.panel.mine{width:720px;max-height:620px;overflow:auto}
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--hairline);margin-top:18px}
+.tab{font:12.5px var(--mono);color:#6B6154;padding:10px 14px;border-bottom:2px solid transparent;cursor:pointer;background:none;border-top:none;border-left:none;border-right:none}
+.tab b{font-weight:400;color:#9A9086}
+.tab.on{color:var(--red);border-bottom-color:var(--red)}
+.tablist{display:none}
+.tablist.on{display:block}
+.row{display:grid;grid-template-columns:44px 1fr auto;gap:16px;padding:16px 2px;border-bottom:1px solid #EAE2CE;align-items:center}
+.row img{height:56px;width:auto;border:1px solid #D5CCB6;grid-row:span 2}
+.row .q{font:14.5px/1.7 var(--sans);color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.row .q .mk{background:var(--marker);padding:0 2px}
+.row .m{font:11px var(--mono);color:var(--gray);margin-top:6px}
+.row .ops{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.row .open{font:13px var(--sans);color:var(--red);background:none;border:none;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.mini-stamp{width:34px;height:34px;display:grid;place-items:center;font:17px var(--kai);border-radius:5px;transform:rotate(-8deg)}
+.mini-stamp.f{color:var(--red);border:2px solid var(--red);outline:1px solid var(--red);outline-offset:-5px}
+.mini-stamp.a{color:#57503F;border:2px solid #57503F;outline:1px solid #57503F;outline-offset:-5px}
+.tab-empty{font:15px var(--kai);color:var(--gray);text-align:center;padding:48px 0 40px}
+
+/* ── toast 边界态 ── */
+.toast{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);background:#221B16;color:#EFE7D7;
+  border-left:3px solid var(--red);border-radius:4px;padding:13px 22px;font:14px var(--sans);box-shadow:0 14px 34px rgba(8,5,3,.5);white-space:nowrap}
+
+/* ── 空态 G-22 ── */
+.card.empty{width:480px;text-align:center;padding:70px 48px 58px;cursor:default}
+.empty .e1{font:28px var(--kai);color:var(--ink)}
+.empty .e2{font:21px var(--kai);color:#4A4238;margin-top:18px}
+.empty .e3{font:11.5px var(--mono);color:var(--gray);margin-top:30px;letter-spacing:.02em}
+.card.empty .rule-red{left:50%;width:120px;right:auto;transform:translateX(-50%)}
+
+/* ── 基因标注层 ── */
+.gene{display:none;position:absolute;z-index:60;font:11px var(--mono);color:#F7F2E7;background:var(--red);
+  padding:3px 8px;border-radius:3px;pointer-events:none;white-space:nowrap;box-shadow:0 3px 8px rgba(0,0,0,.35);letter-spacing:.02em}
+.gene.dark{background:#2A2622;color:#F7F2E7;border:1px solid #4A4038}
+body.show-genes .gene{display:block}
+body.lofi .gene{display:none!important}
+
+/* 出图模式 */
+body.shot,body.shot #wrap{overflow:hidden}
+</style>
+</head>
+<body class="hifi">
+<div id="pv">
+  <span class="pv-title">划线回廊 · 设计稿预览</span>
+  <div class="pv-group" id="pv-mode">
+    <button data-mode="lofi">② 低保真</button>
+    <button data-mode="hifi" class="on">③ 高保真</button>
+  </div>
+  <div class="pv-group" id="pv-scr">
+    <button data-s="s1" class="on">S1 卡片</button>
+    <button data-s="s2">S2 原文</button>
+    <button data-s="s3">S3 记录</button>
+    <button data-s="s4">S4 我的记录</button>
+    <button data-s="s5">S5 边界态</button>
+    <button data-s="s6">S6 空态</button>
+  </div>
+  <span class="pv-note">预览工具条非设计稿内容 · 出图时 ?shot=1 自动隐藏</span>
+  <label><input type="checkbox" id="pv-genes"> 基因标注</label>
+</div>
+
+<div id="wrap"><div id="stage">
+
+  <!-- S1 卡片主界面 -->
+  <section class="scr on" id="s1" data-hook="A"></section>
+
+  <!-- S2 原文阅读视图 -->
+  <section class="scr reader" id="s2">
+    <div class="rd-bar">
+      <img src="data:image/jpeg;base64,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" alt="">
+      <div>
+        <div class="rd-title">九诗心：暗夜里的文学启明</div>
+        <div class="rd-sub">环形时间失落，线性时间诞生 · 本章第 141 / 378 段</div>
+      </div>
+      <button class="btn-back" data-act="back">✕ 回卡片</button>
+    </div>
+    <div class="rd-scroll" id="rdscroll">
+      <div class="rd-col">
+        <p>在现代社会，父母为孩子取名的依据是对这个孩子的希望，在古代宗法社会，父母为孩子取名的依据是这个孩子的辈分，而屈原的名字来自天命。“皇览揆余于初度兮，肇锡余以嘉名”是说屈原的父亲仔细地研究了他出生的时间（初度），解读出这个婴儿出生在这个时间，到底是带着什么特殊的使命而来的，然后赐给他一个美好的名字。</p>
+        <p>父亲到底从屈原的生辰里看出了什么呢？这句有点奇怪，像个字谜。“名余曰正则兮，字余曰灵均。”我们知道屈原名平，为什么说“名余曰正则”呢？因为“正”的意思就是“平”，“则”的意思就是效法，“正则”的意思就是效法最平正的那个事物，也即天。至于“灵均”，“灵”就是神灵，“均”就是均匀，能均匀养育万物的，只有大地，也即“原”。</p>
+        <p><mark id="hitmark">现代社会假设人生来没有给定的意义，个体要去寻找属于自己的意义</mark>；宗法社会中，人生的意义是由君臣父子的伦理关系给定的；神话社会中，人生的意义通过天人感应，由上天的启示获得。所以屈原一生下来就被告知，上天通过独特的生辰给予了这个婴儿要像苍天一样公正，要像大地一样养育子民的任务。这个任务还被他父亲用命名的方式强化了。这是神话思维。</p>
+        <p>屈原完全相信他的身份如此不凡，使命如此特殊，因此不太可能有“举世皆浊我独清，众人皆醉我独醒”的感慨。虽然“众人皆醉我独醒”的故事出自《楚辞·渔父》，但现代学者一般认为它是后人伪托的，也从文献上证明了这并非屈原自述。这就像《魔戒》里，迈雅承担迈雅的责任，精灵承担精灵的责任，人承担人的责任。甘道夫是迈雅，从来不会感慨人类和矮人“众人皆醉我独醒”。这才是神话中应有的等级思维。但到司马迁写《史记》时，在《屈原贾生列传》中已将此事当作事实陈述，可见至迟到西汉时代，人们就很难理解屈原的天命观念了。</p>
+        <p class="more" hidden>在此基础上，屈原总结“纷吾既有此内美兮，又重之以修能”。“内美”是先天给定的条件，即血统和天命；“修能”是修身养性、读书明理等后天修为。二者的逻辑关系是，因为先有了“内美”，要对得起它，才需要额外增添“修能”。屈原作为楚国贵族，世袭巫史的职位，且携带天命而来，所以才有可能和有机会修养自己的智慧和德行。这一逻辑亦符合原始社会的情况。在一个部落中，对智慧的追求是单独属于某一角色，如巫师或智慧老人的，普罗大众并不具有这种诉求。</p>
+        <p class="more" hidden>有趣的是，当屈原确定了自己的“美”之后，随之而来的是强烈的时间焦虑：</p>
+        <button class="rd-more" id="btnfull">读全章 ▾</button>
+      </div>
+    </div>
+    <span class="gene" style="left:44px;top:78px">G-15 摊开书页·信息条</span>
+    <span class="gene dark" style="left:330px;top:470px">G-10 书页宋体·18px/2.05</span>
+    <span class="gene" style="left:1010px;top:500px">G-20 荧光定位·呼吸400ms一次</span>
+  </section>
+
+  <!-- S3 记录弹层 -->
+  <section class="scr" id="s3" data-hook="A">
+    <div class="overlay">
+      <div class="panel" style="width:520px">
+        <div class="p-label">记录 · 将追加到 bAI/bAI/notes/阅读笔记-九诗心：暗夜里的文学启明.md</div>
+        <div class="p-quote"><span class="mk">现代社会假设人生来没有给定的意义，个体要去寻找属于自己的意义</span></div>
+        <textarea placeholder="写点什么……（Ctrl+Enter 存入）"></textarea>
+        <div class="p-actions">
+          <button class="btn-light" data-act="back">取消 (Esc)</button>
+          <button class="btn-ink">存入知识库</button>
+        </div>
+      </div>
+    </div>
+    <span class="gene dark" style="left:940px;top:270px">G-11 机器层·无衬线</span>
+  </section>
+
+  <!-- S4 我的记录 -->
+  <section class="scr" id="s4">
+    <div class="overlay">
+      <div class="panel mine">
+        <div class="p-label">我的记录 · 借阅卡袋</div>
+        <div class="tabs">
+          <button class="tab on" data-tab="fav">🔖 收藏 <b>1</b></button>
+          <button class="tab" data-tab="abs">✓ 已吸收 <b>0</b></button>
+          <button class="tab" data-tab="note">💡 记录 <b>1</b></button>
+        </div>
+        <div class="tablist on" data-list="fav">
+          <div class="row">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <div>
+              <div class="q">他的真正目的是把学院迁移到一个政治、经济、文化条件比较合适的城市去，而不再在魏玛的政治漩涡中无谓地浪费精力。</div>
+              <div class="m">世界现代设计史（第二版） · 二、包豪斯 · 2025-08-27</div>
+            </div>
+            <div class="ops"><span class="mini-stamp f">藏</span><button class="open">打开原文</button></div>
+          </div>
+        </div>
+        <div class="tablist" data-list="abs">
+          <div class="tab-empty">还没有盖过「阅」章。</div>
+        </div>
+        <div class="tablist" data-list="note">
+          <div class="row">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <div>
+              <div class="q">我读书很杂，毫无系统，也没有目的。随手抓起一本书来就看。觉得没意思，就丢开。我看杂书所用的时间比看文学作品和评论的要多得多。</div>
+              <div class="m">已存入 阅读笔记-汪曾祺的写作课.md · 2026-07-06</div>
+            </div>
+            <div class="ops"><button class="open">打开笔记</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="gene" style="left:960px;top:236px">G-17 状态即印章</span>
+  </section>
+
+  <!-- S5 边界态：PDF 无原文 -->
+  <section class="scr" id="s5" data-hook="E">
+    <div class="toast">这本书没有可回的 epub 原文 · 卡片仍可记录与收藏</div>
+  </section>
+
+  <!-- S6 空态 -->
+  <section class="scr" id="s6">
+    <div class="card-zone">
+      <div class="card empty">
+        <div class="rule-red"></div>
+        <div class="e1">抽屉空了。</div>
+        <div class="e2">旧书不厌百回读。</div>
+        <div class="e3">1,787 条划线已全部走过一遍</div>
+      </div>
+    </div>
+    <span class="gene dark" style="left:740px;top:300px">G-22 空态·无按钮</span>
+  </section>
+
+</div></div>
+
+<script>
+const HOOKS = {
+  A:{cover:'data:image/jpeg;base64,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',book:'九诗心：暗夜里的文学启明',chapter:'环形时间失落，线性时间诞生',date:'2026-07-28',
+     text:'现代社会假设人生来没有给定的意义，个体要去寻找属于自己的意义'},
+  B:{cover:'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCACMAGADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDzTtThG5XcEbb644pvar9srvboNt0VyeEGVIz2rzEfcSdjPoq+8VnFgTx3SEjIyBzVA4ycdKBJ3FFKaQUUiwpKU1teGri3Ev2e4igEeWmllkYAsFQ7UGTjk/jTM5y5VcxKXBIJA4HWuhsZJojNdQ5me3jMoBaIquCBkjJyOelUtFkHnXDmWWOXy2YsigoyfxhgfUdPfFBPtNG+xlUV0VtHI2hzzZs1mF3EqSHy/kUq+Rn8B+VYd20j3UrTSLJIXO51Iwx9RigqM+ZtEXap40ufK3xlwg5yGxiq9WYJ4ERRLAzkdT5hHegcmQySySY8x2bH945plWlmtBnNqWyeP3h4FCzWuObUn/toaAv5FYUpp8rRMf3UZT23ZqM0FLYDVnT1u55Rb2Q3OQW2gDsMk5PsKrdq3PD5t007VnfeZvs2Ny8bULoGx7kHH0+tBnVdlcWa9kttC8qdbgzXkeI95XYse8Elcc8lQOnbvVPSbmOKG+tpFdvtcIjTbgYbepBJPQcGt2OaS/sLG7SF1l+0yRp9niRiiKqbFy3QDn9azfDcrNfXcAYrc3UflxfKOX3q2D0AGFNBimuV6f1cFiEWmX1i9tdDyriN5mbaChAZQuM8k7u3pWNceSZn+zhxFn5RIQWA98V2tpfrLcQvEzKlsDLNucOQiyFzty3XBAycnAx3rirhxLcSyDOHcsM+5oKoybbuiOiiig6AopSKQUB1FPWjOaD1o7CgA7VoaU0n2bUY4mhBkt8MsjYJUMpO31PA4+tZ3atvw8JZrTVYlLFBa7sZ4H7xMnnjpmgzqO0fuLMmjX72sWms1uqwXM3z5blgilh06YUc+9Z3h0TJqsM9uEMkRLr5mdpIBwCR0zXXM7mziuwDJdy3E0sltGp3qGQBgAWxuCnOOevTg1zPhdYF1ffL5hMKySRxdMsisw3fTH50HPCbcJX/AK3L9jbaliGPykRtQElsRIXzF0BJBPvXMzxPBM8UgAZDg4IP6iuzsZYd2kzrJJLGLyVvMkX52yVP905b12muNuYhDcPGJFkCnG5QQD+YBoLoybk7/wBasioFFFB0inpSUppKAe4p60HpSUUAKBxUkM8sO7yZHTdjO1sZwcj9ajoFAWJ1vblY0jSZ1WOUyrg4Ic4BOeueBV3RInaae9luDFDEpE0gPzHerAAZB6njPvUN7YpbWscyyMzOcFSOnyqf/Zv0q1pB/wCJNqoHlZzDxKRjq3rRYxm1yXX9ak17pkscWL28UXizLFbIH+QLjJI44wSo4xzmszVxcrql0t7IJblZCsrr0ZhwTXQzl9Q8STWkVutzumhKSoc+SBt3EEfw4znt3rndWlWfVb2ZDlZJ3YH1BYmgik23r2KopKKKDpFPSkpT0oHFIA7ijvmiimAdqKO1JQB0muLN/YFk0iRKv7vG0c8p9P8APFc3U0jXPkoZTL5TcJuztOPT6VDTbuZ048qsKrFTlSQemQaSiikWFFKaSgB3akFGaUdKRQ2iiimSKOlJRQaBkslxNLDFDJIWjizsX+7nrUVFAoEkkLikp3ekNIpoD1pKU0lMkKBRRQAUUUd6AFFBoFBpFdBKBRRTJHUhpaQ0imBra05JBpqlLZXLSFlkLrn5eq4I9Oc/SsU9au2pshGnnSTrIM7tp4/D9KpGVRXRs+XdJK8zaZG26RJVGV4wcKOnuc/n25Sd5JAso02NA+NqhlOcEdvfB/A1mGSx2ti4uSdgxkn72efwpVbTiVMk9znzCTgnpjr065qrmPJ1/wA/8zZuPtLRzqdNhVp02gh0BX5TzXO3en3FmqNcIAsmdpDA5xUoe0YtvuLg4Hy8nrk04tp7oPMluWIfhd2cLjnt1zSepcE4MzhQauQrYFW8x5QdrY+ueP0pl2tmoP2V5GORjcO2Oc/jU2NebpYrCkpRR3oKDtQRilpDSGFdXb3/AIXXwjHbS2ZOsg/NL5R5+fP3t393jpXJ0VSdjKpTU7XexsPdaWUOLWPOQR8jcD8/f9BVee7s5IHjisUjc9Hycjp71n0UXBU0gpR1pKKRoLSGiigBRQetAoPWgYdjQaB0NBpB0P/Z',book:'汪曾祺的写作课',chapter:'谈读杂书',date:'2026-07-06',
+     text:'我读书很杂，毫无系统，也没有目的。随手抓起一本书来就看。觉得没意思，就丢开。我看杂书所用的时间比看文学作品和评论的要多得多。'},
+  E:{cover:'data:image/jpeg;base64,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',book:'Things We Could Design',chapter:'Series Foreword 系列前言',date:'2026-02-15',
+     text:'设计院校并未就这些复杂议题、人类和社会行为的相互交织的复杂性、行为科学、技术和商业等领域对学生进行培训'}
+};
+const GENES = {
+  A:[['G-01 抽屉地面',56,806],['G-13 顶栏·标签架',46,80],['G-12 单卡居中',700,148],
+     ['G-02 索引卡纸',392,252],['G-03 红头线',1006,254],['G-08 钩子楷体',386,412],
+     ['G-04 荧光笔底',1030,424],['G-09 目录 mono',700,470],['G-14 动作行',590,542],['G-21 安静原则',1196,80]]
+};
+function sceneHTML(k){
+  const h = HOOKS[k];
+  return `
+  <div class="grain"></div><div class="vig"></div>
+  <header class="topbar">
+    <span class="logo"><i></i><i></i><i></i></span>
+    <span class="tb-name">划线回廊</span>
+    <span class="tb-sub">第 1 条 / 已加载 50 · 剩余待吸收 1,787</span>
+    <div class="tb-right">
+      <span class="sel">全部书籍 <b>1,787</b> <u>▾</u></span>
+      <span class="sel">未吸收优先 · 随机 <u>▾</u></span>
+      <button class="btn-mine" data-act="mine">我的记录</button>
+    </div>
+  </header>
+  <div class="card-zone">
+    <article class="card">
+      <div class="rule-red"></div>
+      <div class="cover-box"><img src="${h.cover}" alt=""></div>
+      <div class="cover-ph">封面占位</div>
+      <div class="hook" data-act="open"><span class="mk">${h.text}</span></div>
+      <div class="meta">${h.book} · ${h.chapter} · ${h.date}</div>
+      <div class="stamp st-abs">阅</div>
+      <div class="stamp st-fav">藏</div>
+    </article>
+    <div class="actions">
+      <button class="abtn primary" data-act="open">📖 回到原文</button>
+      <button class="abtn ghost" data-act="record">💡 记录</button>
+      <button class="abtn ghost" data-act="abs">✓ 已吸收</button>
+      <button class="abtn ghost" data-act="fav">🔖 收藏</button>
+    </div>
+    <div class="keys">← → 翻卡 · Enter 回原文 · 点卡片 = 打开原书那一页</div>
+  </div>
+  ${(GENES[k]||[]).map(g=>`<span class="gene" style="left:${g[1]}px;top:${g[2]}px">${g[0]}</span>`).join('')}`;
+}
+document.querySelectorAll('.scr[data-hook]').forEach(s=>{
+  const keep = s.innerHTML;            /* 保留弹层/toast/标注等已有子元素 */
+  s.innerHTML = sceneHTML(s.dataset.hook) + keep;
+});
+
+const q=(p)=>document.querySelector(p), qa=(p)=>document.querySelectorAll(p);
+let cur='s1';
+function show(id){
+  cur=id;
+  qa('.scr').forEach(x=>x.classList.toggle('on',x.id===id));
+  qa('#pv-scr button').forEach(b=>b.classList.toggle('on',b.dataset.s===id));
+  if(id==='s2'){ const m=q('#hitmark'),sc=q('#rdscroll');
+    sc.scrollTop=m.offsetTop-330; m.classList.remove('breath'); void m.offsetWidth;
+    if(!document.body.classList.contains('lofi')) m.classList.add('breath'); }
+}
+
+const stage=document.getElementById('stage'), wrap=document.getElementById('wrap');
+/* URL 预设先于 fit 执行：?shot=1&s=s2&mode=hifi&genes=1 */
+const P=new URLSearchParams(location.search);
+if(P.get('mode')==='lofi'||P.get('mode')==='hifi'){
+  qa('#pv-mode button').forEach(x=>x.classList.toggle('on',x.dataset.mode===P.get('mode')));
+  document.body.classList.toggle('lofi',P.get('mode')==='lofi');
+  document.body.classList.toggle('hifi',P.get('mode')==='hifi');
+}
+if(P.get('shot')==='1') document.body.classList.add('shot');
+function fit(){ const chromeH=document.body.classList.contains('shot')?16:78;
+  const s=Math.min(1,(window.innerWidth-16)/1440,(window.innerHeight-chromeH)/900);
+  stage.style.transform=`scale(${s})`; wrap.style.height=900*s+'px'; wrap.style.width=1440*s+'px'; wrap.style.margin='0 auto'; }
+window.addEventListener('resize',fit); fit();
+
+qa('#pv-scr button').forEach(b=>b.onclick=()=>show(b.dataset.s));
+qa('#pv-mode button').forEach(b=>b.onclick=()=>{
+  qa('#pv-mode button').forEach(x=>x.classList.toggle('on',x===b));
+  document.body.classList.toggle('lofi',b.dataset.mode==='lofi');
+  document.body.classList.toggle('hifi',b.dataset.mode==='hifi');
+});
+q('#pv-genes').onchange=e=>document.body.classList.toggle('show-genes',e.target.checked);
+q('#btnfull').onclick=e=>{ const more=qa('.more'); const open=more[0].hidden;
+  more.forEach(p=>p.hidden=!open); e.target.textContent=open?'读全章 ▴':'读全章 ▾'; };
+
+let flipTo={A:'B',B:'A'};
+function flip(sec){
+  const card=sec.querySelector('.card'); if(!card||sec.dataset.hook==='E')return;
+  card.classList.add('flip-out');
+  setTimeout(()=>{ const nk=flipTo[sec.dataset.hook]; sec.dataset.hook=nk;
+    sec.innerHTML=sceneHTML(nk); sec.querySelector('.card').classList.add('flip-in');
+    setTimeout(()=>sec.querySelector('.card').classList.remove('flip-in'),160); },150);
+}
+function stamp(sec,cls){ const st=sec.querySelector('.stamp.'+cls); if(!st)return;
+  st.classList.remove('on'); void st.offsetWidth; st.classList.add('on'); }
+
+document.addEventListener('click',e=>{
+  const act=e.target.closest('[data-act]'); if(!act)return;
+  const sec=act.closest('.scr'), a=act.dataset.act;
+  if(a==='open') show('s2');
+  if(a==='record') show('s3');
+  if(a==='mine') show('s4');
+  if(a==='back') show('s1');
+  if(a==='abs'){ stamp(sec,'st-abs');
+    if(!document.body.classList.contains('lofi')&&sec.id==='s1') setTimeout(()=>flip(sec),480); }
+  if(a==='fav') stamp(sec,'st-fav');
+});
+qa('.tab').forEach(t=>t.onclick=()=>{
+  qa('.tab').forEach(x=>x.classList.toggle('on',x===t));
+  qa('.tablist').forEach(l=>l.classList.toggle('on',l.dataset.list===t.dataset.tab));
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') show('s1');
+  if(cur!=='s1')return;
+  const sec=q('#s1');
+  if(e.key==='Enter') show('s2');
+  if(e.key===' '||e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();flip(sec);}
+});
+
+if(P.get('s')) show(P.get('s'));
+if(P.get('genes')==='1'){ document.body.classList.add('show-genes'); q('#pv-genes').checked=true; }
+</script>
+</body>
+</html>
