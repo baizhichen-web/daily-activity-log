@@ -1,0 +1,761 @@
+{
+  "schema": "bst-component-manifest/v0.1",
+  "generated": "2026-09-01",
+  "status": "built-awaiting-whitepaper-review",
+  "provenance": {
+    "templates": {
+      "mp": {
+        "name": "magic-portfolio",
+        "repo": "once-ui-system/magic-portfolio",
+        "local": "temp/magic-portfolio-try/",
+        "stack": "Next.js + Once UI"
+      },
+      "rx": {
+        "name": "ruixen/portfolio",
+        "repo": "ruixenui/portfolio",
+        "local": "temp/ruixen-portfolio-try/apps/website/",
+        "stack": "Next.js + Tailwind v4 + shadcn"
+      }
+    },
+    "humanDoc": "studio/projects/design-system/template-decomposition.md",
+    "rules": "禁抄模板色相；全部件换绑 BST Tokens v1；数值唯一源=Figma Variables BST Tokens v1"
+  },
+  "figma": {
+    "fileKey": "lspIyYnJDLjIM7kmDT3Xgu",
+    "fileName": "MY WEBSIDE",
+    "pageName": "模板拆解",
+    "pageId": "54:7",
+    "legendFrameId": "55:7",
+    "atomsFrameId": "56:7",
+    "zones": {
+      "legend": "20",
+      "atoms": "21",
+      "magic": "22",
+      "ruixen": "23"
+    },
+    "magicZoneFrameId": "64:11",
+    "ruixenZoneFrameId": "85:7"
+  },
+  "naming": {
+    "figmaDisplay": "TPL/<source>/<part>",
+    "manifestId": "tpl-<source>-<part>",
+    "sources": {
+      "mp": "magic-portfolio",
+      "rx": "ruixen/portfolio",
+      "shared": "两站共有"
+    }
+  },
+  "slotsLegend": "slots 为可替换内容位：type=text|media|list|slot，name 供 AI 定向填换",
+  "components": [
+    {
+      "id": "tpl-mp-pill-nav",
+      "figma": "TPL/mp/pill-nav",
+      "source": "mp",
+      "srcPath": "src/components/Header.tsx + Header.module.scss",
+      "name_zh": "顶部居中胶囊导航",
+      "mapsTo": [
+        "nav-overlay",
+        "page-page-indicator"
+      ],
+      "status": "mapping",
+      "slots": [
+        {
+          "name": "pages",
+          "type": "list",
+          "desc": "页签数组（icon+label+href）"
+        },
+        {
+          "name": "activeIndex",
+          "type": "slot",
+          "desc": "当前页高亮（反白药丸）"
+        }
+      ],
+      "tokens": [
+        "--surface-card",
+        "--radius-pill",
+        "--color-ink",
+        "--border-hairline",
+        "--font-mono"
+      ],
+      "usage": "翻页书页指示器视觉基准：MP 的 active 药丸态移植到 page-page-indicator 的点击态",
+      "caution": "永不染项目色（页码指示器=全局中性红线）",
+      "figmaNodeId": "66:7"
+    },
+    {
+      "id": "tpl-mp-hero-statement",
+      "figma": "TPL/mp/hero-statement",
+      "source": "mp",
+      "srcPath": "src/resources/content.tsx(home) + src/app/page.tsx Hero",
+      "name_zh": "居中三段式宣言（大字+灰从句+头像胶囊入口）",
+      "mapsTo": [],
+      "status": "new",
+      "slots": [
+        {
+          "name": "headline",
+          "type": "text",
+          "example": "如切如磋，如琢如磨"
+        },
+        {
+          "name": "subline",
+          "type": "text",
+          "example": "我是柏志，北师大未来设计学院 2026 级…"
+        },
+        {
+          "name": "ctaChip",
+          "type": "slot",
+          "desc": "头像+入口文案胶囊（跳 about）"
+        }
+      ],
+      "tokens": [
+        "--fs-display",
+        "--leading-tight",
+        "--weight-strong",
+        "--color-ink",
+        "--color-muted",
+        "--radius-pill",
+        "--space-9",
+        "--font-sans",
+        "--font-mono"
+      ],
+      "usage": "页 01 Hero 版式参照（Product.md §8 的 MP 等价物）",
+      "figmaNodeId": "66:57",
+      "motion": {
+        "ctaChip入场": "RevealFx：blur(0.5rem)→0 + opacity 0→1，transition all ease-in-out ~2s（mask 版另有 mask-position 100%→0 扫入）",
+        "ctaChip悬停": "Once UI Arrow 组装动画：容器 width 0→16px、两 arrowHead width 0→8px + rotate ±45° 成箭头（transition-micro）；头像负边距 -12px 嵌钮",
+        "spec": "once-ui Arrow.module.scss(.active)/RevealFx.module.scss（源码实测）",
+        "BST换皮": "arrowHead 色=--color-ink（全局）；hover 底色 --surface-card"
+      }
+    },
+    {
+      "id": "tpl-mp-featured-badge",
+      "figma": "TPL/mp/featured-badge",
+      "source": "mp",
+      "srcPath": "src/resources/content.tsx(home.featured)",
+      "name_zh": "标签竖线灰话术徽章行",
+      "mapsTo": [],
+      "status": "new",
+      "slots": [
+        {
+          "name": "tag",
+          "type": "text",
+          "example": "毕业设计"
+        },
+        {
+          "name": "caption",
+          "type": "text",
+          "example": "儿童 AI 折纸打印机 · 进行中"
+        },
+        {
+          "name": "href",
+          "type": "slot"
+        }
+      ],
+      "tokens": [
+        "--border-hairline",
+        "--color-faint",
+        "--fs-l2",
+        "--font-mono"
+      ],
+      "usage": "项目页招牌/状态角标；也可作为 hero-statement 的可选槽位",
+      "figmaNodeId": "66:78",
+      "motion": {
+        "shine扫光": "::before 光带 linear-gradient(120deg, transparent 20%, 强调alpha 50%, transparent 80%) skewX(-20deg) 横扫全徽章；常态 9s ease-in-out infinite，hover 提速 3s infinite；overflow:hidden+radius-full 裁切",
+        "spec": "once-ui Badge.module.scss keyframes shineDefault/shineHover（temp/magic-portfolio-try 源码实测）",
+        "BST换皮": "光带色=--accent-project alpha 版（项目色作用域①）或全局态=--color-ink 8%；扫光节奏 9s/3s 保留",
+        "语义": "进行中状态的活体信号——与 Product.md §4a「允许并标注进行时」直通"
+      }
+    },
+    {
+      "id": "tpl-mp-project-card-row",
+      "figma": "TPL/mp/project-card-row",
+      "source": "mp",
+      "srcPath": "src/components/ProjectCard.tsx + Projects.tsx",
+      "name_zh": "图字 5:7 分栏项目行卡（轮播+标题+摘要+头像组+链接）",
+      "mapsTo": [
+        "card-project"
+      ],
+      "status": "mapping",
+      "slots": [
+        {
+          "name": "media",
+          "type": "media",
+          "desc": "轮播图集（Carousel items）"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "summary",
+          "type": "text"
+        },
+        {
+          "name": "team",
+          "type": "list",
+          "desc": "团队头像组 AvatarGroup"
+        },
+        {
+          "name": "link",
+          "type": "slot",
+          "desc": "Read case study 箭头链"
+        }
+      ],
+      "tokens": [
+        "--color-ink",
+        "--color-muted",
+        "--fs-d1",
+        "--fs-b2",
+        "--space-5",
+        "--space-6",
+        "--measure"
+      ],
+      "usage": "card-project 的列表行变体（同一内容模型，翻页书=一页一项目、MP=一屏一行）；若做项目总览页即此件",
+      "figmaNodeId": "72:55"
+    },
+    {
+      "id": "tpl-mp-gallery-masonry",
+      "figma": "TPL/mp/gallery-masonry",
+      "source": "mp",
+      "srcPath": "src/components/gallery/GalleryView.tsx",
+      "name_zh": "横竖混排大图墙（零文字）",
+      "mapsTo": [],
+      "status": "borrow-structure",
+      "slots": [
+        {
+          "name": "images",
+          "type": "media",
+          "desc": "src+orientation(h/v)+lightbox"
+        }
+      ],
+      "tokens": [
+        "--space-1",
+        "--radius-sm",
+        "--bg-page"
+      ],
+      "usage": "作品图墙/可玩展区候选（backlog）；占位槽制直接兼容",
+      "figmaNodeId": "72:87"
+    },
+    {
+      "id": "tpl-shared-toc",
+      "figma": "TPL/shared/toc",
+      "source": "shared",
+      "srcPath": "mp: src/components/about/TableOfContents.tsx | rx: components/toc.tsx + toc-thumb.tsx",
+      "name_zh": "侧栏目录轨（active 跟随+缩略点）",
+      "mapsTo": [
+        "nav-toc"
+      ],
+      "status": "mapping",
+      "slots": [
+        {
+          "name": "sections",
+          "type": "list",
+          "desc": "锚点标题数组"
+        },
+        {
+          "name": "activeId",
+          "type": "slot",
+          "desc": "当前节高亮"
+        },
+        {
+          "name": "mode",
+          "type": "slot",
+          "desc": "full(列表) | thumb(缩略轨) 两态"
+        }
+      ],
+      "tokens": [
+        "--fs-l2",
+        "--font-mono",
+        "--color-faint",
+        "--color-ink",
+        "--border-hairline"
+      ],
+      "usage": "长文页/简历页导航；nav-toc（G-23 候选）的两个成熟形制并列呈现供圈定",
+      "figmaNodeId": "72:106"
+    },
+    {
+      "id": "tpl-mp-footer-social",
+      "figma": "TPL/mp/footer-social",
+      "source": "mp",
+      "srcPath": "src/components/Footer.tsx + Footer.module.scss",
+      "name_zh": "版权+署名+右缘图标行页脚",
+      "mapsTo": [],
+      "status": "mapping",
+      "slots": [
+        {
+          "name": "year",
+          "type": "text",
+          "desc": "构建时生成（禁手写日期）"
+        },
+        {
+          "name": "links",
+          "type": "list",
+          "desc": "社交图标（GitHub/Email）"
+        }
+      ],
+      "tokens": [
+        "--fs-l2",
+        "--font-mono",
+        "--color-faint"
+      ],
+      "usage": "尾页联系件骨架参照；红线=删模板自带『Build with Once UI』署名链（CC 协议署名另行合规处理，不上设计件）",
+      "figmaNodeId": "66:96"
+    },
+    {
+      "id": "tpl-mp-og-share",
+      "figma": "TPL/mp/og-share",
+      "source": "mp",
+      "srcPath": "src/components/blog/ShareSection.tsx",
+      "name_zh": "社交分享按钮组",
+      "mapsTo": [],
+      "status": "rejected",
+      "slots": [
+        {
+          "name": "platforms",
+          "type": "list"
+        }
+      ],
+      "usage": "V1 无社交分享需求，不采；留档备查",
+      "figmaNodeId": null
+    },
+    {
+      "id": "tpl-rx-dock-nav",
+      "figma": "TPL/rx/dock-nav",
+      "source": "rx",
+      "srcPath": "components/navigation/dock/ + shared/compoenents/floating-dock.tsx",
+      "name_zh": "底部居中悬浮 dock（圆钮图标组+分隔+状态点）",
+      "mapsTo": [
+        "page-page-indicator"
+      ],
+      "status": "new",
+      "slots": [
+        {
+          "name": "items",
+          "type": "list",
+          "desc": "{icon,label,href}[]"
+        },
+        {
+          "name": "activeIndex",
+          "type": "slot"
+        },
+        {
+          "name": "separator",
+          "type": "slot",
+          "desc": "功能区与主题区之间"
+        }
+      ],
+      "tokens": [
+        "--surface-card",
+        "--radius-pill",
+        "--border-hairline",
+        "--color-ink",
+        "--space-2",
+        "--dur-fast"
+      ],
+      "usage": "全局导航另一形制：与 tpl-mp-pill-nav 同槽竞争（顶指示器 vs 底 dock），拆解区并列供白纸二选一",
+      "figmaNodeId": "85:11"
+    },
+    {
+      "id": "tpl-rx-flip-line",
+      "figma": "TPL/rx/flip-line",
+      "source": "rx",
+      "srcPath": "config/user.ts(flipSentences) + hero 组件",
+      "name_zh": "姓名下轮换宣言句",
+      "mapsTo": [
+        "text-status-line"
+      ],
+      "status": "mapping",
+      "slots": [
+        {
+          "name": "sentences",
+          "type": "list",
+          "example": [
+            "如切如磋，如琢如磨。",
+            "设计出身，工程落地，AI 加持。"
+          ]
+        },
+        {
+          "name": "interval",
+          "type": "slot",
+          "desc": "轮播间隔（动效纪律内）"
+        }
+      ],
+      "tokens": [
+        "--font-mono",
+        "--fs-l1",
+        "--color-muted"
+      ],
+      "usage": "状态行『正在做什么』的轮播升级（Product.md §9 幽灵字轮播的克制替代候选）",
+      "figmaNodeId": "86:109"
+    },
+    {
+      "id": "tpl-rx-venn-skills",
+      "figma": "TPL/rx/venn-skills",
+      "source": "rx",
+      "srcPath": "components/skills-venn.tsx",
+      "name_zh": "四圆韦恩能力声明图（中心头像）",
+      "mapsTo": [],
+      "status": "borrow-structure",
+      "slots": [
+        {
+          "name": "center",
+          "type": "media",
+          "desc": "头像"
+        },
+        {
+          "name": "top",
+          "type": "text",
+          "example": "产品设计"
+        },
+        {
+          "name": "left",
+          "type": "text",
+          "example": "工程落地"
+        },
+        {
+          "name": "right",
+          "type": "text",
+          "example": "AI 工作流"
+        },
+        {
+          "name": "bottom",
+          "type": "text",
+          "example": "硬件产品经理"
+        }
+      ],
+      "tokens": [
+        "--border-hairline",
+        "--color-muted",
+        "--fs-b2",
+        "--radius-pill"
+      ],
+      "usage": "首页『设计×工程×AI』自我声明彩蛋候选；圈层文案定稿后再做（禁占位假文案上线）",
+      "figmaNodeId": "87:7"
+    },
+    {
+      "id": "tpl-rx-contrib-grid",
+      "figma": "TPL/rx/contrib-grid",
+      "source": "rx",
+      "srcPath": "features/ 贡献热力组件 + config 数据",
+      "name_zh": "滚动 52 周×7 行贡献热力图（月份标+图例+计数行）",
+      "mapsTo": [
+        "data-heatmap"
+      ],
+      "status": "mapping",
+      "slots": [
+        {
+          "name": "days",
+          "type": "list",
+          "desc": "{date,count}[]，count 0-4 档"
+        },
+        {
+          "name": "monthLabels",
+          "type": "list"
+        },
+        {
+          "name": "rangeLabel",
+          "type": "text",
+          "example": "Sep → Aug"
+        },
+        {
+          "name": "totalLine",
+          "type": "text",
+          "example": "225 contributions in 2025-26"
+        },
+        {
+          "name": "legend",
+          "type": "slot",
+          "desc": "少 □□□□□ 多"
+        }
+      ],
+      "tokens": [
+        "--heatmap-1",
+        "--heatmap-2",
+        "--heatmap-3",
+        "--heatmap-4",
+        "--heatmap-5",
+        "--fs-l2",
+        "--font-mono",
+        "--radius-xs",
+        "--space-1"
+      ],
+      "usage": "G-16 热区图版式升级参照——rx=滚动周视图（GitHub 原语）、BST=年历视图；拆解区并排画两版对照（示意用我方真实数据 133 会话/38 日）",
+      "figmaNodeId": "97:26",
+      "motion": {
+        "框线": "四角 6px 直角刻度框线 + 左右 1px 竖边线（仪器读数感，静态）",
+        "色阶": "SVG rect 同色相 alpha 阶梯 5/20/40/60/80%（建议 BST heatmap-1..5 由实底灰改此制，待白纸拍板）"
+      }
+    },
+    {
+      "id": "tpl-rx-accordion-entry",
+      "figma": "TPL/rx/accordion-entry",
+      "source": "rx",
+      "srcPath": "features/ 项目/经历列表组件 + config/projects.ts + config/experience.ts",
+      "name_zh": "手风琴条目（icon+标题+期段+chevron→展开描述+技能标签行）",
+      "mapsTo": [
+        "card-details"
+      ],
+      "status": "mapping",
+      "slots": [
+        {
+          "name": "icon",
+          "type": "media"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "period",
+          "type": "text",
+          "example": "11.2025 — 03.2026"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "desc": "展开区（描述+skills chips）"
+        },
+        {
+          "name": "defaultOpen",
+          "type": "slot"
+        }
+      ],
+      "tokens": [
+        "--color-ink",
+        "--color-muted",
+        "--fs-b1",
+        "--fs-l2",
+        "--font-mono",
+        "--surface-card",
+        "--radius-md",
+        "--dur-base"
+      ],
+      "usage": "card-details(G-21) 的列表形态参照——翻页书展开机制与站点项目/简历清单可共用一套内容模型；chevron 染项目色=作用域①",
+      "figmaNodeId": "88:38"
+    },
+    {
+      "id": "tpl-rx-testimonial-spotlight",
+      "figma": "TPL/rx/testimonial-spotlight",
+      "source": "rx",
+      "srcPath": "components/testimonial-spotlight.tsx + testimonial.tsx + config/testimonials.ts",
+      "name_zh": "评语聚焦大卡+次要行卡（引号+作者+tagline+日期）",
+      "mapsTo": [],
+      "status": "borrow-structure",
+      "slots": [
+        {
+          "name": "quote",
+          "type": "text"
+        },
+        {
+          "name": "author",
+          "type": "text"
+        },
+        {
+          "name": "authorTagline",
+          "type": "text"
+        },
+        {
+          "name": "featured",
+          "type": "slot"
+        }
+      ],
+      "tokens": [
+        "--fs-d1",
+        "--color-ink",
+        "--fs-l2",
+        "--font-mono",
+        "--surface-card",
+        "--radius-lg"
+      ],
+      "usage": "Voice 评语区（backlog）结构参照；零假数据=空数组整块隐藏（rx 已示范此机制，与我们的区块隐藏规则同构）",
+      "figmaNodeId": "98:7"
+    },
+    {
+      "id": "tpl-rx-wordmark-footer",
+      "figma": "TPL/rx/wordmark-footer",
+      "source": "rx",
+      "srcPath": "components/wordmark-footer.tsx",
+      "name_zh": "巨型字母标页脚（姓名大字出血裁切）",
+      "mapsTo": [],
+      "status": "new",
+      "slots": [
+        {
+          "name": "text",
+          "type": "text",
+          "example": "陈柏志"
+        }
+      ],
+      "tokens": [
+        "--fs-display",
+        "--weight-strong",
+        "--color-faint",
+        "--leading-tight"
+      ],
+      "usage": "尾页收口视觉锤（翻页书末页或尾页下半区候选）",
+      "figmaNodeId": "98:33"
+    },
+    {
+      "id": "tpl-rx-reveal-on-load",
+      "figma": "TPL/rx/reveal-on-load",
+      "source": "rx",
+      "srcPath": "components/reveal-on-load.tsx",
+      "name_zh": "入场渐显机制件（delay/duration 参数化）",
+      "mapsTo": [
+        "loader-motto"
+      ],
+      "status": "mechanism",
+      "slots": [
+        {
+          "name": "delay",
+          "type": "slot",
+          "desc": "错峰用（0.15 一档）"
+        },
+        {
+          "name": "duration",
+          "type": "slot",
+          "desc": "dur-fast/base"
+        }
+      ],
+      "tokens": [
+        "--dur-fast",
+        "--dur-base"
+      ],
+      "usage": "loader-motto 逐字渐显的元素级推广；reduced-motion 瞬退铁律随行",
+      "figmaNodeId": "98:61"
+    },
+    {
+      "id": "tpl-rx-pulse-dot",
+      "figma": "TPL/rx/pulse-dot",
+      "source": "rx",
+      "srcPath": "dock 组件内嵌（状态呼吸点）",
+      "name_zh": "状态呼吸点（live 指示）",
+      "mapsTo": [],
+      "status": "borrow-structure",
+      "slots": [
+        {
+          "name": "label",
+          "type": "text",
+          "example": "6 agents working"
+        }
+      ],
+      "tokens": [
+        "--heatmap-5",
+        "--radius-pill"
+      ],
+      "usage": "状态行活体标记候选；装饰性动效，受动效纪律约束",
+      "figmaNodeId": "98:89"
+    },
+    {
+      "id": "tpl-rx-drawer-toggle",
+      "figma": "TPL/rx/drawer-toggle",
+      "source": "rx",
+      "srcPath": "components/navigation/mobile-drawer.tsx + floating-header.tsx（Radix Drawer）",
+      "name_zh": "⌘ 钮 + 全页导航抽屉（移动端总入口）",
+      "mapsTo": [
+        "nav-overlay"
+      ],
+      "status": "new-candidate",
+      "slots": [
+        {
+          "name": "trigger",
+          "type": "slot",
+          "desc": "32px 圆钮 ghost variant，⌘ 图标，active:scale-[0.98] 按压反馈，focus ring 3px"
+        },
+        {
+          "name": "drawer",
+          "type": "slot",
+          "desc": "自底上滑 4/5 屏 DrawerContent"
+        },
+        {
+          "name": "sections",
+          "type": "list",
+          "desc": "[身份卡{avatar,name,tagline}→分隔线→导航列表(当前项墨底反白)→Social 组(外链带↗)]；每项点击后自动关闭"
+        }
+      ],
+      "tokens": [
+        "--surface-card",
+        "--radius-pill",
+        "--color-ink",
+        "--radius-lg",
+        "--font-mono",
+        "--dur-base",
+        "--radius-md"
+      ],
+      "usage": "nav-overlay 的移动端交互基准：入口小（32px 钮）+容量大（4/5 屏抽屉）+状态明确（active 反白=与 pill-nav 同语言）",
+      "caution": "抽屉滑入动效走 transform translateY（Radix 制式）；reduced-motion 直开直关",
+      "motion": "触发钮 active:scale-0.98；Drawer 自底滑入；NavigationLink active=墨底反白（--color-ink 底 white 字）",
+      "figmaNodeId": null
+    }
+  ],
+  "atomComparison": {
+    "figma": "21-atoms",
+    "axes": [
+      {
+        "axis": "color",
+        "mp": "Once UI 三级语义（background/border/on-background × weak/medium/strong）+ scheme-* 12 档灰（gray-100 #0A0A0A…1200 #F9F9F9=BST 灰阶改名法与实底来源）",
+        "rx": "Tailwind/shadcn 语义槽（--background/--foreground/--muted/--border/--radius oklch）",
+        "bst": "--gray-100..1200 + 角色层（--color-ink/--color-muted/--color-faint/--border-hairline/--surface-card/--bg-page）"
+      },
+      {
+        "axis": "radius",
+        "mp": "组件 class rounded-*（pill 当家）",
+        "rx": "--radius:0.625rem 单源派生",
+        "bst": "--radius-xs..xl + --radius-pill 六档 + 嵌套公式（外角−padding）"
+      },
+      {
+        "axis": "type",
+        "mp": "variant×size×weight 三维矩阵",
+        "rx": "text-* 工具类（无系统）",
+        "bst": "--fs-display..l3 8 档 + 字重仅 400/600/700/800"
+      },
+      {
+        "axis": "space",
+        "mp": "--spacing-* 档位",
+        "rx": "Tailwind 默认刻度",
+        "bst": "--space-1..11（4px 模数+相邻跳变≥25%）"
+      }
+    ]
+  },
+  "batches": [
+    {
+      "n": 1,
+      "content": "page + 20-legend + 21-atoms",
+      "status": "done (page 54:7 / legend 55:7 / atoms 56:7，目检通过)"
+    },
+    {
+      "n": 2,
+      "content": "22-magic 8 件",
+      "status": "done (7 件建成 + og-share rejected 不建；64:11/66:7/66:57/66:78/66:96/72:55/72:87/72:106)"
+    },
+    {
+      "n": 3,
+      "content": "23-ruixen 10 件",
+      "status": "3a done (dock 85:11/flip 86:109/venn 87:7/accordion 88:38)；3b done (contrib-grid 97:26/testimonial 98:7/wordmark 98:33/reveal 98:61/pulse-dot 98:89)"
+    },
+    {
+      "n": 4,
+      "content": "nodeId 回写 + 截图验收",
+      "status": "done (ZCode 09-01：17 件全回写+五批截图目检通过；og-share rejected 不建)",
+      "owner": "ZCode"
+    }
+  ],
+  "buildSummary": {
+    "built": 17,
+    "rejected": 1,
+    "rejectedIds": [
+      "tpl-mp-og-share"
+    ],
+    "verifiedScreenshots": [
+      "temp/figma-b1-legend.png",
+      "temp/figma-b1-atoms.png",
+      "temp/figma-b2a-magic.png",
+      "temp/22-magic-b2b.png",
+      "temp/23-ruixen-b3a.png",
+      "temp/23-ruixen-b3b.png",
+      "temp/23-ruixen-b3b-contrib.png",
+      "temp/23-ruixen-b3b-wordmark.png"
+    ],
+    "pendingBuild": [
+      "tpl-rx-drawer-toggle（白纸 09-01 补选中含抽屉展开交互，Figma 未建）"
+    ]
+  }
+}
