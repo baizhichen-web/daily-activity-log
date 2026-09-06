@@ -1,0 +1,109 @@
+/* ============================================================
+   Demo v2 候选样式 —— 散文双栏（左段话·右轮播·弹层）
+   tokens 全家桶；卡片轮播=位移+缩放+透明度（可打断/可暂停）
+   ============================================================ */
+
+.f2-root {
+  height: 100vh; background: var(--bg-page); color: var(--color-ink);
+  font-family: var(--font-sans); overflow: hidden;
+}
+.f2-grid {
+  height: 100vh; display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center; gap: var(--space-9);
+  padding: var(--space-9) var(--space-9) var(--space-9) clamp(var(--space-8), 8vw, 160px);
+  box-sizing: border-box;
+}
+
+/* ---- 左：一段话 ---- */
+.f2-prose { max-width: 34em; }
+.f2-para {
+  font-size: var(--fs-d1); line-height: var(--leading-normal);
+  color: var(--color-faint); margin: 0 0 var(--space-6);
+}
+.f2-strong { color: var(--color-ink); font-weight: var(--weight-heading); }
+.f2-em { color: var(--color-muted); }
+.f2-link {
+  font: inherit; border: none; background: none; padding: 0;
+  color: var(--color-ink); font-weight: var(--weight-emphasis);
+  text-decoration: underline; text-underline-offset: 4px;
+  cursor: pointer; transition: color var(--dur-micro) ease-out;
+}
+.f2-link:hover { color: var(--gray-300); }
+.f2-status {
+  font-family: var(--font-mono); font-size: var(--fs-l1);
+  color: var(--color-muted); letter-spacing: 0.04em; margin-top: var(--space-8);
+}
+
+/* ---- 右：轮播列（首位大卡+后续渐小渐淡） ---- */
+.f2-deck { position: relative; height: 74vh; }
+.f2-card {
+  position: absolute; left: 0; right: 0;
+  border: none; background: none; padding: 0; cursor: pointer; text-align: left;
+  transition: transform var(--dur-page) cubic-bezier(0.16, 1, 0.3, 1),
+              opacity var(--dur-base) ease-out;
+}
+.f2-card-art {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; aspect-ratio: 16 / 10;
+  background: repeating-linear-gradient(135deg, var(--surface-card), var(--surface-card) 22px, var(--gray-1000) 22px, var(--gray-1000) 44px);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 12px 32px rgba(0,0,0,0.08); /* 阴影造层级（jakubkrehel） */
+}
+.f2-card-hint {
+  font-family: var(--font-mono); font-size: var(--fs-l2);
+  color: var(--color-faint); background: var(--bg-page);
+  padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill);
+}
+.f2-card-meta { display: flex; align-items: baseline; gap: var(--space-3); margin-top: var(--space-3); }
+.f2-card-title { font-size: var(--fs-b1); font-weight: var(--weight-heading); color: var(--color-ink); }
+.f2-card-date { font-family: var(--font-mono); font-size: var(--fs-l3); color: var(--color-faint); }
+.f2-card.is-top    { top: 0; transform: none; opacity: 1; z-index: 3; }
+.f2-card.is-second { top: 46%; transform: scale(0.86) translateX(6%); opacity: 0.75; z-index: 2; }
+.f2-card.is-third  { top: 72%; transform: scale(0.74) translateX(12%); opacity: 0.45; z-index: 1; }
+.f2-card.is-hidden { top: 86%; transform: scale(0.6) translateX(16%); opacity: 0; z-index: 0; pointer-events: none; }
+.f2-card:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 4px; }
+
+/* ---- 弹层（shadow=层级、scrim 遮罩） ---- */
+.f2-modal-scrim {
+  position: fixed; inset: 0; z-index: 60;
+  background: rgba(20, 20, 20, 0.35);
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--space-8); box-sizing: border-box;
+}
+.f2-modal {
+  position: relative; width: min(560px, 92vw); max-height: 80svh; overflow-y: auto;
+  background: var(--bg-page); border-radius: var(--radius-xl);
+  padding: var(--space-8); box-shadow: 0 24px 80px rgba(0,0,0,0.24);
+  animation: f2-pop var(--dur-slow) cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes f2-pop { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
+.f2-modal-close {
+  position: absolute; top: var(--space-5); right: var(--space-5);
+  border: none; background: none; font-size: var(--fs-t1);
+  color: var(--color-muted); cursor: pointer; line-height: 1;
+}
+.f2-modal-close:hover { color: var(--color-ink); }
+.f2-modal-title { font-size: var(--fs-d1); font-weight: var(--weight-heading); margin: 0 0 var(--space-2); }
+.f2-modal-date { font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); margin: 0 0 var(--space-5); }
+.f2-modal-body { font-size: var(--fs-b1); line-height: var(--leading-loose); color: var(--color-muted); margin: 0 0 var(--space-4); }
+.f2-modal-slot {
+  font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint);
+  border: 1.5px dashed var(--color-faint); border-radius: var(--radius-md);
+  padding: var(--space-5); text-align: center; margin: var(--space-5) 0 0;
+}
+
+/* ---- reduced-motion：停自动轮播逻辑在 TSX；此处撤过渡/动画 ---- */
+@media (prefers-reduced-motion: reduce) {
+  .f2-card { transition: none; }
+  .f2-modal { animation: none; }
+}
+
+/* ---- 窄屏：单列堆叠，轮播转横向滑 ---- */
+@media (max-width: 900px) {
+  .f2-grid { grid-template-columns: 1fr; align-content: center; gap: var(--space-7); padding: var(--space-8) var(--space-6); }
+  .f2-para { font-size: var(--fs-t1); }
+  .f2-deck { height: auto; display: flex; gap: var(--space-4); overflow-x: auto; scroll-snap-type: x mandatory; }
+  .f2-card { position: static; flex: 0 0 72%; transform: none !important; opacity: 1 !important; scroll-snap-align: start; }
+  .f2-card.is-hidden { display: none; }
+}

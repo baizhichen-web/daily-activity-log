@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en" id="top">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Abhinav Prabhakar</title>
+
+        <link rel="stylesheet" href="./index.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 256 256%22><text y=%22203%22 font-size=%22224%22>🧑‍💻</text></svg>"
+        />
+        <script>
+            (function () {
+                const theme = localStorage.getItem("theme") || "light";
+                document.documentElement.setAttribute("data-theme", theme);
+            })();
+        </script>
+    </head>
+    <body>
+        <div
+            class="relative-container mx-auto max-w-2xl px-6 py-16 font-serif text-[17.2px] leading-relaxed antialiased"
+        >
+            <button
+                id="theme-toggle"
+                aria-label="Toggle dark mode"
+                class="theme-toggle"
+            >
+                <!-- Sun Icon -->
+                <svg
+                    class="sun-icon"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path
+                        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+                    ></path>
+                </svg>
+                <!-- Moon Icon -->
+                <svg
+                    class="moon-icon"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </button>
+
+            <!-- ── Header ── -->
+            <header class="mb-16">
+                <h1 class="mb-2 text-2xl font-normal tracking-tight">
+                    Abhinav Prabhakar
+                </h1>
+                <p class="max-w-md leading-relaxed text-neutral-500">
+                    CSE AI/ML student at JNTUH. I think about philosophy,
+                    psychology, and the shape of a well-lived life. I build
+                    software with care (and coffee).
+                </p>
+            </header>
+
+            <!-- ── § 1  About ── -->
+            <section id="about">
+                <h2><span class="num">§ 1</span> About</h2>
+                <p>
+                    I'm 19, based in Hyderabad, India. I’m a software engineer,
+                    a student of philosophy, and a writer. I speak English,
+                    Hindi, and Telugu.
+                </p>
+                <p>
+                    I don’t have a grand thesis for my life yet. Most days, I’m
+                    trying to become a little more precise: in thought, in
+                    language, in work, and in how I treat people.
+                </p>
+                <p>
+                    College is still new to me, so I’m mostly learning how to
+                    balance ambition with patience. Classes, metro rides, books,
+                    long stretches of building things, and the occasional
+                    attempt at becoming less physically useless.
+                </p>
+            </section>
+
+            <!-- ── § 2  Reading & Interests ── -->
+            <section id="reading">
+                <h2><span class="num">§ 2</span> Reading &amp; Interests</h2>
+                <p>
+                    I read philosophy and psychology to understand myself and
+                    the world a little better. Much of that comes from thinking
+                    about meaning, mortality, and how to make good use of
+                    limited time.
+                </p>
+                <p>
+                    I also enjoy chess, Greek mythology, and learning about how
+                    people structure deep work. I’ve played the piano for as
+                    long as I can remember; I'm trying to write novels, though
+                    that's very much a work in progress.
+                </p>
+                <p>
+                    I like optimising small things: keyboard shortcuts, playback
+                    speed, how a workspace is laid out. Partly out of curiosity,
+                    partly because my spine reminds me to be kinder to my body.
+                </p>
+            </section>
+
+            <!-- ── § 3  Selected Work ── -->
+            <section id="work">
+                <h2><span class="num">§ 3</span> Selected Work</h2>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <a
+                            href="https://www.linkedin.com/company/trovo-fi-private-limited/"
+                            target="_blank"
+                            rel="noopener"
+                            >TrovoFi</a
+                        >
+                        <span class="org">— Founding Engineer</span>
+                    </div>
+                    <div class="entry-year">2026 — present</div>
+                    <div class="entry-body">
+                        Building a rewards and cashback optimization platform
+                        for Indian credit cards.
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <a
+                            href="https://www.linkedin.com/company/optern-2025/posts/?feedView=all"
+                            target="_blank"
+                            rel="noopener"
+                            >Optern</a
+                        >
+                        <span class="org">— Tech Lead</span>
+                    </div>
+                    <div class="entry-year">2025</div>
+                    <div class="entry-body">
+                        Creating an elite group of software engineers that
+                        companies would love to hire.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── § 4  Projects ── -->
+            <section id="projects">
+                <h2><span class="num">§ 4</span> Projects</h2>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <a href="https://github.com/CodeDreamer06/Board"
+                            ><span class="project-emoji">🧑‍💻</span>Board</a
+                        >
+                        <span class="org">— Rust, Vite (Tauri)</span>
+                    </div>
+                    <div class="entry-year">2025</div>
+                    <div class="entry-body">
+                        A local-first, collaborative whiteboard app built
+                        specifically for programmers.
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <a href="https://github.com/CodeDreamer06/Conductor"
+                            ><span class="project-emoji">🎶</span>Conductor</a
+                        >
+                        <span class="org">— SwiftUI, macOS</span>
+                    </div>
+                    <div class="entry-year">2024</div>
+                    <div class="entry-body">
+                        Stage control for live shows, autonomously syncing
+                        lighting to music and handling stage automations.
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <a
+                            href="https://github.com/CodeDreamer06/Redmi-Buds-App"
+                            ><span class="project-emoji">🎧</span>Redmi Buds
+                            App</a
+                        >
+                        <span class="org">— Flutter, Desktop</span>
+                    </div>
+                    <div class="entry-year">2024</div>
+                    <div class="entry-body">
+                        A cross-platform desktop controller to manage and tweak
+                        Redmi Buds outside the mobile ecosystem.
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <a href="#"
+                            ><span class="project-emoji">🥁</span>PaperPlay</a
+                        >
+                        <span class="org">— Unity3D, AR</span>
+                    </div>
+                    <div class="entry-year">2023</div>
+                    <div class="entry-body">
+                        Print a piece of paper and turn it into a fully playable
+                        piano or drum kit using augmented reality.
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <a href="#"
+                            ><span class="project-emoji">🍕</span>CampusDash</a
+                        >
+                        <span class="org">— Kotlin, SwiftUI</span>
+                    </div>
+                    <div class="entry-year">2023</div>
+                    <div class="entry-body">
+                        A hyper-local food delivery network built to operate
+                        within college campuses.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── § 5  Writing ── contests-->
+            <section id="writing">
+                <h2><span class="num">§ 5</span> Writing</h2>
+                <p>
+                    These are my long-form essays on philosophy, identity and
+                    romance. My obsidian drafts are currently private, a curated
+                    public collection is <em>forthcoming</em>.
+                </p>
+
+                <!-- Essay Playlist -->
+                <div class="essay-playlist">
+                    <span class="essay-playlist-label">Essay Playlist</span>
+                    <ol class="essay-playlist-list">
+                        <li>
+                            <a
+                                href="https://example.com/essays/on-guilt-and-gardens"
+                                target="_blank"
+                                rel="noopener"
+                                >On Guilt and Gardens</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://example.com/essays/the-mythology-of-becoming"
+                                target="_blank"
+                                rel="noopener"
+                                >The Mythology of Becoming</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://example.com/essays/letters-to-a-younger-self"
+                                target="_blank"
+                                rel="noopener"
+                                >Letters to a Younger Self</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://example.com/essays/why-camus-still-matters-at-3am"
+                                target="_blank"
+                                rel="noopener"
+                                >Why Camus Still Matters at 3 a.m.</a
+                            >
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Research Papers Fan -->
+                <a
+                    href="https://arxiv.org/a/0009-0007-8213-4895.html"
+                    target="_blank"
+                    rel="noopener"
+                    class="papers-box"
+                    aria-label="View research papers on arXiv"
+                >
+                    <div class="papers-fan">
+                        <div
+                            class="paper-page paper-page--4"
+                            aria-hidden="true"
+                        >
+                            <div
+                                class="paper-page-line paper-page-line--title"
+                            ></div>
+                            <div
+                                class="paper-page-line paper-page-line--subtitle"
+                            ></div>
+                            <div class="paper-page-spacer"></div>
+                            <div class="paper-page-line"></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--short"
+                            ></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--med"
+                            ></div>
+                        </div>
+                        <div
+                            class="paper-page paper-page--3"
+                            aria-hidden="true"
+                        >
+                            <div
+                                class="paper-page-line paper-page-line--title"
+                            ></div>
+                            <div
+                                class="paper-page-line paper-page-line--subtitle"
+                            ></div>
+                            <div class="paper-page-spacer"></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--short"
+                            ></div>
+                            <div class="paper-page-line"></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--med"
+                            ></div>
+                        </div>
+                        <div
+                            class="paper-page paper-page--2"
+                            aria-hidden="true"
+                        >
+                            <div
+                                class="paper-page-line paper-page-line--title"
+                            ></div>
+                            <div
+                                class="paper-page-line paper-page-line--subtitle"
+                            ></div>
+                            <div class="paper-page-spacer"></div>
+                            <div class="paper-page-line"></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--med"
+                            ></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--short"
+                            ></div>
+                        </div>
+                        <div
+                            class="paper-page paper-page--1"
+                            aria-hidden="true"
+                        >
+                            <div
+                                class="paper-page-line paper-page-line--title"
+                            ></div>
+                            <div
+                                class="paper-page-line paper-page-line--subtitle"
+                            ></div>
+                            <div class="paper-page-spacer"></div>
+                            <div class="paper-page-line"></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--short"
+                            ></div>
+                            <div class="paper-page-line"></div>
+                            <div
+                                class="paper-page-line paper-page-line--med"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="papers-label">
+                        <span class="papers-label-text">Research Papers</span>
+                        <span class="papers-label-cta">View on arXiv →</span>
+                    </div>
+                </a>
+            </section>
+
+            <!-- ── § 6  Goals ── -->
+            <section id="goals">
+                <h2><span class="num">§ 6</span> Goals</h2>
+                <ol class="goals-list">
+                    <li>
+                        <strong>Prepare for ICPC</strong>
+                        <span class="detail">
+                            Mostly through Codeforces. It's fun when you're
+                            doing this as a team.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Get better at swimming and karate</strong>
+                        <span class="detail">
+                            It’s grounding to be a complete beginner at things
+                            that don't involve a screen.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Learn to cook a few things reliably</strong>
+                        <span class="detail">
+                            I’m currently trying to figure out how to make
+                            decent homemade ice cream.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Get into screenwriting</strong>
+                        <span class="detail">
+                            Mostly on weekends, for now. It’s a different kind
+                            of structure than prose, and I’m still finding my
+                            feet.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Build things that may become startups</strong>
+                        <span class="detail">
+                            A project for later. Getting the foundations right
+                            first; the rest will follow.
+                        </span>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- ── § 7  Principles ── -->
+            <section id="principles">
+                <h2><span class="num">§ 7</span> Principles</h2>
+                <ul class="principles-list">
+                    <li>
+                        <strong>Friendships are exchanges of worldview.</strong>
+                        I look at people as evolving ideas.
+                    </li>
+                    <li>
+                        <strong>Keep your sorrows in perspective.</strong>
+                        Nothing is ever so important that you must surrender
+                        your peace to it. The ultimatum of life is simply
+                        enjoying it.
+                    </li>
+                    <li>
+                        <strong>Choose the story that requires effort.</strong>
+                        We pay the price of living either way; we might as well
+                        live the version worth telling.
+                    </li>
+                    <li>
+                        <strong
+                            >Relationships don’t need to last forever.</strong
+                        >
+                        Sometimes their purpose is to help each other become who
+                        you’re meant to be, even if you eventually drift apart.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ── § 8  Currently ── -->
+            <section id="currently">
+                <h2><span class="num">§ 8</span> Currently</h2>
+                <dl class="facts">
+                    <dt>Reading</dt>
+                    <dd>
+                        Nietzsche, <em>Thus Spoke Zarathustra</em>; Freud on
+                        dreams.
+                    </dd>
+                    <dt>Building</dt>
+                    <dd>
+                        An Over-The-Air update system that reduces bandwidth.
+                    </dd>
+                    <dt>Writing</dt>
+                    <dd>A Heart Made of Letters, A Thousand Silent Vows.</dd>
+                    <dt>Hardware</dt>
+                    <dd>MacBook Pro M2 (13"), and a Huion drawing tablet.</dd>
+                    <dt>Learning</dt>
+                    <dd>Swedish, Bengali and Mandarin.</dd>
+                    <dt>Health</dt>
+                    <dd>
+                        Training for the Hyderabad Hitec Marathon in November.
+                    </dd>
+                </dl>
+            </section>
+
+            <!-- ── § 9  Contact ── -->
+            <section id="contact">
+                <h2><span class="num">§ 9</span> Contact</h2>
+                <p>
+                    Reach me via email
+                    <a href="mailto:codedreamer06@gmail.com">here</a>. I read
+                    everything, reply to most, and ignore cold recruiter mail.
+                    Letters and longer threads welcome.
+                </p>
+            </section>
+
+            <!-- ── Footer ── -->
+            <footer>
+                <span>2026</span>
+                <span>Still figuring it out.</span>
+            </footer>
+        </div>
+
+        <script>
+            document
+                .getElementById("theme-toggle")
+                .addEventListener("click", () => {
+                    const currentTheme =
+                        document.documentElement.getAttribute("data-theme");
+                    const newTheme = currentTheme === "dark" ? "light" : "dark";
+                    document.documentElement.setAttribute(
+                        "data-theme",
+                        newTheme,
+                    );
+                    localStorage.setItem("theme", newTheme);
+                });
+        </script>
+    </body>
+</html>
