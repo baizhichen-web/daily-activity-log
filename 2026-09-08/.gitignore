@@ -1,0 +1,19 @@
+temp/
+deepseek-harness/
+# 插件运行时上传数据（2026-08-18 文档化管理：目录保留工作区内，仅忽略运行时文件；AGENTS.md/README.md 说明文件入库）
+.dsh-vision/uploads/
+# 独立托管的源码仓库（各自有 GitHub 远端，不入外层仓库；项目文档仍入库）
+studio/projects/dsh-vision-fallback/dsh-vision-fallback-bridge/
+studio/projects/AIBookMarks/
+# 大二进制素材：走 Obsidian Sync 不入 git（2026-08-15 O-015 瘦身）
+bAI/bWrite/235_Position_LLMs_can_t_jump.pdf
+studio/projects/paper-translate/applsci-15-10821.epub
+studio/projects/paper-translate/applsci-15-10821.pdf
+
+# AI ������Ŀ¼Ǩ�������� token/credentials����ֹ��⣩2026-08-21
+ai-homes/
+
+# Eagle 视觉素材库（58GB 二进制，不入 git；eagle-bridge 项目 2026-08-21，通配防改名）
+bAI/*.library/
+.superdesign/tmp/
+ops/daily-activity/
