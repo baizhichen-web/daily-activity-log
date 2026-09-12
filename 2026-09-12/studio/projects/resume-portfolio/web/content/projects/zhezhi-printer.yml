@@ -1,0 +1,21 @@
+title: 儿童 AI 折纸打印机
+slug: zhezhi-printer
+period: '2026'
+role: 独立完成（毕业论文）
+status: ongoing
+summary: 为 3–6 岁儿童设计的自然探索与物理创作智能终端：以摄影为主、语音为辅的多模态方式采集创作意图，实时转化为可折叠纸模图纸并即时打印。
+tags: []
+metrics: []
+body:
+- type: note
+  text: 骨架条目：字段与正文块结构已就位，正文内容待组织（原述存 input/毕业论文-儿童AI折纸打印机-项目描述.md）。本块为草稿旁注，不随发布渲染。
+- type: paragraph
+  text: 选择「热敏打印」这个技术，是因为我有一段三个月的行业实习经历，能比较好地了解热敏打印产品的技术性能优势、内部结构编排和行业需求。
+- type: paragraph
+  text: 随着 AI 技术普及和该品类产品收获市场认可，消费电子企业渴望搭载 AI 概念，但缺乏把 AI 能力做适应性转化的设计耐心，依然停留在「套壳」和「模仿」上。于是从
+    AI Native 出发，我想设计一款真正发挥 AI 能力、也让 AI 服务于人的儿童产品。
+- type: process
+  problem: （待填）
+  decision: （待填）
+  tradeoff: （待填）
+  result: （待填）
