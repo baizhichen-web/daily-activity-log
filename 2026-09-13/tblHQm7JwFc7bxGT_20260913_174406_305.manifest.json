@@ -1,0 +1,156 @@
+{
+  "manifest_version": "v1",
+  "format": "ndjson",
+  "base_token": "URbrbJeWRa9ME4szDt8chJFlnJh",
+  "table_id": "tblHQm7JwFc7bxGT",
+  "rev": 266,
+  "timezone": "Asia/Shanghai",
+  "query_context": {
+    "field_scope": "all_fields",
+    "record_scope": "all_records"
+  },
+  "requested_limit": 2000,
+  "records_count": 44,
+  "page_count": 1,
+  "has_more": false,
+  "record_file": "E:\\Desktop\\AI_itself\\workspace_with_ai\\tblHQm7JwFc7bxGT_20260913_174406_305.ndjson",
+  "record_file_size_bytes": 32493,
+  "manifest_file": "E:\\Desktop\\AI_itself\\workspace_with_ai\\tblHQm7JwFc7bxGT_20260913_174406_305.manifest.json",
+  "columns": {
+    "record_id": {
+      "physical_type": "string",
+      "stats": {
+        "max_length": 14
+      },
+      "example": "recvnWUwy9ksSR"
+    },
+    "优先级": {
+      "field_id": "fldSP39PUY",
+      "field_type": "select",
+      "physical_type": "array<string>",
+      "stats": {
+        "empty_count": 12,
+        "max_length": 1,
+        "avg_length": 0.7272727272727273
+      },
+      "example": [
+        "P2-普通"
+      ]
+    },
+    "依赖": {
+      "field_id": "fld9Vukjor",
+      "field_type": "text",
+      "physical_type": "string|null",
+      "stats": {
+        "null_count": 41,
+        "max_length": 66
+      },
+      "example": "figma-agent-打通（MCP 操作手册）/ resume-portfolio（需求方+Design.md 宪法）"
+    },
+    "分类": {
+      "field_id": "fldlnUkT4I",
+      "field_type": "select",
+      "physical_type": "array<string>",
+      "stats": {
+        "empty_count": 5,
+        "max_length": 1,
+        "avg_length": 0.8863636363636364
+      },
+      "example": [
+        "知识管理"
+      ]
+    },
+    "卡点方": {
+      "field_id": "fldyDQNtle",
+      "field_type": "select",
+      "physical_type": "array<string>",
+      "stats": {
+        "empty_count": 37,
+        "max_length": 1,
+        "avg_length": 0.1590909090909091
+      },
+      "example": [
+        "用户"
+      ]
+    },
+    "截止日期": {
+      "field_id": "fldonr1Yso",
+      "field_type": "datetime",
+      "physical_type": "string|null",
+      "stats": {
+        "null_count": 43,
+        "min": "2026-07-16T23:59:59.000+08:00",
+        "max": "2026-07-16T23:59:59.000+08:00"
+      },
+      "example": "2026-07-16T23:59:59.000+08:00"
+    },
+    "描述": {
+      "field_id": "fldx9M51GG",
+      "field_type": "text",
+      "physical_type": "string|null",
+      "stats": {
+        "null_count": 0,
+        "max_length": 939
+      },
+      "example": "论文审阅工具"
+    },
+    "状态": {
+      "field_id": "fldsRyJjyk",
+      "field_type": "select",
+      "physical_type": "array<string>",
+      "stats": {
+        "empty_count": 0,
+        "max_length": 1,
+        "avg_length": 1
+      },
+      "example": [
+        "已归档"
+      ]
+    },
+    "管线": {
+      "field_id": "fldojnNraY",
+      "field_type": "select",
+      "physical_type": "array<string>",
+      "stats": {
+        "empty_count": 36,
+        "max_length": 1,
+        "avg_length": 0.18181818181818182
+      },
+      "example": [
+        "方法线"
+      ]
+    },
+    "进度": {
+      "field_id": "fldQPo6Utp",
+      "field_type": "number",
+      "physical_type": "number|null",
+      "stats": {
+        "null_count": 42,
+        "min": 0.85,
+        "max": 60,
+        "avg": 30.425
+      },
+      "example": 60
+    },
+    "项目名称": {
+      "field_id": "fldETuEAsc",
+      "field_type": "text",
+      "physical_type": "string|null",
+      "stats": {
+        "null_count": 0,
+        "max_length": 29
+      },
+      "example": "AI_Native"
+    },
+    "项目文档": {
+      "field_id": "fldPcoxX3p",
+      "field_type": "text",
+      "physical_type": "string|null",
+      "stats": {
+        "null_count": 21,
+        "max_length": 80
+      },
+      "example": "studio/projects/开学季规划/"
+    }
+  }
+}

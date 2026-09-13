@@ -1,0 +1,107 @@
+# Decap CMS 配置 · 白纸上个人网站（2026-09-12 立）
+# 内容即文件：写入本仓库，AI 可在同一份内容上做版式精修（见 design/内容架构-v0.1.md）
+# 路径说明：Decap 的路径相对 **git 仓库根**（= 工作空间根），故带 studio/projects/resume-portfolio/web 前缀
+backend:
+  name: git-gateway
+  branch: master
+local_backend: true          # 本地写入代理（decap-server），无需云端账号
+publish_mode: simple
+site_url: http://localhost:5175
+display_url: http://localhost:5175
+media_folder: "studio/projects/resume-portfolio/web/public/media"
+public_folder: "/media"
+
+collections:
+  - name: projects
+    label: 项目
+    label_singular: 项目
+    description: 作品集项目，一项目一条；正文用「块」拼结构（图/视频/数字行等）
+    folder: "studio/projects/resume-portfolio/web/content/projects"
+    create: true
+    extension: yml
+    format: yml
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{period}} [{{status}}]"
+    sortable_fields: [period, title]
+    fields:
+      - { name: title, label: 项目名, widget: string, hint: 中文名；专名不译 }
+      - { name: slug, label: URL 标识, widget: string, hint: 小写英文或拼音，如 zhezhi-printer }
+      - { name: period, label: 时期, widget: string, required: false, hint: 如 2025.09–2026.06（内容事实，非页脚日期） }
+      - { name: role, label: 角色, widget: string, required: false, hint: 如 产品负责人 / ID 设计 + PRD }
+      - name: status
+        label: 状态
+        widget: select
+        default: ongoing
+        options:
+          - { label: 最新, value: latest }
+          - { label: 进行中, value: ongoing }
+          - { label: 归档, value: archived }
+      - { name: accent, label: 项目主色, widget: color, allowInput: true, required: false, hint: 只染本页细节（Design.md A2） }
+      - { name: cover, label: 封面, widget: image, required: false, hint: 海报墙用；建议 1440×648 }
+      - { name: summary, label: 一句话摘要, widget: text, hint: 海报展开态与目录页复用 }
+      - { name: ai-summary, label: 给 AI 的摘要（50 字内）, widget: text, required: false, hint: AI Native 第二波：进 llms.txt 与 meta description，措辞由白纸终审 }
+      - { name: tags, label: 标签, widget: list, required: false, default: [] }
+      - name: metrics
+        label: 数字行（对外可验证）
+        widget: list
+        required: false
+        default: []
+        hint: 仅放对外可验证数字（Product.md §7.7）
+        fields:
+          - { name: value, label: 数字, widget: string }
+          - { name: label, label: 说明, widget: string }
+      - name: body
+        label: 正文
+        widget: list
+        types:
+          - label: 段落
+            name: paragraph
+            widget: object
+            fields:
+              - { name: text, label: 文字, widget: text }
+          - label: 小标题
+            name: heading
+            widget: object
+            fields:
+              - { name: level, label: 级别, widget: select, default: h2, options: [h2, h3], hint: h2 会自动进左侧目录 }
+              - { name: text, label: 标题, widget: string }
+          - label: 单图
+            name: figure
+            widget: object
+            fields:
+              - { name: image, label: 图片, widget: image }
+              - { name: caption, label: 图注, widget: string, hint: 必填：无图注的图视为未完成 }
+          - label: 图组
+            name: gallery
+            widget: object
+            fields:
+              - { name: images, label: 图片们, widget: list, fields: [{ name: image, label: 图片, widget: image }, { name: caption, label: 图注, widget: string, required: false }] }
+          - label: 视频
+            name: video
+            widget: object
+            fields:
+              - { name: src, label: 视频地址, widget: string, hint: 短片放 /media/…；长片可贴外链（B 站/YouTube） }
+              - { name: poster, label: 封面图, widget: image, required: false }
+              - { name: caption, label: 说明, widget: string, required: false }
+          - label: 引用
+            name: quote
+            widget: object
+            fields:
+              - { name: text, label: 引文, widget: text }
+              - { name: source, label: 出处, widget: string, required: false }
+          - label: 四问结构
+            name: process
+            widget: object
+            hint: 项目叙事统一口径：问题→决策→取舍→结果
+            fields:
+              - { name: problem, label: 问题, widget: text }
+              - { name: decision, label: 决策, widget: text }
+              - { name: tradeoff, label: 取舍, widget: text }
+              - { name: result, label: 结果, widget: text }
+          - label: 旁注（草稿）
+            name: note
+            widget: object
+            hint: 仅草稿可见，不随发布渲染
+            fields:
+              - { name: text, label: 文字, widget: text }
