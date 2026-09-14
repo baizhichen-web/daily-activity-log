@@ -1,0 +1,50 @@
+/* ============================================================
+   书画封面（CalligraphyArt）· 2026-09-13；09-14 收敛
+   画面整幅铺满画框（与 Scott 的「点击前」一致：图即整幅画面）：
+   图片用 contain（竖幅书法完整可见、不裁切）；占位块用 --surface-card 铺满，
+   形制与真图一致（一眼可知是「一幅待补的画面」而非空白）。
+   ============================================================ */
+
+.cl {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cl-frame {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+.cl-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 裁切窗口由白纸 Figma 蒙版定死，这里不再二次取景 */
+  display: block;
+}
+
+/* ---------- 占位态（书法图未供） ---------- */
+.cl-ph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-card); /* 铺满画框，形制同真图 */
+}
+.cl-ph-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-l2);
+  letter-spacing: 0.08em;
+  color: var(--color-faint);
+  border: 1px dashed var(--border-hairline);
+  border-radius: var(--radius-xs);
+  padding: 6px 12px;
+}
