@@ -1,0 +1,745 @@
+/* ============================================================
+   翻页书 Demo v4 样式 —— 首页精确对标 Scott/R-27
+   实测依据：main 全幅 · 海报 72vh · 缝 1px · 标题 31px/300 压图左下 · 头 sticky
+   全部取 BST tokens（无硬写值）· reduced-motion 降级
+   ============================================================ */
+
+.fb-root {
+  position: relative;
+  height: 100vh;
+  background: var(--bg-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+/* ---------- loader-motto ---------- */
+.fb-loader {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 50;
+  background: var(--bg-page);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: var(--space-7); cursor: pointer;
+}
+/* 加载屏 v2 = Trestle 盖章逐词（2026-09-13 照搬 trestle.inc，全英文米氏配铭）：
+   巨衬线居中、line-height 0.95、letter-spacing -0.034em（Trestle 实测值）；
+   词内 opacity 0.055s + scale 0.16s 同步起跑（power1.out≈cubic-bezier(0,0,0.58,1)，34%≈0.055/0.16 处 opacity 到位），
+   词间 delay 由组件内联注入（0.19 + i*0.072 + sine.inOut 错位*0.34，origin 50% 60%） */
+.fb-loader-title {
+  font-family: var(--font-serif);
+  font-size: clamp(38px, 6.2vw, 96px);
+  font-weight: var(--weight-normal);
+  line-height: 0.95;
+  letter-spacing: -0.034em;
+  text-align: center;
+  max-width: 14em;
+  margin: 0;
+  padding: 0 var(--space-6);
+  color: var(--color-ink);
+}
+.fb-loader-word {
+  display: inline-block; margin-right: 0.24em;
+  transform-origin: 50% 60%;
+  opacity: 0; transform: scale(0.965);
+  animation: fb-loader-stamp 0.16s cubic-bezier(0, 0, 0.58, 1) both;
+  will-change: opacity, transform;
+}
+.fb-loader-word:last-child { margin-right: 0; }
+@keyframes fb-loader-stamp {
+  0% { opacity: 0; transform: scale(0.965); }
+  34% { opacity: 1; }
+  100% { opacity: 1; transform: scale(1); }
+}
+.fb-loader-attr {
+  font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint);
+  margin: 0; opacity: 0;
+  animation: fb-loader-attr-in 0.4s ease both;
+}
+@keyframes fb-loader-attr-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .fb-loader-word, .fb-loader-attr { animation: none; opacity: 1; transform: none; }
+}
+/* 退场：淡出 + 轻微上移（只动 opacity/transform，320ms ease-out；reduced-motion 瞬时） */
+.fb-loader { transition: opacity var(--dur-slow) cubic-bezier(0.22, 1, 0.36, 1), transform var(--dur-slow) cubic-bezier(0.22, 1, 0.36, 1); }
+.fb-loader.is-leaving { opacity: 0; transform: translateY(-8px); pointer-events: none; }
+
+/* ---------- 头栏（Scott=sticky；此处 viewport 横向滚动，等效 fixed） ---------- */
+.fb-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 42;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  background: var(--bg-page);
+  border-bottom: 1px solid var(--border-hairline);
+}
+.fb-header-id { display: flex; align-items: baseline; gap: var(--space-4); }
+.fb-header-name { font-size: var(--fs-t1); font-weight: var(--weight-heading); }
+.fb-header-tag { font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.08em; color: var(--color-muted); text-transform: uppercase; }
+.fb-header-nav { display: flex; gap: var(--space-5); align-items: center; /* center 对齐：文字链/胶囊/圆钮三种高度垂直居中一线（baseline 会把圆钮顶歪） */ }
+.fb-header-nav a { font-family: var(--font-mono); font-size: var(--fs-l1); color: var(--color-ink); text-decoration: none; }
+.fb-header-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+/* 头栏切换器（语言/主题）——2026-09-01 白纸要求按钮形式+动画。
+   形态参考 temp 两测试站：magic=Once UI 图标 toggle；ruixen=next-themes/shadcn
+   （sun/moon 双图标叠放旋转交叉；其 disableTransitionOnChange 立场=不做全场 CSS 渐变，
+   全页过渡改走 View Transition API，旧内核降级直接切换）。离散状态切换用 CSS 过渡，
+   与"动效归 JS"红线（连续进度动画）不冲突。 */
+.fb-langbtn {
+  display: inline-flex; align-items: center; gap: 2px;
+  border: 1px solid var(--border-hairline); border-radius: var(--radius-pill);
+  background: transparent; padding: 3px; cursor: pointer;
+  transition: border-color var(--dur-fast) ease;
+}
+.fb-langbtn:hover { border-color: var(--color-faint); }
+.fb-langbtn .seg {
+  font-family: var(--font-mono); font-size: var(--fs-l2); line-height: 1;
+  color: var(--color-muted); padding: 4px 8px; border-radius: var(--radius-pill);
+  transition: color var(--dur-fast) ease, background var(--dur-fast) ease;
+}
+.fb-langbtn .seg.on { color: var(--bg-page); background: var(--color-ink); } /* 墨底反白=A4 active 拍板 */
+.fb-iconbtn {
+  position: relative; width: 30px; height: 30px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border-hairline); border-radius: var(--radius-pill);
+  background: transparent; cursor: pointer; color: var(--color-ink);
+  transition: background var(--dur-fast) ease, transform var(--dur-fast) ease;
+}
+.fb-iconbtn:hover { background: var(--surface-card); }
+.fb-iconbtn:active { transform: scale(0.9); }
+.fb-iconbtn svg {
+  position: absolute; width: 15px; height: 15px;
+  transition: transform var(--dur-base) cubic-bezier(0.4, 0, 0.2, 1), opacity var(--dur-base) ease;
+}
+.fb-iconbtn .icon-sun { opacity: 1; transform: rotate(0deg) scale(1); }
+.fb-iconbtn .icon-moon { opacity: 0; transform: rotate(90deg) scale(0.4); }
+[data-theme="dark"] .fb-iconbtn .icon-sun { opacity: 0; transform: rotate(-90deg) scale(0.4); }
+[data-theme="dark"] .fb-iconbtn .icon-moon { opacity: 1; transform: rotate(0deg) scale(1); }
+
+/* ---------- MD 副本按钮（AI Native 第一波②）：mono 小胶囊 + 弹出菜单（与头栏钮同语言） ---------- */
+.fb-md { position: relative; }
+.fb-mdbtn {
+  font-family: var(--font-mono); font-size: var(--fs-l2); line-height: 1;
+  color: var(--color-muted); letter-spacing: 0.04em;
+  border: 1px solid var(--border-hairline); border-radius: var(--radius-pill);
+  background: transparent; padding: 7px 9px; cursor: pointer;
+  transition: color var(--dur-fast) ease, border-color var(--dur-fast) ease;
+}
+.fb-mdbtn:hover { color: var(--color-ink); border-color: var(--color-faint); }
+.fb-mdbtn[aria-expanded="true"] { color: var(--color-ink); border-color: var(--color-faint); }
+.fb-mdmenu {
+  position: absolute; right: 0; top: calc(100% + 10px); z-index: 60;
+  min-width: 176px; display: flex; flex-direction: column;
+  background: var(--bg-page); border: 1px solid var(--border-hairline); border-radius: var(--radius-md);
+  padding: 6px;
+  animation: fb-md-in var(--dur-fast) ease both;
+}
+@keyframes fb-md-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.fb-mdmenu-title {
+  font-family: var(--font-mono); font-size: var(--fs-l1, 11px); color: var(--color-faint);
+  letter-spacing: 0.06em; padding: 6px 8px 4px;
+}
+.fb-mdmenu-item {
+  font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-muted);
+  text-align: left; text-decoration: none;
+  background: transparent; border: 0; border-radius: var(--radius-xs);
+  padding: 7px 8px; cursor: pointer;
+  transition: color var(--dur-fast) ease, background var(--dur-fast) ease;
+}
+.fb-mdmenu-item:hover { color: var(--color-ink); background: var(--surface-card); }
+@media (prefers-reduced-motion: reduce) {
+  .fb-mdmenu { animation: none; }
+}
+/* View Transition 全页 cross-fade 时长（主题/语言切换） */
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 280ms; animation-timing-function: ease; }
+
+/* ---------- 页码指示器（让位头栏：top=头高 56px+间距） ---------- */
+/* 页码指示器＝磨砂玻璃胶囊（2026-09-12 白纸要求，参考 Apple）：
+   滚过的内容在它背后被实时模糊，不会与指示文字打架。
+   降级：不支持 backdrop-filter 的内核 / 系统开启"降低透明度" → 退回不透明底，同样不露字 */
+.fb-indicator {
+  position: fixed; top: calc(56px + var(--space-4)); left: 50%; transform: translateX(-50%);
+  z-index: 40; display: flex; align-items: baseline; gap: var(--space-2);
+  font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.08em;
+  color: var(--color-muted);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-page); /* 兜底：无 backdrop-filter 时不透明，绝不露字 */
+  -webkit-backdrop-filter: blur(var(--float-blur)) saturate(1.9);
+  backdrop-filter: blur(var(--float-blur)) saturate(1.9);
+}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .fb-indicator {
+    background-color: var(--float-bg);
+    background-image: var(--float-sheen);   /* 顶部高光＝玻璃的"厚度" */
+    box-shadow: inset 0 1px 0 var(--float-edge), 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .fb-indicator { background: var(--bg-page); -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+.fb-indicator-page { color: var(--color-ink); font-weight: var(--weight-heading); }
+@keyframes fb-fadein { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.fb-indicator-name { color: var(--color-ink); animation: fb-fadein var(--dur-fast) ease-out; }
+.fb-indicator-divider { color: var(--gray-700); }
+.fb-indicator-total { color: var(--color-muted); }
+
+/* ---------- 翻页视口（横向 scroll-snap，滚轮驱动） ---------- */
+/* ⚠️vp 只许横向滚：overflow-y 必须显式 hidden——若留默认，计算值会变 auto，
+   长页（简历）的纵向滚动会发生在 vp 上而非页内，滚到底后向上滚直接横向翻页
+   且 vp.scrollTop 残留（"简历页滑到底滑不上去"bug 根因，2026-09-01 白纸报告） */
+.fb-viewport { height: 100vh; width: 100%; display: flex; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.fb-viewport::-webkit-scrollbar { display: none; }
+.fb-page { flex: 0 0 100%; scroll-snap-align: start; height: 100vh; display: flex; align-items: center; justify-content: center; padding: calc(56px + var(--space-8)) var(--space-9) var(--space-8); box-sizing: border-box;
+  overflow-y: auto; scrollbar-width: none; /* 页内纵滚（滚轮 handler 依赖 active.scrollTop） */
+}
+.fb-page::-webkit-scrollbar { display: none; }
+.fb-col { width: min(760px, 100%); margin-top: auto; margin-bottom: auto; /* 溢出时 auto 退化为 0：长页可纵滚不被裁顶 */ }
+
+/* ============ P1 首页＝全幅海报墙（Scott 实测复刻） ============ */
+.fb-page--wall {
+  display: block; padding: 0; height: 100vh; overflow-y: auto;
+  padding-top: 56px; /* 墙从固定头之下滚过 */
+}
+.fb-wallstack { display: flex; flex-direction: column; gap: 1px; background: var(--border-hairline); }
+/* 高度动画容器：maxHeight 由 JS 逐帧驱动（海报 72vh + pr×正文高），裁剪靠 overflow */
+.fb-poster-collapse { overflow: hidden; }
+
+.fb-poster {
+  position: relative; height: 72vh; overflow: hidden;
+  background: var(--bg-page); cursor: pointer;
+  /* ---- 展开进度插值（2026-09-14）----
+     收起↔展开的一切差异都在这里按 --pr（0→1，JS 逐帧写入）插值，
+     不再用 .is-open 二选一——此前字号/内边距/位置在 pr=0.5 那一帧硬切，
+     观感是「标题噗一下换了个大小」（白纸点名）。 */
+  --ppad-from: var(--space-6);   /* 收起态标题左缘 32 */
+  --ppad-to: var(--space-8);     /* 展开态标题左缘 64 —— × 的横向终点也用它：
+                                    两者左缘齐成一条竖线（白纸 2026-09-14 给 Scott 参考图确认），
+                                    纵向则各归各位（题在面板中段、× 贴海报左下角），故不重叠 */
+  /* 收起态标题字号：以 56 为上限，同时不超过画框高的 14%。
+     书画条目画框按作品比例锁定，宽幅作品在窄屏会压成一条矮带（390 屏上《祭姪文稿》只有 172px），
+     此时 32px 标题会折成两行、把画面盖掉——让它随画框高度收，带子才留得住 */
+  --ptfs-from: min(var(--fs-display), calc(var(--poster-h, 72vh) * 0.14));
+  /* 展开态内容块（题 26 + 间距 8 + 日期 20 ≈ 54）的一半：
+     抬升行程减去它，内容块正好落在海报垂直中线上 */
+  --meta-rise-bias: 27px;
+}
+/* Scott 机制：figure=grid 单格；图=justify-self:end + width 收缩（0.6s ease(0.4,0,0.2,1)）
+   标题=同格叠层（close=渐变托底 / open=fade-in+子元素错峰 slide-in） */
+.fb-poster-art {
+  position: absolute; top: 0; left: auto; right: 0; bottom: 0;
+  right: 0; top: 0; bottom: 0;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  /* 背景与宽度由 TSX inline 提供（JS 混色 hex + 逐帧插值）；此处仅兜底色。
+     flex-wrap：即使 JS/定位失效，装饰字也折行在海报内，不挤成中央一行 */
+  background: var(--surface-card);
+}
+
+
+
+.fb-poster-art-no {
+  position: absolute; left: var(--space-6); top: var(--space-4);
+  font-family: var(--font-mono); font-size: 9em; letter-spacing: 0.02em;
+  line-height: 1;
+}
+.fb-poster-art-word {
+  position: absolute; right: var(--space-6); bottom: 25%;
+  font-size: var(--fs-d1); font-weight: var(--weight-normal);
+  writing-mode: vertical-rl; letter-spacing: 0.35em;
+}
+.fb-poster-art-mark {
+  position: absolute; right: var(--space-6); top: var(--space-4);
+  font-family: var(--font-mono); font-size: var(--fs-l2);
+  letter-spacing: 0.05em;
+}
+.fb-poster-meta {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  /* 内边距全部按 --pr 插值（原先按 pr≥0.5 二选一 = 布局硬切）：
+     左 32→64（对齐展开态标题左缘）· 右 0→27%（给收缩后的图柱让位）
+     下 24→垂直居中（抬升行程 = 海报半高 − 24 − 内容块半高） */
+  padding: var(--space-7) var(--space-6) var(--space-5);
+  padding-left: calc(var(--ppad-from) + var(--pr, 0) * (var(--ppad-to) - var(--ppad-from)));
+  padding-right: calc(var(--pr, 0) * 27%);
+  padding-bottom: calc(var(--space-5) + var(--meta-lift, 0px));
+  --meta-lift: calc(var(--pr, 0) * (var(--poster-h, 72vh) / 2 - var(--space-5) - var(--meta-rise-bias)));
+}
+/* 收起态托底渐变：独立成层（原先＝本元素的背景，而元素高度现在随 --pr 长高，
+   渐变会被拉长、标题下的底越来越浅）。成层＋高度跟随抬升行程＝标题始终站在同一浓度的底上。
+   浓度由 --scrim-op 逐帧给（收起 1 → 展开前段淡出） */
+.fb-poster-meta::before {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: calc(var(--meta-lift, 0px) + var(--poster-h, 72vh) * 0.26);
+  background: var(--meta-scrim-dark);
+  opacity: var(--scrim-op, 1);
+  pointer-events: none;
+}
+/* 题·日期成组（展开态摘要挂在它下方，用绝对定位——否则摘要会占位把标题顶上去） */
+.fb-poster-head { position: relative; }
+.fb-poster-extra { position: absolute; top: 100%; left: 0; right: 0; }
+.fb-poster-title {
+  margin: 0 0 var(--space-2);
+  /* 字号逐帧插值（收起 56 → 展开 26）；移动端 --ptfs-from 转 32。
+     inline 不再切 .is-open 字号——那正是"突然变大变小"的来源 */
+  font-size: calc(var(--ptfs-from) + var(--pr, 0) * (var(--fs-d1) - var(--ptfs-from)));
+  font-weight: var(--weight-normal);
+  line-height: var(--leading-tight); color: var(--color-ink);
+  /* 行宽由面板内边距控制（展开时右内边距给图柱让位），不再靠 max-width 硬切 */
+}
+.fb-poster-date { margin: 0; font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-muted); }
+.fb-poster-plus {
+  position: absolute; right: var(--space-6); bottom: var(--space-5);
+  /* 纵向全程贴海报下缘 24px（收起=右下角，展开=左下角）——不参与 --pr 插值。
+     白纸参考图：× 与标题"垂直方向对齐"指的是左缘齐成一条竖线，不是同一高度 */
+  font-family: var(--font-mono); font-size: var(--fs-t1); color: var(--color-muted);
+  /* 位置/旋转/颜色全部由 JS 逐帧插值（inline style），CSS 无 transition——避免双驱动打架 */
+}
+.fb-poster:focus-visible { outline: 2px solid var(--color-ink); outline-offset: -4px; }
+
+/* ---- 动效轮（2026-09-01） ---- */
+/* 入场：滚动驱动，进视口淡入上浮（一次）。
+   ⚠️旧内核降级：不支持 IntersectionObserver 的浏览器不会有 .is-in——
+   故初始态只留极轻上浮（-8px），opacity 恒为 1，绝不藏内容；
+   过渡保留给支持 IO 的浏览器做装饰。 */
+.fb-poster { transform: translateY(-8px);
+  transition: opacity var(--dur-page) cubic-bezier(0.16, 1, 0.3, 1), transform var(--dur-page) cubic-bezier(0.16, 1, 0.3, 1); }
+.fb-poster.is-in { opacity: 1; transform: none; }
+/* 展开（G-21）：+ → 移左下转 45° = ×，由 JS 逐帧插值驱动（见 TSX plus 样式） */
+/* meta 面板布局（展开左柱+标题浮起）已由 JS 逐帧 inline 驱动（见 TSX panel 分支）；
+   此处不再放 .is-open .fb-poster-meta 规则，避免与 inline 双驱动打架 */
+
+/* 展开态布局（Scott 精髓复刻：图缩右柱 27%——宽度由 JS 逐帧插值，
+   此处不再 transition height：height 恒 72vh，旧内核无新属性依赖） */
+
+@keyframes fb-slide-down {
+  from { clip-path: inset(0 0 100% 0); opacity: 0; }
+  to { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+/* 动画结束后持久态（both 的 fallback 保险）；白底=展开正文区不露 wallstack 灰 */
+.fb-poster-details { clip-path: inset(0 0 0 0); opacity: 1; background: var(--bg-page); }
+@keyframes fb-slide-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+/* 展开态布局（Scott 精髓复刻：图缩右柱 27%）——字号/内边距/位置已改由 --pr 插值，
+   不再有 .is-open 字号规则（2026-09-14）。旧规则 .fb-poster.is-open .fb-poster-date
+   { margin-top } 实测为 no-op（与标题下外边距折叠后同值），一并删除。 */
+/* 注：plus 的移左下+转 45°（×）已由 JS 逐帧接管（旧内核无 transition 不失效）；
+   × 关闭按钮=meta 内 .fb-poster-close */
+.fb-poster-body {
+  /* 墙内展开态的内联全文（Scott 同款）：与长页正文同宽同款（--content-width），居中排版 */
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-6) var(--mobile-padding) var(--space-9);
+}
+.fb-poster-desc { font-size: var(--fs-t1); line-height: var(--leading-loose); color: var(--color-muted); margin: 0 0 var(--space-5); }
+.fb-poster-tobefilled { color: var(--color-faint); font-family: var(--font-mono); font-size: var(--fs-l2); }
+
+/* ---------- P2 简历页（文档流复刻 abhinav-prabhakar，白纸拍板 2026-09-01） ----------
+   拍板两件：①本页上衬线（A3 Backlog 实验口，全站其余仍 sans）②§ 编号式节标题（A4 括号标签在简历页让位）
+   复刻要素：窄栏 660 · 衬线正文 · §N 节标题下挂发丝线 · 条目名+随注+时间右对齐 · 获奖编号列表 */
+#fb-1 .fb-col { width: min(660px, 100%); font-family: var(--font-serif); }
+.fb-resume-headline { font-size: var(--fs-d1); line-height: var(--leading-snug); color: var(--color-ink); margin: 0; max-width: 24em; }
+.fb-strong { font-weight: var(--weight-emphasis); }
+.fb-sec {
+  display: flex; align-items: baseline; gap: var(--space-3);
+  font-family: var(--font-serif); font-size: var(--fs-t1); font-weight: var(--weight-normal);
+  color: var(--color-ink);
+  margin: var(--space-8) 0 var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-hairline);
+}
+.fb-sec:first-of-type { margin-top: var(--space-6); }
+.fb-sec-no { color: var(--color-faint); font-size: var(--fs-b2); letter-spacing: 0.02em; }
+.fb-row { padding: var(--space-3) 0; }
+.fb-row-head { display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap; row-gap: 2px; }
+.fb-row-note { flex: 1 1 auto; min-width: 0; }
+.fb-row-period { margin-left: auto; font-family: var(--font-mono); font-size: var(--fs-l2); font-variant-numeric: tabular-nums; color: var(--color-faint); letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0; }
+.fb-row-title { font-size: var(--fs-b1); font-weight: var(--weight-heading); color: var(--color-ink); }
+.fb-row-note { font-size: var(--fs-b2); color: var(--color-muted); min-width: 0; }
+.fb-row-desc { margin: var(--space-2) 0 0; font-size: var(--fs-b2); line-height: var(--leading-loose); color: var(--color-muted); max-width: 46em; }
+/* 编号列表（参考站 Writing/Goals 式：编号 + 标题行 + 分隔线） */
+.fb-numrow { display: flex; align-items: baseline; gap: var(--space-4); padding: var(--space-3) 0; border-bottom: 1px solid var(--border-hairline); }
+.fb-numrow:last-child { border-bottom: none; }
+.fb-numrow-no { font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); flex-shrink: 0; }
+.fb-numrow-title { font-size: var(--fs-b1); font-weight: var(--weight-heading); color: var(--color-ink); }
+.fb-numrow-note { font-size: var(--fs-b2); color: var(--color-muted); min-width: 0; }
+/* 证明材料：紧凑行（图标 + 名称 + mono 状态，发丝线分隔）——替代早期竖排大卡（省版面无虚浮感） */
+.fb-docrow {
+  display: flex; align-items: center; gap: var(--space-3);
+  padding: 11px 0; border-bottom: 1px solid var(--border-hairline);
+  text-decoration: none; color: var(--color-ink);
+}
+.fb-docrow:last-child { border-bottom: none; }
+.fb-docrow .fb-pdfcard-icon { width: 16px; height: 16px; color: var(--color-faint); flex-shrink: 0; }
+.fb-docrow-title { font-size: var(--fs-b1); color: var(--color-ink); font-weight: var(--weight-heading); }
+.fb-docrow-meta { margin-left: auto; font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); white-space: nowrap; flex-shrink: 0; }
+.fb-docrow:hover .fb-docrow-title { text-decoration: underline; text-underline-offset: 4px; }
+.fb-docrow.is-pending { opacity: 0.62; cursor: default; }
+.fb-docrow.is-pending:hover .fb-docrow-title { text-decoration: none; }
+/* 概览态（收起）——与明细态是两种表示：紧凑单行 / 两栏网格 / 密排网格 / 词条
+   （2026-09-12 白纸纠正：收起态必须能"概览"，而非只显示前 N 条） */
+.fb-compact { padding: 0; }
+/* 概览行＝微型时间轴：圆点 + 单行（超出省略，绝不折行） + 发丝分隔 */
+.fb-crow { display: flex; align-items: baseline; gap: var(--space-3); padding: 6px 0; font-size: var(--fs-b2); border-bottom: 1px solid var(--border-hairline); }
+.fb-crow:last-child { border-bottom: none; }
+.fb-crow::before { content: ""; align-self: center; width: 4px; height: 4px; border-radius: 50%; background: var(--color-faint); flex-shrink: 0; }
+.fb-crow-t { color: var(--color-ink); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fb-crow-n { color: var(--color-muted); min-width: 0; flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fb-crow-p { margin-left: auto; font-family: var(--font-mono); font-size: var(--fs-l2); font-variant-numeric: tabular-nums; color: var(--color-faint); white-space: nowrap; flex-shrink: 0; }
+.fb-chips { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-3); }
+.fb-chip { font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-muted); border: 1px solid var(--border-hairline); border-radius: var(--radius-pill); padding: 3px 10px; }
+/* 获奖行：年份定宽列（等宽数字）+ 奖项 + 等级详情，发丝线分隔 */
+.fb-awardrow { display: flex; align-items: baseline; gap: var(--space-3); padding: 7px 0; border-bottom: 1px solid var(--border-hairline); }
+.fb-awardrow:last-child { border-bottom: none; }
+.fb-awardrow-y { width: 4.6em; flex-shrink: 0; font-family: var(--font-mono); font-size: var(--fs-l2); font-variant-numeric: tabular-nums; color: var(--color-faint); }
+.fb-awardrow-n { color: var(--color-ink); font-size: var(--fs-b2); }
+.fb-awardrow-d { color: var(--color-muted); font-size: var(--fs-b2); min-width: 0; }
+.fb-coursegrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--space-6); row-gap: 0; }
+.fb-cgitem { display: flex; align-items: baseline; gap: var(--space-2); font-size: var(--fs-b2); min-width: 0; padding: 5px 0; border-bottom: 1px solid var(--border-hairline); }
+.fb-cgname { color: var(--color-ink); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fb-cgscore { margin-left: auto; font-family: var(--font-mono); font-size: var(--fs-l3); font-variant-numeric: tabular-nums; color: var(--color-faint); }
+@media (max-width: 768px) {
+  .fb-awardgrid, .fb-coursegrid { grid-template-columns: 1fr; }
+}
+/* 渐进披露（2026-09-12 学自 maxkatz.me：切换钮在节标题行右侧） */
+.fb-sec-action {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 6px;
+  min-height: 24px; padding: 4px 0; /* 触控目标 ≥24px（原 16px 偏小，DOM 审计发现） */
+  font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.06em;
+  color: var(--color-muted); background: none; border: none; cursor: pointer;
+  transition: color var(--dur-fast) ease;
+}
+.fb-sec-action:hover { color: var(--color-ink); }
+.fb-sec-action-ico { width: 12px; height: 12px; transition: transform var(--dur-fast) cubic-bezier(0.22, 1, 0.36, 1); }
+.fb-sec-action[aria-expanded="true"] .fb-sec-action-ico { transform: rotate(180deg); }
+/* 概览↔明细切换的入场（key 变化触发重挂载；ease-out、≤240ms、只动 opacity/transform） */
+@keyframes fb-swap-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.fb-swap { animation: fb-swap-in var(--dur-base) cubic-bezier(0.22, 1, 0.36, 1); }
+.fb-reveal { overflow: hidden; }
+/* 页首身份块（2026-09-12 重排）：头像 → 姓名 → 角色 → 事实条目 → 定位句 → 社交链接 */
+/* Frame 3（白纸手稿 2026-09-13）实测：块间距 17px；姓名 18/黑体加粗；角色 12 mono gray-700；
+   meta 12 mono gray-300 行高 150%；两行定位句 14 mono 行高 175%（首行 ink / 次行 gray-600）
+   ⚠️ 2026-09-14 白纸指令：**身份块整体改衬线**（去掉下面各处的 sans/mono 覆写，
+   让它们继承 #fb-1 .fb-col 的 --font-serif）——与下方各 § 章节的正文衔接一致。
+   仅热区图（.gh-heat-*）仍走 mono：那是数据件的标签/刻度，不属于正文声部。 */
+.fb-identity { display: flex; flex-direction: column; gap: var(--space-5); } /* 手稿间距 17 × 1.333 ≈ 24 */
+.fb-avatar {
+  position: relative; width: 90px; height: 90px; /* 手稿 68 × 1.333 */
+  border-radius: 50%; overflow: hidden; border: 1px solid var(--border-hairline);
+  display: flex; align-items: center; justify-content: center; background: var(--surface-card);
+}
+.fb-avatar-fallback { font-family: var(--font-sans); font-size: 26px; font-weight: var(--weight-heading); color: var(--color-faint); }
+/* 圆内取景（2026-09-14 白纸指令「头像的位置照 Figma」）：
+   按 Figma 节点 166:15「Mask group」的几何复刻——组内是 68×68 的 ELLIPSE 遮罩（1px INSIDE #E0E0E0），
+   罩住其上的图片矩形 166:18：原图 135×90、放在 (-52, 0)。即圆内只露出该图右半（人在画面右侧）。
+   本站圆按 90px 渲染（设计 68 × 1.3235，与既有「手稿 68 × 1.333」口径一致），故等比换算：
+     宽 135/68 = 198.5% · 左移 -52/68 = -76.5% · 高度按原图比例自动（540×360 = 3:2） */
+.fb-avatar img { position: absolute; width: 198.5%; height: auto; left: -76.5%; top: 0; }
+.fb-identity-name { margin: 0; font-size: var(--fs-d1); font-weight: var(--weight-emphasis); line-height: var(--leading-tight); color: var(--color-ink); }
+.fb-identity-role { margin: 0; font-size: var(--fs-b1); color: var(--gray-700); }
+.fb-identity-meta { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; font-size: var(--fs-b1); line-height: 1.5; color: var(--gray-300); }
+/* GitHub 贡献热区图（2026-09-13）：复用热区图语言，灰阶五档走 tokens */
+.gh-heat { display: block; margin: 0; text-decoration: none; color: inherit; }
+.gh-heat-fig { margin: 0; }
+.gh-heat:hover .gh-heat-label { text-decoration: underline; text-underline-offset: 4px; }
+.gh-heat:hover .gh-cell { filter: brightness(0.94); }
+.gh-heat-cap { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-3) var(--space-5); margin-bottom: var(--space-3); }
+.gh-heat-label { font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.08em; color: var(--color-ink); }
+.gh-heat-meta { font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); }
+.gh-heat-scroll { overflow-x: auto; } /* 兜底：窄屏可横滑 */
+.gh-heat-inner { width: 100%; } /* 满栏宽：格子随列伸缩，与两侧文字左右对齐（2026-09-13 白纸要求）*/
+.gh-heat-months { display: flex; gap: 2px; margin-bottom: 4px; }
+.gh-heat-m { flex: 1; min-width: 9px; font-family: var(--font-mono); font-size: var(--fs-l3); color: var(--color-faint); white-space: nowrap; }
+.gh-heat-grid { display: flex; gap: 2px; }
+.gh-heat-col { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.gh-cell { display: block; width: 100%; aspect-ratio: 1 / 1; height: auto; border-radius: 2px; background: var(--heatmap-1); }
+.gh-cell.l1 { background: var(--heatmap-2); }
+.gh-cell.l2 { background: var(--heatmap-3); }
+.gh-cell.l3 { background: var(--heatmap-4); }
+.gh-cell.l4 { background: var(--heatmap-5); }
+/* 入场：列波次 stagger（--wi 列 ×14ms + --ri 行 ×5ms），IO 置 is-in 后播一次 */
+.gh-heat-grid.is-in .gh-cell { animation: gh-cell-in 0.5s ease both; animation-delay: calc(var(--wi) * 14ms + var(--ri) * 5ms); }
+@keyframes gh-cell-in { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .gh-heat-grid.is-in .gh-cell { animation: none; } }
+.gh-heat-legend { display: flex; align-items: center; gap: var(--space-2); margin-top: var(--space-3); font-family: var(--font-mono); font-size: var(--fs-l3); color: var(--color-faint); }
+.gh-heat-legend .gh-cell { display: inline-block; width: 9px; height: 9px; } /* 图例格不随列伸缩，钉回固定尺寸 */
+@media (max-width: 768px) { .gh-heat-legend .gh-cell { width: 7px; height: 7px; } .gh-heat-m { min-width: 7px; font-size: var(--fs-l3); } }
+
+/* 页首身份块（2026-09-12）：姓名 + 事实条目 + 两行定位句 */
+.fb-identity-line { margin: 0; font-size: var(--fs-t1); line-height: 1.75; color: var(--color-ink); }
+.fb-identity-line.is-secondary { color: var(--gray-600); }
+/* 小节标签（§5 获奖下的"设计获奖/荣誉获奖"） */
+.fb-subsec { margin: var(--space-5) 0 var(--space-3); font-family: var(--font-mono); font-size: var(--fs-l1); letter-spacing: 0.06em; color: var(--color-faint); }
+/* §6 课程成绩 */
+.fb-coursegroup { padding: var(--space-3) 0; }
+.fb-coursegroup-title { margin: 0 0 var(--space-3); font-size: var(--fs-b1); font-weight: var(--weight-heading); color: var(--color-ink); }
+.fb-courselist { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); }
+.fb-courselist li { display: flex; align-items: baseline; gap: var(--space-2); font-size: var(--fs-b2); color: var(--color-muted); }
+.fb-course-name { color: var(--color-ink); }
+.fb-course-score { font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); }
+/* §7 自评引文 */
+.fb-selfquote { margin: var(--space-5) 0 var(--space-4); padding: 2px 0 2px var(--space-4); border-left: 2px solid var(--border-hairline); font-size: var(--fs-b2); line-height: var(--leading-loose); color: var(--color-muted); }
+/* §8 证明材料卡列 → 2026-09-14 起改为「挂在各章节下面」的附件行 */
+.fb-doclist { display: flex; flex-direction: column; }
+.fb-doclist--under { margin-top: var(--space-4); } /* 与本节正文拉开一点，读作"附件"而非正文条目 */
+/* 正文内下载区（2026-09-15 白纸任务 3b）：与头栏 MD 菜单同一份副本文件，文末一处。
+   形态=发丝线分节 + 两个胶囊；不用大卡（省版面无虚浮感，同 .fb-docrow 的取舍） */
+.fb-dl {
+  margin: var(--space-8) 0 0;
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--border-hairline);
+}
+.fb-dl-label { margin: 0 0 var(--space-3); font-family: var(--font-mono); font-size: var(--fs-l1); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-faint); }
+.fb-dl-row { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); }
+.fb-dl-btn {
+  display: inline-flex; align-items: center;
+  min-height: 44px; /* 触控目标 ≥44px（Craft.md 可达性红线），窄屏同一尺寸即可 */
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--border-hairline); border-radius: 999px;
+  font-size: var(--fs-b2); color: var(--color-ink); text-decoration: none;
+  transition: background var(--dur-fast) ease-out, border-color var(--dur-fast) ease-out;
+}
+.fb-dl-btn:hover { background: var(--surface-card); border-color: var(--color-muted); }
+/* 散文段（About/Reading：衬线正文，行距舒展） */
+.fb-prose { margin: 0 0 var(--space-5); } /* 散文块与其后的块（chips/列表/引文）留呼吸（2026-09-12 白纸反馈紧贴） */
+.fb-prose p { margin: 0 0 var(--space-4); font-size: var(--fs-b1); line-height: var(--leading-loose); color: var(--color-ink); }
+.fb-prose p:last-child { margin-bottom: 0; }
+.fb-list { display: flex; flex-direction: column; }
+.fb-tobefilled { font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); margin-top: var(--space-6); }
+
+/* ---------- P3 联系页 ---------- */
+.fb-hello { font-size: var(--fs-d1); font-weight: var(--weight-heading); line-height: var(--leading-snug); max-width: 18em; margin: 0 auto var(--space-5); }
+.fb-mail {
+  font-family: var(--font-mono); font-size: var(--fs-b1); color: var(--color-ink);
+  background: none; border: none; padding: 0; cursor: pointer;
+  display: block; margin: 0 auto var(--space-3); /* block 竖排：邮箱/电话不挤一行 */
+}
+.fb-mail:hover { text-decoration: underline; text-underline-offset: 4px; }
+.fb-tel { font-family: var(--font-mono); font-size: var(--fs-b1); color: var(--color-ink); text-decoration: none; display: block; margin: 0 auto var(--space-3); width: fit-content; }
+.fb-tel:hover { text-decoration: underline; text-underline-offset: 4px; }
+/* 复制 toast（Product.md §7.2 拍板件；墨底反白胶囊，底部居中，1600ms 自散） */
+.fb-toast {
+  position: fixed; bottom: var(--space-6); left: 50%; transform: translateX(-50%);
+  background: var(--color-ink); color: var(--bg-page);
+  font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.04em;
+  padding: 8px 16px; border-radius: var(--radius-pill); z-index: 60;
+  animation: fb-toast-in var(--dur-fast) ease-out;
+}
+@keyframes fb-toast-in { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.fb-status { font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); margin: 0; }
+/* § 9 内联联系动作（2026-09-13 联系页撤除后收进简历页尾）：原 P3 是居中排版，此处左对齐覆写 */
+.fb-prose .fb-mail, .fb-prose .fb-tel { margin: 0 0 var(--space-2); }
+.fb-prose .fb-status { margin: var(--space-2) 0 0; }
+
+/* ---------- 响应式（≤768：手机可读性覆写；token 单源不动，仅组件层响应式） ---------- */
+@media (max-width: 768px) {
+  .fb-header { padding: var(--space-4) var(--space-5); }
+  .fb-header-tag { display: none; } /* 窄屏 tag 让位切换器 */
+  .fb-page { padding-left: var(--space-5); padding-right: var(--space-5); } /* 96px 边距吃宽 → 24px */
+  /* 墙是全幅海报，不吃这条页边距（2026-09-14：上面那条同权重且写在 .fb-page--wall 之后，
+     会把墙也加上左右 24px——手机上海报两侧因此多出白槽，与 Scott 全幅原式不符） */
+  .fb-page--wall { padding-left: 0; padding-right: 0; }
+  /* 小屏：标题字号降档（56 在 359px 视口压图过重）。展开态左缘沿用 64（与 × 同竖线） */
+  .fb-poster { --ppad-from: var(--space-5); --ptfs-from: min(32px, calc(var(--poster-h, 72vh) * 0.14)); }
+  .fb-row-head { flex-wrap: wrap; row-gap: 2px; } /* 条目名+注+时间换行不裁 */
+  .fb-poster-art-mark { display: none; } /* 移动端与页码指示器重叠，装饰件让位 */
+  .fb-indicator { padding: 5px 11px; }
+}
+
+/* ---------- reduced-motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .fb-poster { opacity: 1; transform: none; transition: none; }
+  .fb-poster-expand { transition: none; }
+  .fb-poster-plus, .fb-header-nav a, .fb-mail { transition: none; }
+  .fb-indicator-name { animation: none; }
+  .fb-langbtn .seg, .fb-iconbtn, .fb-iconbtn svg { transition: none; }
+  .fb-swap { animation: none; }
+  .fb-loader { transition: none; }
+  .fb-reveal-inner { transform: none !important; }
+  .fb-sec-action-ico { transition: none; }
+  .fb-toast { animation: none; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+
+/* 共享元素位移动画（2026-09-13 白纸：收起→展开时"厦门芸善科技"这类不变元素应有位移动画）
+   机制：两态给同一元素同一 view-transition-name，切换包 startViewTransition →
+   浏览器自动做 FLIP（首尾快照配对 + 位移/尺寸插值）。不支持 VT 的内核＝直接切换（原行为）。 */
+::view-transition-group(*) {
+  animation-duration: var(--dur-slow);
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none; }
+}
+
+/* ---------- 项目页入口（2026-09-13）：标题即链接，悬停出下划线
+   （Scott 实测同款写法：figcaption a:hover → underline + thickness .04em + offset .15em）
+   页面与渲染管线在 src/pages/ProjectPage.tsx + src/styles/project.css ---------- */
+.fb-poster-titlelink {
+  color: inherit;
+  text-decoration: none;
+}
+.fb-poster-titlelink:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.04em;
+  text-underline-offset: 0.15em;
+}
+
+/* ---------- 联系页（?contact=1，2026-09-13 深夜·本会话）：原 03 联系页整段搬入（白纸裁决），居中列旧类复用 ---------- */
+.fb-cpage { min-height: 100vh; background: var(--bg-page); }
+.fb-cpage .fb-page { width: 100%; height: 100vh; }
+.fb-cpage-label { font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.08em; color: var(--color-faint); margin: 0 0 var(--space-5); }
+.fb-col--center { text-align: center; }
+.fb-tel.is-pending { color: var(--color-faint); cursor: default; }
+.fb-tel.is-pending:hover { text-decoration: none; }
+
+/* ---------- 「待建设」模块（2026-09-13 白纸：作品从正列移出、另立模块——元素同源、模块可辨识） ---------- */
+.fb-tobuild {
+  background: var(--surface-card);
+  border-top: 1px solid var(--border-hairline);
+  border-bottom: 1px solid var(--border-hairline);
+  padding: var(--space-9) var(--space-6) var(--space-8);
+}
+.fb-tobuild-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-l2);
+  letter-spacing: 0.22em;
+  color: var(--color-faint);
+}
+.fb-tobuild-title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-display);
+  font-weight: var(--weight-normal);
+  line-height: var(--leading-tight);
+  margin: var(--space-3) 0 var(--space-4);
+}
+.fb-tobuild-note {
+  max-width: 40em;
+  font-size: var(--fs-b2);
+  line-height: var(--leading-loose);
+  color: var(--color-muted);
+}
+
+/* 展开态左面板：摘要与标签（白纸 09-13：圈出的空白要有内容；排法照 Scott——题·时间·摘要）
+   透明度改由 JS 逐帧给（外层 .fb-poster-extra），不再挂 CSS animation——避免与逐帧驱动打架 */
+.fb-poster-summary {
+  margin: var(--space-4) 0 0;
+  max-width: 30em;
+  font-size: var(--fs-b2);
+  line-height: var(--leading-loose);
+  color: var(--color-muted);
+}
+.fb-poster-tags {
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--fs-l2);
+  color: var(--color-faint);
+}
+
+/* ---------- 联系页（2026-09-14 白纸反馈重排）：条目行语言——mono 标签列 + 值 + 发丝线 ---------- */
+.ct-main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: calc(56px + var(--space-10)) var(--mobile-padding) var(--space-10);
+}
+.ct-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-l2);
+  letter-spacing: 0.22em;
+  color: var(--color-faint);
+}
+.ct-lead {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: var(--weight-normal);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  margin: var(--space-4) 0 var(--space-8);
+}
+.ct-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-hairline);
+}
+.ct-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-5);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--border-hairline);
+}
+.ct-key {
+  flex: 0 0 88px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-l2);
+  letter-spacing: 0.08em;
+  color: var(--color-faint);
+}
+.ct-val {
+  font-size: var(--fs-b1);
+  color: var(--color-ink);
+  text-decoration: none;
+  word-break: break-all;
+}
+a.ct-val:hover, .ct-copy:hover { text-decoration: underline; text-underline-offset: 4px; }
+button.ct-copy {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ct-val.is-pending { color: var(--color-faint); }
+.ct-status {
+  margin-top: var(--space-6);
+  font-family: var(--font-mono);
+  font-size: var(--fs-l2);
+  color: var(--color-faint);
+}
+
+/* 收起态浅字压深底（白纸 Figma 182:2）——颜色改由 JS 逐帧插值（随 --pr 从浅转墨），
+   原先的 .is-over 类硬切已删（2026-09-14） */
+
+/* 白纸 Figma 取景稿：单图按「取景窗」插值（收起整幅 → 展开局部，连续放大） */
+.cl-img--win {
+  position: absolute;
+  /* 逐帧改 width/height——提进合成层，避免 5000px 大图每帧重栅格化 */
+  will-change: transform;
+  transform: translateZ(0);
+  object-fit: cover; /* 取景窗外不动；窗口比例微差由 cover 吸收 */
+}
+
+/* ---------- 墙内展开态目录（2026-09-14 白纸："可以跳转的目录，类似 notion 那种"）
+   形态取大纲：桌面右侧浮动、h3 缩进、当前节高亮；窄屏在正文顶部折成一条 <details>。
+   只在该条海报展开时渲染，所以全文只有一个实例（无 id 冲突）。 ---------- */
+.fb-toc { display: flex; flex-direction: column; }
+.fb-toc-link {
+  display: block; padding: 6px 0 6px var(--space-3);
+  border-left: 1px solid var(--border-hairline);
+  font-family: var(--font-mono); font-size: var(--fs-l2); line-height: 1.45;
+  color: var(--color-muted); text-decoration: none;
+  transition: color var(--dur-fast) ease, border-left-color var(--dur-fast) ease;
+}
+.fb-toc-link:hover { color: var(--color-ink); }
+.fb-toc-link.is-active { color: var(--color-ink); border-left-color: var(--color-ink); }
+.fb-toc-link.is-sub { padding-left: var(--space-5); font-size: var(--fs-l3); } /* h3 缩进一档 */
+.fb-toc-rail { display: none; }
+@media (min-width: 1280px) {
+  .fb-toc-rail {
+    display: block; position: fixed; z-index: 12;
+    top: calc(56px + var(--space-8));
+    /* 正文列（--content-width）居中，目录挂在它右侧的空白里 */
+    left: calc(50% + var(--content-width) / 2 + var(--space-6));
+    width: 200px;
+  }
+}
+/* 窄屏：正文顶部的折叠条 */
+.fb-toc-m {
+  margin: 0 0 var(--space-6);
+  border: 1px solid var(--border-hairline); border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+}
+.fb-toc-m summary { cursor: pointer; list-style: none; font-family: var(--font-mono); font-size: var(--fs-l1); color: var(--color-muted); }
+.fb-toc-m-list { padding-top: var(--space-2); }
+.fb-toc-m-list .fb-toc-link { border-left: none; padding: 6px 0; }
+@media (min-width: 1280px) { .fb-toc-m { display: none; } }

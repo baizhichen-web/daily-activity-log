@@ -1,0 +1,278 @@
+# Decap CMS 配置 · 白纸上个人网站（2026-09-12 立）
+# 内容即文件：写入本仓库，AI 可在同一份内容上做版式精修（见 design/内容架构-v0.1.md）
+# 路径说明：Decap 的路径相对 **git 仓库根**（= 工作空间根），故带 studio/projects/resume-portfolio/web 前缀
+backend:
+  name: git-gateway
+  branch: master
+local_backend:
+  # ⚠️ 必须显式给 url：默认按**同源**找 /api/v1（= 站点所在的 5175，那里没有），
+  # 结果退回登录屏。代理由 `npm run cms` 起在 8081（decap-server，放行 localhost 跨源）。
+  url: http://localhost:8081/api/v1
+publish_mode: simple
+site_url: http://localhost:5175
+display_url: http://localhost:5175
+media_folder: "studio/projects/resume-portfolio/web/public/media"
+public_folder: "/media"
+
+collections:
+  - name: projects
+    label: 项目
+    label_singular: 项目
+    description: 作品集项目，一项目一条；正文用「块」拼结构（图/视频/数字行等）
+    folder: "studio/projects/resume-portfolio/web/content/projects"
+    create: true
+    extension: yml
+    format: yml
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{period}} [{{status}}]"
+    sortable_fields: [period, title]
+    fields:
+      - { name: title, label: 项目名, widget: string, hint: 中文名；专名不译 }
+      - { name: slug, label: URL 标识, widget: string, hint: 小写英文或拼音，如 zhezhi-printer }
+      - { name: period, label: 时期, widget: string, required: false, hint: 如 2025.09–2026.06（内容事实，非页脚日期） }
+      - { name: role, label: 角色, widget: string, required: false, hint: 如 产品负责人 / ID 设计 + PRD }
+      - name: status
+        label: 状态
+        widget: select
+        default: ongoing
+        options:
+          - { label: 最新, value: latest }
+          - { label: 进行中, value: ongoing }
+          - { label: 归档, value: archived }
+      - { name: accent, label: 项目主色, widget: color, allowInput: true, required: false, hint: 只染本页细节（Design.md A2） }
+      - { name: cover, label: 封面, widget: image, required: false, hint: 海报墙用；建议 1440×648 }
+      - { name: summary, label: 一句话摘要, widget: text, required: false, hint: 海报展开态与目录页复用；留空则不显示 }
+      - { name: ai-summary, label: 给 AI 的摘要（50 字内）, widget: text, required: false, hint: AI Native 第二波：进 llms.txt 与条目结构化数据（schema.org abstract），措辞由白纸终审 }
+      - { name: tags, label: 标签, widget: list, required: false, default: [] }
+      - name: metrics
+        label: 数字行（对外可验证）
+        widget: list
+        required: false
+        default: []
+        hint: 仅放对外可验证数字（Product.md §7.7）
+        fields:
+          - { name: value, label: 数字, widget: string }
+          - { name: label, label: 说明, widget: string }
+      - name: body
+        label: 正文
+        widget: list
+        hint: 点「+」逐块拼正文；块顺序就是阅读顺序，可拖动排序
+        types:
+          - label: 段落
+            name: paragraph
+            widget: object
+            fields:
+              - { name: text, label: 文字, widget: text }
+          - label: 小标题
+            name: heading
+            widget: object
+            fields:
+              - { name: level, label: 级别, widget: select, default: h2, options: [h2, h3], hint: h2 会自动进左侧目录 }
+              - { name: text, label: 标题, widget: string }
+          - label: 单图
+            name: figure
+            widget: object
+            fields:
+              - { name: image, label: 图片, widget: image }
+              - { name: caption, label: 图注, widget: string, required: false, hint: “无图注的图视为未完成”是本站规范——请尽量补；但这里不再强制，否则存量图会卡住整条保存 }
+          - label: 图组
+            name: gallery
+            widget: object
+            fields:
+              - { name: images, label: 图片们, widget: list, fields: [{ name: image, label: 图片, widget: image }, { name: caption, label: 图注, widget: string, required: false }] }
+          - label: 视频
+            name: video
+            widget: object
+            fields:
+              - { name: src, label: 视频地址, widget: string, hint: 短片放 /media/…；长片可贴外链（B 站/YouTube） }
+              - { name: poster, label: 封面图, widget: image, required: false }
+              - { name: caption, label: 说明, widget: string, required: false }
+          - label: 引用
+            name: quote
+            widget: object
+            fields:
+              - { name: text, label: 引文, widget: text }
+              - { name: source, label: 出处, widget: string, required: false }
+          - label: 四问结构
+            name: process
+            widget: object
+            hint: 项目叙事统一口径：问题→决策→取舍→结果
+            fields:
+              - { name: problem, label: 问题, widget: text }
+              - { name: decision, label: 决策, widget: text }
+              - { name: tradeoff, label: 取舍, widget: text }
+              - { name: result, label: 结果, widget: text }
+          - label: 旁注（草稿）
+            name: note
+            widget: object
+            hint: 仅草稿可见，不随发布渲染
+            fields:
+              - { name: text, label: 文字, widget: text }
+  # ---------- 文章 / 写作（2026-09-14 加：白纸要在后台改文章） ----------
+  # 首页海报墙上的文章。一篇一条，可以在这里新增/改写/调整顺序（顺序由 date 倒序决定）。
+  - name: writing
+    label: 文章
+    label_singular: 文章
+    description: 首页海报墙上的文章（随笔 / 自传 / 游记 / 评论…）。一篇一条，正文用「块」拼结构
+    folder: "studio/projects/resume-portfolio/web/content/writing"
+    create: true
+    extension: yml
+    format: yml
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    fields:
+      - { name: title, label: 标题, widget: string, hint: 显示在墙上面板与文章页大标题 }
+      - { name: slug, label: URL 标识, widget: string, hint: 小写英文或拼音，如 shunde-lvxing。改它会换网址 }
+      - { name: date, label: 日期, widget: string, hint: 形如 2026.09；墙面按它倒序排列 }
+      - { name: kind, label: 归类, widget: string, hint: 显示在日期后面，如 随笔 / 自传 / 游记 / 评论 }
+      # 主色目前对文章不可见：文章封面一律是「纸面」（书法图那层），不走项目色渐变。
+      # 留作将来某篇改用纯渐变封面时用；白纸若觉得碍事可删。
+      - { name: accent, label: 主色, widget: color, allowInput: true, required: false, hint: 暂不生效——文章封面是纸面，此色只在「用渐变封面」的条目上显示 }
+      - { name: summary, label: 一句话摘要, widget: text, required: false, hint: 出现在墙上面板与文章页导语；留空则该处不显示 }
+      - { name: ai-summary, label: 给 AI 的摘要（50 字内）, widget: text, required: false, hint: AI Native 第二波：进 llms.txt 与条目结构化数据（schema.org abstract）；与上面那条受众不同——那条给人看，这条给机器读。留空则机器摘要回落用上面那条 }
+      - name: tags
+        label: 标签
+        widget: list
+        required: false
+        default: []
+        hint: 海报展开后显示在摘要下方，如 #设计 #AI；留空则不显示这一行
+        field: { name: item, label: 标签, widget: string }
+      - name: calligraphy
+        label: 书法封面
+        widget: object
+        required: false
+        hint: 留空或只填「文眼字」＝显示待补占位块（不会出错）
+        fields:
+          - { name: chars, label: 文眼字, widget: string, required: false, hint: 占位块上标注哪几个字，如 旅迹；留空则占位块只写「待补」 }
+          - { name: image, label: 书法图, widget: image, required: false, hint: 源图放 public/media/writing/<URL 标识>/ }
+          - { name: imgAspect, label: 源图宽高比, widget: string, required: false, hint: 源图宽÷高，如 2.268。画框按它锁比例 }
+          - { name: cropFrom, label: 收起态取景, widget: string, required: false, hint: "源图百分比 左,上,右,下；整幅＝0,0,100,100" }
+          - { name: cropTo, label: 展开态取景, widget: string, required: false, hint: "源图百分比 左,上,右,下；如 12.23,28.47,22.72,68.22" }
+          - { name: focus, label: 变焦落点, widget: string, required: false, hint: 没有取景窗时的备选，如 50% 38% }
+          - { name: zoomImage, label: 展开态单独用图, widget: image, required: false }
+      - name: body
+        label: 正文
+        widget: list
+        hint: 点「+」逐块拼正文；块顺序就是阅读顺序，可拖动排序
+        types:
+          - label: 段落
+            name: paragraph
+            widget: object
+            fields:
+              - { name: text, label: 文字, widget: text }
+          - label: 小标题
+            name: heading
+            widget: object
+            fields:
+              - { name: level, label: 级别, widget: select, default: h2, options: [h2, h3], hint: h2 会自动进左侧目录 }
+              - { name: text, label: 标题, widget: string }
+          - label: 单图
+            name: figure
+            widget: object
+            fields:
+              - { name: image, label: 图片, widget: image }
+              - { name: caption, label: 图注, widget: string, required: false, hint: “无图注的图视为未完成”是本站规范——请尽量补；但这里不再强制，否则存量图会卡住整条保存 }
+          - label: 图组
+            name: gallery
+            widget: object
+            fields:
+              - { name: images, label: 图片们, widget: list, fields: [{ name: image, label: 图片, widget: image }, { name: caption, label: 图注, widget: string, required: false }] }
+          - label: 视频
+            name: video
+            widget: object
+            fields:
+              - { name: src, label: 视频地址, widget: string, hint: 短片放 /media/…；长片可贴外链（B 站/YouTube） }
+              - { name: poster, label: 封面图, widget: image, required: false }
+              - { name: caption, label: 说明, widget: string, required: false }
+          - label: 引用
+            name: quote
+            widget: object
+            fields:
+              - { name: text, label: 引文, widget: text }
+              - { name: source, label: 出处, widget: string, required: false }
+          - label: 四问结构
+            name: process
+            widget: object
+            hint: 项目叙事统一口径：问题→决策→取舍→结果
+            fields:
+              - { name: problem, label: 问题, widget: text }
+              - { name: decision, label: 决策, widget: text }
+              - { name: tradeoff, label: 取舍, widget: text }
+              - { name: result, label: 结果, widget: text }
+          - label: 旁注（草稿）
+            name: note
+            widget: object
+            hint: 仅草稿可见，不随发布渲染
+            fields:
+              - { name: text, label: 文字, widget: text }
+
+  # ---------- 简历（2026-09-14 白纸拍板：从代码迁出，后台可编辑） ----------
+  # files 型集合：中英各一份文件，结构完全对称。字段定义用 YAML 锚点复用，
+  # 改一处两份都变（不必抄两遍）。
+  # ⚠️ 那两个 yml 的文件头写着 mini-yaml 的书写约束（序列项里不能出现「半角冒号+空格」）；
+  #    在后台编辑不受影响（Decap 会正确转义），手改文件时要守。
+  - name: resume
+    label: 简历
+    description: 简历全文。中英两个文件，各自独立编辑；保存即生效
+    files:
+      - name: resume_zh
+        label: 简历（中文）
+        file: "studio/projects/resume-portfolio/web/content/resume.zh.yml"
+        fields: &resumeFields
+            - { name: identity, label: 页首身份块, widget: object, fields: [
+                { name: name, label: 姓名, widget: string },
+                { name: role, label: 角色行（姓名下方）, widget: string },
+                { name: meta, label: 事实条目（政治面貌 / 外语…）, widget: list, field: { name: item, label: 条目, widget: string } },
+                { name: lines, label: 定位句, widget: list, field: { name: item, label: 句子, widget: string } },
+                { name: socials, label: 社交链接（当前页面未渲染，留作后用）, widget: list, required: false, fields: [
+                  { name: kind, label: 类型, widget: select, options: [mail, github, red] },
+                  { name: label, label: 显示名, widget: string },
+                  { name: href, label: 链接, widget: string, required: false } ] } ] }
+            - { name: education, label: §1 教育, widget: list, fields: [
+                { name: period, label: 时期, widget: string },
+                { name: title, label: 学校与学院, widget: string },
+                { name: sub, label: 专业与学位, widget: string },
+                { name: lines, label: 明细, widget: list, field: { name: item, label: 行, widget: string } } ] }
+            - { name: about, label: §2 关于, widget: list, field: { name: item, label: 段落, widget: text } }
+            - { name: beyond, label: §3 专业之外, widget: object, fields: [
+                { name: intro, label: 引言, widget: text },
+                { name: items, label: 爱好条目, widget: list, fields: [
+                  { name: title, label: 名称, widget: string },
+                  { name: text, label: 说明, widget: text } ] } ] }
+            - { name: work, label: §4 实习经历, widget: list, fields: [
+                { name: period, label: 时期, widget: string },
+                { name: title, label: 公司, widget: string },
+                { name: sub, label: 角色, widget: string },
+                { name: lines, label: 明细, widget: list, field: { name: item, label: 行, widget: text } } ] }
+            - { name: otherProjects, label: §5 其他项目经历, widget: list, fields: [
+                { name: period, label: 时期, widget: string },
+                { name: title, label: 项目, widget: string },
+                { name: highlight, label: 亮点标签, widget: string },
+                { name: note, label: 随注, widget: string },
+                { name: lines, label: 明细, widget: list, field: { name: item, label: 行, widget: text } } ] }
+            - { name: awardsDesign, label: §6 获奖 · 设计, widget: list, field: { name: item, label: 条目, widget: string } }
+            - { name: awardsHonor, label: §6 获奖 · 荣誉, widget: list, field: { name: item, label: 条目, widget: string } }
+            - { name: courses, label: §7 课程成绩, widget: list, fields: [
+                { name: group, label: 组名, widget: string },
+                { name: items, label: 课程, widget: list, fields: [
+                  { name: name, label: 课程名, widget: string },
+                  { name: score, label: 分数, widget: string } ] } ] }
+            - { name: selfEval, label: §8 自我评价, widget: object, fields: [
+                { name: intro, label: 引言, widget: text },
+                { name: quotes, label: 思想汇报引文, widget: list, field: { name: item, label: 引文, widget: text } },
+                { name: body, label: 正文（收起态=短 / 展开态=全文）, widget: list, fields: [
+                  { name: short, label: 收起态结论, widget: text },
+                  { name: full, label: 展开态全文, widget: text } ] } ] }
+            - { name: docs, label: 证明材料（挂在各节下面）, widget: list, fields: [
+                { name: title, label: 名称, widget: string },
+                { name: sub, label: 类型标注, widget: string },
+                { name: section, label: 挂到哪一节, widget: select, options: [edu, projects, awards, courses, contact] },
+                { name: href, label: 文件链接（空=待上传）, widget: string, required: false } ] }
+            - { name: contact, label: 联系, widget: object, fields: [
+                { name: email, label: 邮箱, widget: string },
+                { name: xiaohongshu, label: 小红书链接, widget: string } ] }
+      - name: resume_en
+        label: Resume (English)
+        file: "studio/projects/resume-portfolio/web/content/resume.en.yml"
+        fields: *resumeFields
