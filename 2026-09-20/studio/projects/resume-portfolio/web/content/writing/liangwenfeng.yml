@@ -1,0 +1,194 @@
+title: 我们是很愿意协助、帮助任何人，甚至我们的竞争对手
+slug: liangwenfeng
+date: "2026.07"
+kind: 评论
+accent: "#b3402e"
+summary: 三场表态，三种世界观：从 Dean W. Ball 与达里奥·阿莫迪，到梁文锋
+calligraphy:
+  image: /media/writing/liangwenfeng/calli.webp
+  imgAspect: 2.4907
+  cropFrom: '6.73,0.0,95.54,99.54'
+  cropTo: '79.37,23.04,92.8,78.76'
+  chars: 不争
+body:
+  - type: paragraph
+    text: 昨晚，「elsewhere」发出了传说中 DeepSeek 4 小时投资人会议中梁文锋的发言，这是目前网上流传最广的一篇对"活体梁文锋"的报道。
+  - type: paragraph
+    text: 作者刘旌此前是 36 氪旗下深度栏目「暗涌+」的主编，离开 36
+      氪后自立门户，创办了独立内容项目「elsewhere别处发生+」。今天，腾讯科技也将其获得的近 4 小时交流会实录整理上线，分类归纳共计 118
+      条。
+  - type: paragraph
+    text: 面对这份很完美的实录，外界难免会质疑：有人判断信源，有人敲打内容的合理性——毕竟合理性有时候只是说服人的手段；也有人看到说，这无非是上市前的一场公关造势。
+  - type: paragraph
+    text: 即使这确实是一场当众传递的战略表态，但对我而言，看到这些言论的一时间，我脑海中浮现出的却是另外两场表态：Anthropic CEO
+      达里奥·阿莫迪（Dario Amodei）与彭博社的访谈，以及 OpenAI 战略负责人 迪恩·鲍尔（Dean W. Ball）对 Kimi k3
+      开源的公开发言。
+  - type: paragraph
+    text: 在这三场代表不同公司世界观的表态背后，对比来自西方的偏见，梁文锋反倒让人感到一种极为畅快的通透。这些畅快，我想不吐不快。
+  - type: heading
+    level: h2
+    text: Dean W. Ball：
+  - type: paragraph
+    text: 想不清楚为什么最近一直标榜正义、真善美与灯塔的美国科技界，世界观会变得如此自闭与狭隘？
+  - type: paragraph
+    text: 好吧，傲慢与双标从来就是西方精英未曾摘下的"画皮"。
+  - type: paragraph
+    text: 在推特上，他将开源模型称为"减速主义（decelerationist）"，甚至扣上"反乌托邦地狱（Dystopian
+      Hellscape）"的帽子——不得不说，美国人至今仍对这些带有浓厚冷战色彩的词汇念念不忘。
+  - type: paragraph
+    text: 并堂而皇之地建议美国政府采用**造谣与阴招**：
+  - type: paragraph
+    text: '"只需美联储发布报告称中国模型存在后门即可制造适当的恐慌，这种说法无需证据。"'
+  - type: paragraph
+    text: （You just need to direct every agency to issue soft law that creates FUD.
+      "A Federal Reserve Advisory Bulletin found that there may be backdoors in
+      Chinese AI models." It needn't be that well justified. You just create
+      enough regulatory risk that every regulated enterprise backs off.）
+  - type: paragraph
+    text: 在受到推特正义网友的批评后，他对开源改口，将中国模型的开源歪曲为"因算力被美国卡脖子而被迫出口"以及"中共在 AI 上战略失明（Strategic
+      Blindness）"——预设了"中国放开开源是不合理、反常行为"的前提，强行建立负面审视视角，绝不承认"开源是中国主动的产业发展战略"。
+  - type: paragraph
+    text: '**他们无法接受，中国工程师可以用极少的资源做成他们需要耗费天文数字资本才能做到的事，更无法接受中国正在用"开源"彻底瓦解西方的"闭源算力霸权"。**'
+  - type: paragraph
+    text: 说到底，他的焦虑只有一句话：开源模型的成功，阻碍了资本对硅谷闭源模型的暴利投资。
+  - type: heading
+    level: h2
+    text: 达里奥·阿莫迪：
+  - type: paragraph
+    text: 如果说 Dean W. Ball 的社交媒体上犯蠢是给 OpenAI 的不 open
+      战略表忠心，那么达里奥则展示了西方精英最擅长的圣母式的双标与伪善。
+  - type: paragraph
+    text: 达里奥的发言是三人中最具"哲学深度"和"道德焦虑感"的，但这并不意味着他的言论是好的。恰恰相反，正因为他的话语体系更精密、更自洽，其内置的偏见也更隐蔽——裹着一切为了人类的糖衣。
+  - type: paragraph
+    text: 他以"人类文明风险"为起点，却落脚于"美国优先"的国家安全。他将自己定义为爱国者，明确希望让所谓的"民主"掌握 AI 的力量。但当主持人尖锐地追问
+      Claude
+      是否卷入了对伊朗女校的致命打击时，他的回应开始变得微妙：他首先切割，说"我们不知道模型如何被使用"；然后将责任推给军事决策者，说"政策必须留给军事决策者，我们能做的只是设定高层边界"；最后用"至少是人类在做最终决定"来为自己开脱。
+  - type: paragraph
+    text: 当"防止文明崩溃"的宏大叙事落实为具体的来自美军的商业合同时，他对人类整体的悲悯，就悄然收缩成了对美国利益的服从。是的，"为了安全不发布
+      Mythos 模型"的他，把人类的火力交给了 AI：
+  - type: paragraph
+    text: 一个宣称要管理"存在性风险"的人，在 AI 可能已造成 150 多名儿童死亡的案例面前，第一反应不是追问真相，而是讨论责任归属——
+  - type: paragraph
+    text: 责任当然是那些能做出军事决策的人，我只是一个技术供应商，他们的"微观失误"我管不着。
+  - type: paragraph
+    text: "**当风险是抽象的、未来的，我是人类文明的守护者；当伤害是具体的、当下的，我只是一个遵守合同的供应商。**"
+  - type: heading
+    level: h2
+    text: 梁文锋：
+  - type: paragraph
+    text: 对比西方这两位——一个明着批评开源保护暴利壁垒，一个用满口道德掩盖双标霸权——还有很多很多我未能列举的双标和偏见。
+  - type: paragraph
+    text: 但反观不知道是不是梁文锋本人的媒体上的梁文锋，却让我感到钦佩和愉快：
+  - type: paragraph
+    text: ——我把让我感动的话截出来——看上去真的像世外高人对大反派言论的反驳，所以我觉得畅快。充满愿景，渴望长期主义，但克制，所以又透露出"不在意"、"我不装"的非常装逼。
+  - type: paragraph
+    text: "**「夫唯不争，故天下莫能与之争」**"
+  - type: paragraph
+    text: 他只是说：我们是一群平凡的人，想做成这件事。我们只赚合理的利润。我们开源最强的模型。我们不和任何人争。
+  - type: paragraph
+    text: 我与有荣焉：我们中国的技术人——**实事求是、开放利他、自信自强。他想做成 AGI，他觉得克制和开放是更有效的路径，仅此而已。**
+  - type: heading
+    level: h2
+    text: 参考资料
+  - type: paragraph
+    text: "[1] 梁文锋四小时投资人会议实录:
+      [https://elsewhere.news/zh/elsewhere/wenfeng-liangs-four-hour-investor-me\
+      eting-full-transcript](https://elsewhere.news/zh/elsewhere/wenfeng-liangs\
+      -four-hour-investor-meeting-full-transcript)"
+  - type: paragraph
+    text: "[2] 腾讯科技丨4小时、118个回答，梁文锋内部交流回应一切:
+      [https://mp.weixin.qq.com/s/Rqv-4yFGUTuLxMaRSt1XDg](https://mp.weixin.qq.\
+      com/s/Rqv-4yFGUTuLxMaRSt1XDg)"
+  - type: paragraph
+    text: "[3] Dean W. Ball (@deanwball) 关于 Kimi K3 开源的推文:
+      [https://x.com/deanwball](https://x.com/deanwball)"
+  - type: paragraph
+    text: "[4] 彭博社最新访谈丨站在 AI 风暴中心：对话 Anthropic CEO 达里奥·阿莫迪:
+      [https://www.youtube.com/watch?v=x2VHFgyawPE](https://www.youtube.com/wat\
+      ch?v=x2VHFgyawPE)"
+en:
+  title: We are very willing to help and assist anyone, even our competitors
+  kind: Commentary
+  summary: Three statements, three worldviews — from Dean W. Ball and Dario Amodei to Liang Wenfeng
+  body:
+    - type: paragraph
+      text: |
+        Last night, "elsewhere" published the much-discussed remarks Liang Wenfeng made during DeepSeek's four-hour investor meeting. It is now the most widely circulated piece of reporting on a live, flesh-and-blood Liang Wenfeng anywhere online.
+    - type: paragraph
+      text: |
+        The author, Liu Jing, was previously editor-in-chief of "Waves+", the in-depth vertical under 36Kr. After leaving 36Kr he struck out on his own and founded the independent content project "elsewhere" ("Happening Elsewhere+"). Today Tencent Tech has also put online its own transcript of the nearly four-hour session it obtained, sorted and categorized into 118 items in all.
+    - type: paragraph
+      text: |
+        Faced with a transcript this seamless, outside doubt is inevitable. Some sift the source; some knock at the plausibility of the content — plausibility, after all, is sometimes only a means of persuasion. Others read it as nothing more than a PR push ahead of an IPO.
+    - type: paragraph
+      text: |
+        Even if this really was a strategic statement delivered in public, what came to mind the moment I read it was two other statements — Anthropic CEO Dario Amodei's interview with Bloomberg, and OpenAI's head of strategy Dean W. Ball's public remarks on Kimi K3's open-sourcing.
+    - type: paragraph
+      text: |
+        Behind these three statements, each speaking for a different company's worldview, Liang Wenfeng — measured against the prejudice coming out of the West — is bracingly, refreshingly clear-eyed. That feeling I had to get off my chest.
+    - type: heading
+      level: h2
+      text: Dean W. Ball
+    - type: paragraph
+      text: |
+        I cannot understand why the American tech world, which has spent so long posturing as the standard-bearer of justice, truth, goodness, beauty and the lighthouse, has grown so closed and narrow.
+    - type: paragraph
+      text: |
+        Well then. Arrogance and double standards have always been the mask Western elites never took off.
+    - type: paragraph
+      text: |
+        On Twitter he labeled open-source models "decelerationist" and went so far as to pin on them the hat of "Dystopian Hellscape." It has to be said — Americans are still, to this day, in love with vocabulary this saturated with Cold War color.
+    - type: paragraph
+      text: |
+        And then, brazenly, he advised the U.S. government to adopt **rumor-mongering and dirty tricks**.
+    - type: paragraph
+      text: |
+        Put plainly, it goes like this — have the Federal Reserve issue a report claiming Chinese models contain backdoors; that alone will create an appropriate amount of panic, and the claim needs no evidence.
+    - type: paragraph
+      text: |
+        (You just need to direct every agency to issue soft law that creates FUD. "A Federal Reserve Advisory Bulletin found that there may be backdoors in Chinese AI models." It needn't be that well justified. You just create enough regulatory risk that every regulated enterprise backs off.)
+    - type: paragraph
+      text: |
+        After being criticized by self-appointed righteous users on Twitter, he walked back his line on open source, distorting China's open-sourcing of its models as "forced export because the U.S. has it by the throat on compute" and as "the CCP's Strategic Blindness on AI" — the whole thing premised on the claim that China opening its models is unreasonable, abnormal behavior. He forces a negative lens onto the question and flatly refuses to admit that open source is a deliberate Chinese industrial strategy.
+    - type: paragraph
+      text: |
+        **They cannot accept that Chinese engineers can do, with a fraction of the resources, what costs them astronomical sums of capital — and still less can they accept that China is using "open source" to tear down the West's "closed-source compute hegemony" outright.**
+    - type: paragraph
+      text: |
+        In the end his anxiety reduces to a single sentence — the success of open-source models stands in the way of capital's windfall investment in Silicon Valley's closed models.
+    - type: heading
+      level: h2
+      text: Dario Amodei
+    - type: paragraph
+      text: |
+        If Dean W. Ball's foolishness on social media is a display of loyalty to OpenAI's not-so-open strategy, then Dario shows what Western elites do best — sanctimonious double standards and hypocrisy.
+    - type: paragraph
+      text: |
+        Of the three, Dario's remarks carry the most "philosophical depth" and "moral anxiety," but that does not make them good. Quite the opposite. Precisely because his discursive system is finer-grained and more self-consistent, the bias built into it is better concealed — wrapped in a sugar coating of "it is all for humanity."
+    - type: paragraph
+      text: |
+        He begins from "risk to human civilization" but lands on "America first" national security. He defines himself as a patriot and says plainly that he wants the so-called "democracies" to hold the power of AI. But when the host presses him sharply on whether Claude was involved in a deadly strike on a girls' school in Iran, his answers start to get slippery. First he cuts loose — "we don't know how the model gets used." Then he shifts responsibility onto military decision-makers — "policy has to be left to military decision-makers; all we can do is set high-level boundaries." Finally he excuses himself with "at least a human makes the final call."
+    - type: paragraph
+      text: |
+        When the grand narrative of "preventing civilizational collapse" cashes out as concrete commercial contracts from the U.S. military, his compassion for humanity as a whole quietly contracts into obedience to American interests. Yes — the man who "wouldn't release the Mythos model, for safety's sake," has handed humanity's firepower to AI.
+    - type: paragraph
+      text: |
+        A man who claims to manage "existential risk," faced with a case in which AI may already have killed more than 150 children, does not first press for the truth. His first move is to discuss where responsibility sits.
+    - type: paragraph
+      text: |
+        Responsibility belongs, of course, to those who can make military decisions. I am only a technology supplier; their "micro-errors" are not mine to manage.
+    - type: paragraph
+      text: |
+        **When the risk is abstract and in the future, I am the guardian of human civilization; when the harm is concrete and in the present, I am only a supplier honoring a contract.**
+    - type: heading
+      level: h2
+      text: Liang Wenfeng
+    - type: paragraph
+      text: |
+        Set against these two Westerners — one openly attacking open source to protect a windfall barrier, the other masking double-standard hegemony in a mouthful of morality — there are many, many more double standards and biases I have not listed.
+    - type: paragraph
+      text: |
+        But the Liang Wenfeng in the media — the one where you cannot tell whether it is really Liang Wenfeng himself — leaves me admiring and pleased.
+    - type: paragraph
+      text: |
+        — I have cut out the lines that moved me — it really does read like a 
