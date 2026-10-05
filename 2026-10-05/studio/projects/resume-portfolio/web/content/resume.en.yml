@@ -1,0 +1,217 @@
+# Resume (English) · editable in the Decap admin under「简历 / Resume (English)」
+#
+# ⚠️ Format constraints (imposed by the mini-yaml parser; violating them parses silently WRONG):
+#   1. A sequence item ("- xxx") must NOT contain an ASCII colon followed by a space —
+#      the parser splits on "key: value" first and quoting does not save it.
+#      Use a block scalar ("- |") for such items. Colons inside map VALUES are fine.
+#   2. Keys on the same level must share identical indentation (2 spaces).
+#   3. Numbers come back as strings (course scores included) — display only, never arithmetic.
+#
+# Written by AI, pending the author's proofread. Chinese copy is untouched.
+
+identity:
+  name: 'Chen Baizhi'
+  role: 'Design postgraduate (M.A., in progress)'
+  meta:
+    - 'Party member (CPC)'
+    - 'CET-6 478'
+    - 'Zhuhai, Guangdong'
+  lines:
+    - 'I love reading, sports and making — exploring what lives between the fields.'
+  socials:
+    - kind: 'mail'
+      label: 'Email'
+      href: 'mailto:202622089004@mail.bnu.edu.cn'
+    - kind: 'github'
+      label: 'GitHub'
+      href: 'https://github.com/baizhichen-web'
+    - kind: 'red'
+      label: 'Xiaohongshu'
+      href: ''
+
+education:
+  - period: '2026.09–present'
+    title: 'Beijing Normal University · School of Future Design'
+    sub: 'Design – M.A. in progress'
+    lines:
+      - 'Service design track'
+      - 'Recommended admission (enrolled Sep 2026)'
+      - 'Campus — Zhuhai · Guangdong'
+  - period: '2022.09–2026.06'
+    title: 'Huaqiao University · Mechatronics & Automation'
+    sub: 'Industrial Design – BEng'
+    lines:
+      - 'GPA 4.58 (rank 1/34); National Scholarship ×2'
+      - 'Recommended to BNU School of Future Design'
+      - 'Campus — Xiamen · Fujian'
+
+about:
+  - 'I am 23. As an undergraduate I ranked first in my major by GPA and received the National Scholarship twice; I was recommended for admission to the School of Future Design at Beijing Normal University, where I now work on service design.'
+  - 'Since starting university in 2022 I have been actively exploring where design, product and technology are heading. Meeting the world with curious eyes is, I think, my greatest strength.'
+  - 'I spent my undergraduate years in a school of mechatronics and automation, which gave me a feel for both technology and industrial production — whether the principle holds, whether the structure is reliable, whether materials and processes match, whether cost and yield are under control, whether the supply chain and mass production are realistic.'
+  - 'Design, in turn, gave me a product perspective — rational and sensory at once — from which to engage with technology.'
+  - 'On the rational side, I turn “experience” into something observable, verifiable and iterable; I use data as a tool both inside the design process and to calibrate design decisions, and I give ideas physical form through hardware and code.'
+  - 'On the sensory side, design puts technology back into human perception and lived experience. What does it feel like when it is seen, touched, operated? What emotion and meaning does it carry through form, material, sound, light and interaction? Does it make people want to come closer, to understand, to remember?'
+
+beyond:
+  intro: 'Beyond the major there are hobbies. I think hobbies shape a person — and a person, almost without noticing, chooses their hobbies. Interests matter a great deal: they make us happy, and they nourish us, carrying us out of difficulty when things hurt.'
+  items:
+    - title: 'Football'
+      text: 'I played for the university football team throughout my undergraduate years, training and competing regularly. Sport gave me health, joy and a tougher will.'
+    - title: 'Reading & Writing'
+      text: 'Reading keeps my curiosity about the world alive. I take books in, read widely, absorb and discard — and end up with a great deal I want to say. Writing then helps me turn those vague thoughts into clear expression.'
+    - title: 'Calligraphy'
+      text: 'I keep writing the characters earlier hands have written, feeling out the movement and the curves of traditional culture in every stroke — an inexhaustible source of traditional aesthetics for me. In truth, though, I am a calligraphy enthusiast whose eye outruns his hand.'
+    - title: 'Tech communities'
+      text: 'I follow the large-model community closely and enjoy watching new techniques turn into small, usable tools. In 2023 I trained and shared models on Civitai and Liblib, ranking among the top 100 new creators on Civitai; my Liblib models have drawn 1.4k+ downloads and 14k+ online runs. These communities keep me sensitive to where things are going.'
+
+work:
+  - period: '2024.03–2024.12'
+    title: 'Xiamen Yunshan Technology'
+    sub: 'Cultural & Creative Design'
+    lines:
+      - 'Built a Stable Diffusion workflow for cultural-and-creative product development; carried campus products from design through production liaison, with sales passing RMB 10,000.'
+  - period: '2025.11–2026.03'
+    title: 'Xiamen Lujiang Technology'
+    sub: 'Hardware Product Intern'
+    lines:
+      - 'Coordinated NPI for a thermal printer product — aligned cross-department requirements and key milestones, kept R&D on schedule for mass-production deliverables, and built up the deliverable system and input/output standards.'
+      - 'Ran prototype validation and technical testing (functional debugging, firmware iteration, reliability, compatibility); built the test-case library and reporting standard to support risk control and release decisions.'
+      - 'Led mass-production process and documentation — BOM, SOP, process sheets — connecting R&D through to production, supporting cost optimisation and solution reuse.'
+      - 'Contributed to early-stage definition and ID proposals, grounding design in user data and market needs so that it could actually ship.'
+
+otherProjects:
+  - period: '2025.01–2026.05'
+    title: '2025 Fujian Provincial Social Science Fund Project'
+    highlight: 'SCI-indexed'
+    note: 'Human factors · Ceramics · Lighting'
+    lines:
+      - 'Paper — An empirical study of ceramic material perception mechanisms under coupled artificial-lighting spectrum and emotion (Lighting Research and Technology, SCI-indexed)'
+      - 'Correlated colour temperature effects on perceived temperature, translucency, glossiness and roughness of traditional Jun porcelain, modulated by gender'
+      - 'Using Jun porcelain as the stimulus, 30 participants rated five perceptual dimensions — glossiness, translucency, roughness, perceived temperature and relief — across eight correlated colour temperatures from 2700 to 6000 K at a constant 150 lx. Colour temperature showed a significant linear relationship with four of the five, with gender acting as a moderator.'
+      - |
+        DOI 10.1177/14771535261455253　(third author)
+  - period: '2023.09–2024.12'
+    title: 'Ozone Catalytic Oxidation Reactor'
+    highlight: 'Utility patent · Internet+ Silver · Qingtai TOP100'
+    note: 'National-level innovation programme · Product lead (second)'
+    lines:
+      - 'Led a cross-disciplinary team spanning chemical engineering and design, turning a laboratory catalytic material into a deployable hardware solution; owned the product structure definition and appearance design. The structure was granted a utility model patent; the project won a university-level Silver Award in the China Internet+ College Students Innovation and Entrepreneurship Competition and a provincial merit award in Chuangqingchun, and the product design placed in the TOP100 of the Qingtai International Industrial Design Competition.'
+  - period: '2024.09–2025.06'
+    title: 'Class League Secretary'
+    highlight: 'University Outstanding League Branch'
+    note: 'Huaqiao University'
+    lines:
+      - 'Ran league affairs and class development for a cohort of 60+, designing activities around values education, study culture and group cohesion, planning themed league days, and meeting 10+ assessment indicators set by the university league committee (dues, awards and recommendations). The class was named an Outstanding League Branch for 2024.'
+      - 'Curated, designed and produced visual work for the graduation exhibition and teaching showcases.'
+  - period: '2024.09–2025.06'
+    title: 'Head of the University Literary Society'
+    highlight: '15+ university-level events · 1000+ attendees'
+    note: 'Huaqiao University'
+    lines:
+      - 'Ran the society across magazine publishing, essay calls, peer review and calligraphy-and-painting competitions. Planned 15+ university-level events during my term with over 1,000 cumulative attendances, and received the library’s award for cultural outreach work.'
+  - period: '2025.07–2026.07'
+    title: 'Freshman Class Mentor'
+    highlight: 'Orientation · Class building · Academic guidance'
+    note: 'Huaqiao University'
+    lines:
+      - 'Supported counsellors and class teachers in helping first-year students settle in, building the class and guiding their studies. Took part in orientation, induction and day-to-day management; organised icebreakers, themed class meetings and department-awareness sessions; handled routine enquiries and paperwork for awards and statistics; watched for signs of strain — acting as a bridge between students and the department.'
+
+awardsDesign:
+  - '2025.05　Milan Design Week, China Higher Education Design Exhibition — National Second Prize; Fujian First Prize'
+  - '2024.11　Qingtai International Industrial Design Competition — “Qingtai Design Elite TOP100”, “Qingtai Design TOP100”'
+  - '2025.05　“Maritime Silk Road Unbounded · Creative Quanzhou” Cross-Strait Cultural & Creative Design Workshop — First Prize'
+  - '2025.08　Future Designer · National College Digital Art Design Competition — Fujian Second Prize'
+  - '2025.08　China Good Creativity & National Digital Art Design Competition — Fujian Third Prize; Merit Award'
+  - '2024.11　5th Yueyao Cup Ceramic Creative Design Competition — Finalist'
+  - '2025.11　10th “Cross-Strait Emerging Design Competition · Huacan Award” — Fujian Second Prize'
+  - '2025.11　Qingtai International Industrial Design Competition — Third Prize ×2'
+
+awardsHonor:
+  - '2023.11　National Scholarship, 2022–2023 academic year'
+  - '2024.11　Huaqiao University Weng Junmin Scholarship, 2023–2024'
+  - '2025.01　Huaqiao University “Outstanding Communist Youth League Member”, 2023–2024'
+  - '2024.11　University Outstanding Student, 2023–2024'
+  - '2023.11　University Outstanding Student, 2022–2023'
+  - '2024.11　Huaqiao University First-Class Scholarship, 2023–2024'
+  - '2025.11　National Scholarship, 2024–2025 academic year'
+  - '2025.11　University Outstanding Student, 2024–2025'
+  - '2025.11　University Outstanding Student Leader, 2024–2025'
+  - '2026.06　Outstanding Graduate, Huaqiao University'
+
+courses:
+  - group: 'Design & User Research'
+    items:
+      - name: 'Virtual Interaction Technology and Design'
+        score: '97'
+      - name: 'Digital Media Design'
+        score: '96'
+      - name: 'Product Realisation and Innovative Design'
+        score: '94'
+      - name: 'Smart Product Design and Development'
+        score: '94'
+      - name: 'Service Design'
+        score: '94'
+      - name: 'History of Industrial Design'
+        score: '94'
+      - name: 'Design Thinking'
+        score: '91'
+      - name: 'Human Factors Engineering'
+        score: '91'
+  - group: 'Technology & Engineering'
+    items:
+      - name: 'Application Development'
+        score: '97'
+      - name: 'Open-Source Hardware and Programming'
+        score: '95'
+  - group: 'Business & Analysis'
+    items:
+      - name: 'Business Data Analytics'
+        score: '93'
+      - name: 'Business Systems and Innovative Design'
+        score: '90'
+  - group: 'Maths & Design Foundations'
+    items:
+      - name: 'Advanced Mathematics A4'
+        score: '94'
+      - name: 'University Physics I'
+        score: '94'
+      - name: 'Foundations of Design Composition'
+        score: '93'
+      - name: 'Design Representation Techniques I'
+        score: '92'
+      - name: 'Design Drawing I'
+        score: '91'
+
+selfEval:
+  intro: 'Self-assessment is never easy — it is genuinely hard to describe oneself accurately. For this section I dug through four years of quarterly ideological reports, probably the most frequent self-examination I have ever done. In one of them I wrote:'
+  quotes:
+    - 'Model Making – 76. Weak hands-on skills and little patience; I also failed to apply pattern-making and testing properly in later design work.'
+    - 'Computer-Aided 3D Design – 84. I grew complacent after some early modelling knowledge, showed the course too little respect, and never trained my modelling ability to a decent standard.'
+  body:
+    - short: 'This is someone with poor hands-on skills, someone impatient, someone who loses interest in three minutes, someone who fears effort and difficulty, someone forever setting goals, someone who likes to be clever.'
+      full: 'Much of it was noise. So let me try to synthesise once more — this is someone with poor hands-on skills, someone impatient, someone who loses interest in three minutes, someone who fears effort and difficulty, someone forever setting goals, someone who likes to be clever.'
+    - short: 'And this is someone who loves sport, someone who loves making things, someone bright and open, someone even-tempered, someone who longs to become honest and kind and morally upright — and who tries not to slide the other way.'
+      full: 'But there is a corresponding good side — this is someone who loves sport, someone who loves making things, someone bright and open, someone even-tempered, someone who longs to become honest and kind and morally upright, and who tries not to slide the other way.'
+
+docs:
+  - title: 'SCI indexing proof (library report)'
+    sub: 'SCI PROOF · PDF'
+    section: 'projects'
+    href: '/docs/sci-proof.pdf'
+  - title: 'Undergraduate transcript'
+    sub: 'TRANSCRIPT · PDF'
+    section: 'courses'
+    href: '/docs/transcript.pdf'
+  - title: 'Résumé (Chinese, PDF)'
+    sub: 'RESUME · PDF'
+    section: 'contact'
+    href: '/docs/resume.pdf'
+  - title: 'Portfolio (10 projects)'
+    sub: 'PORTFOLIO · PDF'
+    section: 'contact'
+    href: '/docs/portfolio.pdf'
+
+contact:
+  email: '202622089004@mail.bnu.edu.cn'
+  xiaohongshu: 'https://www.xiaohongshu.com/user/profile/5d554004000000001200b5d5'

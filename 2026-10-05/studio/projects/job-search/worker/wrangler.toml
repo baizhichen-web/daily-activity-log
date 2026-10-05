@@ -1,0 +1,8 @@
+name = "baizhi-analyzer"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+# 模型供应商：Key 走 wrangler secret（AI_KEY），在 Cloudflare 后台或 wrangler secret put 设置——绝不写进代码
+[vars]
+AI_BASE = "https://openrouter.ai/api/v1"
+AI_MODEL = "deepseek/deepseek-chat-v3.1:free"
