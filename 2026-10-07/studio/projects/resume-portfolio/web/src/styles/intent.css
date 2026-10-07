@@ -1,0 +1,118 @@
+/* ============================================================
+   「我要找工」面板 v3.2 · §11（job-search M3 数字白纸，2026-10-06 三轮反馈后）
+   主流程＝贴 JD → 中转 → 结构化报告 → 简历页重排。
+   2026-10-06 白纸指令：词条浏览区（chips/证据行）整体删除，相关样式随之清掉；
+   定制链接只剩 M3 报告内一条。唯一彩色＝印章红 #b3402e（站内既有文章强调色，
+   只用在匹配分与 pinned 标记两处——单点强调，符合「印章红单强调」定调）。
+   ============================================================ */
+
+.fb-tabs { display: flex; gap: var(--space-2); margin: 0 0 var(--space-4); flex-wrap: wrap; }
+.fb-tab {
+  font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.06em;
+  color: var(--color-muted); background: none; border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-pill); padding: 5px 14px; cursor: pointer;
+  transition: color var(--dur-fast) ease, border-color var(--dur-fast) ease;
+}
+.fb-tab:hover { color: var(--color-ink); }
+.fb-tab.is-on { color: var(--color-ink); border-color: var(--color-ink); }
+.fb-tab--solid { border-color: var(--color-ink); color: var(--color-ink); }
+
+.fb-intent { display: flex; flex-direction: column; gap: var(--space-4); }
+
+/* ---------- 主流程：JD 输入与分析按钮 ---------- */
+.fb-jd-wrap { display: flex; flex-direction: column; }
+.fb-jd {
+  width: 100%; min-height: 84px; resize: vertical; box-sizing: border-box;
+  border: none; border-bottom: 1px solid var(--border-hairline); background: transparent;
+  padding: var(--space-2) 0; font: inherit; font-size: var(--fs-b2); line-height: 1.6;
+  color: var(--color-ink);
+}
+.fb-jd:focus { outline: none; border-bottom-color: var(--color-ink); }
+.fb-jd::placeholder { color: var(--color-faint); }
+
+.fb-jd-actions { display: flex; align-items: center; gap: var(--space-3); margin-top: var(--space-3); flex-wrap: wrap; }
+.fb-jd-run {
+  font-family: var(--font-mono); font-size: var(--fs-b2); letter-spacing: 0.06em;
+  color: var(--bg-page); background: var(--color-ink);
+  border: 1px solid var(--color-ink); border-radius: var(--radius-pill);
+  padding: 7px 20px; cursor: pointer;
+  transition: background var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+.fb-jd-run:hover:not(:disabled) { background: transparent; color: var(--color-ink); }
+.fb-jd-run:disabled { background: transparent; color: var(--color-faint); border-color: var(--border-hairline); cursor: default; }
+
+.fb-intent-note { margin: var(--space-2) 0 0; font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); max-width: 52em; }
+.fb-ai-err { margin: var(--space-2) 0 0; font-size: var(--fs-b2); color: var(--color-ink); overflow-wrap: anywhere; }
+
+.fb-ai-tag { font-family: var(--font-mono); font-size: var(--fs-l2); letter-spacing: 0.08em; color: var(--color-faint); border: 1px solid var(--border-hairline); border-radius: 2px; padding: 1px 6px; }
+
+/* ---------- 数字白纸结构化报告（M3） ---------- */
+.fb-m3 {
+  border-top: 1px solid var(--border-hairline); padding-top: var(--space-5);
+  display: flex; flex-direction: column; gap: var(--space-5);
+}
+.fb-m3-top { display: flex; align-items: baseline; gap: var(--space-2); flex-wrap: wrap; }
+.fb-m3-num { font-family: var(--font-serif); font-size: calc(var(--fs-display) * 0.82); line-height: 1; color: #b3402e; font-weight: var(--weight-heading, 600); }
+.fb-m3-den { font-family: var(--font-mono); font-size: var(--fs-b2); color: var(--color-faint); }
+.fb-m3-verdict { margin: 0; flex: 1 1 100%; min-width: 0; font-size: var(--fs-b1); line-height: var(--leading-loose); color: var(--color-ink); max-width: 46em; }
+
+.fb-m3-reasons { margin: 0; padding: 0 0 0 1.4em; display: flex; flex-direction: column; gap: var(--space-2); max-width: 46em; }
+.fb-m3-reasons li { font-size: var(--fs-b2); line-height: var(--leading-loose); color: var(--color-muted); }
+.fb-m3-reasons li::marker { font-family: var(--font-mono); color: var(--color-faint); }
+
+.fb-m3-block { display: flex; flex-direction: column; gap: var(--space-2); }
+.fb-m3-label { margin: 0; font-family: var(--font-mono); font-size: var(--fs-l1); letter-spacing: 0.06em; color: var(--color-faint); display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+
+.fb-m3-pin { display: flex; flex-direction: column; gap: 2px; }
+.fb-m3-pin-go {
+  display: flex; align-items: baseline; gap: var(--space-3); text-align: left;
+  background: none; border: none; padding: 2px 0; cursor: pointer; font: inherit;
+}
+.fb-m3-pin-no { font-family: var(--font-mono); font-size: var(--fs-l2); color: #b3402e; flex-shrink: 0; }
+.fb-m3-pin-title { font-size: var(--fs-b1); font-weight: var(--weight-heading); color: var(--color-ink); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.fb-m3-pin-go:hover .fb-m3-pin-title { text-decoration-style: dotted; }
+.fb-m3-pin-arrow { font-family: var(--font-mono); color: var(--color-faint); }
+.fb-m3-pin-why { margin: 0 0 4px; padding-left: calc(2em + var(--space-3)); font-size: var(--fs-b2); line-height: var(--leading-loose); color: var(--color-muted); max-width: 46em; }
+
+/* ---------- 降级：markdown 报告 / 本地词面快查 ---------- */
+.fb-ai-out {
+  white-space: pre-wrap; overflow-wrap: anywhere; font-size: var(--fs-b2); line-height: 1.7;
+  color: var(--color-ink); border: 1px solid var(--border-hairline); border-radius: 2mm;
+  padding: var(--space-3); max-width: 100%; box-sizing: border-box;
+}
+.fb-jd-report { border-top: 1px solid var(--border-hairline); padding-top: var(--space-3); display: flex; flex-direction: column; gap: var(--space-4); }
+.fb-jd-best { margin: 0; font-size: var(--fs-b2); color: var(--color-muted); }
+.fb-jd-best strong { color: var(--color-ink); font-weight: var(--weight-heading); }
+.fb-jd-nohit { margin: 0; font-size: var(--fs-b2); color: var(--color-muted); }
+.fb-jd-row { display: flex; flex-direction: column; gap: 6px; }
+.fb-jd-rowhead { display: flex; align-items: baseline; gap: var(--space-3); }
+.fb-jd-dir { font-size: var(--fs-b1); font-weight: var(--weight-heading); color: var(--color-ink); }
+.fb-jd-score { margin-left: auto; font-family: var(--font-mono); font-size: var(--fs-l2); color: var(--color-faint); }
+.fb-jd-bar { height: 3px; background: var(--gray-1000); border-radius: 2px; overflow: hidden; }
+.fb-jd-bar i { display: block; height: 100%; background: var(--color-ink); }
+.fb-jd-hits { margin: 0; font-size: var(--fs-b2); color: var(--color-muted); overflow-wrap: anywhere; }
+.fb-jd-ev { margin: 0; font-size: var(--fs-l2); line-height: 1.6; color: var(--color-faint); max-width: 52em; }
+
+/* ---------- 简历页 pinned 高亮（数字白纸重排版）---------- */
+.fb-row.is-pinned,
+.fb-crow.is-pinned {
+  background: color-mix(in srgb, #b3402e 5%, transparent);
+  border-radius: 2px;
+  scroll-margin-top: calc(var(--header-h, 56px) + 24px);
+}
+
+/* 定制链接打开时：命中节标题淡入淡出一闪 */
+.fb-sec--aim {
+  background: color-mix(in srgb, var(--color-ink) 5%, transparent);
+  box-shadow: inset 3px 0 0 0 var(--color-ink);
+  border-radius: 2px;
+}
+.fb-sec { scroll-margin-top: calc(var(--header-h, 56px) + 16px); }
+.fb-sec-flash { animation: fbSecFlash 1.8s ease; }
+@keyframes fbSecFlash { 0%, 30% { background: color-mix(in srgb, var(--color-ink) 9%, transparent); } 100% { background: transparent; } }
+@media (prefers-reduced-motion: reduce) {
+  .fb-sec-flash { animation: none; }
+}
+
+/* 文内按钮（03 页指针） */
+.fb-inlink-btn { font: inherit; background: none; border: none; cursor: pointer; padding: 0; text-decoration: underline; text-underline-offset: 3px; }
