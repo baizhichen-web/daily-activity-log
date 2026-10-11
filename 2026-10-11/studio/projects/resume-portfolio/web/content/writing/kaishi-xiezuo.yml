@@ -1,0 +1,932 @@
+title: 开始写作是我和AI的协作方案
+slug: kaishi-xiezuo
+date: "2026.07"
+kind: 随笔
+accent: "#b3402e"
+ai-summary: '从一句『等我问问 AI』说起，谈 AI 时代的知识内化——做减法、兼听则明、用表达来学习。'
+summary: 像「阿甘正传」一样写着，阿甘旁若无人的讲他一辈子的故事，在那个长凳上，旁边人却一直在换，有人驻足，有人离去，偶尔有人点点头，或者问上一句。
+calligraphy:
+  image: /media/writing/kaishi-xiezuo/calli-zoom.webp
+  imgAspect: 2.268
+  cropFrom: 0,0,100,100
+  cropTo: 12.23,28.47,22.72,68.22
+body:
+  - type: heading
+    level: h2
+    text: 一、「问 AI」与 LMGTFY
+  - type: paragraph
+    text: 和友人聊到某个问题，争论正酣，他忽然停下来："算了，等我待会问问AI去。"
+  - type: paragraph
+    text: 恰好那段时间我读到一篇博客，标题正叫"Stop Telling Me To Ask An LLM"【1】。
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-01.webp
+    caption: String Literal 博客《Stop Telling Me To Ask An LLM》页面截图（2026 年 7 月 8 日）
+  - type: paragraph
+    text: >
+      作者从一个亲身经历讲起。他有一个棘手的问题，没有行业共识，多方研究后依然无解。于是，他特意约了一位有30年经验、经历过决策失误的资深人士，想听听从惨痛教训中沉淀出的、搜索引擎给不了的判断。结果对方的回答是："Honestly?
+      Ask Claude."
+  - type: paragraph
+    text: 作者提到过去的LMGTFY【2】链接发给别人是讽刺伸手党不愿做基础检索，现在的“问AI”更像是发你一份美食榜单，却拒绝告诉你“我个人觉得哪里不对”。
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-02.webp
+    caption: 时代发展，已经出现chatGPT版本的LMGTFY（或应该叫LMAITFY）
+      https://lmgtfy2.com/s/eBxY3n（GIF链接，大家可以去试试）
+  - type: paragraph
+    text: >
+      是的，所以在美食榜单方面，我是一个比较好的在地导游，所以我都会跟来我家乡玩的伙伴们推荐从小吃到大的在地美食。他们寻求你意见，实际上是寻求你的经验，大家在意的绝对是希望找到最有特色的美食，至少是代表了我希望他们吃的。
+  - type: paragraph
+    text: >
+      站在用户研究的角度完全可以说，世界上的每一个人都代表着一种用户群体、一种态度，他给我们的回答其实就是代表一种态度。这种态度是在 AI
+      之外可以帮我们来做决策的。那是一个比较好的用户研究，或者说作者是经过深思熟虑才去找这个人的。毕竟这个人有他的具身经验。
+  - type: paragraph
+    text: 「有机械者必有机事，有机事者必有机心」【3】
+  - type: paragraph
+    text: >
+      我不由得瞧瞧手机上的信息流应用程序，一条信息从被产生、到被接受、再到被二次消费，全程可能都没有人的判断参与。飞书bot提醒我昨天AI知识分享群的新内容，摘要器把它浓缩成四个要点，我的写作bot建议我引用它，并帮我写好了段落。我只需要点头。界面还会感谢我。
+  - type: paragraph
+    text: 这听起来像是某部反乌托邦科幻里的设定，但它可能只是一个平淡的周一。
+  - type: paragraph
+    text: 「五色令人目不明，五音令人耳不聪」【4】
+  - type: paragraph
+    text: 伍子胥曾援引该谚劝阻吴王接受越国进献的美女【5】，我觉得我也需要借此提醒一下自己，如何对待AI进献上来的信息。
+  - type: heading
+    level: h2
+    text: 二、我们在奔向一个怎样的未来
+  - type: paragraph
+    text: 回顾历史，工业革命外包了人类的四肢躯干；而今日的信息时代，则悍然开启了针对大脑的“削藩”。
+  - type: paragraph
+    text: 每一次浪潮，人类的一项能力都会被标记为低效，然后交由机器接管。蒸汽机比马匹做更多的功，计算机比大脑存储更多的数据，人工智能工具的一定比你先知道你下一个要打什么字。【6】
+  - type: paragraph
+    text: >
+      fast.ai 的创始人 Jeremy Howard 最近和 Chris Lattner 做了一次对谈，Jeremy
+      说，他看到的是开发者放弃了一切通往理解、精通和持久软件的实践。CEO 们吹嘘团队日产万行 AI
+      代码，工程师也骄傲地自称自己搞的是"vibe-coding"。说的是 Vibe Coding
+      扩散到了整个社会，老人小孩都在用，大家不求甚解，摸着AI的脾气过去即可。【7】
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-03.webp
+    caption: fast.ai 创始人 Jeremy Howard 与 Chris Lattner 的对谈节目《Build to Last》封面
+  - type: paragraph
+    text: 我们在奔向一个怎样的未来？
+  - type: paragraph
+    text: 履霜可以感觉坚冰至【8】**，**未来有诸多光怪陆离的景象可以想象，但有一件事我认为是确定的：多样性。
+  - type: paragraph
+    text: 往回看，物种进化靠的就是没完没了的突变和组合，基因的多样性，是生命抵御灭顶之灾的筹码。
+  - type: paragraph
+    text: >
+      往前看，我爱看科幻小说，所以幻想着许多已经被预见到的问题。阿西莫夫的《基地》中构筑了基于统计学的“心理史学”，其前提是人类行为在宏观上可预测——但"骡"打破了所有预测。骡是一个变异体，一个统计模型之外的异常值。谢顿计划能预测整个银河帝国的兴衰，但预测不了一个不按常理出牌的人。多样性是预测和控制的天敌。【9】
+  - type: paragraph
+    text: 教育同理——我们当然更希望在孩子身上看到更多的多样性，这是我们的未来。
+  - type: paragraph
+    text: >
+      把每个小孩按水平分配到一个班级里，命以少年班、火箭班、创新班、提高班，这只能削足适履地损坏了每个孩子的个性和探索热情。就像上海科技馆馆长倪闽景在一席少年上的演讲讲到——初二物理课教能量守恒定律，最聪明的孩子一看就懂。一个"最笨"的孩子举手问："能量既然是这样，为什么会有能源危机？"而让最聪明的同学来回答——老师，我也不知道。【10】
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-04.webp
+    caption: 倪闽景在一席少年的演讲截图——按水平分班，只会削足适履
+  - type: paragraph
+    text: >
+      孔子的弟子三千，贤者七十二，子路好勇，子贡善辩，颜回安贫，冉求多才，夫子因材施教，不曾将他们捏成一个模子【11】。教育不是为了打造很多个一模一样的天才，创造并滋养一片让创新自然涌现的沃土。创新不怕愚蠢，就怕相同，AI的发展也如此。
+  - type: paragraph
+    text: 《三体》智子锁死基础物理，人类在应用技术上还能辗转腾挪，却再也捅不破那层天花板。
+  - type: paragraph
+    text: 那有没有可能，我们通过 AI 以别样的方式把自己的创造力锁死呢？——
+  - type: paragraph
+    text: 我担心到了scaling law到头、旧数据用尽、新数据趋同的时候，创新会成了无源之水。
+  - type: paragraph
+    text: >
+      这个担忧在技术上有其确切的对应物——称之为“模型坍塌（Model
+      Collapse）【12】”。当AI生成的合成数据反复成为下一轮训练的材料，长尾的、稀有的、偏离均值的表达会率先消亡，数据分布逐代收窄，最终坍缩为一种毫无信息量的单调重复。特德·姜在《呼吸》里写过类似内容：一个靠气压差运作的宇宙，当所有气压趋于平衡，一切就停止了。【13】
+  - type: paragraph
+    text: AI 训练追求均值，AI
+      的输出又回流到训练数据，每一代都比上一代更AI、更趋同——我们已然逐渐身处AI构成的系统中，我们的每一次呼吸都在吞吐夹杂着AI生成的空气，我们正在加速这个平衡的过程。
+  - type: paragraph
+    text: >
+      但是，到这里，敏锐的读者——会打断我，这真正的破局点在于：一旦撞上了那个“奇点”，一旦AI掌握了创新的方法，完全能以自我训练的方式不断升级，最终抵达AGI（用梁文锋的话说先是像人一样持续学习的能力再到自我迭代【14】）。
+  - type: paragraph
+    text: 在张小珺对张鹏的访谈中【15】，我了解到情报学——是在已有信息的基础上创造新知识。情报学的知识生产，是将旧的知识纳入演绎推理，从中提取出新的知识。既然人能做到，AI为何不能？
+  - type: paragraph
+    text: >
+      但情报学不只是这样运作，人类如果只会演绎，我们今天还停留在亚里士多德的时代。真正推动知识边界向外移动的，是另外的：归纳、真实世界的具身认知。归纳从个别事实中提炼新的规律，随时可能被下一个反例推翻，但恰恰提供了前提中没有的知识；具身认知则是一个物理学家对“力”的理解，一个设计师对“材质”的直觉，一个医生对“病情”的洞察，都来自他们真实的感官体验和物理世界的反馈。这种“摩擦”让人类能建立起对因果关系的直觉。
+  - type: paragraph
+    text: 这些是偏向coding的模型不足够拥有的——
+  - type: paragraph
+    text: >
+      目前，AI 目前最接近“创新”的时刻，是它像 AlphaGo 【16】下出第 37
+      手，或者在材料科学里自主发现人类没想到的分子结构【17】。规则明确的封闭世界"。围棋的胜负绝对客观，分子结构的稳定性能用能量函数精确计算。在这些领域，AI确实可以靠算力暴力和强化学习发现人类盲区。然而，当我们将目光投向更复杂的科学前沿——暗物质的本质、意识的起源——我们甚至不知道要搜索的空间长什么样，也无法定义什么是"好"的奖励函数。在这些领域，AI的"物理世界反馈"仍然高度依赖人类去设定问题框架和评价标准。
+  - type: heading
+    level: h2
+    text: 三、做减法
+  - type: paragraph
+    text: 最终希望还是需要押回了“人”身上。让我们把目光从伟大的未来和世界移开，放到我们身上——聊聊生活中遇到具体的问题。
+  - type: paragraph
+    text: 第一，不需要 AI 帮你看更多，你需要的是做减法。
+  - type: paragraph
+    text: >
+      我经常能看到在某些视频下面有评论在@各种各样的ai来做总结，考虑完播率的视频的博主或许心情复杂——「得来终觉浅，绝知此事要躬行」，更何况未经阅读，收到的是别人视频的二手知识，而自己更要将这样的二手知识转换成AI摘要的三手知识。
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-05.webp
+    caption: 视频评论区里齐刷刷 @AI 求总结成了新风潮（截图）
+  - type: paragraph
+    text: 信息在大脑中如过眼云烟，隔日即逝。这种看似高效的捷径，恰恰是对生命最大的虚掷，不如潜下心来，真切地读一遍、做一遍。
+  - type: paragraph
+    text: 「书读百遍，其义自见」，记忆与理解本身就需要时间的沉淀与大脑的苦索。
+  - type: paragraph
+    text: 而AI 总结出来的，算什么？
+  - type: paragraph
+    text: 传统的"知"有两种载体，从迈克尔·波兰尼隐默认知论的角度可以分为【18】：
+  - type: paragraph
+    text: >
+      显性知识（Explicit
+      Knowledge）​​：可以用语言、文字、公式、图表等符码系统完整表述的知识。它客观存在，容易传播和共享。比如书本里的理论、操作手册、数据库代码。
+
+      - 隐性知识（Tacit Knowledge）​​：难以用语言清晰表达、深植于个人经验、直觉和心智模式中的知识。比如骑自行车的平衡感、老中医的把脉手感、设计师的审美直觉。
+  - type: paragraph
+    text: AI
+      总结的理应被称为显性知识，但是出于AI能力的不足、可能产生的幻觉和来自开发团队与训练数据的偏见与局限，AI总结的知识好像理应无比准确，又好像更可能产生错误。
+  - type: paragraph
+    text: 即使 AI 总结 100% 忠实于原文，你仍然失去了与作者对话的过程——读书是一个主动的意义建构过程，你需要在作者的论证缝隙中填充自己的理解。
+  - type: paragraph
+    text: >
+      硅谷投资人纳瓦尔（Naval Ravikant）在《纳瓦尔宝典》中写道：“*I would rather read the best one
+      hundred books over and over again, until I absorb them, rather than read
+      all the books.*”（我宁愿把最好的一百本书读深读透，也不要翻遍所有的书。）。重读之所以每次都有新得，是因为你自己的境遇变了【19】。
+  - type: paragraph
+    text: 你让 AI
+      总结成三句话，信息是拿到了，但这种反复咀嚼又“温故而知新”的生命体验，总结是给不了你的。好的内容价值不在于信息量，而在于它能改变你想问题的方式。
+  - type: paragraph
+    text: 我们的时间从来是有限的，每天看到的信息和内容也是有限的。
+  - type: paragraph
+    text: 在这个时代，真正的问题从来不是如何获取海量信息，而是如何在信息的汪洋中，做减法，精筛选，找到值得我们反复咀嚼的东西。
+  - type: paragraph
+    text: >
+      国内AI大V张咋啦怀着这样的看法：告诉我们去youtube、去推特，看关键的⼈，看⼀⼿信息（Builder, not
+      influencer）【20】；我这段「做减法」的观点来自于的博主张司机，他也说： 他的内容来源于 Andrej Karpathy 这些最厉害的
+      AI 从业者的长播客和推文，再加上经典的书籍，他的信息来源其实很少，但是每一个他都会认真的看。【21】
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-06.webp
+    caption: 小红书博主「张司机在路上」的视频——怎么获取更多更新的信息
+  - type: quote
+    text: >
+      上问魏征曰："人主何为而明，何为而暗？"
+
+
+      对曰："**兼听则明，偏信则暗。**昔尧清问下民，故有苗之恶得以上闻；舜明四目，达四聪，故共、鲧、驩兜不能蔽也。秦二世偏信赵高，以成望夷之祸；梁武帝偏信朱异，以取台城之辱；隋炀帝偏信虞世基，以致彭城阁之变。是故人君兼听广纳，则贵臣不得拥蔽，而下情得以上通也。"
+
+
+      上曰："善！"【22】
+    source: 《贞观政要·卷一·君道》（亦见《资治通鉴·唐纪八》）
+  - type: heading
+    level: h2
+    text: 四、兼听则明
+  - type: paragraph
+    text: 「兼听则明」是「做减法」的反方向——
+  - type: paragraph
+    text: >
+      我们一直想通过更多的信息摄入来打破信息茧房，在这样的发心下，人和 AI
+      的关系，我觉得可以定位为皇帝和大臣的关系，封建帝王大都担心被奸臣蒙蔽视听，一味谄媚的 AI 恰似佞臣，确实不可偏听偏信，不论我们是把大臣的角色对应
+      AI，还是对应五花八门的信源。
+  - type: paragraph
+    text: 一方面你要砍掉信息，需要做减法，精读细读少数内容；
+  - type: paragraph
+    text: 另一方面你要广开言路，通过更多的信息摄入来打破信息茧房和综合出客观看法。
+  - type: paragraph
+    text: 既要“做减法”以防信息过载，又要“兼听”以防困于一隅，这二者同时存在好像是个悖论。
+  - type: paragraph
+    text: 两者并不矛盾，只是针对不同阶段。
+  - type: paragraph
+    text: 我的做法是：
+  - type: paragraph
+    text: 做减法，针对的是你“内化”的阶段。一旦确定了值得深读的对象，就要像纳瓦尔那样，把最好的内容翻来覆去地啃，主动进行建构意义的过程。
+  - type: paragraph
+    text: 兼听则明，针对的则是你“筛选”的阶段。此时不求深，而是求全、求异，用AI、用既定的信源矩阵去快速扫描
+  - type: paragraph
+    text: >
+      所以，AI完全可以扮演“兼听”的谏臣——把播客、长文、报告里的轮廓提炼给你，但你心里要始终绷着一根弦：这只是在划定候选，而非到此为止。一旦圈出内容范围，就得把把
+      AI 关在门外，面对和AI一起处理好的半成品，用自己的大脑去链接、去组合、去苦索、去躬行。
+  - type: paragraph
+    text: 「博学之，审问之，慎思之，明辨之，笃行之」【23】
+  - type: paragraph
+    text: 我们拒绝用AI的一键总结和归纳来外包这五步。
+  - type: heading
+    level: h2
+    text: 五、用表达来学习
+  - type: quote
+    text: >
+      If you want to master something, teach it. The more you teach, the better
+      you learn.【24】
+    source: 费曼学习法（Richard Feynman，参见文末【24】）
+  - type: paragraph
+    text: 理查德·费曼（Richard Feynman）如是说，费曼学习法也人尽皆知。
+  - type: paragraph
+    text: 同样来自zara和张司机，他们都认为需要建⽴⼀个能让⾃⼰持续输出的机制，或者说用表达来学习。【25】
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-07.webp
+    caption: 对谈节目 PROLIFIC BUILDING 截图——建一个能让自己持续输出的机制
+  - type: paragraph
+    text: AI正在大爆发，我相信每个人的起点都不会差距很大，但是思考和应用之间绝对有gap，所以我认为我需要把自己想说的内容、学习的过程记录下来。
+  - type: paragraph
+    text: >
+      具体到怎么执行，这之间我其实试过很多方法，特别是前段时间LLM Wiki
+      【26】概念走红，我一直试着打造一个个人与AI都友好的环境，并在其中构建私人知识库，但是一旦交给ai太多权利，他就穿凿附会——笔记不是我记的、线也不是我连的，看似茫茫的知识图鉴背后，我却没什么产出。在搭建与AI协作空间的过程中，个中拉扯还可以写好几篇千字文章。
+  - type: paragraph
+    text: >
+      我如今的实践是：用 AI
+      做初步的素材整理和关联——把散落在收藏夹和知识库中的笔记、文章、想法串起来——把漂浮在我和AI之间的信息碎片通过写作串联。像是山鲁佐德为拯救无辜的女子，自愿嫁给国王，一夜一个故事，串成了「一千零一夜」【27】，我也把我收集的信息和素材串联，产出这样一篇文章。
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-08.webp
+    caption: 我的 Obsidian 关系图谱——AI 帮忙把散落在各处的笔记串起来
+  - type: paragraph
+    text: >
+      我会选择在小红书或者微信公众号这样的平台上，或者说社交媒体上来发布这些文章，我觉得就像「阿甘正传」【28】，阿甘旁若无人的讲他一辈子的故事，在那个长凳上，旁边人却一直在换，有人驻足，有人离去，偶尔有人点点头，或者问上一句。
+  - type: figure
+    image: /media/writing/kaishi-xiezuo/fig-09.webp
+    caption: 《阿甘正传》长椅剧照——旁若无人地讲一辈子的故事
+  - type: paragraph
+    text: 如果你看到这里，那非常感谢！不论是我还是阿甘，我认为这都会给我一点反馈，无论外界反馈如何，这种表达本身，便给了我对抗虚无的力道。
+  - type: paragraph
+    text: 当然，我可能有时候给你讲了的是像巧克力一样甘甜的好故事，也有可能像臭狗屎一样难听的坏故事。有好观点，有坏观点，有正确的观点，有错误的观点，但无论好坏错对，皆是我具身经验的吐露。
+  - type: paragraph
+    text: 总之，愿君包容。
+  - type: heading
+    level: h2
+    text: 六、留意于物，寓意于物
+  - type: paragraph
+    text: 苏轼《宝绘堂记》【29】中也援引了
+  - type: paragraph
+    text: 「五色令人目盲，五音令人耳聋，五味令人口爽」
+  - type: paragraph
+    text: 他在劝诫好友王诜“不可留意于物”的同时，却也提出了一个极为精妙的解法——“可以寓意于物”。
+  - type: paragraph
+    text: 所以我说对AI也应该是这样的态度，注意好“留意”与“寓意”二者间的度——
+  - type: paragraph
+    text: 所谓“留意于物”，是被物所役，沦为算法与信息的奴隶，丧失了主观能动；所谓“寓意于物”，是将万物作为寄托情怀、锤炼智性的工具，玩物而不丧志。
+  - type: paragraph
+    text: >
+      **稀里糊涂写了那么多，一言以蔽之：人的终极价值，在于具身经验的多样性，而 AI
+      给我们的是最可能符合上文语境的概率分布“均值”。我们需要更加关注人的价值、人的感受、人与世界的摩擦往往碰撞出创造性的火花。于是怎么配合AI来协作——写作，是我的答案。**
+  - type: heading
+    level: h2
+    text: 引用解释
+  - type: paragraph
+    text: 以下是对文中各处【引用】的解释说明：
+  - type: paragraph
+    text: '**1. "Stop Telling Me To Ask An LLM"**'
+  - type: paragraph
+    text: >
+      Yael Grauer 在其博客文章《Stop Telling Me To Ask An
+      LLM》中指出，当人们已经自行尝试过大语言模型（LLM）仍存疑问时，再被建议“去问模型”实际上是一种推诿。她认为，这种回应看似礼貌，实则相当于“我不知道”或“我没时间”的委婉说法。问题的关键在于，模型无法提供基于个人独特生活经历的观点和见解，而这恰恰是人们向特定对象请教的根本原因。因此，Yael主张，与其用“去问模型”来回避，不如坦诚地以“我很忙”或“我想不出你还没试过的办法”来回应。
+  - type: paragraph
+    text: "**2. LMGTFY（Let me Google that for you）**"
+  - type: paragraph
+    text: >
+      LMGTFY，全称“Let Me Google That For
+      You”，直译为“让我帮你谷歌一下”。它源自一个同名讽刺性网站，使用者将问题输入后，网站会自动生成一段逐步演示在谷歌搜索框中输入关键词的动画链接。把这个链接发给提问者，对方便会看到“原本只需简单搜索即可得到答案”的过程。LMGTFY
+      由此成为互联网早期一种幽默而犀利的提醒，暗指提问前应先尝试自行搜索，如今也常被用作反思网络礼仪与信息素养的文化符号。
+  - type: paragraph
+    text: "**3. 「有机械者必有机事，有机事者必有机心」**"
+  - type: paragraph
+    text: >
+      语出《庄子·外篇·天地》。此句源自抱瓮灌园的老者拒用桔槔（一种杠杆取水器）之典，直指工具与技术对人心的侵蚀。“机械”泛指机巧省力的器具，“机事”指由此衍生的机巧行事方式，“机心”则指内心萌发的算计、博弈与逐利之念。庄子借老农之口警示：一旦依赖工具带来的效率捷径，行事便流于投机取巧，长此以往，内心质朴将被权谋权衡所取代，所谓“机心存于胸中，则纯白不备”，精神上的澄明完满将因功利算计而支离。此语跨越千年，在技术加速迭代的今天常被重提为“技术异化”的先声，它不仅是对工具本身的警惕，更指向一种认知惯性——当“如何更快达成目标”成为唯一标尺时，“为何做”与“何为真”的本源追问便悄然失落，至今仍叩问着每一个身处效率洪流中的个体。
+  - type: paragraph
+    text: "**4. 「五色令人目不明，五音令人耳不聪」**"
+  - type: paragraph
+    text: 典出《越绝书·内经九术》，化用自《道德经》“五色令人目盲，五音令人耳聋”之意。意指过度的色彩与音律等感官刺激，会钝化人的视听与洞察力。此句旨在劝诫人们防微杜渐，避免被繁复的外物蒙蔽内在的心智。
+  - type: paragraph
+    text: "**5. 伍子胥援引该谚**"
+  - type: paragraph
+    text: >
+      记于《越绝书·内经九术》这是一部记录春秋时期吴越历史、地理及哲学思想的典籍（相传为东汉袁康、吴平所撰），被誉为“中国地方志之祖”。“内经九术”为其核心篇章，记载了春秋时期越国重臣（文种）帮助越王勾践图强灭吴的九条策略。该篇融汇了老子道家思想与政治智慧，主张“内修心性、外顺规律”，是古典谋略与修身养性的集中体现。
+  - type: paragraph
+    text: "**6. 能力外包的三段式演进**"
+  - type: paragraph
+    text: >
+      此观点化用 Joan Westenberg 在 Medium（2025）的英文长文《How Cognitive Offshoring is
+      Killing Personal
+      Thought》。文中提出了“认知外包”的三段式演进：工业革命外包体力，信息时代外包记忆，人工智能时代正在外包思维。文章警示：当算法提前预判了我们的表达，极致的效率也在剥离思考所必需的“摩擦力”，最终导致人类拥有海量答案，却失去了精神重量。
+  - type: paragraph
+    text: "**7. Jeremy Howard 与 Chris Lattner 对谈**"
+  - type: paragraph
+    text: >
+      语出 2025 年 10 月 AI 深度研究平台 fast.ai 发布的对话文章《Build to Last》。fast.ai 创始人 Jeremy
+      Howard 对话 LLVM 与 Swift 语言缔造者 Chris Lattner，深刻警示了生成式 AI 时代流行的“氛围编码”（Vibe
+      Coding）风气。文章指出，过度依赖 AI
+      交付代码而放弃对底层架构的理解，将导致工程能力的断崖式衰退；真正的技术壁垒仍在于坚持“第一性原理”与追求卓越的软件工匠精神（Craftsmanship）。
+  - type: paragraph
+    text: "**8. 「履霜可以感觉坚冰至」**"
+  - type: paragraph
+    text: >
+      出自《周易·坤卦》初六爻辞"履霜，坚冰至"。原意指脚下踩到薄霜，就应当预感到严冬坚冰即将来临。古人借此阐述“积渐”与“防微杜渐”的哲理：事物的巨变与危局绝非一朝一夕形成，而是由细微的征兆逐步积累演变而来。警示人们要保持敏锐的洞察力，在变局初显时便能防患于未然。
+  - type: paragraph
+    text: "**9. 《基地》心理史学与骡**"
+  - type: paragraph
+    text: >
+      典出美国科幻巨匠阿西莫夫（Isaac
+      Asimov）的经典科幻巨著《基地》（*Foundation*）系列。文中学者哈里·谢顿创立了“心理史学”，其核心假设在于：当人口基数足够庞大时，人类的宏观历史行为可以被数学与统计学精准预测（即“谢顿计划”）。然而，突变体“骡”（The
+      Mule）的出现打破了这一模型——他作为具备情绪控制异能的个体，是一个完全超出统计概率之外的极端异常值，凭一己之力推翻了宏观预测。在现代讨论中，“心理史学”代表了基于大数据、概率算法与决定论的预测信仰，而“骡”则象征着不可预测的异数与黑天鹅事件。
+  - type: paragraph
+    text: "**10. 倪闽景在一席少年的演讲**"
+  - type: paragraph
+    text: 上海科技馆馆长（原上海市教委副主任）倪闽景在一席少年发表的演讲《探索充满未知的洞》（＃社会／无锡／2026.04.25）。
+  - type: paragraph
+    text: "**11. 孔子因材施教**"
+  - type: paragraph
+    text: >
+      “弟子三千，身通六艺者七十二人”典出《史记·孔子世家》与《仲尼弟子列传》；宋代朱熹在《论语集注》中将孔子的教育理念总结为“孔子教人，各因其材”。面对性格与天赋各异的门生，孔子皆顺应秉性而教之——如好勇果敢的子路（《史记》载“好勇力”）、辩捷善言的子贡（《论语》列其为“言语”科之首）、箪食陋巷安贫乐道的颜回（《论语》赞“贤哉回也”）、多艺多才善于理政的冉求（《论语》称“求也艺”）。
+  - type: paragraph
+    text: "**12. 模型坍塌（Model Collapse）**"
+  - type: paragraph
+    text: >
+      人工智能学术界（以 2024 年发表于《自然》杂志的重磅论文《*AI models collapse when trained on
+      recursively generated data*》为代表）提出的一个退化现象。指当生成式人工智能（如大语言模型、扩散模型等）长期使用由前代
+      AI 生成的“合成数据”（Synthetic
+      Data）进行递归训练时，系统会出现不可逆的退化。在这一过程中，数据分布的长尾部分——即那些稀有的、偏离均值的、边缘的人类独特表达与异常值会率先消亡；随着代际演进，模型生成的数据分布将逐代收窄，方差骤减，最终坍缩为一种毫无信息量、单调重复且脱离现实世界的同质化状态。这一现象从数学与概率学层面证明了真实人类数据与具身经验的不可替代性。
+  - type: paragraph
+    text: "**13. 特德·姜《呼吸》**"
+  - type: paragraph
+    text: >
+      典出当代著名华裔科幻作家特德·姜（Ted Chiang）的同名短篇小说《呼吸》（*Exhalation*，收录于 2019
+      年出版的同名小说集）。小说构筑了一个由金属机械生命构成的异质宇宙，这些生命的思维完全依赖充气肺中的高压氩气与外部大气之间的“气压差”，驱动脑部微型气缸与齿轮运作。随着生命的呼吸，高压气体不断喷吐至大气中，使得宇宙整体气压逐渐升高，内外气压差不断减小。一旦气压趋于绝对平衡，气体停止流动，机械脑便无法进行任何计算与思考，整个宇宙的生命与文明便归于死寂。该作是对热力学第二定律（熵增定律）与信息论的文学寓言，深刻揭示了“思考与生命依赖于梯度、差异与摩擦，绝对的平衡与同质化即意味着死亡”的物理与哲学真理。文中以此比喻模型坍塌的终极状态：信息的熵达到最大，再无新意。
+  - type: paragraph
+    text: "**14. 梁文锋论AGI**"
+  - type: paragraph
+    text: >
+      来自2026年7月下旬由elsewhere和腾讯科技有关深度求索（DeepSeek）创始人梁文锋在投资者交流会上的发言实录的报道。梁文锋在阐述
+      AGI（通用人工智能）的技术路线图时指出，AI
+      演进的关键阶梯在于从思维链（CoT）、Agent（智能体）迈向\*\*“持续学习”\*\*（Continuous Learning）。他认为，当前
+      AI
+      的局限在于无法像人类一样进行长时间的增量式与持续性学习；一旦攻克“持续学习”，模型便能跨越智能的“奇点”——即无需依赖高成本的人工干预，便能像人类研究员一样自主研究、开发并自我迭代出下一代更先进的人工智能模型。
+  - type: paragraph
+    text: "**15. 张小珺对张鹏的访谈**"
+  - type: paragraph
+    text: 科技媒体人张小珺在《张小珺商业访谈录》中对话智谱 AI（Zhipu AI）CEO 张鹏的深度访谈《全球大模型第一股的上市访谈，和智谱 CEO
+      张鹏聊：敢问路在何方？》。
+  - type: paragraph
+    text: "**16. AlphaGo 第37手**"
+  - type: paragraph
+    text: >
+      2016 年 3 月 Google DeepMind 开发的围棋程序 AlphaGo 与世界围棋冠军李世石人机大战的第二局。在第 37
+      手时，AlphaGo
+      执黑下出了一着位于五路（肩冲）的奇特落子。在人类数千年的传统围棋理论与定式直觉中，此类落子通常被视为不合常理的“坏棋”；然而后续局势证明，这手棋打破了人类的惯性思维，成为了全局的关键胜负手。
+  - type: paragraph
+    text: "**17. 材料科学中AI发现分子结构**"
+  - type: paragraph
+    text: >
+      指人工智能（如 DeepMind 的 GNoME 模型及 AlphaFold 等“AI for
+      Science”项目）在晶体结构预测与新材料研发领域的突破。2023 年发表于《自然》（*Nature*）杂志的研究显示，AI
+      系统通过图神经网络与量子化学评估（如密度泛函理论），在符合物理与能量函数约束的确定性空间中，自主预测并发现了上百万种全新的稳定晶体结构。
+  - type: paragraph
+    text: "**18. 迈克尔·波兰尼隐默认知论**"
+  - type: paragraph
+    text: >
+      美籍匈牙利哲学家迈克尔·波兰尼（Michael Polanyi）在《个人知识》（*Personal Knowledge*,
+      1958）与《隐相时代》（*The Tacit Dimension*, 1966）中提出的认知哲学理论。波兰尼将人类知识划分为两大类。
+  - type: paragraph
+    text: "**19. 纳瓦尔（Naval Ravikant）《纳瓦尔宝典》**"
+  - type: paragraph
+    text: 语出硅谷创业者兼投资人纳瓦尔·拉威康特（Naval Ravikant）在《纳瓦尔宝典》（*The Almanack of Naval
+      Ravikant*，埃里克·乔根森整理）中的读书哲学。
+  - type: paragraph
+    text: "**20. 张咋啦**"
+  - type: paragraph
+    text: 国内AI领域内容创作者，特别是「如何足不出户 吸收硅谷最前沿的AI认知」这一篇小红书引发了我关于信息源的相关思考。
+  - type: paragraph
+    text: "**21. 张司机**"
+  - type: paragraph
+    text: 张司机在路上，同样是我很喜欢的一个创作者，他的「我为什么不推荐AI总结工具」是这部分「做减法」的内容的启发。
+  - type: paragraph
+    text: "**22. 「兼听则明，偏信则暗」**"
+  - type: paragraph
+    text: >
+      语出唐代吴兢所撰《贞观政要·卷一·君道》（亦见《资治通鉴·唐纪八》）。魏征引述历史教训指出，君主若能广开言路、兼听各方意见（如尧舜达四聪），奸邪便无法垄断视听；若偏听偏信少数奸臣（如秦二世偏信赵高、梁武帝偏信朱异、隋炀帝偏信虞世基），则必致覆亡之祸。
+  - type: paragraph
+    text: "**23. 「博学之，审问之，慎思之，明辨之，笃行之」**"
+  - type: paragraph
+    text: 典出儒家经典《礼记·中庸》第二十章。指古代儒家治学与修身的五个递进阶段：
+  - type: paragraph
+    text: 广泛地涉猎与吸收知识、信息；详尽、审慎地提出疑问与探究；深入、严谨地思考与逻辑推理；清晰地辨别真伪、主次与逻辑理路；切实、坚定地将所学践履于实际行动。
+  - type: paragraph
+    text: 这五个阶段构成了中国传统哲学中完整的认知与实践闭环，强调知识的获取绝非简单的信息接收，而必须经过批判性提问、独立思考、理性辨析与具身实践的内化过程。
+  - type: paragraph
+    text: "**24. 费曼学习法**"
+  - type: paragraph
+    text: 诺贝尔物理学奖得主理查德·费曼（Richard Feynman）的学习哲学。
+  - type: paragraph
+    text: >
+      “费曼学习法”是一种通过“主动输出”来倒逼“深度内化”的高效学习机制，包含四个核心步骤：选择概念、用极简且无术语的语言将其教授给门外汉（或孩子）、识别表达卡顿处的知识漏洞、重新查阅源头资料并简化表达。该方法强调真正的精通不在于熟记专业名词，而在于能否将复杂的知识转化为简洁直观的语言重构与传递。
+  - type: paragraph
+    text: "**25. zara和张司机论持续输出**"
+  - type: paragraph
+    text: >
+      这样的观点来自于张司机「我做短视频的原因：记录本身就是最好的学习」的这篇小红书，也来自于zara的「Build in
+      public如何长期保持高产？」的这篇小红书（其实不止这篇，但是张咋啦的博文和视频实在太多，只举此例）
+  - type: paragraph
+    text: "**26. LLM Wiki**"
+  - type: paragraph
+    text: >
+      Andrej Karpathy推广，在个人知识管理（PKM）与人工智能领域流行的一种“大语言模型 +
+      私人知识库”搭建范式。该架构将传统的网状笔记系统（如 Obsidian、Notion 等基于 Markdown 的知识库）与
+      LLM（大语言模型）、检索增强生成（RAG）及知识图谱技术相结合。其典型工作流为：输入原始素材（Raw Data）→ AI
+      自动解析、提炼与编译（AI Ingest）→ 自动产出结构化的维基页面（Wiki Pages）与实体关联。这种架构旨在打造一个人类与 AI
+      均可高效交互的私人知识空间。
+  - type: paragraph
+    text: "**27. 《一千零一夜》**"
+  - type: paragraph
+    text: >
+      阿拉伯著名民间故事集（又名《天方夜谭》）。其框形叙事结构讲述了宰相之女山鲁佐德（Scheherazade）为了拯救无辜女性，自愿嫁给残暴的国王山努亚。山鲁佐德在每晚睡前为国王讲述引人入胜的故事，并在黎明破晓前停在最关键的悬念处，使国王因渴望听完故事而一再推迟执行死刑，最终连续讲述了一千零一个夜晚，感化了国王。
+  - type: paragraph
+    text: "**28. 《阿甘正传》**"
+  - type: paragraph
+    text: >
+      改编自温斯顿·格鲁姆同名小说、由罗伯特·泽米吉斯执导的 1994 年美国经典电影。片中的标志性场景为主角阿甘（Forrest
+      Gump）坐在公交站的木凳上，手捧巧克力盒，向身旁不断换乘、离去的陌生过客坦诚平实地讲述自己平凡而传奇的半生经历。过客们有人驻足倾听，有人质疑离开，而阿甘始终保持着阿呆的纯粹与笃定。
+  - type: paragraph
+    text: "**29. 《宝绘堂记》**"
+  - type: paragraph
+    text: >
+      典出北宋文学家苏轼为驸马王诜（字晋卿，酷爱收藏珍贵书画）所作的散文名篇《宝绘堂记》。文中援引《老子》“五色令人目盲，五音令人耳聋，五味令人口爽”之语，警示玩好外物易使人丧失内在的澄明。苏轼在文中精辟地提出了“寓意于物”与“留意于物”的辩证关系：
+  - type: paragraph
+    text: "**寓意于物**：“君子可以寓意于物，而不可以留意于物。”指将情怀寄托于外物，以物寄托审美与智性，玩物而不丧志，得之不喜，去之不忧；"
+  - type: paragraph
+    text: |
+      **留意于物**：指心神完全被外物所掌控、牵绊与固化，丧失了独立的主体性，沦为外物的奴隶（“君子易以物役”）。  
+      这一思想阐明了人类与外部工具、器物之间“主动寄托与驾驭，而非被其奴役”的古典哲学。
+en:
+  title: Starting to Write Is My Plan for Collaborating with AI
+  kind: Essay
+  summary: |
+    I write the way Forrest Gump told his story — talking on about his whole life without a care for who was around him, on that bench, while the people beside him kept changing. Some stopped to listen, some walked away, and now and then someone would nod or ask a question.
+  body:
+    - type: heading
+      level: h2
+      text: I. Asking the AI, and LMGTFY
+    - type: paragraph
+      text: |
+        I was arguing with a friend about some question, right in the thick of it, when he suddenly stopped. "Forget it — let me go ask AI in a bit."
+    - type: paragraph
+      text: |
+        Right around then I happened to read a blog post titled, of all things, "Stop Telling Me To Ask An LLM"【1】.
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-01.webp
+      caption: Screenshot of the String Literal post “Stop Telling Me To Ask An LLM” (8 July 2026)
+    - type: paragraph
+      text: |
+        The author opens with a story from his own life. He had a thorny question, no industry consensus, and even after working through a pile of research it stayed unsolved. So he made a point of meeting a veteran with thirty years of experience, someone who had lived through bad calls, hoping for the kind of judgment that only settles out of painful lessons — the kind a search engine cannot give you. The man's answer was — "Honestly? Ask Claude."
+    - type: paragraph
+      text: |
+        The author recalls how LMGTFY【2】 links used to be a jab at people who could not be bothered to run a basic search. Today's "just ask AI" feels more like being handed a food ranking while the other person refuses to tell you "here is what I personally think is off about it."
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-02.webp
+      caption: |
+        The times have moved on, and there is already a ChatGPT edition of LMGTFY (or perhaps it should be called LMAITFY) — https://lmgtfy2.com/s/eBxY3n (a GIF link, feel free to try it)
+    - type: paragraph
+      text: |
+        Exactly. When it comes to food rankings, I am a decent local guide — whenever friends come to visit my hometown I steer them to the local eats I grew up on. When people ask for your opinion, what they are really after is your experience. What everyone cares about is finding the most distinctive food, or at least food that stands for what I hope they will taste.
+    - type: paragraph
+      text: |
+        From a user-research angle you could put it this way — every person in the world stands for one user group, one attitude. The answer they give you is the voice of that attitude, an attitude that exists outside AI and can help us make decisions. In a sense that is good user research — or rather, the author thought it through carefully before going to this particular person. After all, this person has his own embodied experience.
+    - type: paragraph
+      text: |
+        "Where there are mechanical contraptions, there will be mechanical deeds; where there are mechanical deeds, there will be mechanical minds."【3】
+    - type: paragraph
+      text: |
+        I could not help but glance at the feed apps on my phone. A piece of information gets produced, received, and consumed a second time over — and not one human judgment may have taken part the whole way. My Feishu (Lark) bot pings me about new content from yesterday's AI knowledge-sharing group; a summarizer condenses it into four bullet points; my writing bot suggests I quote it and has already drafted the paragraph for me. All I have to do is nod. The interface even thanks me.
+    - type: paragraph
+      text: |
+        It sounds like the setup of some dystopian science fiction, but it could just be an ordinary Monday.
+    - type: paragraph
+      text: |
+        "The five colors blind the eye; the five tones deafen the ear."【4】
+    - type: paragraph
+      text: |
+        Wu Zixu once cited this saying to talk the King of Wu out of accepting the beauties offered by the state of Yue【5】. I think I need it too, as a reminder to myself of how to treat the information AI keeps presenting to me.
+    - type: heading
+      level: h2
+      text: II. What Future Are We Running Toward
+    - type: paragraph
+      text: |
+        Looking back, the Industrial Revolution outsourced our limbs and torsos. Today's information age has brazenly begun "cutting down the fiefs" — this time, of the brain.
+    - type: paragraph
+      text: |
+        With every wave, one human ability gets stamped as inefficient and handed over to the machines. The steam engine did more work than horses; the computer stores more data than the brain; and an AI tool will always know your next typed word before you do.【6】
+    - type: paragraph
+      text: |
+        fast.ai founder Jeremy Howard recently sat down with Chris Lattner for a conversation. Jeremy says what he sees is developers abandoning every practice that leads to understanding, mastery, and durable software. CEOs boast about teams shipping ten thousand lines of AI-generated code a day; engineers proudly call what they do "vibe-coding." And Vibe Coding has spread across society at large — the old and the young are all using it, nobody bothering to understand it deeply, just feeling out AI's temper and getting by.【7】
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-03.webp
+      caption: Cover of “Build to Last” — the Jeremy Howard × Chris Lattner conversation
+    - type: paragraph
+      text: |
+        What kind of future are we running toward?
+    - type: paragraph
+      text: |
+        When you tread on frost you can feel the hard ice coming【8】**,** and though the future holds all manner of strange and bizarre scenes we can imagine, one thing I believe is certain — diversity.
+    - type: paragraph
+      text: |
+        Look back, and species evolution runs on endless mutation and recombination. Genetic diversity is life's stake against total annihilation.
+    - type: paragraph
+      text: |
+        Look forward, and because I love science fiction I dream up all sorts of problems that have already been foreseen. Asimov's Foundation (《基地》) builds a statistics-based "psychohistory" on the premise that human behavior is predictable in aggregate — but the Mule breaks every prediction. The Mule is a mutant, an outlier beyond the statistical model. The Seldon Plan can predict the rise and fall of an entire galactic empire, but it cannot predict one person who refuses to play by the rules. Diversity is the natural enemy of prediction and control.【9】
+    - type: paragraph
+      text: |
+        The same goes for education — of course we want to see more diversity in our children. They are our future.
+    - type: paragraph
+      text: |
+        Sorting every child into a class by level — the gifted class, the rocket class, the innovation class, the remedial class — can only maim each child's individuality and appetite for exploration, cutting the feet to fit the shoes. Ni Minjing, director of the Shanghai Science and Technology Museum, told a story in his Yixi Youth talk. In an eighth-grade physics class on the conservation of energy, the smartest kid gets it at a glance. Then the "dumbest" kid raises his hand and asks — if energy works like that, why is there an energy crisis? And the smartest kid is asked to answer. Teacher, I have no idea either.【10】
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-04.webp
+      caption: Ni Minjing on stage at 一席少年 — tracking by level only misfits every child
+    - type: paragraph
+      text: |
+        Confucius had three thousand disciples, seventy-two of them virtuous. Zilu was brave, Zigong eloquent, Yan Hui content in poverty, Ran Qiu multitalented. The Master taught each according to his nature, never pressing them into a single mold【11】. Education is not about stamping out many identical geniuses; it is about creating and nourishing soil where innovation can emerge on its own. Innovation is not afraid of foolishness — it is afraid of sameness. The development of AI is no different.
+    - type: paragraph
+      text: |
+        In The Three-Body Problem (《三体》), the sophons lock down fundamental physics. Humanity can still maneuver in applied technology, but it can never break through that ceiling again.
+    - type: paragraph
+      text: |
+        Is it possible that, through AI, we are locking down our own creativity in a different way? —
+    - type: paragraph
+      text: |
+        My worry is that by the time scaling law runs out, the old data is used up, and the new data grows homogeneous, innovation will have become water without a source.
+    - type: paragraph
+      text: |
+        This worry has an exact counterpart in technology — it is called "model collapse (Model Collapse)【12】." When synthetic data generated by AI repeatedly becomes the material for the next round of training, the long-tail expressions — the rare, the off-average — die first, the data distribution narrows with each generation, and it finally collapses into a monotonous repetition devoid of information. Ted Chiang wrote something similar in Exhalation (《呼吸》) — a universe that runs on pressure differences, where everything stops once all the pressures even out.【13】
+    - type: paragraph
+      text: |
+        AI training chases the mean, and AI's output flows back into the training data. Each generation is more AI, more homogeneous than the last — and we are already living inside a system built of AI. With every breath we take in and out air laced with AI-generated content. We are accelerating this process of equilibration.
+    - type: paragraph
+      text: |
+        But here a sharp reader would cut me off. The real breakthrough lies in this — once we hit that "singularity," once AI masters the method of innovation, it could keep upgrading itself through self-training and finally arrive at AGI. In Liang Wenfeng's words, that means first the ability to keep learning like a human, and then self-iteration【14】.
+    - type: paragraph
+      text: |
+        From Zhang Xiaojun's interview with Zhang Peng【15】I learned that intelligence studies is about creating new knowledge on the foundation of existing information. Its knowledge production takes old knowledge into deductive reasoning and extracts new knowledge from it. If humans can do it, why not AI?
+    - type: paragraph
+      text: |
+        But intelligence studies does not work only that way. If humans could only deduce, we would still be stuck in the age of Aristotle. What truly pushes the boundaries of knowledge outward is something else — induction, and embodied cognition of the real world. Induction distills new laws from individual facts; it can be overturned by the next counterexample at any time, yet it is precisely what supplies knowledge not contained in the premises. Embodied cognition is a physicist's understanding of "force," a designer's intuition for "materials," a doctor's insight into "an illness" — all of it drawn from real sensory experience and feedback from the physical world. This kind of "friction" is what lets humans build an intuition for cause and effect.
+    - type: paragraph
+      text: |
+        These are exactly what coding-focused models do not sufficiently have —
+    - type: paragraph
+      text: |
+        At present, the moments when AI comes closest to "innovation" are when it plays move 37 like AlphaGo【16】, or when it independently discovers molecular structures in materials science that humans never thought of【17】. Closed worlds with clear rules. Go's wins and losses are utterly objective; the stability of a molecular structure can be computed exactly with an energy function. In these domains AI can indeed rely on brute-force computation and reinforcement learning to discover blind spots that humans miss. Yet when we turn to more complex scientific frontiers — the nature of dark matter, the origin of consciousness — we do not even know what the search space looks like, and we cannot define what a "good" reward function would be. In these domains, AI's "physical-world feedback" still depends heavily on humans to set the problem frame and the evaluation criteria.
+    - type: heading
+      level: h2
+      text: III. Subtraction
+    - type: paragraph
+      text: |
+        In the end, our hope has to be staked back on the "human." Let us turn our gaze from the grand future and the wide world back onto ourselves — and talk about the concrete problems we meet in daily life.
+    - type: paragraph
+      text: |
+        First — you do not need AI to help you see more. What you need is to do subtraction.
+    - type: paragraph
+      text: |
+        I often see comments under videos @-ing all sorts of AIs to summarize them. The video creator, who has to worry about completion rate, probably has complicated feelings — "what you get from others always feels shallow; to truly know a thing, you must do it yourself." And that is before you consider — without reading it yourself, what you receive is secondhand knowledge from someone else's video, which you then turn into thirdhand knowledge through an AI summary.
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-05.webp
+      caption: Comment sections now full of @-ed AIs asked to summarize (screenshot)
+    - type: paragraph
+      text: |
+        Information passes through the brain like clouds crossing the eye, gone by the next day. This seemingly efficient shortcut is in fact the greatest waste of life. Better to settle down and genuinely read it once, do it once.
+    - type: paragraph
+      text: |
+        "Read a book a hundred times, and its meaning will appear of itself." Memory and understanding themselves need the settling of time and the hard searching of the brain.
+    - type: paragraph
+      text: |
+        And what does an AI summary count as?
+    - type: paragraph
+      text: |
+        Traditional "knowing" has two carriers. From the perspective of Michael Polanyi's theory of tacit knowledge, they divide as follows【18】 —
+    - type: paragraph
+      text: |
+        Explicit knowledge — knowledge that can be fully expressed through symbol systems such as language, writing, formulas, and charts. It exists objectively and spreads and shares easily. Think of the theories in books, operating manuals, database code.
+
+        - Tacit knowledge — knowledge that is hard to articulate clearly, deeply rooted in personal experience, intuition, and mental models. Think of the sense of balance in riding a bicycle, the practiced feel of an old Chinese-medicine doctor taking a pulse, a designer's aesthetic intuition.
+    - type: paragraph
+      text: |
+        What AI produces ought to be called explicit knowledge. But given AI's own limitations, the hallucinations it may produce, and the biases baked in by the development team and the training data, AI summaries seem as if they ought to be perfectly accurate — and yet seem more likely to be wrong.
+    - type: paragraph
+      text: |
+        Even if an AI summary is 100% faithful to the original, you have still lost the process of conversing with the author. Reading is an active construction of meaning — you have to fill the gaps in the author's argument with your own understanding.
+    - type: paragraph
+      text: |
+        Silicon Valley investor Naval Ravikant writes in The Almanack of Naval Ravikant (《纳瓦尔宝典》) — "*I would rather read the best one hundred books over and over again, until I absorb them, than to read all the books.*" (I would rather read the best hundred books deeply and thoroughly than skim through every book there is.) Rereading yields something new every time because your own circumstances have changed【19】.
+    - type: paragraph
+      text: |
+        You have AI summarize something into three sentences. You got the information, but the lived experience of chewing it over again and again, of "reviewing the old and knowing the new" — a summary cannot give you that. The value of good content lies not in its volume of information but in its power to change the way you think about problems.
+    - type: paragraph
+      text: |
+        Our time has always been finite, and the information and content we see each day is finite too.
+    - type: paragraph
+      text: |
+        In this era, the real problem has never been how to acquire massive amounts of information, but how, in that ocean of information, to do subtraction, to filter finely, and to find the things worth chewing over again and again.
+    - type: paragraph
+      text: |
+        The Chinese AI influencer Zhang Zhala holds this view — he tells us to go to YouTube, go to Twitter, follow the key people, read first-hand information (builder, not influencer)【20】. My "do subtraction" argument comes from the blogger Zhang Siji, who also says his content comes from the long podcasts and tweets of the very best AI practitioners, people like Andrej Karpathy, plus classic books. His information sources are actually very few, but he reads every one of them carefully.【21】
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-06.webp
+      caption: A Xiaohongshu video by 张司机在路上 — how to get fresher information
+    - type: quote
+      text: |
+        The Emperor asked Wei Zheng — "What makes a sovereign enlightened, and what makes him benighted?"
+
+        Wei Zheng answered — "**Listen to many sides and you will be enlightened; listen to one side and you will be benighted.** Of old, Yao asked plainly of the common people, so the evils of the Miao could reach his ears. Shun kept his four eyes clear and his four ears open, so Gong, Gun, and Huandou could not conceal anything from him. The Second Emperor of Qin trusted Zhao Gao alone, which brought about the disaster at Wangyi. Emperor Wu of Liang trusted Zhu Yi alone, which invited the humiliation of Taicheng. Emperor Yang of Sui trusted Yu Shiji alone, which led to the coup at Pengcheng. So when a ruler listens broadly and accepts widely, his powerful ministers cannot screen him off, and the conditions of the people can rise up to him."
+
+        The Emperor said — "Well said!"【22】
+      source: 《贞观政要·卷一·君道》 Zhenguan Zhengyao, Book I (Discourse on the Way of the Sovereign)（亦见《资治通鉴·唐纪八》 Zizhi Tongjian, Tang Annals VIII）
+    - type: heading
+      level: h2
+      text: IV. Listening Widely, Seeing Clearly
+    - type: paragraph
+      text: |
+        "Listen broadly and be enlightened" runs in the opposite direction from "do subtraction" —
+    - type: paragraph
+      text: |
+        We have always wanted to break out of the information cocoon by taking in more information. With that in mind, I think the relationship between a person and AI can be framed as the relationship between an emperor and his ministers. Feudal rulers mostly worried about being hoodwinked by treacherous ministers, and an AI that does nothing but flatter is exactly like a sycophant official. We truly cannot listen narrowly or trust narrowly — whether the minister's role is played by AI or by the motley crew of our information sources.
+    - type: paragraph
+      text: |
+        On the one hand, you need to cut information away — do subtraction, read a small number of things closely and carefully.
+    - type: paragraph
+      text: |
+        On the other hand, you need to open wide the channels of speech — break out of the information cocoon by taking in more information, and synthesize an objective view.
+    - type: paragraph
+      text: |
+        You must "do subtraction" to guard against information overload, and you must "listen broadly" to guard against being trapped in one corner. Having both at once seems like a paradox.
+    - type: paragraph
+      text: |
+        The two are not in conflict. They simply apply to different stages.
+    - type: paragraph
+      text: |
+        My approach is this —
+    - type: paragraph
+      text: |
+        Subtraction targets your stage of "internalization." Once you have settled on what deserves deep reading, gnaw on the best content over and over, the way Naval does — actively carrying out the process of constructing meaning.
+    - type: paragraph
+      text: |
+        Listening broadly targets your stage of "screening." Here you are not after depth but after breadth and difference — use AI, use your established matrix of sources, to scan quickly.
+    - type: paragraph
+      text: |
+        So AI can perfectly well play the role of the remonstrating minister who "listens broadly" — distilling the outlines of podcasts, long essays, and reports for you. But you must always keep a string taut in your mind — this is only drawing up the shortlist, not the end of the story. Once you have circled the range of content, you have to shut AI outside the door. Facing the half-finished material you processed together with AI, use your own brain to connect, to combine, to search hard, and to practice.
+    - type: paragraph
+      text: |
+        "Study broadly, inquire carefully, think prudently, discern clearly, and practice earnestly."【23】
+    - type: paragraph
+      text: |
+        We refuse to outsource these five steps to AI's one-click summaries and inductions.
+    - type: heading
+      level: h2
+      text: V. Learning by Expressing
+    - type: quote
+      text: |
+        If you want to master something, teach it. The more you teach, the better you learn.【24】
+      source: The Feynman technique (Richard Feynman; see note 24)
+    - type: paragraph
+      text: |
+        So said Richard Feynman, and the Feynman learning technique is known to all.
+    - type: paragraph
+      text: |
+        The same idea comes from zara and Zhang Siji — both believe you need to build a mechanism that lets you keep producing output, or, to put it another way, to learn by expressing.【25】
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-07.webp
+      caption: From the PROLIFIC BUILDING conversation — build a mechanism that keeps you creating
+    - type: paragraph
+      text: |
+        AI is exploding right now. I believe everyone's starting point will not differ by much, but there is definitely a gap between thinking and application. So I think I need to record what I want to say and the process of my learning.
+    - type: paragraph
+      text: |
+        As for how to actually do it, I have tried many methods along the way. Especially when the LLM Wiki【26】concept was trending a while back, I kept trying to build an environment friendly to both myself and AI, and to construct a private knowledge base inside it. But once you hand AI too much power, it starts forcing far-fetched connections — the notes are not ones I took, the links are not ones I drew, and behind that vast-looking atlas of knowledge I had produced nothing at all. The push and pull of building a human-AI collaborative space could fill several more thousand-word essays.
+    - type: paragraph
+      text: |
+        My practice nowadays is this — use AI for the preliminary sorting and linking of material, stringing together the notes, articles, and ideas scattered across my bookmarks and knowledge base, tying the fragments of information floating between me and AI into a line through writing. Like Scheherazade, who married the king of her own will to save innocent women and, one story a night, wove together the Arabian Nights (《一千零一夜》)【27】 — I too string together the information and material I have gathered, and produce an essay like this one.
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-08.webp
+      caption: My Obsidian graph view — AI helping thread scattered notes together
+    - type: paragraph
+      text: |
+        I choose to publish these essays on platforms like Xiaohongshu (RED) or WeChat official accounts — on social media, in other words. It feels to me like Forrest Gump (《阿甘正传》)【28】 — Gump rattling off the story of his whole life without a care for who was around him, on that bench, while the people beside him kept changing. Some stopped to listen, some walked away, and now and then someone would nod or ask a question.
+    - type: figure
+      image: /media/writing/kaishi-xiezuo/fig-09.webp
+      caption: The bench scene from Forrest Gump — telling your life story to whoever sits down
+    - type: paragraph
+      text: |
+        If you have read this far, thank you very much! Whether it is me or Gump, I think any of this gives me a little feedback. Whatever the outside world makes of it, the act of expression itself gives me a kind of force to push back against the void.
+    - type: paragraph
+      text: |
+        Of course, sometimes what I tell you will be a good story as sweet as chocolate, and sometimes a bad story as harsh as dog crap. There are good views and bad views, correct views and wrong views — but whether good or bad, right or wrong, every one of them is an outpouring of my own embodied experience.
+    - type: paragraph
+      text: |
+        In short, I ask for your indulgence.
+    - type: heading
+      level: h2
+      text: VI. Dwelling on Things, and Meaning in Things
+    - type: paragraph
+      text: |
+        Su Shi also invoked the line in his "Record of the Hall of Treasured Paintings" (《宝绘堂记》)【29】 —
+    - type: paragraph
+      text: |
+        "The five colors blind the eye, the five tones deafen the ear, the five flavors dull the palate."
+    - type: paragraph
+      text: |
+        While warning his friend Wang Shen "not to fix your attention on things," he also offered an exquisitely subtle solution — "you may lodge your meaning in things."
+    - type: paragraph
+      text: |
+        So I say our attitude toward AI should be the same — mind the balance between "fixing attention" and "lodging meaning" —
+    - type: paragraph
+      text: |
+        To "fix attention on things" is to be driven by things, to sink into slavery to algorithms and information and lose your subjective agency. To "lodge meaning in things" is to take all things as instruments for entrusting your feelings and tempering your intellect — to play with things without losing your purpose.
+    - type: paragraph
+      text: |
+        **I have muddled through all of that, so to sum it up in one sentence — the ultimate value of the human lies in the diversity of embodied experience, while what AI gives us is the "mean" of the probability distribution most likely to fit the context above. We need to pay more attention to human value and human feeling — the friction between people and the world is what sparks creativity. So, how to collaborate with AI — writing is my answer.**
+    - type: heading
+      level: h2
+      text: Notes on the Citations
+    - type: paragraph
+      text: |
+        What follows are explanations of the various 【citations】 in the text —
+    - type: paragraph
+      text: |
+        **1. "Stop Telling Me To Ask An LLM"**
+    - type: paragraph
+      text: |
+        In her blog post "Stop Telling Me To Ask An LLM," Yael Grauer points out that when someone has already tried a large language model (LLM) themselves and still has questions, being told to "go ask the model" is actually a brush-off. She argues that this response seems polite but is really a euphemism for "I don't know" or "I don't have time." The key point is that a model cannot offer views and insights grounded in a person's unique life experience — and that is precisely the fundamental reason people consult a particular person in the first place. So Yael suggests that instead of dodging with "go ask the model," it is more honest to answer with "I'm busy" or "I can't think of anything you haven't tried yet."
+    - type: paragraph
+      text: |
+        **2. LMGTFY (Let me Google that for you)**
+    - type: paragraph
+      text: |
+        LMGTFY, short for "Let Me Google That For You," literally means "let me Google that for you." It comes from a satirical website of the same name. You type in a question, and the site auto-generates an animated link that demonstrates, step by step, typing the keywords into the Google search box. Send that link to the person who asked, and they will see the process of "getting the answer with a simple search" play out. LMGTFY thus became a humorous but sharp reminder of the early internet — a hint that you should try searching for yourself before asking. Today it is often used as a cultural symbol for reflecting on netiquette and information literacy.
+    - type: paragraph
+      text: |
+        **3. "Where there are mechanical contraptions, there will be mechanical deeds; where there are mechanical deeds, there will be mechanical minds"**
+    - type: paragraph
+      text: |
+        From the Zhuangzi (《庄子·外篇·天地》, "Heaven and Earth" in the Outer Chapters). The line comes from the story of the old gardener who carried water in a jar and refused to use a well-sweep (a lever for drawing water). It speaks directly to the erosion of the human heart by tools and technology. "Mechanical contraptions" means devices that save effort through clever design; "mechanical deeds" are the calculating ways of acting that follow from them; and a "mechanical mind" is the scheming, game-playing, profit-seeking impulse that sprouts inside. Through the old farmer's mouth Zhuangzi warns that once you depend on the efficiency shortcuts tools provide, your actions drift toward opportunism, and over time your inner simplicity is replaced by the calculus of power and advantage — "once the mechanical mind is lodged in the breast, pure whiteness is no longer complete," and the clarity and fullness of the spirit fall apart under utilitarian calculation. Across a thousand years, in an age of accelerating technological iteration, this line is often revived as an early warning of "technological alienation." It is not only a wariness of tools themselves but points to a habit of cognition — when "how to reach the goal faster" becomes the only measure, the primal questions of "why do it" and "what is true" quietly slip away. It still questions every individual caught in the flood tide of efficiency.
+    - type: paragraph
+      text: |
+        **4. "The five colors blind the eye; the five tones deafen the ear"**
+    - type: paragraph
+      text: |
+        From the "Nine Methods" chapter of the Yuejue Shu (《越绝书·内经九术》), it adapts the sense of the Daodejing's (《道德经》) "the five colors blind the eye, the five tones deafen the ear." It means that excessive sensory stimuli — colors, tones, and the like — will dull people's sight, hearing, and insight. The line aims to warn people to guard against small beginnings and avoid having their inner minds obscured by the clutter of external things.
+    - type: paragraph
+      text: |
+        **5. Wu Zixu's use of the saying**
+    - type: paragraph
+      text: |
+        Recorded in the "Nine Methods" chapter of the Yuejue Shu (《越绝书·内经九术》). This is a classic recording the history, geography, and philosophy of the Wu and Yue states in the Spring and Autumn period (traditionally attributed to Yuan Kang and Wu Ping of the Eastern Han), and it is praised as "the ancestor of Chinese local gazetteers." "Nine Methods" is its core chapter, setting down the nine strategies with which the Yue minister Wen Zhong helped King Goujian strengthen Yue and destroy Wu. The chapter blends Laozi's Daoist thought with political wisdom, advocating "cultivate the mind within, follow the patterns without," and is a concentrated expression of classical strategy and self-cultivation.
+    - type: paragraph
+      text: |
+        **6. The three-stage evolution of outsourcing ability**
+    - type: paragraph
+      text: |
+        This idea adapts Joan Westenberg's long English essay on Medium (2025), "How Cognitive Offshoring is Killing Personal Thought." The essay lays out a three-stage evolution of "cognitive offshoring" — the Industrial Revolution outsourced physical labor, the information age outsourced memory, and the age of AI is now outsourcing thought itself. The essay warns that when algorithms pre-empt our expressions, ultimate efficiency strips away the "friction" that thinking requires, leaving humanity with a vast store of answers but bereft of spiritual weight.
+    - type: paragraph
+      text: |
+        **7. The Jeremy Howard and Chris Lattner conversation**
+    - type: paragraph
+      text: |
+        From the conversation article "Build to Last," published in October 2025 by the AI research platform fast.ai. fast.ai founder Jeremy Howard talks with Chris Lattner, creator of LLVM and the Swift language, and delivers a sharp warning about the "vibe coding" culture popular in the generative-AI era. The article points out that over-relying on AI to deliver code while abandoning any understanding of the underlying architecture will lead to a cliff-edge decline in engineering ability. The real technical moat still lies in holding to "first principles" and pursuing the software craftsmanship of excellence.
+    - type: paragraph
+      text: |
+        **8. "Tread on frost and you can feel the hard ice coming"**
+    - type: paragraph
+      text: |
+        From the first-six line text of the Kun hexagram in the Book of Changes (《周易·坤卦》) — "tread on frost, and solid ice is coming." Originally it means that when thin frost is under your feet, you should already sense that the hard ice of deep winter is about to arrive. The ancients used it to expound the philosophy of "gradual accumulation" and "nipping trouble in the bud" — great transformations and crises never form overnight but accumulate step by step from tiny signs. It warns people to keep a keen eye, so that when change first shows itself they can forestall it.
+    - type: paragraph
+      text: |
+        **9. Psychohistory and the Mule in Foundation**
+    - type: paragraph
+      text: |
+        From the classic science-fiction series Foundation (《基地》) by the American grand master Isaac Asimov. In the books, the scholar Hari Seldon founds "psychohistory," whose core assumption is that when the population base is large enough, the macro-historical behavior of humanity can be predicted precisely with mathematics and statistics — the "Seldon Plan." Yet the appearance of the mutant "the Mule" breaks the model. As an individual with the psychic power to control emotions, he is an extreme outlier lying entirely outside statistical probability, and he overturns the macro-forecast single-handedly. In modern discussions, "psychohistory" stands for a faith in prediction built on big data, probabilistic algorithms, and determinism, while "the Mule" symbolizes the unpredictable aberration, the black-swan event.
+    - type: paragraph
+      text: |
+        **10. Ni Minjing's Yixi Youth talk**
+    - type: paragraph
+      text: |
+        "Exploring the Cave Full of the Unknown" (《探索充满未知的洞》), a talk given by Ni Minjing — director of the Shanghai Science and Technology Museum and former deputy director of the Shanghai Municipal Education Commission — on Yixi Youth (#Society / Wuxi / 2026.04.25).
+    - type: paragraph
+      text: |
+        **11. Confucius teaching according to ability**
+    - type: paragraph
+      text: |
+        "Three thousand disciples, seventy-two of them proficient in the six arts" — from the "Hereditary House of Confucius" and "Biographies of the Disciples of Zhongni" (《仲尼弟子列传》) in the Records of the Grand Historian (《史记》). In the Song dynasty, Zhu Xi summed up Confucius's educational philosophy in his Collected Commentaries on the Analects (《论语集注》) as "Confucius taught people, each according to his material." Facing disciples of differing character and talent, Confucius taught each in accordance with his nature — like Zilu, who was brave and resolute (the Shiji records him as "fond of bravery and strength"); Zigong, eloquent and quick of speech (the Analects places him first among the "speech" category); Yan Hui, who lived on a single basket of rice in a mean lane, content in poverty and devoted to the Way (the Analects praise him, "Virtuous indeed is Hui!"); and Ran Qiu, variously skilled and good at administration (the Analects say "Qiu, too, has abilities").
+    - type: paragraph
+      text: |
+        **12. Model collapse (Model Collapse)**
+    - type: paragraph
+      text: |
+        A degenerate phenomenon proposed in AI academia — represented by the landmark 2024 paper in Nature, "AI models collapse when trained on recursively generated data." It refers to the irreversible degradation that occurs when generative AI systems (such as large language models and diffusion models) are trained recursively for a long time on "synthetic data" generated by previous generations of AI. In this process, the long tail of the data distribution — the rare, the off-average, the marginal unique expressions and outliers of humanity — dies first. As generations advance, the distribution of the data the models generate narrows with each pass, variance plummets, and it finally collapses into a homogeneous state devoid of information, monotonously repetitive, and detached from the real world. This phenomenon proves, at the level of mathematics and probability, that genuine human data and embodied experience are irreplaceable.
+    - type: paragraph
+      text: |
+        **13. Ted Chiang's "Exhalation"**
+    - type: paragraph
+      text: |
+        From the short story "Exhalation" (《呼吸》) by the contemporary Chinese-American science-fiction writer Ted Chiang (collected in the 2019 collection of the same name). The story constructs a heterogeneous universe of metallic mechanical life. These beings' thought depends entirely on the "pressure difference" between the high-pressure argon in their inflated lungs and the outside atmosphere, which drives tiny cylinders and gears in their brains. As they breathe, the high-pressure gas keeps spewing into the atmosphere, so the overall pressure of the universe gradually rises and the difference between inside and outside keeps shrinking. Once the pressures approach absolute equilibrium, gas stops flowing, the mechanical brains can no longer compute or think, and all life and civilization in the universe falls into deathly silence. The work is a literary parable of the second law of thermodynamics (the law of entropy) and of information theory, revealing a physical and philosophical truth — "thought and life depend on gradients, differences, and friction; absolute equilibrium and homogeneity mean death." The essay uses it to figure the ultimate state of model collapse — the entropy of information reaching its maximum, with nothing new left.
+    - type: paragraph
+      text: |
+        **14. Liang Wenfeng on AGI**
+    - type: paragraph
+      text: |
+        From a report in late July 2026 by elsewhere and Tencent Technology on remarks by Liang Wenfeng, founder of DeepSeek, at an investor exchange. Laying out the technology roadmap for AGI (artificial general intelligence), Liang Wenfeng noted that the key ladder in AI's evolution runs from chain-of-thought (CoT) and agents to "continuous learning." He believes the limitation of current AI is its inability to carry out long-form incremental and continuous learning the way humans do. Once "continuous learning" is cracked, models can cross the "singularity" of intelligence — that is, without costly human intervention, they could autonomously research, develop, and self-iterate the next generation of even more advanced AI models, the way human researchers do.
+    - type: paragraph
+      text: |
+        **15. Zhang Xiaojun's interview with Zhang Peng**
+    - type: paragraph
+      text: |
+        A long-form interview in which the tech media personality Zhang Xiaojun, on her "Zhang Xiaojun Business Interviews" (《张小珺商业访谈录》) program, talks with Zhipu AI CEO Zhang Peng — "The IPO interview of the world's first large-model stock, talking with Zhipu CEO Zhang Peng — dare we ask where the road leads?"
+    - type: paragraph
+      text: |
+        **16. AlphaGo's 37th move**
+    - type: paragraph
+      text: |
+        From game two of the March 2016 man-machine match between the Go program AlphaGo, developed by Google DeepMind, and world Go champion Lee Sedol. On its 37th move, playing black, AlphaGo made a strange placement on the fifth line (a shoulder hit). In millennia of traditional Go theory and the intuition of fixed patterns, such a move would normally be seen as an irrational "bad move." Yet the subsequent position proved that this move broke humans' habitual thinking and became the decisive play of the whole game.
+    - type: paragraph
+      text: |
+        **17. AI discovering molecular structures in materials science**
+    - type: paragraph
+      text: |
+        This refers to breakthroughs by AI systems (such as DeepMind's GNoME model and "AI for Science" projects like AlphaFold) in crystal-structure prediction and new-materials research. A study published in Nature in 2023 showed that, through graph neural networks and quantum-chemical evaluation (such as density functional theory), AI systems autonomously predicted and discovered more than a million entirely new stable crystal structures within a deterministic space constrained by physical and energy functions.
+    - type: paragraph
+      text: |
+        **18. Michael Polanyi's theory of tacit knowledge**
+    - type: paragraph
+      text: |
+        A cognitive philosophy theory put forward by the Hungarian-American philosopher Michael Polanyi in Personal Knowledge (1958) and The Tacit Dimension (1966). Polanyi divided human knowledge into two great categories.
+    - type: paragraph
+      text: |
+        **19. Naval Ravikant's The Almanack of Naval Ravikant**
+    - type: paragraph
+      text: |
+        From the reading philosophy of the Silicon Valley entrepreneur and investor Naval Ravikant, as compiled by Eric Jorgenson in The Almanack of Naval Ravikant (《纳瓦尔宝典》).
+    - type: paragraph
+      text: |
+        **20. Zhang Zhala**
+    - type: paragraph
+      text: |
+        A Chinese content creator in the AI space. It was his Xiaohongshu post "How to Absorb Silicon Valley's Cutting-Edge AI Thinking Without Leaving Home" that set off my thinking about information sources.
+    - type: paragraph
+      text: |
+        **21. Zhang Siji**
+    - type: paragraph
+      text: |
+        Zhang Siji on the Road is another creator I like a lot. His piece "Why I Don't Recommend AI Summarization Tools" was the inspiration for this section on "doing subtraction."
+    - type: paragraph
+      text: |
+        **22. "Listen broadly and be enlightened; trust narrowly and be benighted"**
+    - type: paragraph
+      text: |
+        From the Zhenguan Zhengyao (《贞观政要·卷一·君道》, "Discourse on the Way of the Sovereign," Book I), written by Wu Jing of the Tang dynasty (also found in the Zizhi Tongjian, Tang Annals VIII (《资治通鉴·唐纪八》)). Citing the lessons of history, Wei Zheng points out that if a ruler opens wide the channels of speech and listens broadly to all opinions (as Yao and Shun did, with four ears open), the treacherous cannot monopolize his sight and hearing. But if he listens narrowly and trusts a handful of villainous ministers (as Qin Ershi trusted Zhao Gao, Emperor Wu of Liang trusted Zhu Yi, and Emperor Yang of Sui trusted Yu Shiji), disaster and downfall are certain.
+    - type: paragraph
+      text: |
+        **23. "Study broadly, inquire carefully, think prudently, discern clearly, practice earnestly"**
+    - type: paragraph
+      text: |
+        From chapter 20 of the "Doctrine of the Mean" (《中庸》) in the Record of Rites (《礼记》), a Confucian classic. It names five progressive stages of classical Confucian learning and self-cultivation —
+    - type: paragraph
+      text: |
+        broadly ranging over and absorbing knowledge and information; raising questions and inquiring in detail and with care; thinking and reasoning deeply and rigorously; clearly discerning truth from falsehood, the primary from the secondary, and the threads of logic; and putting what you have learned into real action, firmly and concretely.
+    - type: paragraph
+      text: |
+        Together these five stages form a complete loop of cognition and practice in traditional Chinese philosophy. They stress that acquiring knowledge is never simple information reception — it must pass through an internalizing process of critical questioning, independent thought, rational analysis, and embodied practice.
+    - type: paragraph
+      text: |
+        **24. The Feynman learning technique**
+    - type: paragraph
+      text: |
+        The learning philosophy of Richard Feynman, winner of the Nobel Prize in Physics.
+    - type: paragraph
+      text: |
+        The "Feynman technique" is an efficient learning mechanism that uses "active output" to force "deep internalization." It has four core steps — choose a concept; teach it to a layperson (or a child) in the simplest possible language, free of jargon; identify the gaps in your knowledge where your explanation stumbles; go back to the source material and simplify your explanation. The method stresses that true mastery lies not in memorizing technical terms but in whether you can reconstruct complex knowledge into concise, intuitive language and pass it on.
+    - type: paragraph
+      text: |
+        **25. zara and Zhang Siji on continuous output**
+    - type: paragraph
+      text: |
+        This view comes from Zhang Siji's Xiaohongshu post "Why I Make Short Videos — Recording Itself Is the Best Learning," and also from zara's Xiaohongshu post "How Do You Stay Productive for the Long Haul with Build in Public?" (It is not only this one post, to be honest — but Zhang Zhala's posts and videos are simply too many to list, so this is just one example.)
+    - type: paragraph
+      text: |
+        **26. LLM Wiki**
+    - type: paragraph
+      text: |
+        A "large language model plus private knowledge base" paradigm, popularized by Andrej Karpathy and trending in personal knowledge management (PKM) and AI. The architecture combines traditional networked note systems (Markdown-based knowledge bases like Obsidian and Notion) with LLMs, retrieval-augmented generation (RAG), and knowledge-graph technology. Its typical workflow is — input raw material (Raw Data), AI automatically parses, distills, and compiles it (AI Ingest), and it produces structured wiki pages and entity links automatically. The aim of this architecture is a private knowledge space in which both human and AI can interact efficiently.
+    - type: paragraph
+      text: |
+        **27. The Arabian Nights (One Thousand and One Nights)**
+    - type: paragraph
+      text: |
+        A famous collection of Arab folk tales (also known as the Arabian Nights (《一千零一夜》)). Its frame narrative tells of Scheherazade, daughter of the vizier, who marries the cruel King Shahryar of her own accord to save innocent women. Each night before sleep Scheherazade tells the king a gripping story, stopping at the most crucial cliffhanger just before dawn, so that the king, eager to hear the ending, keeps postponing the execution — until she has told stories for one thousand and one nights and the king is moved.
+    - type: paragraph
+      text: |
+        **28. Forrest Gump**
+    - type: paragraph
+      text: |
+        A 1994 American classic, adapted from Winston Groom's novel of the same name and directed by Robert Zemeckis. Its iconic scene has the protagonist, Forrest Gump, sitting on a wooden bench at a bus stop with a box of chocolates in hand, telling the plain, honest story of his ordinary yet legendary life to the strangers who keep sitting down beside him and leaving. Some of them stop to listen, some question him and walk away, while Gump always keeps the purity and certainty of a simple soul.
+    - type: paragraph
+      text: |
+        **29. "Record of the Hall of Treasured Paintings" (Baohui Tang Ji)**
+    - type: paragraph
+      text: |
+        From the famous prose piece "Record of the Hall of Treasured Paintings" (《宝绘堂记》), written by the Northern Song literary figure Su Shi for the imperial son-in-law Wang Shen (courtesy name Jinqing), who was obsessed with collecting rare paintings and calligraphy. The essay invokes the Laozi's line "the five colors blind the eye, the five tones deafen the ear, the five flavors dull the palate," warning that obsessing over external things easily costs a person their inner clarity. In it Su Shi incisively sets out the dialectical relationship between "lodging meaning in things" and "fixing attention on things" —
+    - type: paragraph
+      text: |
+        **Lodging meaning in things** — "A gentleman may lodge his meaning in things, but he may not fix his attention on things." It means entrusting your feelings to external things, using things to carry your aesthetic and intellectual pursuits, playing with things without losing your purpose — not delighted at gaining them, not distressed at losing them.
+    - type: paragraph
+      text: |
+        **Fixing attention on things** — the mind is entirely seized, entangled, and fixated by external things, losing independent subjectivity and sinking into slavery to things ("the gentleman is easily driven by things").
+        This idea articulates a classical philosophy of the relationship between humans and external tools and objects — to entrust and master them actively, rather than be enslaved by them.
