@@ -1,0 +1,37 @@
+id="curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+More details on what you'll study
+Find out what you'll cover in this programme
+What you'll cover
+How will I learn?
+MRes RCA is delivered in a blended mode with some sessions delivered online and others on campus. Delivery is through lectures, seminars, workshops, group critiques and tutorials. Each unit begins with a clear briefing outlining the schedule, aims, learning outcomes and assessment format.
+The intensity of teaching will vary depending on the unit being delivered, with some units taught content delivered more intensely on-campus at the beginning or end of terms. This allows for independent study time around the taught delivery. Between on-campus activity, online seminars, group tutorials and peer-led asynchronous sessions, these activities support and structure your independent study.
+Unit descriptors identify the number and type of contact hours you will have in each unit. The majority of programme delivery is academic, taking place in seminar and lectures, and delivered by academic staff. In this programme, some units have a number of technical contact hours included, such as technical and library orientations and inductions into the use of equipment, spaces and processes required during the unit. If you wish to access other specialist technical equipment, spaces or processes or acquire additional technical or library skills outside of your timetabled unit contact time, you will be required to make independent bookings, which are available on a first-come first-serve basis from Technical Services and the Library.
+You will be encouraged to engage with your network of peers across the art and design disciplines and to collectively contribute to common learning resources, student-led seminars, and peer critique. You are encouraged to treat your peers as critical friends, and to engage in critique in ways that are informed by their existing experiences of industry and practice. By participating in peer critiques, you will receive constructive feedback and learn to critique your own work more effectively.
+Opportunities for formative feedback are used to support and structure your learning. Peer and tutor critiques form an important part of the teaching, and occur in every unit.
+You are expected to begin the programme with existing technical expertise within your specialism. An orientation session and a small number of technical skills workshops will take place for your whole cohort. Any new technical expertise that you wish to acquire in order to realise your proposed projects will be mostly gained through independent access to Technical Services that take place outside of the unit structure on a first come first served basis, and subject to availability. Some electives may offer specific access to technical activities.
+You are expected to take a professional and independent approach to the programme, including determining your journey through choice of units, managing the demands of multiple concurrent units, and working towards deadlines. You will be guided to pursue public facing professional development opportunities as appropriate throughout the programme.
+Alongside your taught units, scheduled community events will provide opportunities for you to network with your peers across other programmes and Schools.
+You will also learn from your fellow students, and they will learn from you. Each year a global cohort of students from diverse backgrounds, careers and life experiences joins our community. Peer-to-peer learning is a vital part of the RCA experience and this range of perspectives enriches students, igniting new ways of thinking and sparking innovation.
+Outside of campus experience, you will have opportunities to explore London and immerse yourself in Europe's creative and cultural capital.
+Programme structure
+The programme is delivered across three terms and includes a combination of programme, School and College units. These will include:
+Term 1
+Research Methods Part 1: Developing Research Questions (15 credits)
+This unit supports you in developing and articulating research questions, by interrogating the central themes of your practice and what you aim to explore within your independent research projects through interconnected theoretical and practice approaches. The focus of this first research methods unit is on developing concise research questions and supporting your understanding of interdisciplinary research methods that you will build into your own research methods toolkit which will be used in Research Methods Part 2 to write a research proposal that mirrors the form of a PhD application. Through this unit you will develop your conceptual, analytical, technical, and theoretical knowledge base.
+Research in Practice Part 1: Testing and Experimenting (15 credits)
+Within this unit, you will interrogate your research questions through practice approaches, be that a visual practice or a written practice. Experimentation and innovation across practice and theory are encouraged and supported. You will introduce different methods and approaches for you to test and explore.
+Term 2
+Research Methods Part 2: Developing a Research Proposal (15 credits)
+Through an understanding of a wide range of research methods, you will be able to research and develop new, experimental, and effective approaches, engaging with problems and insights at the forefront of your discipline. The detailed research proposal mirrors the form of a PhD application by introducing your research subjects, aims, contexts, and key questions. You will also build a core repository of research references appropriate to your subject as an annotated bibliography, articulating which aspects of each source are of importance to your research.
+Research in Practice Part 2: Defining and Developing (15 credits)
+Within this unit, you will further define and develop your practice. Through planning and investigation, you will begin to determine the methods and approaches that are successful for you, which you will build upon within the final Research Project.
+Also in Term 2,
+a choice of elective units
+will allow you to shape your own learning journey. You will have the opportunity to work alongside students from other programmes, bringing your practice into dialogue with the creative approaches of your peers. A full list of elective options will be published in 2027.
+Term 3
+Independent Research Project (60 credits)
+Within this unit, you will apply the skills, knowledge and understanding developed through the previous units to complete a complex Independent Research Project. This project can be practice- or thesis-based, with practice-based route bringing together an original body of work with a connected thesis, and thesis-based route the completion of a longer textual output. Students will be supervised by MRes staff by discipline specialisms, with group and individual critiques and tutorials.
+This MA is delivered over 45 weeks.
+Electives
+You will also select three or four further units from a series of College-wide electives, allowing you to choose from a menu of units delivered across all the RCA Schools that align to your specialism. Drawing upon the learning and work established in these units, the MRes culminates in the development of your independent research project, with theory and practice in dialogue with one another.
+<div class="tabs__panel tabs__panel--hidden js-tab-panel"

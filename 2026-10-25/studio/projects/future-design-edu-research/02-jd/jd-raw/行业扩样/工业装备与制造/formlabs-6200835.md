@@ -1,0 +1,16 @@
+---
+source: Formlabs
+ats: greenhouse
+tier: overseas-ats
+industry: 工业装备与制造
+job_id: formlabs-6200835
+title: "Industrial Designer (Shenzhen)"
+location: "Asia Pacific"
+url: "https://careers.formlabs.com/job/6200835/apply/?gh_jid=6200835"
+fetched_at: 2026-10-06
+channel: Greenhouse 公开接口
+---
+
+# Industrial Designer (Shenzhen)
+
+To reinvent an industry, you have to build the best team. Join Formlabs if you want to bring ground-breaking professional 3D printers to the desktop of every designer, engineer, researcher, manufacturer and artist in the world. The Industrial Design team enables accessible and productive experiences for our users and communicates the values of the brand through beautiful, functional hardware design. As part of our team, you’ll collaborate with an interdisciplinary team of designers, engineers, and scientists to make a significant impact on a rapidly-emerging class of products. If you are passionate about delivering great user experiences and have the skills to contribute, we want you to join our team. Sharing a portfolio/website that reflects your work or projects is required. The Job: Ensure that interacting with our products are great experiences Prototype continuously and test designs with users through interviews and surveys Manage all aspects of the hardware user experience, from unboxing to maintenance Design beautiful products that people love to use, from idea to production Develop design concepts with clear and compelling visual communication Create high-quality CAD to communicate design intent Collaborate closely with Product, UI Design, Engineering, and Manufacturing to develop well-balanced solutions You: 2+ years of relevant professional experience developing products with strong interactive elements and experience Obsessive attention to detail Proven track record of designing products and bringing them to market Actively involved in the day-to-day design of products Demonstrable knowledge of relevant manufacturing processes Experience solving complex problems with engineering and manufacturability constraints Demonstrate fluency in aesthetic decision-making and an eye for detail Able to communicate quickly and effectively with hand sketches Capable in 3D CAD, Keyshot, and Adobe CC Comfortable prototyping using a variety of methods Bonus Skills: Passion for 3D printing and emerging technologies Experience in rapidly-growing startup environments We Offer: An inclusive environment with diverse and inspiring colleagues Shares in the company (we’re a Unicorn company) Unlimited 3D prints Fun team events Perks are subject to adjustments and may vary from team to team. We build amazing things. Come join us! We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, colour, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status. Even if you don&#39;t check every box, but see yourself contributing, please ap ply. Help us build an inclusive community that will change the face of 3D printing.

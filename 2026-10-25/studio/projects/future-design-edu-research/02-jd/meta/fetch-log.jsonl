@@ -1,0 +1,15 @@
+{"ts": "2026-09-30T12:28:49+00:00", "source": "anthropic", "dry_run": true, "raw": 637, "kept": 80}
+{"ts": "2026-09-30T12:29:16+00:00", "source": "scaleai", "ok": false, "error": "TimeoutError: The read operation timed out"}
+{"ts": "2026-09-30T12:29:59+00:00", "source": "databricks", "dry_run": true, "raw": 882, "kept": 119}
+{"ts": "2026-09-30T12:30:45+00:00", "source": "openai", "dry_run": true, "raw": 838, "kept": 96}
+{"ts": "2026-09-30T12:31:42+00:00", "source": "linear", "dry_run": true, "raw": 30, "kept": 17}
+{"ts": "2026-09-30T12:32:44+00:00", "source": "anthropic", "ok": true, "raw": 637, "kept": 80, "saved": 80, "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"}
+{"ts": "2026-09-30T12:33:35+00:00", "source": "scaleai", "ok": true, "raw": 191, "kept": 28, "saved": 28, "url": "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true"}
+{"ts": "2026-09-30T12:33:50+00:00", "source": "databricks", "ok": true, "raw": 882, "kept": 119, "saved": 119, "url": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true"}
+{"ts": "2026-09-30T12:34:47+00:00", "source": "openai", "ok": true, "raw": 838, "kept": 96, "saved": 96, "url": "https://api.ashbyhq.com/posting-api/job-board/OpenAI?includeCompensation=true"}
+{"ts": "2026-09-30T12:35:40+00:00", "source": "linear", "ok": true, "raw": 30, "kept": 17, "saved": 17, "url": "https://api.ashbyhq.com/posting-api/job-board/linear?includeCompensation=true"}
+{"ts": "2026-09-30T12:45:47+00:00", "source": "anthropic", "ok": true, "raw": 636, "kept": 81, "saved": 81, "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"}
+{"ts": "2026-09-30T12:48:40+00:00", "source": "scaleai", "ok": true, "raw": 191, "kept": 28, "saved": 28, "url": "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs?content=true"}
+{"ts": "2026-09-30T12:49:03+00:00", "source": "databricks", "ok": true, "raw": 882, "kept": 107, "saved": 107, "url": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs?content=true"}
+{"ts": "2026-09-30T12:52:39+00:00", "source": "openai", "ok": true, "raw": 838, "kept": 96, "saved": 96, "url": "https://api.ashbyhq.com/posting-api/job-board/OpenAI?includeCompensation=true"}
+{"ts": "2026-09-30T12:54:35+00:00", "source": "linear", "ok": true, "raw": 30, "kept": 17, "saved": 17, "url": "https://api.ashbyhq.com/posting-api/job-board/linear?includeCompensation=true"}

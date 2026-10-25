@@ -1,0 +1,34 @@
+id="curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+More details on what you'll study.
+Find out what you'll cover in this programme.
+What you'll cover
+What is a research degree?
+At the RCA we offer both MPhil and PhD research degrees. Research candidates can study in part-time and full-time modes (subject to approval) and their research can be undertaken by project or thesis modes. The mode of research will be discussed in the interview, and should be indicated in the application process.
+A postgraduate research degree challenges you to complete a research project that pushes the boundaries of our understanding.
+Unlike a taught degree, a research degree emphasises independence of learning and increased specialisation. You will manage your own research project in order to investigate your topic in depth and to produce new ideas, arguments and solutions.
+A research degree will give you the subject matter expertise and transferable skills necessary for a wide range of senior roles in research and academia, as well as in business, industry and the cultural and creative sectors.
+A PhD is awarded to students who produce a substantial piece of original research that makes a contribution to research in the field. This can take the form of a thesis (60,000–80,000 words) or by project (a body of work and thesis 25,000–40,000 words). If you’re a PhD candidate you’ll normally register for three years full-time, with submission within four years, or six to seven years part-time. You must remain registered and pay an appropriate fee until submission.
+An MPhil is awarded for original research and submission of a thesis. If you’re an MPhil candidate you’ll normally be registered for two to three years full-time or four to six years part-time.
+Our postgraduate community
+We have more than 250 PhD students pursuing cutting-edge research and undertaking advanced training across the College:
+School of Architecture
+School of Arts & Humanities
+School of Communication & Design
+Centre for Materials Science & Culture
+Helen Hamlyn Centre for Design
+Intelligent Mobility Design Centre
+Robotics Laboratory
+The RCA is a world-leading postgraduate university and is ranked the most research-intensive university of art and design in the UK since 2014. Both our students and staff are drawn from countries across the globe. Overseas students play a vital role in ensuring that our College community benefits from a diversity of experience and skills.
+Doctoral training programme
+At the RCA, research students undertake training both at a cross-College level and within their Schools/Centres, offering rich and robust preparation and learning opportunities for their research degree progression. Many of these also offer opportunities to build a portfolio of experience for future careers.
+All students are required to attend and engage with our Doctoral Training Weeks in September, February and July. These are opportunities to participate in the broader research community at the RCA, but also to undertake timely training to support research progression. These intensive weeks include a range of professional development seminars, training and advice in writing, getting published, achieving impact, entering the academic job market and more, and opportunities for you to develop and present your research to your peers and staff.
+Our Research Biennale, held every alternate February, offers a showcase of research to internal and external partners and public. The events include space for testing and experimenting with public-facing aspects of research, extending and challenging frameworks and perceptions of what art and design research can be.
+We are committed to ensuring that you are well equipped, not only to complete your studies but also to develop your future careers.
+Supervisors
+All students are allocated supervisors upon registration; your supervisory team will have both subject specialism and experience of supervising to completion. Our current staff index includes an overview of their research interests, recent research outputs and areas of expertise. These give an idea of the key areas of research that are covered at the RCA.
+We are not able to guarantee allocation to a specific supervisor as we need to balance staff capacities and our research strategy. However, if there is a particular supervisor whose research aligns with your research proposal, please join us at one of our Open Days and we can talk with you about the possibilities.
+Each student will have six supervisions per year (three for part-time students); these might be with the full supervisory team or with one supervisor. Students are expected to initiate these meetings, set the agenda and provide supervisors with pre-reading or other materials in an agreed timeframe for review.
+Annual progress reviews
+All research students have Annual Progress Reviews, which they must pass in order to progress into the next year of study. These are vital points where all candidates receive formal feedback not only from their supervisory team, but also from other members of the faculty.
+There is a formal Confirmation Exam that takes place midway through the period of study to ascertain your readiness for PhD submission; if you do not meet the requirements at this stage then you’ll usually be recommended to submit for MPhil examination.
+<div class="tabs__panel tabs__panel--hidden js-tab-panel"

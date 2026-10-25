@@ -1,0 +1,91 @@
+SOURCES.txt — MIT（Massachusetts Institute of Technology）
+采集会话：03-培养方案 线 C（国外综合院校）
+抓取日期（全部）：2026-10-04
+抓取工具：run_code 内 Node fetch（https 直连）；Wayback 快照用 curl.exe -x http://127.0.0.1:7897（本机 https 直连 schannel 故障，仅 http+代理可用）
+
+== 当前版（2026-10-04 抓取） ==
+mit-catalog-media-arts-sciences.html
+  URL: https://catalog.mit.edu/schools/architecture-planning/media-arts-sciences/
+  类型: HTML，200；catalog 院系页，含 SM/PhD 在学要求原文
+  抓取日期: 2026-10-04
+
+mit-catalog-subjects-mas.html
+  URL: https://catalog.mit.edu/subjects/mas/
+  类型: HTML，200；MAS 全量课程条目 72 条（研究生层 55）
+  抓取日期: 2026-10-04
+
+mit-catalog-master-art-culture-technology.html
+  URL: https://catalog.mit.edu/degree-charts/master-art-culture-technology/
+  类型: HTML，200；SMACT 学位图
+  抓取日期: 2026-10-04
+
+mit-catalog-system-design-management.html
+  URL: https://catalog.mit.edu/interdisciplinary/graduate-programs/system-design-management/
+  类型: HTML，200；SDM 跨学科项目页
+  抓取日期: 2026-10-04
+
+mit-medialab-graduate-program.html
+  URL: https://www.media.mit.edu/graduate-program/
+  类型: HTML，200；Media Lab 研究生项目页，挂各学期课程表链接
+  抓取日期: 2026-10-04
+
+mit-medialab-about-mas.html
+  URL: https://www.media.mit.edu/graduate-program/about-media-arts-sciences/
+  类型: HTML，200；方向/项目介绍（方向介绍层，非课程层）
+  抓取日期: 2026-10-04
+
+mit-medialab-apply.html
+  URL: https://www.media.mit.edu/graduate-program/apply/
+  类型: HTML，200；招生页
+  抓取日期: 2026-10-04
+
+mit-medialab-fall2026-course-list.html
+  URL: https://www.media.mit.edu/posts/fall-2026-media-arts-and-sciences-course-list/
+  类型: HTML，200；2026 秋 MAS 课表，13 行
+  抓取日期: 2026-10-04
+
+mit-medialab-spring2026-course-list.html
+  URL: https://www.media.mit.edu/posts/spring-2026-media-arts-and-sciences-course-list/
+  类型: HTML，200；2026 春 MAS 课表
+  抓取日期: 2026-10-04
+
+mit-medialab-fall2025-course-list.html
+  URL: https://www.media.mit.edu/posts/fall-2025-media-arts-and-sciences-course-list/
+  类型: HTML，200；2025 秋 MAS 课表
+  抓取日期: 2026-10-04
+
+mit-medialab-fall2024-course-list.html
+  URL: https://www.media.mit.edu/posts/fall-2024-media-arts-and-sciences-course-list/
+  类型: HTML，200；2024 秋 MAS 课表
+  抓取日期: 2026-10-04
+
+mit-medialab-fall2023-course-list.html
+  URL: https://www.media.mit.edu/posts/fall-2023-media-arts-and-sciences-course-list/
+  类型: HTML，200；2023 秋 MAS 课表
+  抓取日期: 2026-10-04
+
+mit-medialab-fall2018-course-list.html
+  URL: https://www.media.mit.edu/posts/fall-2018-mas-course-list/
+  类型: HTML，200 但正文为 JS 空壳：页面文本仅 3844 字符、`MAS.` 命中 0，未取到课表内容
+  抓取日期: 2026-10-04
+
+== 历史版（Wayback Machine） ==
+wayback-2019-2020-mit-mas-school-page.html
+  原始 URL: http://catalog.mit.edu/archive/2019-2020/schools/architecture-planning/media-arts-sciences/
+  Wayback 完整 URL: https://web.archive.org/web/20211216165424id_/http://catalog.mit.edu/archive/2019-2020/schools/architecture-planning/media-arts-sciences/
+  快照日期: 2021-12-16（CDX 时间戳 20211216165424）
+  文件类型: HTML（2019-2020 学年 MIT Catalog 归档页，含学位要求原文 + 全量课程条目 69 条 / 研究生层 58 条）
+  抓取日期: 2026-10-04
+
+wayback-2019-2020-mit-mas-school-page.txt
+  同上的纯文本副产品（HTML 标签剥离后），供 grep 与并置使用
+  快照日期: 2021-12-16；抓取日期: 2026-10-04
+
+== 落盘验收（grep） ==
+- mit-catalog-subjects-mas.html：`MAS.` 命中 72 条课程条目；`units` 命中多处 → 非空壳
+- wayback-2019-2020-mit-mas-school-page.html：`units` 命中 48 处、`courseblockhours|Terms in residence|research thesis` 命中 70 处 → 非空壳（2019-20 版原文用 "four terms in residence + satisfactory research thesis"，**未出现 66-unit 字样**）
+- mit-medialab-fall2018-course-list.html：`MAS.` 命中 0 → 标注为「JS 空壳或错误页」，未取到内容
+
+== 会话归属说明 ==
+本文件由 03-培养方案 线 C（国外综合/设计强校）会话于 2026-10-04 生成，覆盖本目录全部 14 件 MIT 原件。
+同目录另有并行会话生成的 `MIT-课程清单逐门提取.md` 与若干 `mit-medialab-grad-*` 探针页；本文件未登记探针页。

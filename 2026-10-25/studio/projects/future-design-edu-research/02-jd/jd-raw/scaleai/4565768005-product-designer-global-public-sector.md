@@ -1,0 +1,75 @@
+---
+source: Scale AI (scaleai)
+ats: greenhouse
+tier: overseas-ats
+job_id: 4565768005
+title: "Product Designer, Global Public Sector"
+department: "GPS Product"
+location: "Doha, Qatar ; Dubai, UAE; London, UK"
+url: https://job-boards.greenhouse.io/scaleai/jobs/4565768005
+updated_at: 2026-09-16T16:10:51-04:00
+published_at: 2025-08-06T16:00:51-04:00
+fetched_at: 2026-09-30T12:48:40+00:00
+---
+
+# Product Designer, Global Public Sector
+
+Do you thrive in the ambiguity and possibility of early stage product design? We're looking for a bilingual Product Designer to help build intuitive, AI-driven experiences for government and enterprise clients across the Middle East.
+
+At Scale AI, we're building the future of AI through high-quality data and world-class design. Our products power critical decisions for businesses and governments worldwide.
+
+You will:
+
+Lead 0-1 Design: Own the entire design process — from raw concept to final implementation — working directly with PMs and engineers to ship impactful products quickly
+
+Develop Concepts: Extract key insights from PM and client feedback and translate them into compelling concepts
+
+Manage Expectations: Respond effectively to multiple stakeholders and align them around a clear design direction
+
+Communicate and Prototype Visually: Deliver polished verbal communication and visual storytelling using AI tools like Cursor and Claude Design to bring concepts to life 
+
+Design with Data: Make design decisions informed by research, data, and user insights
+
+You're a great fit if you:
+
+Are fluent in Arabic and English (a hard requirement for this role)
+
+Excel at navigating ambiguity in early stage products
+
+Have a mix of startup and established company experience; at least one role at a well-respected company with a strong product development culture
+
+Have experience in B2B products for government or enterprise clients
+
+Want your work to shape the role of AI in modern business applications
+
+Have prior work experience in the GCC (Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, UAE)
+
+Are based in the GCC or open to relocating
+
+Have hands-on experience with AI-powered design platforms such as Cursor and Claude
+
+Have a degree in HCI, Computer Science, or Graphic Design
+
+Have a strong portfolio demonstrating polish, professional presentation, and clear visual storytelling to broad audiences
+
+Nice to haves:
+
+Experience at notable AI companies
+
+Technical background
+
+For those applying based in Qatar: Residency and employment in Qatar requires certain permissions (visa and permits) issued by the Qatari authorities. As part of the application process, candidates will be asked to provide personal information, including residency status and nationality, which is required for visa processing. This information is collected solely for immigration compliance purposes and will be not used as a criterion in any hiring decision unless such use is lawfully permitted. Visa issuance is at the discretion of the Qatari authorities. If you are successful in your application, you will be required to provide the documentation requested by Scale and the authorities to obtain the necessary permissions for you to live and work in Qatar, and Scale will work with successful candidates to support the visa application process.
+
+PLEASE NOTE: Our policy requires a 90-day waiting period before reconsidering candidates for the same role. This allows us to ensure a fair and thorough evaluation of all applicants.
+
+About Us:
+
+At Scale, our mission is to develop reliable AI systems for the world's most important decisions. Our products provide the high-quality data and full-stack technologies that power the world's leading models, and help enterprises and governments build, deploy, and oversee AI applications that deliver real impact. We work closely with industry leaders like Meta, Ernst & Young, Mayo Clinic, Time Inc., the Government of Qatar, and U.S. government agencies including the Army and Air Force. We are expanding our team to accelerate the development of AI applications.
+
+We believe that everyone should be able to bring their whole selves to work, which is why we are proud to be an inclusive and equal opportunity workplace. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability status, gender identity or Veteran status. 
+
+We are committed to working with and providing reasonable accommodations to applicants with physical and mental disabilities. If you need assistance and/or a reasonable accommodation in the application or recruiting process due to a disability, please contact us at accommodations@scale.com. Please see the United States Department of Labor's Know Your Rights poster for additional information.
+
+We comply with the United States Department of Labor's Pay Transparency provision. 
+
+PLEASE NOTE: We collect, retain and use personal data for our professional business purposes, including notifying you of job opportunities that may be of interest and sharing with our affiliates. We limit the personal data we collect to that which we believe is appropriate and necessary to manage applicants’ needs, provide our services, and comply with applicable laws. Any information we collect in connection with your application will be treated in accordance with our internal policies and programs designed to protect personal data. Please see our privacy policy for additional information.

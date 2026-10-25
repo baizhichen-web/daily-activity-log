@@ -1,0 +1,39 @@
+id="curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+What you'll study
+Flexibility and choice are at the heart of the offer, with a combination of Core and Elective units enabling you to create a bespoke programme of studies that best suits your approach, context and interests.
+What you'll cover
+How you'll learn
+Units are delivered through a combination of lectures, seminars, and group tutorials, including in-person and online delivery. Concurrent units will be delivered through burst learning, with intense on-campus activity in blocks to provide a more sequential experience of the units. Between on-campus activity, online seminars, group tutorials and peer-led asynchronous activities support and structure your independent study.
+You will be encouraged to engage with your network of peers and to collectively contribute to common learning resources, student-led seminars and peer critique. You are encouraged to treat your peers as critical friends, and to engage in critique in ways that are informed by your existing experiences of industry and practice. By participating in peer critiques, you will receive constructive feedback and learn to critique your work more effectively.
+Opportunities for formative feedback are used to support and structure your learning. Peer and tutor critiques form an important part of the teaching, and occur in every unit.
+You will also learn from your fellow students, and they will learn from you. Each year a global cohort of students from diverse backgrounds, careers and life experiences joins our community. Peer-to-peer learning is a vital part of the RCA experience and this range of perspectives enriches students, igniting new ways of thinking and sparking innovation.
+Outside of campus experience, you will have opportunities to explore London and immerse yourself in Europe's creative and cultural capital.
+Programme structure
+The programme is delivered across three terms and includes a combination of programme, School and College units. These will include:
+Term 1
+You'll begin by taking
+Research Methodologies (15 credits)
+, which introduces research and futures methodologies to support the imagination and realisation of alternative futures by engaging with diverse forms of knowledge, stakeholders and perspectives.
+You’ll also take
+Complex Systems
+(15 credits), which introduces complexity, wicked problems, systems thinking, theories of change, and leverage points for design. Students develop an understanding of working with secondary data and qualitative insights to comprehend contexts, identify root causes, and find opportunities for transformation and value.
+Term 2
+In term two you take
+Envisioning Futures
+, which combines futures methods with advanced digital and analogue envisioning methods bringing to life near and deep futures from a multi-species perspective.
+You'll start to plan your
+Individual Research Project (IRP) Proposal (15 credits)
+by developing a research proposal to demonstrate the need for research on your chosen topic, articulate any gaps of knowledge and how your research proposal intends to address this.
+Also
+in Term 2, a choice of elective units will allow you to shape your own learning journey. You will have the opportunity to work alongside students from other programmes, bringing your practice into dialogue with the creative approaches of your peers. This could either be through tackling ‘wicked’ design problems from a range of different perspectives, by collaborating on themed interdisciplinary projects, or by exploring how mutual exchanges of ideas and interpretations can foster a socially engaged practice. A full list of elective options will be published in 2027.
+Term 3
+The final term is devoted to the development and realisation of your
+Independent Research Project (60 credits).
+The independent research project (IRP) is the conclusion of your studies on the Design Futures MA. The independent research project is broken down into one 15 credit unit and a final 60 credit unit. The IRP is an opportunity for you to propose and realise a body of work that addresses the key ambitions of your research and professional practice. You will draw on what you have learnt on the programme to devise a project which might be individual or collaborative. You will also be encouraged and supported to identify opportunities for the professional public dissemination of your work. Your project will be supported through tutorials and opportunities to share your research developments through seminars and forums.
+This MA is delivered over 45 weeks (full time) and 90 weeks (part time).
+Electives
+You will select electives to customise your own journey through the programme, choosing from a range of units offered by Design Futures and other programmes.
+You'll be asked to rank your elective preferences and will be allocated based on those choices and availability. Elective offerings change each year.
+Programme duration
+The MA is delivered over 45 weeks (full time) and 90 weeks (part time). There are different periods of intensity in the programme. The first month is an intensive block for both full and part time students, then you will be on campus three to four days a week for full time and one to two days a week for part time.
+<div class="tabs__panel tabs__panel--hidden js-tab-panel"

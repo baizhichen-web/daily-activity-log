@@ -1,0 +1,96 @@
+中国美术学院（CAA，www.caa.edu.cn）原始件登记表
+采集会话：线 C 培养方案会话
+抓取日期：2026-10-04（Wayback 快照另注快照日期）
+
+重要说明：2026-10-04 实测，中国美术学院全部已知站点在本机**不可直接访问**：
+  - www.caa.edu.cn：DNS 122.224.174.87；curl 直连 http/https 均 000；web_fetch 多次 TypeError: fetch failed；仅 1 次早前 web_fetch 成功返回 4,973 字节的近似空壳页。
+  - grs.caa.edu.cn（研工部、研究生处）：DNS 210.33.125.5；直连 000，代理 502。
+  - zb.caa.edu.cn（招生办）：DNS 210.33.125.5；直连 000，代理 502。
+  - yjsjxcg.caa.edu.cn：直连 000，代理 502；Wayback CDX 无存档。
+本目录全部原件均取自 **Wayback Machine**，用 http://web.archive.org/web/<时间戳>id_/<原始URL> 经代理 127.0.0.1:7897 下载。
+
+======================================================================
+一、学位授权点建设年度报告（Wayback）
+----------------------------------------------------------------------
+2021-设计学学位授权点建设年度报告-中国美术学院.pdf
+  原始 URL：http://grs.caa.edu.cn/attachment/20220325/8b31cc93e85b9dd4d8654d0771319311.pdf
+  Wayback 完整 URL：http://web.archive.org/web/20250409132415id_/http://grs.caa.edu.cn/attachment/20220325/8b31cc93e85b9dd4d8654d0771319311.pdf
+  快照日期：2025-04-09 13:24:15（原件落款 2022-03-25）
+  文件类型：PDF 36 页 782,824 字节；抓取日期 2026-10-04
+
+2021-艺术硕士艺术设计专业学位授权点建设年度报告.pdf
+  原始 URL：http://grs.caa.edu.cn/attachment/20220325/148c2007f14cd62420aad24053da6cea.pdf
+  Wayback 完整 URL：http://web.archive.org/web/20250409132343id_/http://grs.caa.edu.cn/attachment/20220325/148c2007f14cd62420aad24053da6cea.pdf
+  快照日期：2025-04-09 13:23:43（原件落款 2022-03-25）
+  文件类型：PDF 40 页 1,173,696 字节；抓取日期 2026-10-04
+
+======================================================================
+二、研究生教育发展质量年度报告（Wayback）
+----------------------------------------------------------------------
+2021-研究生教育发展质量年度报告-中国美术学院.pdf
+  原始 URL：https://grs.caa.edu.cn/attachment/20220328/50594f5baa56b78805180a41c6718ab2.pdf
+  Wayback 完整 URL：http://web.archive.org/web/20220706005224id_/https://grs.caa.edu.cn/attachment/20220328/50594f5baa56b78805180a41c6718ab2.pdf
+  快照日期：2022-07-06 00:52:24
+  文件类型：PDF 21 页 675,016 字节；抓取日期 2026-10-04
+
+======================================================================
+三、研究生课程表与教学运行文件（Wayback）
+----------------------------------------------------------------------
+2023-2024学年第一学期-研究生通识必修课程表-全日制学术型硕士.pdf
+  原始 URL：http://grs.caa.edu.cn/attachment/20231015/5fecb7f981cacecf22574bd64854b996.pdf
+  Wayback 完整 URL：http://web.archive.org/web/20240817181205id_/http://grs.caa.edu.cn/attachment/20231015/5fecb7f981cacecf22574bd64854b996.pdf
+  快照日期：2024-08-17 18:12:05；文件类型：PDF 1 页 57,744 字节；有文本层（已提取 12 行课程条目）
+
+2023-2024学年第一学期-研究生通识必修课程表-全日制专业学位硕士.pdf
+  原始 URL：http://grs.caa.edu.cn/attachment/20231025/d361855fe9942d86cf2fc8a017c8fc32.pdf
+  Wayback 完整 URL：http://web.archive.org/web/20240817163938id_/http://grs.caa.edu.cn/attachment/20231025/d361855fe9942d86cf2fc8a017c8fc32.pdf
+  快照日期：2024-08-17 16:39:38；文件类型：PDF 1 页 1,041,976 字节；**文本层为空（扫描件）**
+
+2023-2024学年第一学期-研究生通识必修课程表-非全日制专业学位硕士.pdf
+  原始 URL：http://grs.caa.edu.cn/attachment/20231025/7afc4868e349a107a9ac3416f7d49130.pdf
+  Wayback 可用时间戳（CDX）：20240714074805、20240818220113
+  Wayback 完整 URL：http://web.archive.org/web/20240818220113id_/https://grs.caa.edu.cn/attachment/20231025/7afc4868e349a107a9ac3416f7d49130.pdf
+  结果：HTTP 502，0 字节 —— **未到手**（文件未保留在本目录）
+
+2022-2023学年-研究生专业教学进程表.xlsx
+  原始 URL：https://grs.caa.edu.cn/attachment/20220629/f1134dcc292eb048bf00cd8c2bad071c.xlsx
+  Wayback 完整 URL：http://web.archive.org/web/20240818183545id_/https://grs.caa.edu.cn/attachment/20220629/f1134dcc292eb048bf00cd8c2bad071c.xlsx
+  快照日期：2024-08-18 18:35:45；文件类型：XLSX 16,299 字节；**内容为空白模板**
+
+2023-2024学年-硕博研究生专业教学进程表.xlsx
+  原始 URL：https://grs.caa.edu.cn/attachment/20230702/7f2d3a97ab816bb235444c4120c6ec57.xlsx
+  Wayback 完整 URL：http://web.archive.org/web/20240817093613id_/https://grs.caa.edu.cn/attachment/20230702/7f2d3a97ab816bb235444c4120c6ec57.xlsx
+  快照日期：2024-08-17 09:36:13；文件类型：XLSX 17,297 字节；**内容为空白模板**
+
+2021-研究生课程教学大纲格式-附件3.docx
+  原始 URL：http://grs.caa.edu.cn/attachment/20211207/b881d15e9f14e02d2ee7b80476ccaf24.docx
+  Wayback 完整 URL：http://web.archive.org/web/20250409073222id_/http://grs.caa.edu.cn/attachment/20211207/b881d15e9f14e02d2ee7b80476ccaf24.docx
+  快照日期：2025-04-09 07:32:22；文件类型：DOCX 13,202 字节（格式模板）
+
+2021级-硕博等同于下乡的实践课程-设计艺术学院雕塑与公共艺术学院.docx
+  原始 URL：https://grs.caa.edu.cn/attachment/20211009/5412f892596da59c0498186902810edf.docx
+  Wayback 完整 URL：http://web.archive.org/web/20240708134020id_/https://grs.caa.edu.cn/attachment/20211009/5412f892596da59c0498186902810edf.docx
+  快照日期：2024-07-08 13:40:20；文件类型：DOCX 14,744 字节
+
+======================================================================
+四、CDX 已记录但未下载的其他原件（可复核）
+----------------------------------------------------------------------
+2019-2020学年第二学期研究生专业教学进程表（空表）.xlsx | https://grs.caa.edu.cn/attachment/20200102/d4f5769df78c00304bfeeda7003518fb.xlsx | 快照 2024-07-08 14:12:57
+2020-2021学年第一学期研究生专业教学进程表（模板）.xlsx | https://grs.caa.edu.cn/attachment/20200707/803bf266444fa4a56bc414a984cb9c34.xlsx | 快照 2025-03-28 12:09:43
+2020-2021学年第二学期研究生专业教学进程表（模板）.xls | https://grs.caa.edu.cn/attachment/20210106/75ba0c92bc1add9cfea734401861d181.xls | 快照 2024-08-17 11:25:42
+附件：2021-2022学年第一学期研究生专业教学进程表（模板）.xlsx | https://grs.caa.edu.cn/attachment/20210625/fd8a1c8d38aab54c7b79e2b24732256b.xlsx | 快照 2024-08-17 12:19:31
+2021-2022学年第二学期研究生专业教学进程表（模板）.xlsx | https://grs.caa.edu.cn/attachment/20220106/1e815f5f96dee53ed296ff30bcd62b59.xlsx | 快照 2024-08-17 12:59:25
+附件2：全国研究生一级学科核心课程指南.pdf | http://grs.caa.edu.cn/attachment/20211207/ac6ef4bae72697c341f5c8cfb2f919a4.pdf | 快照 2025-04-09 08:56:05
+中国美术学院 美术学学位授权点建设年度报告（2021） | http://grs.caa.edu.cn/attachment/20220325/c522420c1da55e5ca17bdbbd833d0d1f.pdf | 快照 2025-04-09 14:05:36
+中国美术学院 艺术学理论学位授权点建设年度报告（2021） | http://grs.caa.edu.cn/attachment/20220325/2530ed32bb87202db299ba1d9ee673ba.pdf | 快照 2025-04-09 13:48:43
+中国美术学院 电影专业学位授权点建设年度报告（2021） | http://grs.caa.edu.cn/attachment/20220509/c13bf55bc8ca56e303c38eae3ff86e11.pdf | 快照 2025-04-09 13:46:47
+中国美术学院 文物与博物馆硕士专业学位授权点建设年度报告（2021） | http://grs.caa.edu.cn/attachment/20220325/64865f39ea5cb2337e2f238ab8efd0b8.pdf | 快照 2025-04-09 14:04:56
+中国美术学院“科研伦理与学术规范”课程学生操作手册（2021） | https://grs.caa.edu.cn/attachment/20210926/1ba0b00e2084ef3e9ce9c79377f2dc30.pdf | 快照 2025-04-09 08:16:21
+中国美术学院“科研伦理与学术规范”课程学生操作手册（2024） | http://grs.caa.edu.cn/attachment/20241112/a8f1ba63ff0abb324064e791e6f66b88.pdf | 快照 2025-05-27 02:03:18
+
+======================================================================
+五、结构化提取文件（本会话产出）
+----------------------------------------------------------------------
+2021-设计学1305与艺术硕士艺术设计135108学位授权点建设年度报告-结构化提取.md
+2023-2024学年第一学期-研究生通识必修课程表-结构化提取.md
+HISTORY.md（历史版尝试与失败原因）

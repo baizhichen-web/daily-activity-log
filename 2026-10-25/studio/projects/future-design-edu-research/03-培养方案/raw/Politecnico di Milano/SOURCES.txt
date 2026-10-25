@@ -1,0 +1,110 @@
+Politecnico di Milano 原始件登记（自动生成，可复核）
+生成会话：线 C 培养方案会话　生成日期：2026-10-04
+抓取日期：2026-10-04（Wayback 快照另注快照时间戳）
+生成规则：URL 取自 HTML 的 canonical/og:url，或同目录页面里指向该 PDF 的 href；文件名含 wayback-YYYY-MM-DD 的从文件名取时间戳。
+**抽不到 URL 的一律标「URL 待补」，不用推测填**——需由采集会话补全。
+
+| 文件 | 类型 | 原始 URL / 快照时间戳 | 字节 |
+|---|---|---|---|
+| `2021-2022-polimi-Communication-Design-track-C_1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 248632 |
+| `2021-2022-polimi-Design-and-Engineering-track-DE1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 114636 |
+| `2021-2022-polimi-Design-for-the-Fashion-System-track-M_1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 215357 |
+| `2021-2022-polimi-Digital-and-Interaction-Design-track-DID-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 172961 |
+| `2021-2022-polimi-Integrated-Product-Design-track-IP1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 241239 |
+| `2021-2022-polimi-Interior-and-Spatial-Design-track-IS1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 256113 |
+| `2021-2022-polimi-Product-Service-System-Design-track-PS1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 241251 |
+| `2025-2026-polimi-programme-detail-digital-and-interaction-design.html` | 原件 | /en/education/laurea-programmes/programme-detail/digital-and-interaction-design | 530467 |
+| `2026-2027-polimi-Communication-Design-track-C_1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 213892 |
+| `2026-2027-polimi-Communication-Design-track-C_2-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 213832 |
+| `2026-2027-polimi-Communication-Design-track-C_3-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 213813 |
+| `2026-2027-polimi-Design-and-Engineering-track-DE1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 191486 |
+| `2026-2027-polimi-Design-and-Engineering-track-DE2-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 191486 |
+| `2026-2027-polimi-Design-for-the-Fashion-System-track-M_1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 191048 |
+| `2026-2027-polimi-Design-for-the-Fashion-System-track-M_2-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 191050 |
+| `2026-2027-polimi-Digital-and-Interaction-Design-track-DI1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 240938 |
+| `2026-2027-polimi-Integrated-Product-Design-track-IP1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 249921 |
+| `2026-2027-polimi-Interior-and-Spatial-Design-track-IS1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 213351 |
+| `2026-2027-polimi-Interior-and-Spatial-Design-track-IS2-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 213352 |
+| `2026-2027-polimi-Interior-and-Spatial-Design-track-IS3-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 213365 |
+| `2026-2027-polimi-Interior-and-Spatial-Design-track-IS4-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 213343 |
+| `2026-2027-polimi-Product-Service-System-Design-track-PS1-manifesto-study-plan.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 231814 |
+| `_probe-ceda-aa2019-1262.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 151667 |
+| `_probe-ceda-aa2020-1262.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 151667 |
+| `_probe-manifesto-1014-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 80273 |
+| `_probe-manifesto-1019-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 72312 |
+| `_probe-manifesto-1020-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 73126 |
+| `_probe-manifesto-1021-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 73605 |
+| `_probe-manifesto-1022-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 78243 |
+| `_probe-manifesto-1023-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 62913 |
+| `_probe-manifesto-1024-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 49223 |
+| `_probe-manifesto-1025-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 58110 |
+| `_probe-manifesto-1026-aa2016.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 71409 |
+| `_probe-manifesto-1026-aa2017.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 71409 |
+| `_probe-manifesto-1026-aa2018.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 71409 |
+| `_probe-manifesto-1026-aa2019.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 71409 |
+| `_probe-manifesto-1026-aa2020.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 71409 |
+| `_probe-manifesto-1026-aa2021.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 71409 |
+| `_probe-manifesto-1026-aa2022.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 69641 |
+| `_probe-manifesto-1026-aa2023.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 69800 |
+| `_probe-manifesto-1026-aa2024.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 54838 |
+| `_probe-manifesto-1026-aa2025.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 54222 |
+| `_probe-manifesto-1026-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 53593 |
+| `_probe-manifesto-1027-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 54993 |
+| `_probe-manifesto-1028-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 50955 |
+| `_probe-manifesto-1029-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 59253 |
+| `_probe-manifesto-1087-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 50750 |
+| `_probe-manifesto-1088-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 47319 |
+| `_probe-manifesto-1089-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 47640 |
+| `_probe-manifesto-1090-aa2026.html` | 中间产物（建议移入 temp/ 或删除） | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 50010 |
+| `_tmp-ay2021-fetchlog.json` | 原件 | **URL 待补** | 3311 |
+| `_tmp-ay2021-tracks.json` | 原件 | **URL 待补** | 1507 |
+| `_tmp-ay2026-fetchlog.json` | 原件 | **URL 待补** | 6680 |
+| `_tmp-cdx-ceda-1.json` | 原件 | **URL 待补** | 64000 |
+| `_tmp-cdx-ceda.json` | 原件 | **URL 待补** | 0 |
+| `_tmp-cdx-design-polimi-1.json` | 原件 | **URL 待补** | 64000 |
+| `_tmp-cdx-design-polimi-2.json` | 原件 | **URL 待补** | 4887 |
+| `_tmp-combined-DI1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 240938 |
+| `_tmp-design.polimi.it_en.html` | 原件 | /en/ | 696506 |
+| `_tmp-did-structure.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 53593 |
+| `_tmp-did-structure.txt` | 原件 | **URL 待补** | 5294 |
+| `_tmp-did-text.txt` | 原件 | **URL 待补** | 15681 |
+| `_tmp-en_corsi_translate-to-english-regolamenti-didattici.html` | 原件 | /en/corsi/translate-to-english-regolamenti-didattici | 177084 |
+| `_tmp-en_education_course-prospectus-and-programmes.html` | 原件 | /en/education/course-prospectus-and-programmes | 164373 |
+| `_tmp-showsezioni-1026.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 53155 |
+| `_tmp-trackfetch.json` | 原件 | **URL 待补** | 3921 |
+| `_tmp-tracks.json` | 原件 | **URL 待补** | 2419 |
+| `aa2026-kc1023-indir-ALL.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 169760 |
+| `aa2026-kc1023-indir-DE1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 62913 |
+| `aa2026-kc1023-indir-DE2.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 62913 |
+| `aa2026-kc1023-indir-___.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 169760 |
+| `aa2026-kc1024-indir-ALL.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 202792 |
+| `aa2026-kc1024-indir-C_1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 49223 |
+| `aa2026-kc1024-indir-C_2.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 49163 |
+| `aa2026-kc1024-indir-C_3.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 49144 |
+| `aa2026-kc1024-indir-___.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 202792 |
+| `aa2026-kc1025-indir-ALL.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 173877 |
+| `aa2026-kc1025-indir-M_1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 58110 |
+| `aa2026-kc1025-indir-M_2.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 58112 |
+| `aa2026-kc1025-indir-___.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 173877 |
+| `aa2026-kc1026-indir-ALL.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 225699 |
+| `aa2026-kc1026-indir-DI1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 53593 |
+| `aa2026-kc1026-indir-DI2.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 53593 |
+| `aa2026-kc1026-indir-___.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 225699 |
+| `aa2026-kc1027-indir-ALL.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 232926 |
+| `aa2026-kc1027-indir-IP1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 54993 |
+| `aa2026-kc1027-indir-IP2.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 54981 |
+| `aa2026-kc1027-indir-___.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 232926 |
+| `aa2026-kc1028-indir-ALL.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 200859 |
+| `aa2026-kc1028-indir-IS1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 50955 |
+| `aa2026-kc1028-indir-IS2.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 50956 |
+| `aa2026-kc1028-indir-IS3.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 50969 |
+| `aa2026-kc1028-indir-IS4.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 50947 |
+| `aa2026-kc1028-indir-___.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 200859 |
+| `aa2026-kc1029-indir-ALL.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 211653 |
+| `aa2026-kc1029-indir-PS1.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 59253 |
+| `aa2026-kc1029-indir-PS2.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 59253 |
+| `aa2026-kc1029-indir-___.html` | 原件 | https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN | 211653 |
+| `wayback-2019-08-17-design.polimi.it-manifesto-degli-studi-e-programmi.html` | 原件 | 快照 20190817 | 18542 |
+| `wayback-2020-09-24-design.polimi.it-manifesto-degli-studi-e-programmi.html` | 原件 | /it/didattica/studiare-design/manifesto-degli-studi-e-programmi | 186492 |
+
+统计：原件 100 件，自动补到 URL 的 88 件。

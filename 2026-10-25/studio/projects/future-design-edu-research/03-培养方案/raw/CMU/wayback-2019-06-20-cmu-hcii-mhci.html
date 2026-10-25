@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<link rel="alternate" type="text/calendar" title="Add to My Calendar" href="webcal://hcii.cmu.edu/news/calendar/ical/calendar.ics" />
+<link rel="shortcut icon" href="https://hcii.cmu.edu/sites/all/themes/custom/zen_hcii/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="The Master of Human-Computer Interaction (MHCI) program at Carnegie Mellon University is the first program in the world dedicated to preparing professionals for careers related to human-computer interaction, user experience design and user-centered research. The MHCI program integrates service and design thinking into a rigorous HCI curriculum that prepares our students to" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://hcii.cmu.edu/academics/mhci" />
+<link rel="shortlink" href="https://hcii.cmu.edu/node/2820" />
+  <title>Master of Human-Computer Interaction | Human-Computer Interaction Institute</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+
+  <link rel="stylesheet" href="https://hcii.cmu.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link rel="stylesheet" href="https://hcii.cmu.edu/sites/default/files/css/css_ntCz7udh66prM85dlibL5cSl16uR5mFkmPYLsA2b56k.css" media="all" />
+<link rel="stylesheet" href="https://hcii.cmu.edu/sites/default/files/css/css_MxzsFRz8PkFp9pH5MabaHUsWfp6u-SyaGaDbumwqfGs.css" media="all" />
+<link rel="stylesheet" href="https://hcii.cmu.edu/sites/default/files/css/css_LOTpaSRGK9TWkNqMqshuV8TsLq83KKt2h_plvJ0bzmA.css" media="all" />
+<link rel="stylesheet" href="https://hcii.cmu.edu/sites/default/files/css/css_BBiKPr0rzq2YHAf85cgI2lE7wVVY3D5T34M-YKa4PzA.css" media="all" />
+  <script src="https://hcii.cmu.edu/sites/default/files/js/js_0RyHJ63yYLuaWsodCPCgSD8dcTIA0dqcDf8-7c2XdBw.js"></script>
+<script src="https://hcii.cmu.edu/sites/default/files/js/js_CwA9uD2kYGc1ubylea-Ul8iN5PWYS40GWBA4ue9Bo4w.js"></script>
+<script>document.createElement( "picture" );</script>
+<script src="https://hcii.cmu.edu/sites/default/files/js/js_EkY8j3XiF4gHjcIr0KFDu1FIKTl1tv9mDnQXTcAmnP8.js"></script>
+<script src="https://hcii.cmu.edu/sites/default/files/js/js_xvV_gfQ8GVbJ3BxjzZhzNXmn1h6vPk0D_l13NclV7_o.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-359322-5", {"cookieDomain":"auto","allowLinker":true});ga("require", "linker");ga("linker:autoLink", ["hcii.cmu.edu ","hcii.cs.cmu.edu ","www.hcii.cs.cmu.edu","metals.hcii.cmu.edu","metals.cs.cmu.edu","www.metals.cs.cmu.edu"]);ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="https://hcii.cmu.edu/sites/default/files/js/js_2vOiMWT0yKRU5hc9iWlzMa6eD41cU5Bze8WRNve3_n4.js"></script>
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://rich.srv.cs.cmu.edu/analytics/" : "https://rich.srv.cs.cmu.edu/analytics/");_paq.push(["setSiteId", "4"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["setCookieDomain", ".hcii.cmu.edu"]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();</script>
+<script src="https://hcii.cmu.edu/sites/default/files/js/js_gE8mMHSddAUDgM7WJlyPQSN0VVTfYyIwooKDSG1dDn4.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"zen_hcii","theme_token":"zVP1RNcUVydlpfZowjSHKWz8fPe-83TPhaA5ETQZSvc","js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"0":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/custom\/hcii_theme\/js\/panopoly-accordion.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"sites\/all\/modules\/legacy\/spamspan\/spamspan.js":1,"profiles\/panopoly\/modules\/contrib\/caption_filter\/js\/caption-filter.js":1,"profiles\/panopoly\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/modules\/piwik\/piwik.js":1,"2":1,"sites\/all\/themes\/custom\/zen_hcii\/js\/modernizr.min.js":1,"sites\/all\/themes\/custom\/zen_hcii\/js\/imagesloaded.pkgd.min.js":1,"sites\/all\/themes\/custom\/zen_hcii\/js\/masonry.pkgd.min.js":1,"sites\/all\/themes\/custom\/zen_hcii\/js\/global.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/legacy\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/hcii_theme\/css\/panopoly-featured.css":1,"sites\/all\/modules\/custom\/hcii_theme\/css\/panopoly-accordian.css":1,"sites\/all\/modules\/legacy\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-dropbutton.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-magic.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/panopoly\/modules\/contrib\/views\/css\/views.css":1,"profiles\/panopoly\/modules\/contrib\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"profiles\/panopoly\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/panopoly\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/custom\/zen_hcii\/system.menus.css":1,"sites\/all\/themes\/custom\/zen_hcii\/system.messages.css":1,"sites\/all\/themes\/custom\/zen_hcii\/system.theme.css":1,"sites\/all\/themes\/custom\/zen_hcii\/font-awesome-4.5.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/custom\/zen_hcii\/css\/styles.css":1}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"single"},"better_exposed_filters":{"views":{"calendar":{"displays":{"panel_pane_2":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":2,"trackCrossDomains":["hcii.cmu.edu ","hcii.cs.cmu.edu ","www.hcii.cs.cmu.edu","metals.hcii.cmu.edu","metals.cs.cmu.edu","www.metals.cs.cmu.edu"]},"piwik":{"trackMailto":1},"urlIsAjaxTrusted":{"\/academics\/mhci":true}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/contrib/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-2820 node-type-page region-content section-academics page-panels" >
+      <p id="skip-link">
+      <a href="#block-system-main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+<div id="page" class="t-global__wrapper">
+    <div class = "topheader">
+        <div class = "maincontent"><a href = "https://www.cmu.edu"><img src = "/sites/all/themes/custom/zen_hcii/images/cmu_logo_white.svg" class="logo"></a></div></div>
+
+    <header class="o-header t-global__header" id="header" role="banner">
+
+        <div class="o-header__logo-wrapper">
+            <a href="/" title="Home" rel="home" class="o-header__logo a-logo a-logo--hcii" id="logo">
+                <span class="element-invisible">Human-Computer Interaction Institute</span>
+                <img src="https://hcii.cmu.edu/sites/all/themes/custom/zen_hcii/logo.png" alt="Home" class="a-logo__image a-logo__image--hcii" />
+            </a>
+        </div>
+
+        <a href="#" class="o-header__toggle js-dropdown__toggle" data-body-class="js-primary-nav-open">
+            <span class="o-header__toggle__inner"></span>
+        </a>
+
+        <div class="o-header__inner js-dropdown__wrapper">
+
+          
+
+
+<form action="/academics/mhci" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-searchfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search" type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text form-search" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-LfEjQ5ClNRVryKpb9kK_wlpXJelKueIRcKAFhOc3S64" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form><div id="block-system-main-menu" class="block block-system contextual-links-region block-menu last even o-navigation js-navigationPrimary o-navigation--primary" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-expanded is-active-trail first expanded active-trail"><a href="/academics" class="menu__link is-active-trail active-trail menu__link--academics">Academics</a><ul class="menu"><li class="menu__item is-collapsed first collapsed"><a href="/academics/phd-hci" class="menu__link menu__link--phd-in-hci">Ph.D. in HCI</a></li>
+<li class="menu__item is-expanded is-active-trail expanded active-trail"><a href="/masters-programs" class="menu__link is-active-trail active-trail menu__link--masters-programs">Masters Programs</a><ul class="menu"><li class="menu__item is-expanded is-active-trail first expanded active-trail"><a href="/academics/mhci" class="menu__link is-active-trail active-trail menu__link--human-computer-interaction-mhci active">Human-Computer Interaction (MHCI)</a><ul class="menu"><li class="menu__item is-collapsed first collapsed"><a href="/academics/mhci/core-curriculum" class="menu__link menu__link--core-curriculum">Core Curriculum</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="/academics/mhci/capstone-project" class="menu__link menu__link--capstone-project">Capstone Project</a></li>
+<li class="menu__item is-leaf leaf"><a href="/academics/mhci/application" class="menu__link menu__link--admissions">Admissions</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://www.hcii.cmu.edu/node/6615" class="menu__link menu__link--tuition--aid">Tuition &amp; Aid</a></li>
+<li class="menu__item is-leaf leaf"><a href="/academics/mhci/mhci-faqs" class="menu__link menu__link--mhci-faqs">MHCI FAQs</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/people/alumni/mhci" class="menu__link menu__link--alumni">Alumni</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf"><a href="/academics/hci-undergraduate/accelerated-masters" class="menu__link menu__link--accelerated-mhci">Accelerated MHCI</a></li>
+<li class="menu__item is-leaf leaf"><a href="/masters-educational-technology-and-applied-learning-science-program-overview" class="menu__link menu__link--educational-technology--applied-learning-sciences-metals">Educational Technology &amp; Applied Learning Sciences (METALS)</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://mcds.cs.cmu.edu/learn-us" class="menu__link menu__link--data-science-mcds">Data Science (MCDS)</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/academics/MSPM" class="menu__link menu__link--product-management-mspm">Product Management (MSPM)</a></li>
+</ul></li>
+<li class="menu__item is-collapsed collapsed"><a href="/academics/hci-undergraduate" class="menu__link menu__link--undergraduate-programs">Undergraduate Programs</a></li>
+<li class="menu__item is-leaf leaf"><a href="/academics/courses" class="menu__link menu__link--courses">Courses</a></li>
+<li class="menu__item is-leaf leaf"><a href="/academics/plagiarism-policy" class="menu__link menu__link--plagiarism-policy">Plagiarism Policy</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/academics/independent-study" class="menu__link menu__link--independent-study">Independent Study</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded"><a href="/research" class="menu__link menu__link--research">Research</a><ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/research/faculty/grid" class="menu__link menu__link--faculty-projects">Faculty Projects</a></li>
+<li class="menu__item is-leaf leaf"><a href="/research/affiliated-faculty/grid" class="menu__link menu__link--affiliated-faculty-projects">Affiliated Faculty Projects</a></li>
+<li class="menu__item is-leaf leaf"><a href="/research/mhci-capstone/grid" class="menu__link menu__link--mhci-capstone-projects">MHCI Capstone Projects</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://reports-archive.adm.cs.cmu.edu/hcii.html" class="menu__link menu__link--technical-report-collection">Technical Report Collection</a></li>
+<li class="menu__item is-leaf leaf"><a href="/research/archived/grid" class="menu__link menu__link--archived-projects">Archived Projects</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/research/doing-research-us" class="menu__link menu__link--doing-research-with-us">Doing Research With Us</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded"><a href="/news" class="menu__link menu__link--news--events">News &amp; Events</a><ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/news/calendar" class="menu__link menu__link--calendar">Calendar</a></li>
+<li class="menu__item is-leaf leaf"><a href="/news/news" class="menu__link menu__link--news">News</a></li>
+<li class="menu__item is-leaf leaf"><a href="/news/in-the-media" class="menu__link menu__link--in-the-media">In the Media</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="/seminar-series" class="menu__link menu__link--seminar-series">Seminar Series</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/news/spotlights" class="menu__link menu__link--spotlights">Spotlights</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded"><a href="/people" class="menu__link menu__link--people">People</a><ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/people/faculty" class="menu__link menu__link--faculty">Faculty</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/affiliated-faculty" class="menu__link menu__link--affiliated-faculty">Affiliated Faculty</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/special-faculty-and-postdocs" class="menu__link menu__link--special-faculty--postdocs">Special Faculty &amp; Postdocs</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/adjunct-faculty" class="menu__link menu__link--adjunct-faculty">Adjunct Faculty</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/visitors-and-guests" class="menu__link menu__link--visitors--guests">Visitors &amp; Guests</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/phd-students" class="menu__link menu__link--phd-students">PhD Students</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/master%27s-students" class="menu__link menu__link--masters-students">Master&#039;s Students</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/hci-undergraduates" class="menu__link menu__link--hci-undergraduates">HCI Undergraduates</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="/people/alumni" class="menu__link menu__link--alumni">Alumni</a></li>
+<li class="menu__item is-leaf leaf"><a href="/people/administrative-staff" class="menu__link menu__link--administrative-staff">Administrative Staff</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/people/technical-staff" class="menu__link menu__link--technical-staff">Technical Staff</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf"><a href="/facilities" class="menu__link menu__link--facilities">Facilities</a></li>
+<li class="menu__item is-leaf leaf"><a href="/giving" class="menu__link menu__link--giving">Giving</a></li>
+<li class="menu__item is-leaf leaf"><a href="/about" class="menu__link menu__link--about">About</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/careers" class="menu__link menu__link--careers">Careers</a></li>
+</ul>
+</div>
+
+            <aside class="o-header__hcii-info">
+<!--                <div class="o-header__cmu-logo">-->
+<!--                    <div class="a-logo a-logo--cmu">-->
+<!--                      --><!--                    </div>-->
+<!--                </div>-->
+                <p>
+                  HCII, Carnegie Mellon University<br>
+                  5000 Forbes Ave<br>
+                  Pittsburgh, PA 15213                </p>
+                <p>
+                  <em><a href="/">HCII</a> is part of the <a href="http://www.cs.cmu.edu">School of Computer Science</a> at <a href="http://www.cmu.edu/">Carnegie Mellon University</a></em>                </p>
+            </aside>
+
+        </div>
+    </header>
+
+    <div class="t-global__main-and-footer-wrapper">
+        <main id="main" role="main" class="t-global__main">
+
+            <div class="column t-global__content-wrapper">
+              
+              <nav class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li><a href="/">Home</a></li><li><a href="/academics">Academics</a></li></ol></nav>                <a id="main-content"></a>
+                                                                                                                
+
+
+<div class="panel-display t-hcii-two-col hcii-two-col" >
+
+      <div class="t-hcii-two-col__top o-card o-card--has-media">
+        <div class="panel-pane pane-node-title" >
+                    
+    
+    <h1>Master of Human-Computer Interaction</h1>
+
+    
+      </div>
+  <div class="panel-pane pane-entity-field pane-node-field-subtitle" >
+                    
+    
+    
+  The longest-running and most impactful Master of Human-Computer Interaction in the world.
+    
+      </div>
+  <div class="panel-pane pane-entity-field pane-node-field-hero-image" >
+                    
+    
+    
+  <div id="file-2715" class="file file-image file-image-png contextual-links-region">
+
+        <h2 class="element-invisible"><a href="/file/mhci1080x500png">mhci_1080x500.png</a></h2>
+    
+  
+  <div class="content">
+    <img class="panopoly-image-original" src="https://hcii.cmu.edu/sites/default/files/styles/panopoly_image_original/public/mhci_1080x500.png?itok=pQoxhGzo" alt="MHCI Hero Image" />  </div>
+
+  
+</div>
+
+    
+      </div>
+  <div class="panel-pane pane-entity-field pane-node-body" >
+                    
+    
+    
+  <p>The Master of Human-Computer Interaction (MHCI) program at Carnegie Mellon University is the first program in the world dedicated to preparing professionals for careers related to human-computer interaction, user experience design and user-centered research.</p>
+
+<p>The MHCI program integrates service and design thinking into a rigorous HCI curriculum that prepares our students to design and guide the future of human and technology interactions.</p>
+
+    
+      </div>
+    </div>
+  
+      <div class="t-hcii-two-col__middle">
+        <div class="panel-pane pane-fieldable-panels-pane pane-current-62 pane-bundle-wysiwyg-content" >
+                      <h2 class="pane-title">About the MHCI Program</h2>        
+    
+    <div class="fieldable-panels-pane">
+    <div class="field field-name-field-wysiwyg field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><ul><li>The MHCI program is a three-semester program completed over the course of a full calendar year (August-August).</li>
+	<li>It is a professional degree that prepares students for industry and a career related to user experience, human-computer interaction and beyond.</li>
+	<li>Our program is interdisciplinary to its core. Each year, cohorts are made up of richly diverse student groups with varying degrees of industry experience and backgrounds in design, social science, business and computer science among many others.</li>
+	<li>MHCI is led by faculty who are driving and defining the world of HCI. They bring together expertise in computer science, cognitive psychology, behavioral science, design and many are experts coming directly from industry. Our diverse range of faculty powers the interdisciplinary culture in the HCII.</li>
+	<li>The flagship course of the MHCI program is the seven-month Capstone course, a research and design team project with an external industry client.</li>
+</ul><p><strong>The MHCI Experience</strong></p>
+
+<p>During the first semester, students learn core HCI methodologies and techniques in the required classes, while customizing their academic experience with the immense selection of electives across all of the schools at Carnegie Mellon University.</p>
+
+<p>While completing the second and third semesters, students continue their diverse electives and complete a substantial industry capstone project with an external client. Our alumni praise the capstone course as being one of the most instrumental courses in their academic career.</p>
+
+<p>Since our first graduating class in 1997, we have graduated over 700 MHCI students who are defining the ways humans interact with technology. They are user researchers, experience designers, product managers, entrepreneurs and business owners, and software developers. More importantly, they are strategizing and defining the future of technology in companies across the globe. </p>
+</div></div></div></div>
+
+    
+      </div>
+    </div>
+  
+      <div class="t-hcii-two-col__cards">
+      <div class="o-card__wrapper">
+  <div class="panel-pane pane-fieldable-panels-pane pane-current-142 pane-bundle-wysiwyg-content o-card u-float--left t-hcii-main__cards__card o-card o-card--wysiwyg-content" >
+                      <h2 class="pane-title">Application Closed</h2>        
+    
+    <div class="fieldable-panels-pane">
+    <div class="field field-name-field-wysiwyg field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>We are no longer accepting applications for the fall 2019 cohort of the MHCI program.</p>
+
+<p>The application for the fall 2020 cohort will open by October 2019.</p>
+</div></div></div></div>
+
+    
+      </div>
+</div>
+<div class="o-card__wrapper">
+  <div class="panel-pane pane-fieldable-panels-pane pane-uuid-a109965b-1e65-448a-a610-dd64cb5a7bf7 pane-bundle-text t-hcii-main__cards__card o-card o-card--text" >
+                      <h2 class="pane-title"><a href="/academics/mhci/core-curriculum">Curriculum</a></h2>        
+    
+    <div class="fieldable-panels-pane">
+    <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Learn more about the interdisciplinary core courses that shape the curriculum for the MHCI program.</p></div></div></div></div>
+
+    
+      </div>
+</div>
+<div class="o-card__wrapper">
+  <div class="panel-pane pane-fieldable-panels-pane pane-current-143 pane-bundle-wysiwyg-content t-hcii-main__cards__card o-card o-card--wysiwyg-content" >
+                      <h2 class="pane-title">MHCI Director of Student Affairs</h2>        
+    
+    <div class="fieldable-panels-pane">
+    <div class="field field-name-field-wysiwyg field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>Nicole Willis</strong><br />
+Human-Computer Interaction Institute<br />
+Carnegie Mellon University<br />
+300 S. Craig Street, Suite 209<br />
+Pittsburgh, PA 15213</p>
+
+<div class="info_group">
+<ul><li><span class="spamspan"><span class="u">nicolewi</span> [at] <span class="d">cs.cmu.edu</span><span class="e"><!--class="icon-envelope"--></span></span></li>
+	<li><a class="icon-phone-sign" href="tel:412-268-7971">412-268-7971</a></li>
+	<li><a class="icon-print" href="#">412-268-9433</a></li>
+</ul></div>
+</div></div></div></div>
+
+    
+      </div>
+</div>
+    </div>
+  
+  
+</div>
+                          </div>
+
+        </main>
+    </div>
+    <div class = "footer-container">
+    <div class="t-global__main-and-footer-wrapper">
+        <footer class="o-footer t-global__footer">
+          
+
+
+<div class="panel-display t-hcii-multi-column hcii-multi-column o-footer" id="mini-panel-site_footer">
+
+  
+  <div class="t-hcii-multi-column__columns-wrapper o-footer__columns-wrapper t-hcii-multi-column__columns-wrapper--empty o-footer__columns-wrapper--empty">
+
+                  <div class="t-hcii-multi-column__column t-hcii-multi-column__column--1 o-footer__column">
+            <div class="panel-pane pane-views-panes pane-calendar-panel-pane-2 o-footer__column-inner" >
+                      <h2 class="pane-title">Upcoming Events</h2>        
+    
+    <div class="view view-calendar view-id-calendar view-display-id-panel_pane_2 calendar-agenda calendar-agenda--upcoming view-dom-id-8ba3d2f658933723841470f1c717f19d contextual-links-region">
+        
+  
+  <!--
+      <div class="feed-icon">
+      <a href='webcal://hcii.cmu.edu/news/calendar/ical/calendar.ics' class='ical-icon a-icon--i-calendar'></a>    </div>
+  -->
+      <div class="view-empty">
+      <p><i>No events for this time</i></p>    </div>
+  
+  
+  
+  
+  
+</div>
+    
+      </div>
+        </div>
+                        <div class="t-hcii-multi-column__column t-hcii-multi-column__column--2 o-footer__column">
+            <div class="panel-pane pane-block pane-menu-menu-follow-us o-footer__column-inner o-navigation" >
+                      <h2 class="pane-title">Follow Us</h2>        
+    
+    <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="https://www.facebook.com/cmuhcii" target="_blank" class="menu__link menu__link--facebook">Facebook</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://instagram.com/cmuhcii" target="_blank" class="menu__link menu__link--instagram">Instagram</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://www.linkedin.com/school/11310964/" class="menu__link menu__link--linkedin">LinkedIn</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://twitter.com/cmuhcii" target="_blank" class="menu__link menu__link--twitter">Twitter</a></li>
+<li class="menu__item is-leaf last leaf"><a href="https://www.hcii.cmu.edu/news/stories/feed" target="_blank" class="menu__link menu__link--subscribe">Subscribe</a></li>
+</ul>
+    
+      </div>
+        </div>
+                        <div class="t-hcii-multi-column__column t-hcii-multi-column__column--3 o-footer__column">
+            <div class="panel-pane pane-fieldable-panels-pane pane-uuid-5b0245b3-2d62-4847-8354-001ff412600e pane-bundle-text o-footer__column-inner" >
+                      <h2 class="pane-title">Contact us</h2>        
+    
+    <div class="fieldable-panels-pane">
+    <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Email: <span class="spamspan"><span class="u">hciiwebmaster</span> [at] <span class="d">cs.cmu.edu</span><span class="e"></span></span></p>
+<p><br />
+Fax: 412-268-1266</p>
+<p>Human-Computer Interaction Institute<br />
+Carnegie Mellon University<br />
+5000 Forbes Ave<br />
+Pittsburgh, PA 15213</p>
+<p><em>The HCII is located on the 3rd floor of Newell-Simon Hall. </em></p>
+<p><a href="https://www.cmu.edu/legal/" target="_blank"><em>Legal Info</em></a></p></div></div></div></div>
+
+    
+      </div>
+        </div>
+                                        
+  </div>
+
+  
+</div>
+        </footer>
+    </div>
+    </div>
+</div>
+<script>
+    jQuery('.view-empty p').click(function() {
+        jQuery('select#field_research_area_tid').prop('selectedIndex', 0).change();
+        jQuery('select#edit-field-research-area-tid').prop('selectedIndex', 0).change();
+        //  console.log('hey!');
+        jQuery('select#field_research_area_tid').val('All').change();
+        jQuery('select#edit-field-research-area-tid').val('All').change();
+
+        jQuery('#field_research_area_tid').prop('selectedIndex', 0).change();
+        jQuery('#edit-field-research-area-tid').prop('selectedIndex', 0).change();
+//  console.log('this!');
+    });
+
+    jQuery(document).ready( function() {
+
+        jQuery("a[href^='http']:not([href*='hcii.cmu.edu'])").click(function(){
+            window.open(this.href);
+            return false;
+        }).attr("title", "Opens in new tab/window");
+
+        if(jQuery('div.pane-node-field-group-role').length) {
+            var htmltext = '';
+            var plaintext = jQuery('div.pane-node-field-group-role').text().trim();
+            console.log('text = ' + plaintext);
+
+
+            if(plaintext.toLowerCase().indexOf("affiliated faculty") >= 0){
+                htmltext += ' <a href = "/people/affiliated-faculty">Affiliated Faculty</a> ';
+            }
+            if(plaintext.toLowerCase().indexOf("postdocs") >= 0){
+                htmltext += ' <a href = "/people/special-faculty-and-postdocs">Special Faculty & Postdocs</a> ';
+            }
+
+            if(plaintext.toLowerCase().indexOf("adjunct faculty") >= 0){
+                htmltext += ' <a href = "/people/adjunct-faculty">Adjunct Faculty</a> ';
+            }
+
+            if(plaintext.toLowerCase().indexOf("faculty") >= 0 && htmltext == ''){
+                htmltext += ' <a href = "/people/faculty">Faculty</a> ';
+                console.log("htmltext = " + htmltext);
+            }
+            
+            if(plaintext.toLowerCase().indexOf("phd students") >= 0){
+                htmltext += ' <a href = "/people/phd-students">PhD Students</a> ';
+            }
+
+            if(plaintext.toLowerCase().indexOf("master") >= 0){
+                htmltext += ' <a href = "/people/master%27s-students">Master\'s Students</a> ';
+            }
+
+            if(plaintext.toLowerCase().indexOf("visitors and guests") >= 0){
+                htmltext += ' <a href = "/people/visitors-and-guests">Visitors & Guests</a> ';
+            }
+
+            if(plaintext.toLowerCase().indexOf("hci undergraduates") >= 0){
+                htmltext += ' <a href = "/people/hci-undergraduates">HCI Undergraduates</a> ';
+            }
+            
+            if(plaintext.toLowerCase().indexOf("alumni") >= 0){
+                htmltext += ' <a href = "/people/alumni">Alumni</a> ';
+            }
+
+            if(plaintext.toLowerCase().indexOf("administrative staff") >= 0){
+                htmltext += ' <a href = "/people/administrative-staff">Administrative Staff</a> ';
+            }
+
+            if(plaintext.toLowerCase().indexOf("technical staff") >= 0){
+                htmltext += ' <a href = "/people/technical-staff">Technical Staff</a> ';
+            }
+
+
+            
+                jQuery('div.pane-node-field-group-role').html(' ' + htmltext);
+        console.log('people page');
+    }
+
+    });
+
+    
+
+
+</script>
+
+
+
+
+  <script src="https://hcii.cmu.edu/sites/default/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+<script src="https://hcii.cmu.edu/sites/default/files/js/js_29qYXJz8NLGg8Aomg-RZPjJcj9yEdEst1BMZ9gZbs-4.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ce1c3bf267","applicationID":"122611931","transactionName":"Y1QHYUFVCxdTAhBdWVoeJFZHXQoKHREFU1NrXARbUlMAFm0PC1BTa0cMUERrFQVVBA==","queueTime":0,"applicationTime":418,"atts":"TxMEFwlPGBk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

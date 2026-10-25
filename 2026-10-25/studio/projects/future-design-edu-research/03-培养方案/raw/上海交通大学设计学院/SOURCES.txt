@@ -1,0 +1,31 @@
+上海交通大学设计学院 — 原件登记（SOURCES）
+抓取日期：2026-10-04（全部）
+写入边界：本文件与同目录原件均由线 C（培养方案）会话写入，未改动项目其他文件。
+
+[当前版]
+1. sjtu-2025级-设计MoDi-135700-培养方案.xlsx | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | URL: https://designschool.sjtu.edu.cn/static/2025%E7%BA%A7%E8%AE%BE%E8%AE%A1MoDi%EF%BC%88135700%EF%BC%89%E5%9F%B9%E5%85%BB%E6%96%B9%E6%A1%88-1761015322001.xlsx | 页面: https://designschool.sjtu.edu.cn/cultivate/master/30f66b489cbbe73bbeb71fa71ba81595/detail/68f6f62e4347b9dc7e88798c | 页面登记日期 2025-10-21
+2. sjtu-2025级-设计学-140300-培养方案.xlsx | xlsx | URL: https://designschool.sjtu.edu.cn/static/2025%E7%BA%A7%E8%AE%BE%E8%AE%A1%E5%AD%A6%EF%BC%88140300%EF%BC%89%E5%9F%B9%E5%85%BB%E6%96%B9%E6%A1%88-1761014936602.xlsx | 页面: .../detail/68f6f4a14347b9dc7e801b31 | 2025-10-21
+3. sjtu-2024级-设计-135700-培养方案-全日制.xlsx | xlsx | URL: https://designschool.sjtu.edu.cn/static/2024%E7%BA%A7%E8%AE%BE%E8%AE%A1%EF%BC%88135700%EF%BC%89%E5%9F%B9%E5%85%BB%E6%96%B9%E6%A1%88-%E5%85%A8%E6%97%A5%E5%88%B6-1745895908056.xlsx | 页面: .../detail/681041ec06cde589ea2cf566 | 2025-04-29
+4. sjtu-硕士生教育-培养方案栏目-2026-10-04.html | text/html | URL: https://designschool.sjtu.edu.cn/cultivate/master/30f66b489cbbe73bbeb71fa71ba81595
+5. sjtu-2025级设计135700-MoDi硕士培养方案-页面-2026-10-04.html | text/html | URL: .../detail/68f6f62e4347b9dc7e88798c
+6. sjtu-2024级设计135700硕士培养方案-页面-2026-10-04.html | text/html | URL: .../detail/681041ec06cde589ea2cf566
+7. sjtu-2025级设计学140300硕士培养方案-页面-2026-10-04.html | text/html | URL: .../detail/68f6f4a14347b9dc7e801b31
+
+[历史版 — 原件与 Wayback 快照]
+8. sjtu-2019级-设计学硕士培养方案.doc | application/msword (OLE2) | URL: https://design.sjtu.daguchuangyi.com/static/上海交通大学设计学院2019级设计学硕士培养方案-1591079939252.doc | 快照日期 2022-01-24 | 快照: http://web.archive.org/web/20220124174339/https://designschool.sjtu.edu.cn/cultivate/master/30f66b489cbbe73bbeb71fa71ba81595/detail/5ed5f404bfe30558087cdef8
+9. sjtu-2020级-设计学硕士培养方案.doc | application/msword (RTF) | URL: https://designschool.sjtu.edu.cn/static/2020级设计学硕士培养方案-1598510240912.doc | 快照日期 2022-01-24 | 快照: http://web.archive.org/web/20220124161003/https://designschool.sjtu.edu.cn/cultivate/master/30f66b489cbbe73bbeb71fa71ba81595/detail/5f4754a2b93c48b6b0e19f25
+10. sjtu-2020级-工业设计工程硕士培养方案.doc | application/msword (RTF) | URL: https://designschool.sjtu.edu.cn/static/2020级工业设计工程硕士培养方案-1598510507353.doc | 快照日期 2022-01-24 | 快照: http://web.archive.org/web/20220124180524/...detail/5f4755adb93c48b6b0e1b82d
+11. wayback-20211129-sjtu-硕士生教育-培养方案栏目.html | text/html | 快照: http://web.archive.org/web/20211129121255/https://designschool.sjtu.edu.cn/cultivate/master/30f66b489cbbe73bbeb71fa71ba81595 | 快照日期 2021-11-29 | 内容：列出 2019 级 6 份、2020 级 6 份培养方案名称；正文无学分数据（前端渲染）
+12. wayback-20220124-sjtu-2019级设计学硕士培养方案.html | text/html | 快照: http://web.archive.org/web/20220124174339/...detail/5ed5f404bfe30558087cdef8 | 快照日期 2022-01-24 | 正文仅含附件链接，无学分数据
+13. wayback-20220124-sjtu-2020级设计学硕士培养方案.html | 同 #9 快照
+14. wayback-20220124-sjtu-2020级工业设计工程硕士培养方案.html | 同 #10 快照
+
+[Wayback CDX 查询记录]
+- http://web.archive.org/cdx/search/cdx?url=designschool.sjtu.edu.cn&matchType=domain&output=json&collapse=urlkey&limit=3000 → 3000 条（2020-08 ~ 2026-09）；域名首快照 20200808203736。
+- .../cultivate/master/30f66b489cbbe73bbeb71fa71ba81595 → 8 个快照，最早 2021-11-29，最晚 2025-11-02。
+- .../cultivate/master/.../detail/* → 34 个 detail 页有快照，其中 8 个为 2022-01-24。
+- http://web.archive.org/cdx/search/cdx?url=gs.sjtu.edu.cn&matchType=domain&limit=3000 → 3000 条（2005-11 ~ 2026-06）；仅有 2007-2010 年的研究生课程列表页，未见设计学院培养方案。
+
+[未取到的]
+- 2021/2022/2023 级设计类培养方案原件：cdx 未见 detail 快照含附件，未取。
+- design.sjtu.daguchuangyi.com 域名自身 CDX：未查询。

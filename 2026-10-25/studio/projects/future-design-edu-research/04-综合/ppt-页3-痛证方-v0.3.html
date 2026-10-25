@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>页3 · 结论：三方独立说话，指向同一张清单（v0.3）</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --gray:#8a8a8a; --light:#b5b3ae; --line:#e0ded9;
+    --seal:#b23a2e; --paper:#fff; --bg:#efeeea;
+    --font:'Source Han Sans SC','Noto Sans SC','Microsoft YaHei',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);font-family:var(--font);color:var(--ink);padding:28px}
+  .slide{width:1600px;min-height:880px;background:var(--paper);margin:0 auto;padding:44px 52px 30px;box-shadow:0 4px 22px rgba(0,0,0,.10)}
+  .eyebrow{font-size:25px;font-weight:700}
+  .eyebrow .num{color:var(--seal);margin-right:12px}
+  .thesis{font-size:20px;font-weight:700;margin-top:14px;line-height:1.5}
+  .thesis em{font-style:normal;color:var(--seal)}
+  /* ---- 三栏 痛→证→方 ---- */
+  .flow{display:flex;gap:0;margin-top:30px;align-items:stretch}
+  .col{flex:1;border:1px solid var(--line);background:#fdfdfc;padding:16px 18px 14px}
+  .colhead{display:flex;align-items:baseline;gap:10px;border-bottom:1.5px solid var(--ink);padding-bottom:9px;margin-bottom:12px}
+  .step{font-size:22px;font-weight:800}
+  .colhead .qt{font-size:12px;color:var(--seal);font-weight:700;letter-spacing:1px}
+  .arrow{align-self:center;font-size:30px;color:var(--light);padding:0 10px;font-weight:300}
+  /* 痛 */
+  .fact{margin-bottom:13px}
+  .fact .big{font-size:23px;font-weight:800;line-height:1.15}
+  .fact .big small{font-size:12.5px;color:var(--gray);font-weight:400;margin-left:4px}
+  .fact .cap{font-size:12.5px;color:#444;line-height:1.5;margin-top:2px}
+  .x{color:var(--gray);font-weight:400;margin:0 3px}
+  /* 证 */
+  .claim{font-size:14.5px;font-weight:600;line-height:1.75;margin-bottom:12px}
+  .claim em{font-style:normal;color:var(--seal)}
+  .mirror{border:1px dashed var(--seal);background:#fdf6f4;padding:11px 12px 9px;margin-bottom:12px}
+  .mirror .mt{font-size:11px;color:var(--seal);letter-spacing:2px;margin-bottom:8px}
+  .mnodes{display:flex;justify-content:space-between;gap:6px}
+  .mnode{flex:1;text-align:center;background:#fff;border:1px solid var(--line);padding:8px 4px}
+  .mnode .v{font-size:19px;font-weight:800;color:var(--seal)}
+  .mnode .l{font-size:10.5px;color:#555;margin-top:2px;line-height:1.4}
+  .mlink{align-self:center;color:var(--seal);font-size:15px;padding:0 2px}
+  .supplies{display:flex;gap:7px;flex-wrap:wrap}
+  .supplies b{font-size:13px;border:1.5px solid var(--seal);color:var(--seal);padding:5px 11px;font-weight:700}
+  /* 方 */
+  .mini{margin-bottom:13px}
+  .mini .h{font-size:13.5px;font-weight:700;margin-bottom:3px}
+  .mini .h i{font-style:normal;color:var(--seal)}
+  .mini p{font-size:12.5px;color:#444;line-height:1.6}
+  .seq{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:5px}
+  .seq b{font-size:12.5px;background:var(--ink);color:#fff;padding:4px 9px;font-weight:600;white-space:nowrap}
+  .seq span{color:var(--light);font-size:13px}
+  /* 收口句 */
+  .close{margin-top:auto;border-top:1px dashed var(--line);padding-top:9px;font-size:13.5px;font-weight:700}
+  .close em{font-style:normal;color:var(--seal)}
+  .col{display:flex;flex-direction:column}
+  /* ---- 回扣带 ---- */
+  .callback{margin-top:28px;border:1.5px solid var(--ink);padding:13px 18px;display:flex;gap:0;align-items:stretch}
+  .callback .ct{font-size:13px;font-weight:800;letter-spacing:1px;padding-right:16px;border-right:1px solid var(--line);display:flex;align-items:center;white-space:nowrap}
+  .callback .items{display:flex;flex:1;justify-content:space-between;padding-left:18px;gap:12px}
+  .cbi{font-size:12.5px;line-height:1.5;color:#444}
+  .cbi b{display:block;font-size:13.5px;color:var(--ink)}
+  .cbi b i{font-style:normal;color:var(--seal)}
+  .foot{margin-top:14px;font-size:11px;color:var(--gray);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="eyebrow"><span class="num">03</span>结论：三方独立说话，指向同一张清单</div>
+  <div class="thesis">学生说的痛、企业在要的、学校没教的——<em>三方互不通气，独立指向同一批缺口</em>。规划者的回答分三步：先认痛，再立证，后排方案。</div>
+
+  <div class="flow">
+    <!-- ① 痛 -->
+    <div class="col">
+      <div class="colhead"><span class="step">痛</span><span class="qt">题1 · 现状诊断</span></div>
+      <div class="fact"><div class="big">69.4%<small>认同</small> · 0%<small>不同意</small></div>
+        <div class="cap">课程与行业脱节——没有一个人站在"不脱节"一边</div></div>
+      <div class="fact"><div class="big">72.7%<span class="x">×</span>51.4%</div>
+        <div class="cap">AI 用而无教：七成学生已高频自用<span class="x">·</span>过半说学院最缺 AI 资源</div></div>
+      <div class="fact"><div class="big">95%<span class="x">×</span>39.7%</div>
+        <div class="cap">规划悬空：95% 自述"方向/路径不明确"（问卷C·全表最大共识）<span class="x">·</span>成因是制度性的：近四成国考岗"仅限本科"、65% 的 JD 不提学历</div></div>
+      <div class="close">▸ 痛点＝<em>供给缺口</em>，不是学生不努力</div>
+    </div>
+    <div class="arrow">→</div>
+    <!-- ② 证 -->
+    <div class="col">
+      <div class="colhead"><span class="step">证</span><span class="qt">题3 · 多源互证</span></div>
+      <div class="claim">三份主观数据（问卷A/B·访谈）×三条客观证据线（JD·培养方案·政策国考）<em>互相不认识、各自说话，指向同一批新供给</em></div>
+      <div class="mirror">
+        <div class="mt">镜像实例 · 三个独立来源互为印证</div>
+        <div class="mnodes">
+          <div class="mnode"><div class="v">67%</div><div class="l">JD"端到端负责"</div></div>
+          <div class="mlink">↔</div>
+          <div class="mnode"><div class="v">4.1<span style="font-size:12px">/5</span></div><div class="l">问卷"企业真实项目进学分"</div></div>
+          <div class="mlink">↔</div>
+          <div class="mnode"><div class="v">0</div><div class="l">16校课名层对应专课</div></div>
+        </div>
+      </div>
+      <div class="supplies"><b>AI 协同</b><b>真实项目</b><b>可持续</b><b>跨学科</b></div>
+      <div class="close">▸ 新供给是<em>三重表决出</em>的，不是单一来源的自我陈述</div>
+    </div>
+    <div class="arrow">→</div>
+    <!-- ③ 方 -->
+    <div class="col">
+      <div class="colhead"><span class="step">方</span><span class="qt">题4 · 题5 · 题6 · 供给方案</span></div>
+      <div class="mini"><div class="h"><i>题4</i> AI 摆位：效率给 AI，决策留人</div>
+        <p>"替代教学"仅 7.27%、"终案决定"仅 5.45%，83.6% 仍要教师——AI 管创意启发与提效（70.9%/61.8%）</p></div>
+      <div class="mini"><div class="h"><i>题5</i> 差异供给：共性之上按专业分型</div>
+        <p>数媒·工设→AI+工程 ｜ 环艺→可持续 ｜ 视传→商业 ｜ 产品→跨学科整合</p></div>
+      <div class="mini"><div class="h"><i>题6</i> 优先次序：先进系统的是这四件</div>
+        <div class="seq"><b>AI协同课</b><span>→</span><b>跨学科真实项目</b><span>→</span><b>可持续融入</b><span>→</span><b>媒介素养</b></div></div>
+      <div class="close">▸ 按"世界在要 ∩ 学校能接"排序进入教育系统</div>
+    </div>
+  </div>
+
+  <!-- 回扣带：页1 四词一一收口 -->
+  <div class="callback">
+    <div class="ct">规划者的回答<br><span style="font-weight:400;color:var(--gray);font-size:11px">＝页1四词，一一收口</span></div>
+    <div class="items">
+      <div class="cbi"><b><i>未来</i></b>十五五五年窗口<br>2026–2030 语境可核验</div>
+      <div class="cbi"><b><i>研究生</i></b>异质群体<br>共性基础＋按型供给</div>
+      <div class="cbi"><b><i>需求</i></b>世界在要 ∩ 学校能接<br>学生陈述放最后对质</div>
+      <div class="cbi"><b><i>教育</i></b>AI·教师·学生三分工<br>决策与思维训练留给人</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>局限：问卷为便利抽样、JD 样本量有限、课名层≠课程内容层——结论均为方向性判断</span>
+    <span>追问预案：题2 未选做 → 缺口判定已内嵌"痛"栏三组数字（重要但不满意）</span>
+  </div>
+
+</div>
+</body>
+</html>

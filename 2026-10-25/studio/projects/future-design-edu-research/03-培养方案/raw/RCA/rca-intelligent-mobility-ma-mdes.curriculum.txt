@@ -1,0 +1,84 @@
+id="curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+The MA programme is hosted by the Intelligent Mobility Design Centre.
+More details on what you'll study.
+Find out what you'll cover in this programme.
+What you'll cover
+How will I learn?
+The programme will deploy a range of teaching/learning strategies to build skills at a number of levels during the MA as follows:
+Personally directed study
+will be encouraged during the programme and will be a focus for the IRP as part of the strategic/ideological goals of the programme. Such study will be guided by tutors through regular personal and group tutorials as below.
+Personal tutorials
+will be used to explore and challenge students' attitudes and knowledge about their work in context between individual students and their tutor.
+Group tutorials
+will be used to debate issues across student cohorts and tutors and to examine ideas at depth.
+Group seminars
+will be used to provide a range of contextual and ideological knowledge to students on the programme.
+Group workshops and skills training
+will be used to build key skills in a range of areas during the programme. Typical examples include: specialist CAD training, research skills workshops, bespoke short skills projects.
+Individual interim project presentation and reviews
+(non-examined) will be used to assess and debate students work during projects - leading to verbal and written feedback being given.
+Final examinations
+will be used to critically appraise work and provide feedback by an examination board on work submitted for a unit.
+You will also learn from your fellow students, and they will learn from you. Each year a global cohort of students from diverse backgrounds, careers and life experiences joins our community. Peer-to-peer learning is a vital part of the RCA experience and this range of perspectives enriches students, igniting new ways of thinking and sparking innovation.
+Outside of campus experience, you will have opportunities to explore London and immerse yourself in Europe's creative and cultural capital.
+Programme structure
+The programme includes a combination of programme, School and College units. These will include:
+Year 1
+In year 1 you will be exposed to a range of mobility sectors which will give you an understanding of the spectrum of contexts in which mobility interfaces. These naturally take you from macro (city and place) to micro (the car as the common currency and unit of mobility)
+People and places
+This unit provides a framework to understand how and where future mobility fits into a changing global landscape and how people and places connect through mobility. The unit aims to sensitise you to the scope and limits of different mobility typologies within the mobility mix and highlights the need for design to meet broader infrastructural and social requirements.
+Humanising technology
+This unit aims to explore how recent transformational mobility technologies such as autonomy and electrification can be interpreted to provide new and desirable human interactions in mobility. You are expected to gain a profound and critical understanding of emerging technologies and their place in future mobility design.
+Automotive transitions
+This unit focuses on the future of the automotive typology and asks you to reimagine how technology and social trends will influence future automotive design. The unit provides a deep context into the key elements of future automotive design with an emphasis on advanced manufacturing, contemporary socio-cultural issues and questions related to future business models.
+Also in Term 2,
+a choice of elective units
+will allow you to shape your own learning journey. You will have the opportunity to work alongside students from other programmes, bringing your practice into dialogue with the creative approaches of your peers. This could either be through tackling ‘wicked’ design problems from a range of different perspectives, by collaborating on themed interdisciplinary projects, or by exploring how mutual exchanges of ideas and interpretations can foster a socially engaged practice. A full list of elective options will be published in 2027.
+Independent Research Project
+This unit concludes the first year of your study and asks students to identify, develop and address a defined research question which is both socially relevant and technically challenging. The work must be documented at all stages for public dissemination. This will take the form of a physical and or digital (virtual) exhibition of a selection of the students’ work during their 3 terms.
+You are responsible for the intellectual and technical evolution of this project and for leading the research and development of ideas and insights through different stages of the design process. This includes working out who the stakeholders are, how to research, and the development of thinking through different media; notably from 2D to 3D and to an appropriate level of resolution.
+For students continuing to the enhanced MDes award, the IRP will be a design response to a thematic topic/research question or challenge set by the programme academic team (this will be adapted and reset each year). The topic will be sufficiently broad to enable students to locate their project in one of the three studios i.e. People and places, Humanising Technology or Automotive transitions.
+Students will be expected to define their project within the thematic topic before commencing the project including the following:
+A definition of the space within the brief they intend to focus on
+A plan/methodology for the development of the work
+A rationale for how their target project related to their skills and interests
+Year 2
+You will begin year 2 with
+Professional Development & Contextual Framing.
+This unit marks the transition into the second year of the MDes and establishes the conditions for advanced, independent design enquiry. It is intended to consolidate and extend the work developed during the first year, enabling you to operate with increased autonomy and critical confidence as you prepare for the
+MDes Major Project
+. The unit provides a structured but open framework within which you will refine your practice, deepen your contextual understanding, and define a coherent and ambitious direction for your work.
+Towards the end of term 4 you will begin your
+MDes Major Project.
+This unit represents the culmination of the
+Master of Design
+and is structured as an extended period of independent, practice-led enquiry through which you will realise a substantial and original design project or proposition. It builds on the direction, research and methodologies established in the preceding unit and requires you to operate with a high degree of autonomy, critical judgement and professional awareness.
+The
+MDes Major Project
+will require students to situate and test their work at an advanced level in order to establish its social, technical and/or commercial positioning. This will require students to deliver a series of formal project reports at prespecified stage gates during the project – which describe and reflect on the testing and development of the project proposition. (In this context ‘testing’ of the work can include traditional formats such as prototyping and evaluation with users and/or alternatives such as road mapping/future casting etc.)
+A key point of difference of the MDes will be evidenced as students progress their projects to select, test, apply and evolve a range of appropriate methods and processes for their project. This may include for example state of the art digital/virtual processes or experimental material/production methods where projects are closely aligned to commercial opportunities. In such cases the expectation is for students to demonstrate a degree of critical reflection to the selection of approaches and in the adaptation of these to deliver their work – creating original outcomes which display depth of enquiry – situated via expert use of processes of production and development as appropriate.
+At the end of this unit, you will present your work through an appropriate public or professional format. This may take the form of an exhibition, prototype, system, publication, digital platform or other mode of dissemination, depending on the nature of your discipline.
+Examples of industry links
+Bentley
+Ford
+Geely
+Hyundai Kia
+JLR
+Porsche Design
+SAIC
+Toyota Lexus
+VW
+">
+">
+Bentley
+Ford
+Geely
+Hyundai Kia
+JLR
+Porsche Design
+SAIC
+Toyota Lexus
+VW
+">
+">
+<div class="tabs__panel tabs__panel--hidden js-tab-panel"

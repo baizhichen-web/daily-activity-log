@@ -1,0 +1,13 @@
+Design Academy Eindhoven 原始件登记（自动生成，可复核）
+生成会话：线 C 培养方案会话　生成日期：2026-10-04
+抓取日期：2026-10-04（Wayback 快照另注快照时间戳）
+生成规则：URL 取自 HTML 的 canonical/og:url，或同目录页面里指向该 PDF 的 href；文件名含 wayback-YYYY-MM-DD 的从文件名取时间戳。
+**抽不到 URL 的一律标「URL 待补」，不用推测填**——需由采集会话补全。
+
+| 文件 | 类型 | 原始 URL / 快照时间戳 | 字节 |
+|---|---|---|---|
+| `DAE-课程层不可得说明.md` | 原件 | **URL 待补** | 1719 |
+| `dae-master-programme.html` | 原件 | https://www.designacademy.nl/page/398/master-programme | 83668 |
+| `dae-masters.html` | 原件 | https://www.designacademy.nl/page/5740/masters | 73586 |
+
+统计：原件 3 件，自动补到 URL 的 2 件。

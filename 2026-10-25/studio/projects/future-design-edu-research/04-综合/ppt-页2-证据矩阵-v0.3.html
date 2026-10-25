@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>页2 · 调研怎么做的：五题 × 八类证据（研究设计可视化 v0.3）</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --gray:#8a8a8a; --light:#c9c9c9; --line:#e0ded9;
+    --seal:#b23a2e; --paper:#ffffff; --bg:#efeeea;
+    --font:'Source Han Sans SC','Noto Sans SC','Microsoft YaHei',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);font-family:var(--font);color:var(--ink);padding:28px}
+  .slide{width:1600px;background:var(--paper);margin:0 auto;padding:44px 52px 34px;box-shadow:0 4px 22px rgba(0,0,0,.10)}
+  /* ---- 眉标 ---- */
+  .eyebrow{font-size:25px;font-weight:700;letter-spacing:.5px}
+  .eyebrow .num{color:var(--seal);margin-right:12px}
+  .eyebrow .sub{font-size:15px;color:var(--gray);font-weight:400;margin-left:16px}
+  /* ---- 设计命名行 ---- */
+  .design{display:flex;align-items:baseline;margin:16px 0 26px;border-left:4px solid var(--seal);padding-left:14px}
+  .design b{font-size:16px;letter-spacing:1px}
+  .design span{font-size:14px;color:#555;margin-left:12px}
+  /* ---- 主表 ---- */
+  table{border-collapse:collapse;width:100%;table-layout:fixed}
+  th,td{border:0 solid var(--line);vertical-align:top}
+  /* 分组括线行 */
+  tr.grp td{padding:0 0 6px;text-align:center}
+  .bracket{display:inline-block;font-size:12px;letter-spacing:2px;color:var(--gray);
+    border-top:1.5px solid var(--light);padding:5px 14px 0;margin:0 4px}
+  .bracket.corpus{border-top-color:var(--ink);color:var(--ink)}
+  /* 列头四行堆栈 */
+  th.src{padding:2px 8px 10px}
+  th.src .n1{font-size:16.5px;font-weight:700}
+  th.src .n2{font-size:12px;color:#555;margin-top:2px}
+  th.src .n3{font-size:11px;color:var(--gray);margin-top:5px;line-height:1.45}
+  th.src .n4{font-size:11px;color:var(--gray);margin-top:2px;line-height:1.45;border-top:1px dashed var(--line);padding-top:4px;white-space:nowrap}
+  td.rowlab,th.rowlab{width:168px;text-align:left;vertical-align:middle}
+  .qtag{font-size:15px;font-weight:700}
+  .qtag i{font-style:normal;color:var(--seal)}
+  .qname{font-size:13px;color:#555;margin-top:2px}
+  /* 单元格 */
+  td.cell{text-align:center;border-top:1px solid var(--line);padding:13px 6px 12px}
+  td.cell.empty{background:#fafaf8}
+  .dot{font-size:21px;line-height:1;display:block}
+  .dot.prime{color:var(--seal)}
+  .dot.aux{color:#a8a8a8;font-size:19px}
+  .cn{font-size:10.5px;color:var(--gray);display:block;margin-top:4px;line-height:1.35}
+  /* 表尾细线与质量线 */
+  .rule{border-top:1.5px solid var(--ink);margin:26px 0 0}
+  tr.integ th.rowlab{vertical-align:top;padding-top:2px}
+  /* ---- 集成带（5题横排） ---- */
+  .integ-band{margin-top:26px}
+  .integ-title{font-size:13px;letter-spacing:2px;color:var(--gray);margin-bottom:10px}
+  table.integ{width:100%;table-layout:fixed}
+  th.icell{font-size:13px;font-weight:700;text-align:left;padding:0 10px 6px;border-bottom:1px solid var(--line)}
+  th.icell i{font-style:normal;color:var(--seal)}
+  td.icell{font-size:12px;color:#444;text-align:left;padding:7px 10px;line-height:1.5;border-bottom:1px solid var(--line)}
+  td.icell.out{color:var(--ink);font-weight:600}
+  td.icell .fx{color:var(--seal);font-weight:700}
+  /* ---- 质量线+脚注 ---- */
+  .qline{display:flex;gap:26px;margin-top:24px;font-size:12px;color:#555;align-items:baseline}
+  .qline::before{content:"质量线";font-weight:700;color:var(--ink);letter-spacing:1px;
+    border-left:3px solid var(--seal);padding-left:8px;font-size:12.5px}
+  .qline b{color:var(--ink);font-weight:600}
+  .foot{margin-top:10px;font-size:11px;color:var(--gray)}
+  .tierkey{margin-top:14px;font-size:11px;color:var(--gray);display:flex;gap:20px}
+  .tierkey .dot{display:inline;font-size:13px;vertical-align:-1px}
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="eyebrow"><span class="num">02</span>调研怎么做的：两轨采集 · 独立加工 · 末端对质<span class="sub">五题 × 八类证据</span></div>
+
+  <div class="design"><b>研究设计</b><span>多源三角互证（triangulation）——三档证据强度不同、互不通气，只在“对质”一站见面</span></div>
+
+  <!-- ═══════════ 主矩阵 ═══════════ -->
+  <table>
+    <colgroup>
+      <col style="width:168px">
+      <col><col><col><col><col><col><col><col>
+    </colgroup>
+    <!-- 分组括线 -->
+    <tr class="grp"><td></td>
+      <td colspan="3"><span class="bracket">自报证据 · 学生怎么说</span></td>
+      <td><span class="bracket">话语证据</span></td>
+      <td colspan="4"><span class="bracket corpus">语料证据 · 经编码处理</span></td>
+    </tr>
+    <!-- 列头堆栈：名称/规模/采集/分析 -->
+    <tr>
+      <th class="rowlab"></th>
+      <th class="src"><div class="n1">问卷A</div><div class="n2">n=72 · 17题</div><div class="n3">网络发放 · 便利抽样</div><div class="n4">描述统计＋分专业交叉表</div></th>
+      <th class="src"><div class="n1">问卷B＋访谈</div><div class="n2">n=55 · 10题＋4人</div><div class="n3">网络发放＋半结构访谈</div><div class="n4">量表统计＋访谈主题归纳</div></th>
+      <th class="src"><div class="n1">问卷C＋访谈</div><div class="n2">发30·回21＋研二访谈</div><div class="n3">定向发放 · 便利抽样</div><div class="n4">痛点排序＋需求三层归纳</div></th>
+      <th class="src"><div class="n1">桌面研究</div><div class="n2">知网＋小红书/抖音/微博</div><div class="n3">关键词检索 · 高赞筛选</div><div class="n4">三方话语归纳（文献×3）</div></th>
+      <th class="src"><div class="n1">JD 语料</div><div class="n2">409条 → 103条编码</div><div class="n3">官网多源采集 · 过采设计去向族</div><div class="n4">双AI编码→人工裁决→盲编校准</div></th>
+      <th class="src"><div class="n1">培养方案</div><div class="n2">16校 · 课名层</div><div class="n3">官网＋历史快照</div><div class="n4">关键词提取＋纵向对比</div></th>
+      <th class="src"><div class="n1">国考职位表</div><div class="n2">2026 · 380岗</div><div class="n3">全表筛选</div><div class="n4">门槛分类统计</div></th>
+      <th class="src"><div class="n1">政策 / WEF</div><div class="n2">十五五 · 三期报告</div><div class="n3">官方文本</div><div class="n4">词频追踪＋任务转写</div></th>
+    </tr>
+    <!-- 题1 -->
+    <tr>
+      <th class="rowlab"><div class="qtag"><i>题1</i> 痛点</div><div class="qname">此刻被什么卡住</div></th>
+      <td class="cell"><span class="dot prime">●</span></td>
+      <td class="cell"><span class="dot prime">●</span></td>
+      <td class="cell"><span class="dot prime">●</span><span class="cn">95% 方向不明</span></td>
+      <td class="cell"><span class="dot aux">◦</span><span class="cn">碎片化自学自述</span></td>
+      <td class="cell"><span class="dot aux">◦</span><span class="cn">65% 不提学历</span></td>
+      <td class="cell"><span class="dot aux">◦</span><span class="cn">课名层零对应</span></td>
+      <td class="cell"><span class="dot prime">●</span><span class="cn">39.7% 仅限本科</span></td>
+      <td class="cell empty"></td>
+    </tr>
+    <!-- 题3 -->
+    <tr>
+      <th class="rowlab"><div class="qtag"><i>题3</i> 新支持</div><div class="qname">未来补什么</div></th>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell"><span class="dot prime">●</span></td>
+      <td class="cell"><span class="dot prime">●</span></td>
+      <td class="cell"><span class="dot aux">◦</span></td>
+      <td class="cell"><span class="dot prime">●</span></td>
+    </tr>
+    <!-- 题4 -->
+    <tr>
+      <th class="rowlab"><div class="qtag"><i>题4</i> AI 角色</div><div class="qname">哪些给人哪些给AI</div></th>
+      <td class="cell empty"></td>
+      <td class="cell"><span class="dot prime">●</span></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+    </tr>
+    <!-- 题5 -->
+    <tr>
+      <th class="rowlab"><div class="qtag"><i>题5</i> 类型差异</div><div class="qname">需求是否一致</div></th>
+      <td class="cell"><span class="dot prime">●</span><span class="cn">分专业交叉</span></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell"><span class="dot prime">●</span><span class="cn">文献×3</span></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+    </tr>
+    <!-- 题6 -->
+    <tr>
+      <th class="rowlab"><div class="qtag"><i>题6</i> 优先级</div><div class="qname">先做什么</div></th>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell"><span class="dot prime">●</span></td>
+      <td class="cell"><span class="dot aux">◦</span><span class="cn">框架外能力佐证</span></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+      <td class="cell empty"></td>
+    </tr>
+  </table>
+
+  <div class="tierkey">
+    <span><span class="dot prime">●</span> 主要证据源</span>
+    <span><span class="dot aux">◦</span> 佐证（注语＝该题实际引用的数字）</span>
+    <span>列头自上而下＝这份数据的四步一生：名称 → 规模 → 采集设计 → 分析方法</span>
+  </div>
+
+  <!-- ═══════════ 集成带 ═══════════ -->
+  <div class="integ-band">
+    <div class="integ-title">每题如何把证据合起来 · 集成 → 输出</div>
+    <table class="integ">
+      <colgroup><col style="width:168px"><col><col><col><col><col></colgroup>
+      <tr>
+        <th></th>
+        <th class="icell"><i>题1</i> 痛点</th>
+        <th class="icell"><i>题3</i> 新支持</th>
+        <th class="icell"><i>题4</i> AI角色</th>
+        <th class="icell"><i>题5</i> 差异</th>
+        <th class="icell"><i>题6</i> 优先</th>
+      </tr>
+      <tr>
+        <td style="font-size:12px;color:var(--gray);padding:7px 10px 7px 0;vertical-align:top">集成方式</td>
+        <td class="icell">双轨数字对质 → 定位三类痛点</td>
+        <td class="icell"><span class="fx">学生在要 ∩ 世界在要 − 学校已教</span></td>
+        <td class="icell">角色 · 决策 · 教师 三层交叉</td>
+        <td class="icell">共性检验 → 分化检验 两步</td>
+        <td class="icell">呼声 × 缺口 双因子排序</td>
+      </tr>
+      <tr>
+        <td style="font-size:12px;color:var(--gray);padding:0 10px 0 0;vertical-align:top">输出形态</td>
+        <td class="icell out">痛点三分类</td>
+        <td class="icell out">缺口清单 → 四项新供给</td>
+        <td class="icell out">AI·教师·学生 三分工</td>
+        <td class="icell out">专业分型画像</td>
+        <td class="icell out">优先次序表</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="rule"></div>
+  <div class="qline">
+    <span><b>双AI独立编码</b>＋破裂点人工裁决＋盲编校准（工序仅语料轨）</span>
+    <span><b>来源分档</b>：全可追溯才具名引用</span>
+    <span><b>便利抽样</b>：只报方向，不作推断</span>
+  </div>
+  <div class="foot">局限：课名层≠课程内容层；桌面研究为话语素材非统计证据；各题结论与其证据强度同级。</div>
+
+</div>
+</body>
+</html>

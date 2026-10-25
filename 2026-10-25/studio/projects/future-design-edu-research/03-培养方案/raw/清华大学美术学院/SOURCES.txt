@@ -1,0 +1,91 @@
+# SOURCES.txt — 03-培养方案/raw/清华大学美术学院/
+
+采集会话：DSH 线 C（院校培养方案）子会话，2026-10-04。抓取日期栏统一为 **2026-10-04**。Wayback 另记快照日期。
+
+---
+
+## A. 官方原件（清华域名）
+
+### A1. yzbm-2024硕士招生专业目录-统招-美术学院080.html
+- 类型：HTML（服务端渲染，含 080 美术学院整段目录）
+- 完整 URL：https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/8b8b3674-5b95-4a03-a8fd-1fb7baf9d32a?yxsdm=080
+- 文档内标题：清华大学2024年硕士研究生招生专业目录_统招(含招生人数)
+- 抓取日期：2026-10-04
+- 快照日期：无（未取到 Wayback 存档）
+- 覆盖：080 美术学院 6 个专业、37 个研究方向、专业招生计划、③④ 考试科目
+
+### A2. yzbm-2027硕士招生专业目录-推荐免试-美术学院080.html
+- 类型：HTML
+- 完整 URL：https://yzbm.tsinghua.edu.cn/publish/s01/s0103/detail/996743a2-3adb-4416-ac66-1e272055e0ae/1?yxsdm=080
+- 文档内标题：清华大学2027年硕士研究生招生专业目录_推荐免试
+- 抓取日期：2026-10-04
+- 快照日期：无
+- 覆盖：080 美术学院 5 个专业、27 个研究方向（不列招生计划与考试科目）
+
+### A3. yzbm-2027博士招生专业目录-美术学院080.html
+- 类型：HTML
+- 完整 URL：https://yzbm.tsinghua.edu.cn/publish/s03/s0303/detail/ab3ae191-f6b5-4a83-bd4d-02a279904861?yxsdm=080
+- 文档内标题：清华大学2027年博士研究生招生专业目录
+- 抓取日期：2026-10-04；快照日期：无
+
+### A4. 2020年12月修订-清华大学攻读硕士学位研究生培养工作规定-yjsy.pdf
+- 类型：PDF，5 页，206,228 字节
+- 完整 URL（附件直链）：https://www.tsinghua.edu.cn/yjsy/fujian/pygz.pdf
+- 发布页：https://www.tsinghua.edu.cn/yjsy/info/1055/1789.htm （页面标注发布时间 2021-03-29）
+- 文档内标题：清华大学攻读硕士学位研究生培养工作规定（2020年12月修订）
+- 抓取日期：2026-10-04；快照日期：无
+- 文本层导出：2020-清华大学攻读硕士学位研究生培养工作规定-原文文本.txt（派生件，PyMuPDF 1.27.2.2 导出）
+- 覆盖：第五章第十二条等——学位课程（环节）学分的校级下限
+
+### A5. ad.tsinghua.edu.cn-研究生招生栏目.html
+- 类型：HTML（列表页第 1 页）
+- 完整 URL：https://www.ad.tsinghua.edu.cn/zs/yjszs/yjszs.htm
+- 抓取日期：2026-10-04；快照日期：无
+- 备注：该栏目共 19 页，内容为通知/公示/考核办法；本条只存第 1 页
+
+### A6. ad.tsinghua-2021-信息艺术设计交叉学科硕士研究生项目招生简介.html
+- 类型：HTML（正文页）
+- 完整 URL：https://www.ad.tsinghua.edu.cn/info/1290/15580.htm
+- 页面标注日期：2020.09.24（栏目：招生 / 研究生招生 / 2022-2021 / 2021 / 报考专栏）
+- 抓取日期：2026-10-04；快照日期：无
+
+### A7. ad.tsinghua-2021-非全日制工业设计工程领域工程硕士项目招生简介.html
+- 类型：HTML（正文页）
+- 完整 URL：https://www.ad.tsinghua.edu.cn/info/1290/15579.htm
+- 页面标注日期：2020.09.24；抓取日期：2026-10-04；快照日期：无
+
+---
+
+## B. Wayback Machine 快照
+
+### B1. wayback-20170511-www.ad.tsinghua.edu.cn-首页.html
+- 类型：HTML
+- 原 URL：http://www.ad.tsinghua.edu.cn:80/
+- 快照日期：**2017-05-11**（快照时间戳 20170511192032，UTC）
+- Wayback 完整 URL：http://web.archive.org/web/20170511192032/http://www.ad.tsinghua.edu.cn:80/
+- 抓取日期：2026-10-04（前 2 次返回 HTTP 502，第 3 次成功；29,520 字节）
+- 备注：首页导航含「教务教学」「招生信息」等栏目，**未见「培养方案」栏目名**
+
+### B2. wayback-20170509-yz.tsinghua.edu.cn-首页.html
+- 类型：HTML
+- 原 URL：http://yz.tsinghua.edu.cn:80/
+- 快照日期：**2017-05-09**（快照时间戳 20170509203011，UTC）
+- Wayback 完整 URL：http://web.archive.org/web/20170509203011/http://yz.tsinghua.edu.cn:80/
+- 抓取日期：2026-10-04（前 2 次 HTTP 502，第 3 次成功；17,984 字节）
+
+---
+
+## C. 产出件
+
+### C1. 2024-2027-清华大学美术学院-招生专业目录与校级培养规定-结构化提取.md
+- 类型：本会话产出的结构化提取（纯数据层）
+- 依据：A1–A7、B1、B2
+
+---
+
+## D. 通道与边界备注
+
+- 本目录内 **不含任何清华美院课程层培养方案原件**——本次未取得，原因与已尝试查询见 HISTORY.md。
+- cloud.tsinghua.edu.cn 上的官方「研究生培养方案汇编」PDF 直链一律返回 **HTTP 403 Access token not found**，未取得原件（详见 HISTORY.md 第 2.1 节）。
+- 本会话抓取过程中另存过若干查询用中间文件（CDX 原始输出等），信息已并入 C1 与 HISTORY.md，按协作规范已删除。
+- Node 原生 fetch 是本批 PDF 原件的实际下载通道（curl.exe 的 https 一律 000）。

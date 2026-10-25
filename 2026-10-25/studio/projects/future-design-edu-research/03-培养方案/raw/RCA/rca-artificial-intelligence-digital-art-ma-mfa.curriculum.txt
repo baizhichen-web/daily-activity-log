@@ -1,0 +1,70 @@
+id="curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+More details on what you'll study.
+Find out what you'll cover on this programme.
+What you'll cover
+How you'll learn
+AiDA combines independent studio practice with collective experimentation, creative coding and critical research.
+At MA level, students work through Conditions: experimental studio and research environments that bring particular relationships between AI and contemporary life into focus. Multiple Conditions operate simultaneously, allowing students to work within small research groups while developing independent artistic practices.
+Rather than beginning with a particular technology, students encounter situated questions and artistic methodologies that ask them to consider how computational systems relate to bodies, environments, histories, institutions and publics. Creative Coding and Systems provide the technical and conceptual means to investigate, construct and reconfigure those relationships.
+Tutorials, seminars, critiques and public engagement support the development of independent artistic research. The MA culminates in an Independent Research Project presented as part of the RCA Show. The MFA extends this model through sustained, situated artistic research and public presentation.
+You will also learn from your fellow students, and they will learn from you. Each year a global cohort of students from diverse backgrounds, careers and life experiences joins our community. Peer-to-peer learning is a vital part of the RCA experience and this range of perspectives enriches students, igniting new ways of thinking and sparking innovation.
+Outside of campus experience, you will have opportunities to explore London and immerse yourself in Europe's creative and cultural capital.
+MA Programme structure (one-year programme)
+The MA is organised around three interconnected strands that run throughout the programme:
+Conditions
+,
+Creative Coding
+and
+Systems
+.
+Conditions
+Conditions are AiDA’s experimental studio and research environments. Drawing on diverse traditions of experimental art education, interdisciplinary practice and collective making, Conditions also build upon a history of artists and thinkers who have understood computation, technology and systems as creative and cultural questions. From Ada Lovelace’s conception of computation as a creative and symbolic medium to Black Mountain College, Experiments in Art and Technology, Cedric Price and Joan Littlewood’s Fun Palace and Jack Burnham’s systems thinking, AiDA reconsiders these histories in relation to the circumstances in which AI operates today.
+Conditions treat artistic enquiry as a set of relationships in action. Rather than beginning with a technology, each begins with a situated question about how AI is imagined, made or experienced, bringing people, technologies, materials, histories, environments and forms of knowledge into relation. Students encounter distinct artistic methodologies for navigating these relationships and develop material, spatial and experiential forms through which to articulate, question and reconfigure them. In doing so, Conditions move AI away from the screen and into dialogue with bodies, politics, environments, institutions and public life.
+Multiple Conditions run simultaneously, enabling students to work in small research groups while developing independent artistic practices. Conditions change each year through new questions, practitioners and perspectives. The curriculum remains stable while the relationships through which it is explored continually change.
+Creative Coding
+Creative Coding develops the computational fluency to understand, construct, interrogate and reconfigure intelligent systems.
+Programming is approached as an artistic methodology rather than an end in itself. Students learn how computational systems are made so that they can work critically with, and against, their assumptions, structures and limitations.
+Technical learning develops in dialogue with studio practice, enabling students to work with software, machine learning, computational media and physical computing in response to the artistic questions they are pursuing.
+Systems
+Systems considers what happens when artistic and computational propositions enter the world.
+Working across installation, robotics, physical computing, networks, performance and public space, students investigate how their artworks behave within complex social, material and technical environments – and how they are encountered by different bodies and publics.
+Programme structure
+The programme is delivered across three terms and includes a combination of programme, School and College units. These will include:
+Term 1: Artistic Methods
+Students begin the programme by establishing their studio practice within one of several
+Conditions
+. These experimental studio and research environments provide the context through which the
+Capture
+unit is explored. Capture introduces distinct artistic methodologies for observing, recording and interpreting how computational systems encounter the world, and how the world is made available to computation
+Working within small research groups, students translate situated questions into material, spatial and experimental forms while developing their independent artistic practices.
+Alongside this,
+Creative Coding
+units establish the computational fluency required to understand and intervene in the systems encountered through their work.
+Term 2: Computational Practice
+Students work within a new Condition, providing a different context through which the
+Stimulus–Response
+unit is explored.
+Here the emphasis shifts towards what happens when computational systems act within the world: how they respond, interact, classify, decide and produce consequences. Students investigate relationships between technical systems, bodies, environments and publics.
+The Systems units support students in developing these investigations into ambitious artistic propositions while preparing for their Independent Research Project.
+Also in Term 2, a choice of elective units will allow you to shape your own learning journey. You will have the opportunity to work alongside students from other programmes, bringing your practice into dialogue with the creative approaches of your peers. A full list of elective options will be published in 2027.
+Term 3: Independent Research
+The MA programme culminates in the
+Independent Research Project
+, where students bring together the artistic methodologies developed through Conditions, the computational fluency established through Creative Coding and the approaches to realisation explored through Systems.
+Projects are presented publicly as part of the
+RCA Show
+. Following exhibition, students focus on professional practice, documentation, preservation and the continued life of their work beyond the programme.
+MFA Programme structure (two-year programme)
+After completing your first year following our MA curriculum above, the MFA extends the MA through sustained artistic research, public engagement and situated practice. Units in your second year will include:
+Term 4: Advanced Practice
+Having learned to navigate shared Conditions during the MA, MFA students increasingly establish and transform
+Conditions of their own
+. They identify the cultural, political, material or institutional contexts within which their practice needs to operate and construct new relationships through artistic research.
+Students establish an independent research programme through tutorials, critiques and seminars while working with an external cultural or research context. The focus is on defining a significant artistic question, developing an appropriate methodology and positioning the work within contemporary discourse.
+Term 5: Situated Practice
+Students develop long-term projects situated within contemporary cultural contexts. This may involve engagement with artists, researchers, communities, cultural organisations or technological infrastructures, but may equally take the form of critique, observation, speculation or independent intervention. External collaboration is therefore one possible mode of situated practice rather than a requirement.
+Students are encouraged to consider their own position within the relationships their work constructs: whose knowledge it draws upon, which histories and assumptions it inherits, what infrastructures and resources it depends upon, whom it addresses and how it enters the world.
+Through this process, students move from responding to shared Conditions towards authoring the conditions of their own long-term artistic practice.
+Term 6: Public Contribution
+The programme culminates in a substantial public outcome demonstrating artistic independence and research leadership. Depending on the project, this may take the form of an exhibition, installation, performance, publication or public intervention, presented within an appropriate public context or as part of the RCA Show.
+<div class="tabs__panel tabs__panel--hidden js-tab-panel"

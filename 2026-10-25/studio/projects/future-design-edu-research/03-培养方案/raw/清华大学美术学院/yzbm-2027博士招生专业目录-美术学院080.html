@@ -1,0 +1,928 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>招生目录</title>
+		<meta charset="utf-8">
+		<meta content="webkit" name="renderer">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta content="no-cache" http-equiv="Pragma">
+		<meta http-equiv="Expires" content="0">
+		<meta content="width=device-width, initial-scale=1, user-scalable=1" name="viewport">
+		<link rel="stylesheet" href="/static/xxpt/lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/login/css/style.css">
+		<script src="/static/xxpt/js/jquery-1.12.4.min.js"></script>
+		<style>
+	        .side-nav {
+			    list-style: none;
+			    padding: 0;
+			    margin: 1rem;
+			}
+			.side-nav li {
+			    display: flex;
+			    justify-content: flex-start;
+			    align-items: center;
+			    margin-right: 1rem;
+			}
+			.side-nav li:before {
+			    content: "";
+			    display: block;
+			    width: 0.75rem;
+			    height: 0.125rem;
+			    margin-right: 0.75rem;
+			}
+			.side-nav li.active:before {
+			    background: linear-gradient(90deg,#AA6AFF,#706DFF);
+			}
+			.side-nav li.active a {
+			    color: #000;
+			}
+			.side-nav li a {
+			    display: block;
+			    color: #697B8C;
+			    margin: 0.5rem 0;
+			    padding: 0 0.25rem;
+			    text-decoration: none;
+			    border-radius: 0.25rem;
+			    font-size: 0.875rem;
+			}
+			.side-nav li a:hover {
+			    background-color: #AA6AFF;
+			    color: #fff;
+			}
+			.side-nav li.active a:hover {
+			    background-color: transparent;
+			    color: #000;
+			}
+			.table-jzml h5, .table-jzml h6 { margin: 0;}
+			.table-jzml a { color: #AA6AFF;}
+			.table-jzml a:hover { color: #873BF4;}
+			
+			#zsml-table td textarea{
+				width: 100%;
+			    border: 0;
+			    color: #3A5064;
+			    background-color: #FFF;
+			    vertical-align: top;
+			    font-size: 14px;
+			    font-family: '微软雅黑';
+			    resize: none;
+				outline: none;
+				overflow: auto;
+			}
+			
+			.content-container {
+				width: 100%;
+			    padding-right: 15px;
+			    padding-left: 15px;
+			    margin-right: auto;
+			    margin-left: auto;
+			}
+			
+			.right-container {
+			    float:left;
+			    width: calc(100% - 320px);
+			}
+			
+			#left-container {
+			    float:right;
+			    position:relative;
+			    width: 300px;
+				padding-left: 20px;
+			}
+			
+			/* #left-container #inner-sidebar.fixed {
+			    position:fixed;
+			    top: 0;
+			} */
+			.label {
+			    display: inline;
+			    padding: .2em .6em .3em;
+			    font-size: 75%;
+			    font-weight: 700;
+			    line-height: 1;
+			    color: #fff;
+			    text-align: center;
+			    white-space: nowrap;
+			    vertical-align: baseline;
+			    border-radius: .25em;
+			}
+			.label-danger {
+			    background-color: #dd4b39 !important;
+			}
+			.label-info {
+			    background-color: #00c0ef !important;
+			}
+			
+    	</style>
+    </head>
+    <body>
+	    <div id="sub-banner" class="sub-banner">
+	        <div class="container h-100 d-flex align-items-center justify-content-center">
+				
+					
+					
+						<h1 class="text-white">清华大学2027年博士研究生招生专业目录</h1>
+					
+				
+	        	
+	        </div>
+	    </div>
+	    <div class="content-container mt-5 mb-5">
+        	<div class="row">
+        		<div id="left-container" class="left-container">
+        			<div id="inner-sidebar" class="inner-sidebar">
+        				<ul class="side-nav">
+		                    
+		                    
+								<li class=""><a href="?yxsdm=000">000&nbsp;建筑学院</a></li>
+							
+								<li class=""><a href="?yxsdm=003">003&nbsp;土木工程系</a></li>
+							
+								<li class=""><a href="?yxsdm=004">004&nbsp;水利水电工程系</a></li>
+							
+								<li class=""><a href="?yxsdm=005">005&nbsp;环境学院</a></li>
+							
+								<li class=""><a href="?yxsdm=012">012&nbsp;机械工程系</a></li>
+							
+								<li class=""><a href="?yxsdm=013">013&nbsp;精密仪器系</a></li>
+							
+								<li class=""><a href="?yxsdm=014">014&nbsp;能源与动力工程系</a></li>
+							
+								<li class=""><a href="?yxsdm=015">015&nbsp;车辆与运载学院</a></li>
+							
+								<li class=""><a href="?yxsdm=016">016&nbsp;工业工程系</a></li>
+							
+								<li class=""><a href="?yxsdm=022">022&nbsp;电机工程与应用电子技术系</a></li>
+							
+								<li class=""><a href="?yxsdm=023">023&nbsp;电子工程系</a></li>
+							
+								<li class=""><a href="?yxsdm=024">024&nbsp;计算机科学与技术系</a></li>
+							
+								<li class=""><a href="?yxsdm=025">025&nbsp;自动化系</a></li>
+							
+								<li class=""><a href="?yxsdm=026">026&nbsp;集成电路学院</a></li>
+							
+								<li class=""><a href="?yxsdm=031">031&nbsp;航天航空学院</a></li>
+							
+								<li class=""><a href="?yxsdm=032">032&nbsp;工程物理系</a></li>
+							
+								<li class=""><a href="?yxsdm=034">034&nbsp;化学工程系</a></li>
+							
+								<li class=""><a href="?yxsdm=035">035&nbsp;材料学院</a></li>
+							
+								<li class=""><a href="?yxsdm=042">042&nbsp;数学科学系</a></li>
+							
+								<li class=""><a href="?yxsdm=043">043&nbsp;物理系</a></li>
+							
+								<li class=""><a href="?yxsdm=044">044&nbsp;化学系</a></li>
+							
+								<li class=""><a href="?yxsdm=045">045&nbsp;生命科学学院</a></li>
+							
+								<li class=""><a href="?yxsdm=046">046&nbsp;地球系统科学系</a></li>
+							
+								<li class=""><a href="?yxsdm=047">047&nbsp;交叉信息研究院</a></li>
+							
+								<li class=""><a href="?yxsdm=048">048&nbsp;杨振宁高等研究院</a></li>
+							
+								<li class=""><a href="?yxsdm=051">051&nbsp;经济管理学院</a></li>
+							
+								<li class=""><a href="?yxsdm=059">059&nbsp;公共管理学院</a></li>
+							
+								<li class=""><a href="?yxsdm=060">060&nbsp;五道口金融学院</a></li>
+							
+								<li class=""><a href="?yxsdm=064">064&nbsp;外国语言文学系</a></li>
+							
+								<li class=""><a href="?yxsdm=066">066&nbsp;法学院</a></li>
+							
+								<li class=""><a href="?yxsdm=067">067&nbsp;新闻与传播学院</a></li>
+							
+								<li class=""><a href="?yxsdm=068">068&nbsp;马克思主义学院</a></li>
+							
+								<li class=""><a href="?yxsdm=069">069&nbsp;人文学院</a></li>
+							
+								<li class=""><a href="?yxsdm=070">070&nbsp;社会科学学院</a></li>
+							
+								<li class="active"><a href="?yxsdm=080">080&nbsp;美术学院</a></li>
+							
+								<li class=""><a href="?yxsdm=088">088&nbsp;统计与数据科学系</a></li>
+							
+								<li class=""><a href="?yxsdm=092">092&nbsp;天文系</a></li>
+							
+								<li class=""><a href="?yxsdm=093">093&nbsp;安全科学学院</a></li>
+							
+								<li class=""><a href="?yxsdm=094">094&nbsp;人工智能学院</a></li>
+							
+								<li class=""><a href="?yxsdm=095">095&nbsp;心理与认知科学系</a></li>
+							
+								<li class=""><a href="?yxsdm=096">096&nbsp;万科公共卫生与健康学院</a></li>
+							
+								<li class=""><a href="?yxsdm=101">101&nbsp;核能与新能源技术研究院</a></li>
+							
+								<li class=""><a href="?yxsdm=103">103&nbsp;教育学院</a></li>
+							
+								<li class=""><a href="?yxsdm=402">402&nbsp;药学院</a></li>
+							
+								<li class=""><a href="?yxsdm=405">405&nbsp;临床医学院</a></li>
+							
+								<li class=""><a href="?yxsdm=410">410&nbsp;软件学院</a></li>
+							
+								<li class=""><a href="?yxsdm=412">412&nbsp;网络科学与网络空间研究院</a></li>
+							
+								<li class=""><a href="?yxsdm=413">413&nbsp;国际与地区研究院</a></li>
+							
+								<li class=""><a href="?yxsdm=415">415&nbsp;航空发动机研究院</a></li>
+							
+								<li class=""><a href="?yxsdm=476">476&nbsp;求真书院</a></li>
+							
+								<li class=""><a href="?yxsdm=500">500&nbsp;医学院</a></li>
+							
+								<li class=""><a href="?yxsdm=501">501&nbsp;基础医学院</a></li>
+							
+								<li class=""><a href="?yxsdm=502">502&nbsp;生物医学工程学院</a></li>
+							
+								<li class=""><a href="?yxsdm=599">599&nbsp;清华大学深圳国际研究生院</a></li>
+							
+		                </ul>
+        			</div>
+	            </div>
+			    <div class="right-container">
+		            <div class="process-content">
+		                <div class="card">
+		                    <div class="card-body">
+		                        <div class="mb-1">
+		                        	<table id="zsml-table" class="table table-bordered table-jzml mb-0" style="font-size: 14px;">
+		                        		<tbody>
+		                        			
+							           			
+							           			
+													<tr>
+									                   	<th style="width: 30%;text-align:center;">院系、专业、研究方向</th>
+									                   	<th style="width: 15%;text-align:center;">导师姓名</th>
+								                   		<th style="width: 30%;text-align:center;">招生说明</th> 
+				                        			</tr>
+							           			
+							           		
+		                        			
+							               
+							               
+							               		<tr>
+								                    <td colspan="2" >
+								                    	<h5>
+								                    		<span>
+																<span>
+								                    				080&nbsp;美术学院
+								                    				
+								                    			</span>
+								                    		</span>
+								                    	</h5>
+								                    </td>
+								                    
+								                    <td>
+								                    	<textarea readonly="readonly">电话：010-62798172
+电子邮箱：myzb@tsinghua.edu.cn
+</textarea>
+								                    	
+								                    </td>
+								               	</tr>
+								               	
+								               	
+								               		<tr>
+								                    	<td style="padding-left: 20px;" colspan="2">
+								                    		<h6 style="font-weight: bold;">
+								                    			<span>
+																	
+							                   						<span>
+																		130100
+																		
+																			（学术学位）
+																			
+																		
+							                   							艺术学
+							                   						</span>
+																</span>
+																
+								                    		</h6>
+								                    	</td>
+								                    	
+								                    	
+								                      	<td>
+								                      		<textarea readonly="readonly">考生可上美术学院官网（http://www.ad.tsinghua.edu.cn）查询导师介绍。美术学院不招收非脱产考生。</textarea>
+								                      	</td>
+								                	</tr>
+								                	
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			01（全日制）艺术史论研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：陈岸瑛、张敢、杭间、邱才桢、章锐、陈彦姝、刘平，限英语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+								               	
+								               		<tr>
+								                    	<td style="padding-left: 20px;" colspan="2">
+								                    		<h6 style="font-weight: bold;">
+								                    			<span>
+																	
+							                   						<span>
+																		135600
+																		
+																			
+																			（专业学位）
+																		
+							                   							美术与书法
+							                   						</span>
+																</span>
+																
+								                    		</h6>
+								                    	</td>
+								                    	
+								                    	
+								                      	<td>
+								                      		<textarea readonly="readonly">考生可上美术学院官网（http://www.ad.tsinghua.edu.cn）查询导师介绍。美术学院不招收非脱产考生。</textarea>
+								                      	</td>
+								                	</tr>
+								                	
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			01（全日制）中西绘画艺术研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：叶健、金纳、冷冰川、李天元、丁荭，限英语、日语报考  （李天元不招收直博生）
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			02（全日制）综合媒介绘画艺术研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：文中言、周爱民、付斌，限英语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			03（全日制）雕塑语言研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：陈辉、马天羽、冯崇利、魏二强、王轶男，限英语、日语报考  （魏二强不招收直博生）
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			04（全日制）公共雕塑研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：董书兵、李象群、马文甲，限英语、日语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+								               	
+								               		<tr>
+								                    	<td style="padding-left: 20px;" colspan="2">
+								                    		<h6 style="font-weight: bold;">
+								                    			<span>
+																	
+							                   						<span>
+																		140300
+																		
+																			（学术学位）
+																			
+																		
+							                   							设计学
+							                   						</span>
+																</span>
+																
+								                    		</h6>
+								                    	</td>
+								                    	
+								                    	
+								                      	<td>
+								                      		<textarea readonly="readonly">考生可上美术学院官网（http://www.ad.tsinghua.edu.cn）查询导师介绍。美术学院不招收非脱产考生。</textarea>
+								                      	</td>
+								                	</tr>
+								                	
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			01（全日制）陶瓷艺术设计研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：杨帆、吴昊宇、尹航、刘润福，限英语、德语、日语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			02（全日制）染织服装设计研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：张宝华、李迎军、吴波、王悦、臧迎春、张红娟、刘亚，限英语、法语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			03（全日制）视觉传达设计研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：陈磊、王红卫、赵健、陈楠、原博、徐小鼎，限英语、日语报考  （王红卫、赵健不招收直博生）
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			04（全日制）环境空间与生活方式研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：杨冬江、于历战、刘铁军、杜异、崔笑声，限英语报考  （杜异不招收直博生）
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			05（全日制）人居环境与可持续设计研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：方晓风、李朝阳、汪建松、聂影、黄艳、梁雯，限英语报考  （李朝阳不招收直博生）
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			06（全日制）产品设计研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：张雷、刘新、赵超、唐林涛、王国胜、蒋红斌，限英语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			07（全日制）展示设计研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：马赛、范寅良、周艳阳、刘强，限英语、德语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			08（全日制）工艺美术研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：岳嵩、王晓昕、关东海、杨佩璋、李静、潘妙，限英语报考  （关东海不招收直博生）
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			09（全日制）信息艺术设计研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：鲁晓波、吴琼、师丹青、米海鹏、付志勇、张烈、张茫茫，限英语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+									               		<tr>
+								                     		<td style="padding-left: 40px;vertical-align: middle;" rowspan="1" >
+								                     			10（全日制）新媒体艺术研究
+								                     			
+								                     			
+								                     				
+								                     				
+								                     				
+								                     			
+								                     		</td>
+										                    
+							                     				
+							                     				
+							                     					
+							                     					
+									                     				
+										                   				<td style="text-align: center;vertical-align: middle;">
+										                   					
+										                   						
+										                   						
+										                   							导师组
+										                   						
+										                   					
+										                   				</td>
+										                   			    
+										                   			    <td>
+										                   			    	
+										                   			    	导师组名单：王之纲、邓岩、马森、唐克扬、雷磊，限英语报考
+										                   			    </td>
+									                     				
+											                   		
+							                     				
+							                     			
+								               			</tr>
+									               	
+								               	
+							               
+							               <tr>
+							                   <td colspan="4" style="font-size:10px;">注：专业目录所列导师均具有博士生招生资格，与招生人数不完全对应。</td>
+							               </tr>
+		                        		</tbody>
+		                        	</table>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+        </div>
+   		<script>
+	    	(function($) {
+	    		$(document).ready(function() {
+	    			$.each($("textarea"), function(i, n){
+	    				$(n).css("height", n.scrollHeight + "px");
+	    			});
+	    		});
+	    	})(jQuery);
+	    	
+	    	
+			$('.dsinfo').click(function() {
+				var newWindow = window.open('/publish/infors/view/dsfc/'+$(this).data('val'));
+				newWindow.opener = null;
+			});
+			
+	    </script>
+    </body>
+</html>

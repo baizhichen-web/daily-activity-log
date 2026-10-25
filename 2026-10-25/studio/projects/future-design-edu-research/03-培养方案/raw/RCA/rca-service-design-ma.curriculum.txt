@@ -1,0 +1,57 @@
+id="curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+More details on what you'll study.
+Find out what you'll cover in this programme.
+What you'll cover
+What will I learn?
+The Service Design programme equips you with cutting-edge thinking and tools to provide human insight, engage with complex systems and create and prototype new futures to become an effective changemaker in the modern world.
+The teaching and learning is mostly project-based in that students will develop their practice through working on projects in teams. This includes collaborations with commercial, public sector or social organisations who bring real issues and opportunities for future disruption or innovation.
+Collaborating in teams, the students will move through the design process of deep research, issue reframing, creative concept generation, prototyping and user testing. In developing their practice, students are encouraged to take a critical and reflective view of Service Design to develop their confidence in contributing to the development of Service Design as a practice and subject.
+How will I learn?
+We aim to create a studio-based learning environment where you learn by doing projects in collaboration with your peers, addressing a range of real-world challenges, e.g. health inequality, the green transition, designing for cities, emerging technology and AI.
+The project work is guided by regular sessions with tutors who work with you throughout each project. You will have the opportunity to describe relevant research, hypotheses and potential outcomes with tutors as your project develops.
+The studio-based learning is complemented with a series of lectures and seminars, covering the theoretical principles, practical examples, and methods of service design.
+Topics include the impact and future direction of service design, human and digital interactions, user research and the generation of insight, design ethics, total system design and approaches to prototyping and testing.
+A public event is held towards the end of the Independent Research Project.
+You will also learn from your fellow students, and they will learn from you. Each year a global cohort of students from diverse backgrounds, careers and life experiences joins our community. Peer-to-peer learning is a vital part of the RCA experience and this range of perspectives enriches students, igniting new ways of thinking and sparking innovation.
+Outside of campus experience, you will have opportunities to explore London and immerse yourself in Europe's creative and cultural capital.
+Programme structure
+The programme is delivered across three terms and includes a combination of programme, School and College units.
+The first two terms will take you from a foundation of the tools and methodologies through to advanced techniques and management skills which are applied through projects leading to the Independent Research Project in the third term. These will include:
+Term 1
+Service Design Foundation
+introduces the theories and concepts underpinning service and service design practice. You will deliver a small-scale and analytically focused project in a team setting.
+In
+Service Design Practice
+, you will apply service design tools and methods to deliver a ‘live’ project in dialogue with industry partners, to address a selected challenge in an area, e.g. health, sustainability, business innovation or social inclusion.
+Term 2
+In
+Service Design in Context
+, you will develop a project proposal for the Independent Research Project, by examining the relationship between practice and context, and the impact of service design projects on economic, technological, social, cultural and environmental systems and how these contexts shape the implementation of service ideas.
+Also in Term 2,
+a choice of elective units
+will allow you to shape your own learning journey. You will have the opportunity to work alongside students from other programmes, bringing your practice into dialogue with the creative approaches of your peers. This could either be through tackling ‘wicked’ design problems from a range of different perspectives, by collaborating on themed interdisciplinary projects, or by exploring how mutual exchanges of ideas and interpretations can foster a socially engaged practice. A full list of elective options will be published in 2027.
+Term 3
+The
+Independent Research Project (IRP)
+is self-directed, with the aim to develop and establish yourself as a professional service designer in your chosen areas of expertise within the diverse spectrum of service design practice. You will develop strategic visions with practical deliverable design interventions to create new services and systems. This project will be the core of the public output of the programme and contribute powerfully to public discourse on the value and suitability of the services and interactions we experience.
+This MA is delivered over 45 weeks.
+Each year, students work on project briefs from a range of organisations. Examples include:
+Arup
+Catch22
+Canal Dream CIC
+Ealing Council
+EY Seren
+Red Cross
+Tate
+">
+">
+Arup
+Catch22
+Canal Dream CIC
+Ealing Council
+EY Seren
+Red Cross
+Tate
+">
+">
+<div class="tabs__panel tabs__panel--hidden js-tab-panel"

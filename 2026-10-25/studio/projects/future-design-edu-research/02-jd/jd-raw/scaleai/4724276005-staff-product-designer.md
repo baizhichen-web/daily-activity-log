@@ -1,0 +1,85 @@
+---
+source: Scale AI (scaleai)
+ats: greenhouse
+tier: overseas-ats
+job_id: 4724276005
+title: "Staff Product Designer"
+department: "Public Sector Product"
+location: "New York, NY; Washington, DC"
+url: https://job-boards.greenhouse.io/scaleai/jobs/4724276005
+updated_at: 2026-09-14T12:41:42-04:00
+published_at: 2026-08-14T12:31:30-04:00
+fetched_at: 2026-09-30T12:48:40+00:00
+---
+
+# Staff Product Designer
+
+Scale is hiring a Staff Product Designer to lead product design for Scale's Public Sector business unit.
+
+Public Sector brings AI-powered decision support directly to government and national security customers. You'll design sophisticated tools for critical operations including crisis planning, geo spatial- visualization, and human-agent collaborative canvases.
+
+Much of this work has no established playbook. The conventions for how humans and agents plan, review, and decide together are still being written, and this role will help write them. You'll push past existing patterns to establish new ones, then make them durable enough for the rest of the platform to build on. This is a role for a designer who enjoys untangling dense workflows and making powerful systems feel coherent, intuitive, and trustworthy at speed.
+
+What you’ll do
+
+Own the end-to-end design, from undefined requirements through wireframes, high-fidelity mockups, and interactive prototypes.
+
+Develop state-of-the-art techniques to leverage AI in design systems and processes.
+
+Design for complex, data-dense workflows: dashboards, mapping interfaces, alerting systems, and analytical reporting tools.
+
+Partner directly with Product and Engineering peers to turn ambiguity into clear product directions, work through tradeoffs and launch experiences. 
+
+Work directly in code alongside engineers, going beyond static mockups to help build and refine the shipped experience.
+
+Work with customers, building direct relationships during key project touchpoints (discovery, feedback, post-launch) and confidently socializing design decisions with stakeholders.
+
+Contribute design assets and interaction patterns back to the broader platform.
+
+Who you are
+
+10–15 years of experience across a range of design settings and problem types.
+
+You're energized by complexity. You take dense, tangled systems and turn them into something elegant and easy to use, and you're at your best when the problem is hard.
+
+You bring clarity to ambiguity. When requirements are unclear or still forming, you help define them rather than wait for them.
+
+You own the end-to-end experiences. You've led B2B or enterprise products, from the first sketch through what ships.
+
+Strong client-facing presence - confident presenting to and winning over senior stakeholders, whether in person or remote.
+
+Working understanding of front-end development and how to hand off clean, implementable designs; comfort collaborating directly with engineers on code.
+
+Nice-to-haves
+
+Experience in a client-facing role where you presented directly to senior stakeholders.
+
+Exposure to AI/ML tools and fluency using AI in your own design workflow.
+
+Experience contributing to a design system or shared interaction patterns across multiple products or teams.
+
+Active security clearance.
+
+Compensation packages at Scale for eligible roles include base salary, equity, and benefits. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position and may be inclusive of several career levels at Scale; it will be determined during the interview process based on work location and additional factors, including job-related skills, experience, qualifications, interview performance, and relevant education or training. Scale employees in eligible roles are also granted equity based compensation, subject to Board of Director approval. Your recruiter can share more about the specific salary range for your preferred location during the hiring process, and confirm whether the hired role will be eligible for equity grant. You'll also receive benefits including, but not limited to: comprehensive health, dental and vision coverage, retirement benefits, a learning and development stipend, and generous PTO. Additionally, this role may be eligible for additional benefits such as a commuter stipend.
+
+Please reference the job posting's subtitle for where this position will be located. For pay transparency purposes, the base salary range for this full-time position in the locations of San Francisco, New York, Seattle is:
+
+$200,000—$290,000 USD
+
+Please reference the job posting's subtitle for where this position will be located. For pay transparency purposes, the base salary range for this full-time position in the locations of Washington DC, Texas, Colorado, Hawaii is:
+
+$180,000—$260,000 USD
+
+PLEASE NOTE: Our policy requires a 90-day waiting period before reconsidering candidates for the same role. This allows us to ensure a fair and thorough evaluation of all applicants.
+
+About Us:
+
+At Scale, our mission is to develop reliable AI systems for the world's most important decisions. Our products provide the high-quality data and full-stack technologies that power the world's leading models, and help enterprises and governments build, deploy, and oversee AI applications that deliver real impact. We work closely with industry leaders like Meta, Ernst & Young, Mayo Clinic, Time Inc., the Government of Qatar, and U.S. government agencies including the Army and Air Force. We are expanding our team to accelerate the development of AI applications.
+
+We believe that everyone should be able to bring their whole selves to work, which is why we are proud to be an inclusive and equal opportunity workplace. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability status, gender identity or Veteran status. 
+
+We are committed to working with and providing reasonable accommodations to applicants with physical and mental disabilities. If you need assistance and/or a reasonable accommodation in the application or recruiting process due to a disability, please contact us at accommodations@scale.com. Please see the United States Department of Labor's Know Your Rights poster for additional information.
+
+We comply with the United States Department of Labor's Pay Transparency provision. 
+
+PLEASE NOTE: We collect, retain and use personal data for our professional business purposes, including notifying you of job opportunities that may be of interest and sharing with our affiliates. We limit the personal data we collect to that which we believe is appropriate and necessary to manage applicants’ needs, provide our services, and comply with applicable laws. Any information we collect in connection with your application will be treated in accordance with our internal policies and programs designed to protect personal data. Please see our privacy policy for additional information.

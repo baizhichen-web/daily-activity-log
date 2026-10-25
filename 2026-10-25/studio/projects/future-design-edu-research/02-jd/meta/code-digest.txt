@@ -1,0 +1,1181 @@
+
+==========================================================================================
+JOB anthropic/5026097008  [其他|5年+]  Staff Software Engineer, Product 
+------------------------------------------------------------------------------------------
+About the role:
+
+Claude is one of the most-used AI products in the world, and the experience we build for our users directly shapes how people interact with AI every day. We're looking for a talented engineer to join the team that builds the consumer web app — the interfaces, interactions, and moments that turn Claude from a capable model into a product people genuinely enjoy using.
+
+This is a product engineering role first and foremost. You'll work closely with designers and product managers to bring features from concept to shipped experience, obsessing over the details that make the difference: how something feels when you first land on it, how smoothly a new interaction flows, how an interface holds up under real-world use. 
+
+The pace is fast, the product is evolving quickly, and the opportunity to have a visible, direct impact on how millions of people use AI is real. If you love building consumer products and care about getting the details right, this could be a great fit.
+
+Responsibilities:
+
+Set technical direction for the Claude product and its features
+
+Build and ship user-facing features for Claude's web and desktop experience
+
+Own the quality bar for how the product looks and feels, treating latency, responsiveness, and reliability as first-class concerns rather than afterthoughts, and advocate for user experience and design considerations early in the process
+
+Collaborate tightly with product managers to understand user needs, shape feature scope, and make informed tradeoffs as you build
+
+Iterate quickly based on user feedback and internal testing, improving the experience on a continuous basis
+
+You may be a good fit if you:
+
+Have 5+ years of experience building consumer-facing web products, with a strong emphasis on UI quality and user experience
+
+Are profi
+
+==========================================================================================
+JOB anthropic/5385602008  [其他|5年+]  Product Marketing Lead, GTM Strategy - Claude for Knowledge Work
+------------------------------------------------------------------------------------------
+About the role
+
+There are close to a billion knowledge workers in the world, and only a small fraction of them have discovered what it feels like to work alongside AI that actually raises their game. Getting the rest of the way there isn't a single campaign or launch — it's an integrated marketing and growth motion: the right story, reaching the right persona, backed by activation and campaign work that turns a first try into habitual use. That's what this role owns.
+
+We're looking for a Product Marketing Lead to own the GTM Strategy and integrated growth motion that makes Claude for Knowledge Work — chat, Cowork, Claude for Office, Tag and more — the default AI collaborator for knowledge workers.
+
+You'll define the Marketing & growth strategy by segment for our core knowledge-work products, and coordinate the work streams that acquire and activate both users and accounts and drive their success. This role provides direction, coordination, and fuel across Demand Generation, Growth, Brand, Events, Campaigns, Field Marketing, and Success.
+
+This is a GTM-oriented product marketer: deep in messaging and product truth, expressed through narrative content, campaigns, activation programs, and community. You'll build and run programs personally from day one, backed by many internal teams.
+
+If you've owned an awareness-to-success marketing motions end to end for a product line, know how to turn product truth into content and campaigns that land with various segments and personas, and want to build the motion that gets millions of knowledge workers to change how they work, this role is for you.
+
+Key responsibilities
+
+Define the Marketing and growth strategy, segment by segment. Build a marketing plan per priority segment or function, prioritizing where to lead first and what to d
+
+==========================================================================================
+JOB anthropic/5424080008  [其他|未标注]  Product Marketing Manager, Special Projects
+------------------------------------------------------------------------------------------
+About the role
+
+We're looking for a senior Product Marketing Manager to lead go-to-market for Anthropic's highest-priority special projects — the cross-cutting launches, new capabilities, and time-sensitive initiatives that don't map neatly to a single product line but matter enormously to how the market understands Claude and Anthropic. 
+
+You'll own positioning, messaging, and narrative development for these projects end to end, and you'll also own the program: pulling together product, research, comms, sales, and marketing stakeholders, building the plan, and driving it to launch. This is a senior individual contributor role for someone who operates with a high degree of autonomy. You'll frequently be handed an ambiguous, technically complex problem — sometimes deep in areas like safety and cyber — with a tight timeline and no existing playbook, and be expected to shape the story, build the plan, and ship. If you're a product marketer who is equally strong at crafting the narrative and running the launch, and you want to work on the projects that define the frontier of AI, this role is for you.
+
+Responsibilities
+
+Own go-to-market strategy for a rotating portfolio of special projects, from positioning and messaging through launch execution and enablement
+
+Develop crisp, differentiated narratives for net-new capabilities and initiatives, often where no established market category or language yet exists
+
+Translate complex technical subject matter — including safety and safeguards work — into clear, credible messaging for developers, enterprise buyers, and the broader ecosystem
+
+Act as the program lead for each project: define the launch plan, timeline, and workstreams; align cross-functional stakeholders; and drive execution across product, research, comms, demand genera
+
+==========================================================================================
+JOB databricks/8823880002  [其他|5年+]  Staff Product Operations Lead, Marketplace Operations
+------------------------------------------------------------------------------------------
+Minimum Qualifications
+
+8+ years of operational leadership experience across Business Operations, Product Operations, Technical Program Management, or scaling operational functions within a fast-paced technology environment.
+
+Demonstrated "builder" capability: hands-on experience designing and shipping automations or operational tools using a mix of Python, low-code/RPA platforms, workflow platforms, or modern AI, LLM, and agent tooling.
+
+Proven track record of full operational ownership over end-to-end processes, approval gates, and quality control systems rather than pure analytical reporting.
+
+Strong cross-functional collaboration and leadership skills, with a history of aligning priorities across Product, Engineering, Sales, and Field organizations.
+
+Exceptional organizational skills, strong attention to detail, and the ability to move fast and keep a high bar for accuracy in ambiguous situations.
+
+Direct experience with enterprise software marketplaces, two-sided platform ecosystems, or cloud commerce environments.
+
+Preferred Qualifications
+
+Experience scaling a marketplace, platform, or commerce operation through a high-growth phase.
+
+Familiarity with software commercial structures, Deal Desk operations, or strategic partner GTM programs.
+
+Experience quickly adopting next-generation AI coding tools (e.g., Claude Code, AI agents) to streamline personal or team productivity.
+
+Pay Range Transparency
+
+Databricks is committed to fair and equitable compensation practices. The pay range(s) for this role is listed below and represents the expected salary range for non-commissionable roles or on-target earnings for commissionable roles. Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to job-related skil
+
+==========================================================================================
+JOB openai/0e078d07-fb0b-4893-b90a-f50e413f3e13  [其他|5年+]  Industry Product Marketing Manager
+------------------------------------------------------------------------------------------
+About the Role
+
+As an Industry PMM, you will help define how OpenAI brings frontier AI to priority industries. This role sits at the center of OpenAI’s industry marketing motion, helping customers understand where AI can create practical value, improve workflows, and support responsible adoption.
+
+You will shape the market narrative, build the field-facing operating system, and coordinate cross-functional execution across product launches, customer proof, partner moments, events, and account-based campaigns. You will help senior industry leaders understand how OpenAI models, products, and workflows can support meaningful work in either Life Sciences, Banking, or Healthcare.
+
+We’re looking for a product marketer who can combine strategic narrative, technical curiosity, enterprise GTM judgment, and program leadership. The right person can turn fast-moving capability into clear positioning, credible assets, and practical field execution.
+
+This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees.
+
+In this role, you will:
+
+Own positioning and messaging for OpenAI’s industry offering for either Life Sciences, Banking, or Healthcare.
+
+Build field-ready assets for account directors, solution engineers, industry leaders, and executive audiences, including first-call decks, one-pagers, use-case libraries, customer stories, and proof-point packages
+
+Translate frontier model capabilities into simple, accurate, and defensible GTM language for senior enterprise buyers and industry practitioners
+
+Partner with Product, Research, Policy, Legal, Comms, Partnerships, Customer Success, and GTM to coordinate launches, claims, proof points, enablement, and customer-facing guidance
+
+Develop campaigns 
+
+==========================================================================================
+JOB openai/4d1ede8c-3d4c-4503-8408-81e4b68c5c91  [其他|未标注]  Full Stack Software Engineer, Product Explorations
+------------------------------------------------------------------------------------------
+About the Role
+
+We are looking for product-minded full stack engineers to join the Product Explorations team and drive high-impact, net-new product explorations.
+
+In this role, you will independently identify promising opportunities, move quickly from idea to prototype, and work across teams to validate and launch new experiences. You will operate with a high degree of autonomy, use strong product intuition, and make thoughtful decisions in ambiguous environments.
+
+You may work on a new ChatGPT experience one week, explore a new model capability the next, and partner with Research or Applied teams to turn the strongest ideas into scalable products. This role is a strong fit for someone who enjoys building from scratch, iterating quickly, and working on projects where the path forward is not always obvious.
+
+In this role, you will:
+
+Identify and pursue high-leverage product and technical opportunities across OpenAI’s products
+
+Move quickly from idea to prototype, validation, launch, and iteration
+
+Build full stack product experiences that unlock value from new model capabilities
+
+Work closely with Research, Applied, product, design, data science, and engineering partners
+
+Use user feedback, product signals, and experimentation to determine which ideas should scale
+
+Drive alignment across teams and helping shape a culture of speed, ownership, curiosity, and thoughtful experimentation
+
+You might thrive in this role if you:
+
+Have experience building and shipping full stack product experiences, from early prototypes through production
+
+Thrive in early-stage, highly iterative environments and can move quickly from idea to execution with limited structure
+
+Bring strong product intuition and an ability to identify what matters most for users and the business
+
+Communicate clearl
+
+==========================================================================================
+JOB openai/9909555b-3dc4-4ba2-859e-43eae7c97a34  [其他|未标注]  Software Engineer, Product Velocity
+------------------------------------------------------------------------------------------
+About the Role
+
+We are hiring an experienced infrastructure engineer to make ChatGPT development dramatically faster and more reliable. You will work across local development, build systems, CI, deployment infrastructure, test ownership, and production safety signals to reduce the time and attention required to move a healthy change from development to production.
+
+This is not a narrow tooling role. The best person for this job will be comfortable diagnosing messy distributed systems, reading developer pain signals from Slack and metrics, building reliable automation, negotiating ownership across teams, and making tradeoffs between velocity and production safety. You should enjoy treating engineers as users and turning confusing workflow failures into clear, measured systems.
+
+In this role, you will:
+
+Reduce local development startup and iteration latency for ChatGPT engineers
+
+Improve Bazel and build performance for local machines, devboxes, and CI, including cache effectiveness, reproducibility, disk usage, remote cache behavior, and observability into invalidations.
+
+Improve CI reliability and merge throughput by reducing unrelated failures, tail latency, flaky or mis-owned tests, quarantine friction, and repeated manual reruns.
+
+Build agents that help PRs make forward progress: rebasing, conflict resolution, CI triage, safe reruns, owner routing, and clear identification of external blockers.
+
+Make deploy pipelines more self-healing, especially when transient alerts, known-bad clusters, recovered synthetics, stale RCs, or noisy gates should not require human babysitting.
+
+Improve deploy observability so engineers can quickly tell where a change is, what is blocking it, whether the signal is trustworthy, and who owns the next action.
+
+Establish lightweight metrics fo
+
+==========================================================================================
+JOB openai/cb9280db-df39-4c88-b411-5fdf149a6e52  [其他|未标注]  Product Manufacturing Engineer
+------------------------------------------------------------------------------------------
+About the Role
+
+We’re looking for a product manufacturing engineer, who will be responsible for driving technical initiatives related to manufacturing to ensure product success from concept to launch and through mass production with a specific focus on PCB and PCBa manufacturing and process. You’ll have the opportunity to work with a wide range of stakeholders, from design engineering and operations teams,TPMs, external industry vendors and partners to ensure that all products are developed and delivered on time and to the highest quality standards.
+
+This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees.
+
+In this role, you will:
+
+In this role, you’ll be responsible for driving manufacturing and quality initiatives to ensure product success from concept to launch
+
+Lead the product design and the manufacturing process for next-gen AI hardware system development, you will have the opportunity to work with a wide range of stakeholders, from design engineering and operations teams, TPMs and external industry vendors and partners to ensure that all products are developed and delivered on time and to the highest quality standards.
+
+Lead the team to establish NPI product manufacturing process, systems and quality controls, defining clear milestones and deliverables, drive internal process improvements across multiple terms and functions
+
+Provide hands-on product manufacturing analysis during design, development, testing, prototypes and production phases.
+
+Research automation techniques and develop new tests and systems for efficiency.
+
+Own L6 up to potentially L10 product manufacturing development of the hardware product. This includes the PCB, PCBA, cabling and connectorization & L1
+
+==========================================================================================
+JOB anthropic/5096878008  [产品经理|未标注]  Research Product Manager, Labs
+------------------------------------------------------------------------------------------
+About the role:
+
+As a Research Product Manager for the Labs teams at Anthropic, you will own the ideation and development of new, moonshot products as we advance transformative, safe AI. The Labs team runs Anthropic's most ambitious experiments: new product categories that don't exist yet. The team focuses on 0-to-1 product development, taking our most advanced research and transforming it into innovative applications like Claude Code and MCP.
+
+We seek experienced founders and product managers who can bridge pure research and ambitious product experimentation, with the ability to identify and ultimately define entirely new product categories enabled by AI.
+
+Responsibilities:
+
+Work with researchers to understand what's emerging and what it means for users
+
+Identify nascent research capabilities that could become transformative products
+
+Build prototypes yourself to validate ideas before committing resources
+
+Lead 0-to-1 product development from research to internal prototypes to shipped products
+
+Define product strategy for experimental initiatives that push beyond our current offerings
+
+Creatively build MVPs and prototypes to validate product-market fit with the lowest cost possible
+
+Lead vision, strategy, roadmap, and execution of frontier technologies that leverage the latest AI capabilities to solve real-world problems
+
+Minimum Qualifications
+
+You might be a good fit if you:
+
+Possess a deep technical background with experience working cross-functionally with engineering teams to ship technical products.
+
+Have the ability to navigate and execute amidst ambiguity, and to flex into different domains based on the business problem at hand, finding simple, easy-to-understand solutions
+
+Have a track record of launching ambitious products that have found distribution or comm
+
+==========================================================================================
+JOB anthropic/5324349008  [产品经理|未标注]  Product Manager, Research (Code) 
+------------------------------------------------------------------------------------------
+About the role
+
+As a Product Manager for the Research team at Anthropic, you will own the ideation and deployment of new models and products as we advance frontier, safe AI technology. You will work closely with our research teams to help productize credible applied research and identify high-potential use cases grounded in customer needs. We are looking for someone passionate about developing safe and beneficial artificial intelligence technologies. You thrive in ambiguous environments and can uncover latent, non-obvious use cases for nascent technologies, bringing these insights back to research. Your curiosity about user needs enables you to connect advanced technology to products that deliver real-world value.
+
+We seek experienced founders and product managers who can bridge research and ambitious product experimentation, with the ability to create and grow entirely new product categories enabled by AI.
+
+Responsibilities
+
+Lead vision, strategy, roadmap, and execution of frontier technologies that leverage the latest AI capabilities to solve real-world problems
+
+Partner with research to define, improve, and ship model capabilities within a research area
+
+Identify nascent research that could become transformative products
+
+Synthesize user insights into actionable requirements and evaluations
+
+Understand the AI landscape and ecosystem, ensuring we have an objective view of market capabilities and our position
+
+Work with and influence a diverse set of stakeholders, including research, product engineering, and platform engineering teams
+
+Minimum Qualifications
+
+Have a deep passion and curiosity for AI and LLMs. Use AI regularly. 
+
+Are a first-principles thinker with the ability to navigate and execute amidst ambiguity, flexing into different domains based on the business
+
+==========================================================================================
+JOB anthropic/5409934008  [产品经理|5年+]  Product Manager, Multi-Cloud Trust & Safety
+------------------------------------------------------------------------------------------
+About the Role
+
+A large and growing share of Claude usage reaches customers through our cloud partners — Amazon Bedrock, Google Cloud's Agent Platform, and Microsoft Foundry. These surfaces require bespoke solutions so our approaches have to be designed for third-party distribution from the start. In this role you will own how Anthropic's model safeguards, fraud defenses, and compliance posture show up on every cloud.
+
+Responsibilities:
+
+Model Safety Across Clouds
+
+Own the multi-cloud strategy and roadmap for our safeguards — data retention, automated review, human review, and enforcement — designed to fit each partner's operating model
+
+Design product experiences and operations paths for managing eligibility criteria, verification paths, and the controls attached to differentiated capabilities for higher-trust organizations
+
+Build threat-intelligence sharing with AWS, Google, and Microsoft so misuse is detected and acted on consistently across surfaces
+
+Drive our transparency commitments to customers and partners on data access, review, and enforcement
+
+Fraud & Abuse
+
+Own fraud and abuse defenses for partner-sold offerings: bot and mass-registration abuse, pre- and post-sale risk controls, and chargebacks where the partner owns billing
+
+Define the fraud signals we exchange with each cloud partner and turn them into product requirements that influence growth initiatives 
+
+Cross-functional Leadership
+
+Engage directly with enterprise security, risk, and compliance leaders to understand their requirements and turn them into roadmap priorities
+
+Be Anthropic's product counterpart to trust & safety, security, and compliance teams at AWS, Google, and Microsoft
+
+Work with Safeguards, Inference, Policy, Security, Legal, and multi-cloud engineering to ship one coherent set of con
+
+==========================================================================================
+JOB databricks/7649409002  [产品经理|5年+]  Staff Product Manager
+------------------------------------------------------------------------------------------
+# Staff Product Manager
+
+P-1345
+
+You will be the Product Manager for the Databricks Runtime team in Amsterdam. The team works at the intersection of query processing, storage, infrastructure and data governance, all key components of the Databricks data intelligence platform. As the Product Manager, you will develop a deep understanding of modern cloud infrastructure, data governance solutions, and open source components, and gather requirements from customers. You will launch features that will impact how customers process petabytes of data every day and make it simpler for them to draw value from their data. 
+
+This role requires coordinating all product activities from vision to implementation, including engaging customers to understand their needs, developing long-term product strategy, defining product roadmaps, working with engineering to build those products, and coordinating with various internal stakeholders (both pre- and post-launch) to ensure product success.
+
+The impact you will have: 
+
+Own the end-to-end product management process
+
+Gather customer requirements, design features and collaborate with engineering to deliver a polished market-ready product
+
+Drive launches with product marketing through blog posts, release notes, webinars
+
+Define and measure OKRs for your products
+
+Drive the prioritization and development of features, measurably reducing the cost and time needed for operating ETL and machine learning workflows.
+
+What we look for:
+
+6+ yrs of experience
+
+Bachelors degree in Computer Science or similar field
+
+Experience in Product Management (inbound, outbound, cross-functional processes)
+
+Technical skills
+
+Solid understanding of cloud infrastructure (AWS, Azure)
+
+Strong data analysis and operationalization skills (SQL, rollups, building operational
+
+==========================================================================================
+JOB databricks/8326513002  [产品经理|3-5年]  Sr. Product Manager, Databricks Repos
+------------------------------------------------------------------------------------------
+# Sr. Product Manager, Databricks Repos
+
+RDQ427R130
+
+At Databricks, we are passionate about enabling data teams to solve the world’s toughest problems — from making the next mode of transportation a reality to accelerating the development of medical breakthroughs. We do this by building and running the world’s best data and AI infrastructure platform so our customers can use deep data insights to improve their business. Founded by engineers — and customer obsessed — we leap at every opportunity to tackle technical challenges, from designing next-gen UI/UX for interfacing with data to scaling our services and infrastructure across millions of virtual machines. And we're only getting started. 
+
+More about the team: 
+
+A great platform needs an exceptional developer experience. Databricks Repos is the source control and workflow foundation that powers how data engineers, ML engineers, and analysts manage code, collaborate with teammates, and ship data and AI applications to production. The Repos team builds the version control experience inside Databricks and defines how users connect their Git providers, manage code changes, track lineage, review pull requests, and promote code into jobs, pipelines, and deployments.
+
+We are responsible for creating a simple, reliable, AI native workflow that blends the best of Git style development with the unique needs of data and AI teams. Our mission is to provide a smooth authoring to production journey across notebooks, SQL, Python, and Lakeflow, all in a unified platform.
+
+You will drive the vision and roadmap for Databricks Repos and define how developers build, test, review, and ship code inside Databricks. You will work across Workflows, Notebooks, Lakeflow, Data Management, and the broader Developer Experience teams to deliver an
+
+==========================================================================================
+JOB databricks/8831555002  [产品经理|5年+]  Staff Product Manager, US Public Sector
+------------------------------------------------------------------------------------------
+# Staff Product Manager, US Public Sector
+
+RDQ427R587
+
+At Databricks, we are passionate about helping data teams solve the world's toughest problems, from making the next mode of transportation a reality to accelerating the development of medical breakthroughs. We do this by building and running the world's best data and AI infrastructure platform protected by the highest standards of security and compliance. Nowhere are those standards higher than in the US public sector.
+
+As the Product Manager for US Public Sector, you will own the roadmap that brings the Databricks Data Intelligence Platform to every tier of the US Government mission, from federal civilian agencies and state and local governments to the Department of Defense and the Intelligence Community. Your surface spans the full accreditation spectrum: FedRAMP on commercial clouds, the sovereign AWS GovCloud and Azure Government regions, and classified environments up to Top Secret.
+
+You will define the product strategy to identify, prioritize, and sequence where Databricks should invest next. As the voice of the government customer inside Databricks, you will shape and influence roadmaps across R&D so that our latest Data and AI innovations reach mission owners without compromising on security or sovereignty. You will partner cross-functionally with R&D, security, legal, GTM, and support teams, and directly with the public-sector field team, to enable adoption across the most demanding regulated environment in the world, empowering government customers to focus on their mission while relying on Databricks to meet the bar.
+
+The impact you will have
+
+Own the US public-sector product offerings end to end — from FedRAMP on commercial clouds, to AWS GovCloud and Azure Government, to DoD Impact Levels and classified
+
+==========================================================================================
+JOB openai/70d5259a-f18c-4595-bf52-ec03eeeeac4c  [产品经理|未标注]  Product Manager, Multimodal Safety
+------------------------------------------------------------------------------------------
+About the Role
+
+We are hiring a Product Manager to focus on risk related to multimodal models. In this role, you will drive initiatives which ensure that OpenAI’s audio, image, and video deployments are safe, impactful, and aligned with user needs and technical innovation. You will clarify strategic priorities, develop safety-focused product roadmaps, and collaborate closely with AI researchers, software engineers, policy experts, and cross-functional partners. This role suits a proactive, technically skilled product manager adept at adversarial thinking and excited to tackle challenging, ambiguous problems through structured analysis and collaborative decision-making.
+
+This position is based in San Francisco, CA, with relocation assistance available.
+
+In this role, you will:
+
+Partner closely with AI research, engineering, data science, policy teams, and other stakeholders to embed safety throughout the development and deployment of multimodal AI models - such as GPT-Live and ChatGPT Images - as well as multimodal capabilities in frontier AI models.
+
+Develop comprehensive frameworks for understanding and mitigating deployment safety risks, drawing on data analysis, expert consultation, and adversarial assessments.
+
+Define strategic priorities and product roadmaps focused on improving deployment safety, enhancing reliability, and managing multimodal AI capabilities.
+
+Create scalable approaches for evaluating and improving safety outcomes.
+
+Establish repeatable processes to integrate cutting-edge AI safety research into OpenAI’s models and product offerings.
+
+Develop and continuously refine clear, actionable metrics that effectively capture safety performance and user experience at scale.
+
+You might thrive in this role if you:
+
+Have 6+ years of product management or relat
+
+==========================================================================================
+JOB scaleai/4609736005  [产品经理|3-5年]  AI Product Manager (Coding/Multimodal)
+------------------------------------------------------------------------------------------
+# AI Product Manager (Coding/Multimodal)
+
+Scale is the leading AI data foundry, helping fuel the most exciting advancements in AI, including frontier model training, enterprise adoption, defense applications, and autonomous vehicles. Our mission is to develop reliable AI systems for the world's most important decisions.
+
+We are looking for an AI Product Manager to support Multimodal & Coding AI data verticals, including audio, image, video, and world models. This role is designed for someone early in their product career who is excited about AI and wants to develop into a full AI Product Manager over time.
+
+In this role, you will work closely with Senior AI Product Managers to drive execution across product, operations, and customer programs. You will help coordinate cross-functional initiatives, manage project timelines, support customer engagements, and contribute to product discovery and data development efforts. This position offers a clear growth path into AI Product Management, with increasing ownership of products, customer relationships, and business outcomes.
+
+You Will
+
+Partner with Senior AI Product Managers to drive execution of strategic initiatives across Coding, Agentic, and RL data products.
+
+Coordinate cross-functional projects across operations, engineering, research, and go-to-market teams to ensure timely delivery of customer commitments.
+
+Track program milestones, risks, dependencies, and deliverables while driving accountability across stakeholders.
+
+Support customer engagements by preparing materials, documenting requirements, coordinating follow-ups, and helping manage project execution.
+
+Assist in defining data specifications, reviewing data quality, and identifying opportunities to improve product performance and operational efficiency.
+
+Conduct
+
+==========================================================================================
+JOB anthropic/4017331008  [研究工程|未标注]  Research Engineer, Knowledge Team
+------------------------------------------------------------------------------------------
+About the role:
+
+We are looking for Research Engineers to help us redesign how Claude interacts with external data sources. Many of the paradigms for how data and knowledge bases are organized assume human consumers and constraints. This is no longer true in a world of LLMs! Your job will be to design new architectures for how information is organized, and train language models to optimally use those architectures.
+
+Responsibilities:
+
+Designing and implementing from scratch new information architecture strategies
+
+Performing finetuning and reinforcement learning to teach language models how to interact with new information architectures
+
+Building “hard” knowledge base eval sets to help identify failure modes of how language models work with external data
+
+Designing and evaluating advanced agentic search capabilities.
+
+You may be a good fit if you:
+
+Are a very experienced Python programmer who can quickly produce reliable, high quality code that your teammates love using
+
+Have good machine learning research experience 
+
+Have experience developing software that utilizes Large Language Models such as Claude
+
+Are results-oriented, with a bias towards flexibility and impact
+
+Pick up slack, even if it goes outside your job description
+
+Enjoy pair programming (we love to pair!)
+
+Want to partner with world-class ML researchers to develop new LLM capabilities
+
+Care about the societal impacts of your work
+
+Have clear written and verbal communication
+
+Strong candidates will also have experience with:
+
+Collaborating with product teams to quickly prototype and deliver innovative solutions
+
+Building complex agentic systems that utilize LLMs
+
+Developing scalable distributed information retrieval systems, such as search engines, knowledge graphs, RAG, indexing, ranking, query understan
+
+==========================================================================================
+JOB anthropic/4952051008  [研究工程|未标注]  Research Engineer, RL Engineering
+------------------------------------------------------------------------------------------
+About the role
+
+Reinforcement learning (RL) is how Claude learns to reason, write code, and act autonomously over long horizons. This role sits on the team that builds and owns the RL training system: the system that trains our production models and that researchers across Anthropic run their experiments on. The team works closely with research teams across the company on the science and engineering of making RL work at scale.
+
+As a Research Engineer on the team, you'll work at the center of RL at Anthropic. You'll have a direct view of how RL training behaves at the frontier because the system you own sits underneath both production and research runs. ou willl use it with collaborators across research teams to understand what is working, what is fragile, and where the next improvements are.
+
+Key responsibilities
+
+Build, own, and improve the core RL training system that serves Anthropic's production and research runs
+
+Work across the stack (orchestration, environments, training, inference, evaluation) wherever the system needs it
+
+Study how RL training behaves at scale and contribute to the research that improves it, in collaboration with teams across Anthropic
+
+Implement new training methods as stable, fast, well-tested code
+
+Improve the speed and efficiency of RL training and evaluation through profiling, optimization, and benchmarking
+
+Make the system easier for researchers to build on, through clean abstractions, clear APIs, and automated testing
+
+Debug hard problems across the stack, from a run that has quietly drifted to a distributed systems failure that only shows up at scale
+
+Communicate results clearly, in writing and in discussion
+
+Minimum qualifications
+
+Proficiency in Python and experience working in, debugging, and improving a large ML codebase
+
+Experience
+
+==========================================================================================
+JOB anthropic/5198255008  [研究工程|未标注]  Research Engineer, Post-Training Model Evaluations
+------------------------------------------------------------------------------------------
+About the role 
+
+Anthropic's production models undergo sophisticated post-training processes to enhance their capabilities, alignment, and safety. Decisions in production training depend on knowing how the model is really behaving. Our team's mission is to have the best observability into production post-training runs at Anthropic: to be the clearest, most trusted view of model quality during training. We shape what gets measured, keep the signal trustworthy and timely, and get to the bottom of surprising results to inform post-training and release decisions.
+
+In this role you will lead the science of how we evaluate production training runs. You'll work out which measurements tell us something real about the model, notice when they stop doing so, and find what we should be measuring but aren't. You'll partner with research teams across every RL domain, bringing their priorities into what we measure and setting the standard for what makes an eval trustworthy across post-training. You'll also be hands-on with the eval fleet day to day, because the best questions about measurement come from watching real results come in during a live run.
+
+Responsibilities
+
+Steer the eval strategy for production Claude models: study and optimize the eval mix so it gives the most accurate and complete assessment of model quality
+
+Run and monitor the eval fleet live to understand how each Claude model is developing as it trains 
+
+Advise teams across post-training on eval methodology, and help eval authors bring new evals up to the bar for production
+
+Investigate regressions in production runs and inform training interventions when appropriate
+
+Build the dashboards, alerts, and reports that researchers and leadership use to track model quality
+
+You may be a good fit if you
+
+Have designed, ru
+
+==========================================================================================
+JOB anthropic/5404725008  [研究工程|5年+]  Staff+ Research Engineer, RL Data Platform
+------------------------------------------------------------------------------------------
+About the role
+
+Anthropic's RL Data Platform team builds the systems that produce, move, and serve the human data Claude learns from: the interfaces humans use to give feedback, the pipelines that turn raw feedback into training signal, and the tooling researchers use to launch, monitor, and inspect data collection. Every RL run depends on a steady supply of high-quality data - human feedback, expert demonstrations, graded transcripts - and when a researcher has an idea for new data on Monday, our job is to make it collectable by Wednesday and in the training mix by Friday.
+
+This is a full-stack, ownership-heavy role on a small, senior team. You'll design and ship web interfaces used by thousands of expert annotators, build the backend services and data pipelines behind them, and work directly with RL researchers to understand what data they need and why. You'll scope your own projects, make architectural calls, and see them through to production. We're looking for engineers who treat researchers as their users, build for reliability first, and care as much about the shape of the data leaving the system as the UI going into it.
+
+Key responsibilities
+
+Design, build, and operate the feedback and data collection interfaces used by human annotators, domain experts, and internal researchers.
+
+Build and maintain the backend services, APIs, and pipelines that route model samples to humans and return structured feedback to training.
+
+Own the reliability, latency, and usability of systems that run continuously against live model endpoints.
+
+Partner with RL researchers to translate loosely specified data needs into well-scoped collection campaigns and the tooling to run them.
+
+Build dashboards, monitoring, and inspection tools so researchers can see data quality and throughput wi
+
+==========================================================================================
+JOB openai/1c516e9f-c97d-4a40-8529-9871dac615a5  [研究工程|未标注]  Research Engineer / Research Scientist- Personal AGI (Post Training)
+------------------------------------------------------------------------------------------
+About the Role
+
+As a Research Engineer / Scientist, you will research and develop improvements to our models. Our team works in research areas combining reinforcement learning and products. 
+
+We're looking for individuals with strong ML engineering skills and research experience, especially with novel and highly capable models. An ideal candidate is passionate about product-driven research.
+
+This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees.
+
+In this role, you will:
+
+Own and pursue a research agenda to improve model capability and performance.
+
+Collaborate closely with the other research and product teams, allowing customers to optimize their own models.
+
+Build robust evaluations for tracking modeling improvements.
+
+Design, implement, test, and debug code across our research stack.
+
+You might thrive in this role if you:
+
+Have a deep understanding of machine learning and machine learning applications.
+
+Have a working knowledge of relevant models, and building evaluations for model capability improvement.
+
+Are comfortable diving into a large ML codebase to debug.
+
+Thrive in a dynamic and technically complex environment.
+
+About OpenAI
+
+OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity. 
+
+We are an equal opportunity employ
+
+==========================================================================================
+JOB openai/7e198d81-34e0-48b6-b64e-a501a75f9d53  [研究工程|未标注]  Research Engineer/Research Scientist, RL/Reasoning
+------------------------------------------------------------------------------------------
+About the Role
+
+As a Research Engineer/Research Scientist at OpenAI, you will advance the frontier of AI alignment and capabilities through cutting-edge RL methods. Your work will sit at the heart of training intelligent, aligned, and general-purpose agents, including the systems that power various models.
+
+We’re looking for people who have a background in reinforcement learning research, are able to iterate quickly, and are proficient at coding.
+
+This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees.
+
+You might thrive in this role if: 
+
+You love being on the cutting edge of RL and language model research.
+
+You’re a self-starter who takes initiative and ownership of ideas, driving them to completion.
+
+You value principled approaches, simple experiments in tightly-controlled settings, and reaching trustworthy conclusions which stand the test of time.
+
+You thrive in a fast-paced, dynamic, and technically complex environment where rapid iteration is key.
+
+You’re comfortable diving into a large ML codebase to debug and improve it.
+
+You have a deep understanding of machine learning and machine learning applications.
+
+About OpenAI
+
+OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity. 
+
+We are an equal opportunity employer, and we 
+
+==========================================================================================
+JOB databricks/8015848002  [前线部署|未标注]  AI Engineer, FDE (Forward Deployed Engineer)
+------------------------------------------------------------------------------------------
+# AI Engineer, FDE (Forward Deployed Engineer)
+
+CSQ326R35
+
+AI Engineer - FDE (Forward Deployed Engineer)
+
+Mission
+
+The AI Forward Deployed Engineering (AI FDE) team is a highly specialized customer-facing AI team at Databricks. We deliver professional services engagements to help our customers build and productionize first-of-its-kind AI applications. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations, as well as support internal subject matter expert (SME) teams. We view our team as an ensemble: we look for individuals with strong, unique specializations to improve the overall strength of the team. This team is the right fit for you if you love working with customers, teammates, and fueling your curiosity for the latest trends in GenAI, LLMOps, and ML more broadly. Open to remote locations.
+
+The impact you will have:
+
+Develop cutting-edge GenAI solutions, incorporating the latest techniques from Databricks AI research to solve customer problems
+
+Own production rollouts of consumer and internally facing GenAI applications
+
+Serve as a trusted technical advisor to customers across a variety of domains
+
+Present at conferences such as Data + AI Summit, recognized as a thought leader internally and externally
+
+Collaborate cross-functionally with the product and engineering teams to influence priorities and shape the product roadmap 
+
+What we look for:
+
+Experience building GenAI applications, including RAG, multi-agent systems, Text2SQL, fine-tuning, etc., with tools such as HuggingFace, LangChain, and DSPy
+
+Expertise in deploying production-grade GenAI applications, including evaluation and optimizations 
+
+Extensive years of hands-on industry data science experience, leveraging common mac
+
+==========================================================================================
+JOB databricks/8438803002  [前线部署|5年+]  Lead Engagement Manager, FDE - Healthcare & Life Sciences
+------------------------------------------------------------------------------------------
+# Lead Engagement Manager, FDE - Healthcare & Life Sciences
+
+CSQ227R171
+
+The Lead Engagement Manager delivers measurable impact for our Healthcare & Life Sciences customers as well as at the Business Unit (BU) or Regional team level in the Forward Deployed Engineering organization. You will own and independently scope multi-quarter, highly complex initiatives to solve problems with no clear precedent, operating with high autonomy in high-stakes environments.
+
+The impact you will have:
+
+Regional Impact: Drive excellence at the BU/Region level, contributing to team-level booking targets and consumption goals.
+
+Complex Problem Solving: Navigate complex regional, regulatory, or market-specific complexities across multiple countries.
+
+Mentorship: Coach and support junior Engagement Managers, acting as a go-to resource for peers on complex projects.
+
+Sales Strategy: Shape account strategy to align with client goals and lead the sales of complex services and training offerings.
+
+Strategic Relationships: Establish and maintain strategic relationships with senior customer stakeholders across multiple engagements.
+
+What we look for:
+
+10+ years of leadership experience in Professional Services.
+
+Expert-level understanding of Professional Services & Training offerings and the ability to customize solutions for complex environments.
+
+Proficient thought leadership, increasingly viewed as an external expert in the industry.
+
+Participate in the hiring process to attract top-tier talent. 
+
+Expertise in Databricks architecture, ecosystem, and strategic account planning.
+
+Ability to travel up to 25-50% as required.
+
+Pay Range Transparency
+
+Databricks is committed to fair and equitable compensation practices. The pay range(s) for this role is listed below and represents the expected base s
+
+==========================================================================================
+JOB databricks/8546367002  [前线部署|未标注]  AI Engineer – Forward Deployed Engineering (AI FDE)
+------------------------------------------------------------------------------------------
+# AI Engineer – Forward Deployed Engineering (AI FDE)
+
+AI Engineer – Forward Deployed Engineering (AI FDE) (ALL LEVELS)
+
+CSQ327R177
+
+Mission
+
+The AI Forward Deployed Engineering (AI FDE) team is a highly specialized customer-facing AI team at Databricks. We deliver professional services engagements to help our customers build and productionize first-of-its-kind AI applications. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations, as well as support internal subject matter expert (SME) teams. We view our team as an ensemble: we look for individuals with strong, unique specializations to improve the overall strength of the team. This team is the right fit for you if you love working with customers, teammates, and fueling your curiosity for the latest trends in GenAI, LLMOps, and ML more broadly. Open to remote locations.
+
+This role is intended for experienced engineers with demonstrated industry experience designing, building, and deploying production GenAI and LLM applications at scale. It is not intended for internship, new graduate, or entry-level applicants.
+
+The impact you will have:
+
+Develop cutting-edge GenAI solutions, incorporating the latest techniques from Databricks AI research to solve customer problems
+
+Own production rollouts of consumer and internally facing GenAI applications
+
+Serve as a trusted technical advisor to customers across a variety of domains
+
+Present at conferences such as Data + AI Summit, recognized as a thought leader internally and externally
+
+Collaborate cross-functionally with the product and engineering teams to influence priorities and shape the product roadmap 
+
+What we look for:
+
+Experience building GenAI applications, including RAG, multi-agent sy
+
+==========================================================================================
+JOB databricks/8586857002  [前线部署|3-5年]  Sr. Field Technical Program Manager, FDE
+------------------------------------------------------------------------------------------
+# Sr. Field Technical Program Manager, FDE
+
+CSQ327R208
+
+At Databricks, our core principles are at the heart of everything we do; creating a culture of proactiveness and a customer-centric mindset guides us to create a unified platform that makes data science and analytics accessible to everyone. We aim to inspire our customers to make informed decisions that push their business forward. We provide a user-friendly and intuitive platform that makes it easy to turn insights into action and fosters a culture of creativity, experimentation, and continuous improvement. You will be an essential part of this mission, using your technical expertise to demonstrate how our Data Intelligence Platform can help customers solve their complex data challenges. You'll work with a collaborative, customer-focused team that values innovation and creativity, using your skills to create customized solutions to help our customers achieve their goals and guide their businesses forward. Join us in our quest to change how people work with data and make a better world!
+
+As a Sr. Field Technical Program Manager at Databricks, you will be a key driver in our Forward Deployed Engineering team's mission to accelerate and de-risk customer outcomes. Your role is central to achieving project goals and maintaining exceptional customer satisfaction, particularly within our Healthcare & Life Sciences customer base. While you are not expected to have hands-on coding experience, your technical acumen and strategic influence will be critical for guiding complex engagements to success. You will work closely with cross-functional teams to deliver excellence at every stage.
+
+The impact you will have:
+
+Be responsible for the successful delivery of our most complex customer engagements by providing technical leader
+
+==========================================================================================
+JOB databricks/8645052002  [前线部署|3-5年]  Sr. Forward Deployed Engineer - FDE (Fullstack)
+------------------------------------------------------------------------------------------
+# Sr. Forward Deployed Engineer - FDE (Fullstack)
+
+CSQ427R34
+
+As a Forward Deployed Engineer (FDE) you will work with customers to build and productionize solutions to their data & AI challenges using the Databricks platform. You will own the architecture, lead design decisions, and implement end-to-end systems spanning data engineering, AI, and application development. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations. FDEs deliver with customer empathy, integrating with client systems, training, and other technical needs to help customers get most value out of their data. 
+
+This is a hands-on, customer-facing role for builders who thrive at the intersection of technology and business impact. The ideal candidate combines engineering expertise with adaptability, curiosity, and a passion for working with customers and teammates to solve complex problems that drive measurable outcomes. FDEs are billable and know how to complete projects according to specification with exceptional customer empathy.
+
+The impact you will have:
+
+Production Solution Delivery: Lead impactful customer technical projects by delivering production-grade systems, designing and building reference architectures, custom applications and data ingestion and ML/AI model integration
+
+Transformational Impact: Guide strategic customers as they implement transformational big data projects including end-to-end design, build and deployment of industry-leading big data and AI applications. Work with engagement managers to scope technical delivery work with input from the customer
+
+Empower Customers: Guide customers on architecture and design; bootstrap or implement customer projects which leads to a customers' successful und
+
+==========================================================================================
+JOB databricks/8687861002  [前线部署|3-5年]  Sr. Deployment Strategist, FDE - Manufacturing & High-Tech
+------------------------------------------------------------------------------------------
+# Sr. Deployment Strategist, FDE - Manufacturing & High-Tech
+
+CSQ327R212
+
+About the team: 
+
+The FDE (Forward Deployed Engineering) team is a new, strategic initiative sponsored by the CEO and Founders. Our mission is to win C-suite-sponsored, high-value AI opportunities by selling and delivering outcomes, not just a platform. You will be part of the founding team, embedded with our most strategic customers from the very first sales call through to a production-ready solution. 
+
+You will be the "product manager" for the customer's problem, responsible for the "why" and "what," while our FDEs (Engineers) will be your partners responsible for the "how."
+
+Role description:
+
+As a Deployment Strategist (DS), you are the critical bridge between a customer's multi-million-dollar business problem and Databricks' technical solution. You are a product manager for the field, owning the technical and product direction of the engagement from initial discovery through production launch and adoption. You will build C-suite trust, perform deep discovery to map the customer's political and technical landscape, and scope the value. 
+
+You will define the Minimum Viable Product for a pilot, write the PRD that guides the engineering team, and manage the project to a successful landing. You will also lead technical discovery, shape solution architecture with FDEs, and ensure that each proposed solution can move from prototype to production. 
+
+This role requires a rare combination of executive presence, deep product thinking, technical depth, and a hands-on delivery mindset.
+
+The impact you will have:
+
+C-Suite Scoping & Value Definition: Partner with Sales to perform deep discovery, map the customer's organization, quantify the business value of $10M+ problems, and define the pilot, including 
+
+==========================================================================================
+JOB databricks/8760167002  [前线部署|未标注]  AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)
+------------------------------------------------------------------------------------------
+# AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)
+
+PLEASE NOTE: 
+Due to federal contract requirements and client site access obligations, U.S. citizenship and eligibility for a U.S. government secret clearance are required to access classified information. The position is based in the Washington, D.C., Maryland, or Virginia metropolitan area and includes periodic on‑site work and client collaboration. Candidates with an active Secret or higher clearance are strongly encouraged to apply.
+
+The AI Forward Deployed Engineering (AI FDE) team is a highly specialized customer-facing AI team at Databricks. We deliver professional services engagements to help our customers build and productionize first-of-its-kind AI applications. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations, as well as support internal subject matter expert (SME) teams. We view our team as an ensemble: we look for individuals with strong, unique specializations to improve the overall strength of the team. This team is the right fit for you if you love working with customers, teammates, and fueling your curiosity for the latest trends in GenAI, LLMOps, and ML more broadly. This role can be remote.
+
+The impact you will have:
+
+Develop cutting-edge GenAI solutions, incorporating the latest techniques from Databricks AI research to solve customer problems
+
+Own production rollouts of consumer and internally facing GenAI applications
+
+Serve as a trusted technical advisor to customers across a variety of domains
+
+Present at conferences such as Data + AI Summit, recognized as a thought leader internally and externally
+
+Collaborate cross-functionally with the product and engineering teams 
+
+==========================================================================================
+JOB openai/93568fc5-8c7a-4cc1-8aad-198d67bf348f  [前线部署|5年+]  Deployment Lead (DL), FDE - Singapore
+------------------------------------------------------------------------------------------
+About the Role
+
+This is a founding role. As EMEA’s first Deployment Lead (DL), you will define how OpenAI delivers complex systems to customers. You will own how they are built, shipped, and adopted. You’ll translate business outcomes into a technical plan, run day-to-day execution across FDEs, Researchers, and Customer Engineers, and partner with customer teams to ensure delivery supports their goals.
+
+You will own delivery end-to-end: embedding with customers to map workflows and success criteria, ensuring components ship on time, and leading readiness and change management for adoption. You’ll track progress, manage dependencies, make sequencing decisions, and drive 0→1 prototypes through MVP and scale. You will also share field insights with Product and Research to guide roadmap and priorities.
+
+Success will be measured first and foremost by impact - deployments that deliver measurable value against customer goals, drive adoption, and become critical to their workflows. Additional measures of success include delivery reliability (milestones hit, low reopen/churn), operating leverage (patterns reused across deployments), judgment under pressure, and product impact (field signal that shifts roadmaps/architectures).
+
+This is a high-trust, high-autonomy role. Success requires technical project management expertise, extreme ownership of outcomes, and an ability to immerse in customer workflows and partner with customer teams to solve complex engineering problems at pace.
+
+This role is based in Singapore. We use a hybrid work model of 3 days in the office per week. We offer relocation assistance. 
+
+In this role, you will:
+
+Own the technical delivery plan for multiple interdependent workstreams. Translate business objectives into a roadmap with milestones, dependencies, an
+
+==========================================================================================
+JOB anthropic/5257689008  [硬件/机构设计|5年+]  Platform Hardware Security
+------------------------------------------------------------------------------------------
+About the role
+
+We're seeking a Platform Hardware Security Engineer to design and implement security architectures for bare-metal infrastructure. You'll work with teams across Anthropic to build firmware, bootloaders, operating systems, and attestation systems to ensure the integrity of our infrastructure from the ground up.
+
+This role requires expertise in low-level systems security and the ability to architect solutions that balance security requirements with the performance demands of training AI models across our massive fleet.
+
+Key responsibilities
+
+Design and implement secure boot chains from firmware through OS initialization for diverse hardware platforms (CPUs, BMCs, switches, peripherals, and embedded microcontrollers)
+
+Architect attestation systems that provide cryptographic proof of system state from hardware root of trust through application layer
+
+Develop measured boot implementations and runtime integrity monitoring
+
+Create reference architectures and security requirements for bare-metal deployments
+
+Integrate security controls with infrastructure teams without impacting training performance
+
+Prototype and validate security mechanisms before production deployment
+
+Conduct firmware vulnerability assessments and penetration testing
+
+Build firmware analysis pipelines for continuous security monitoring
+
+Document security architectures and maintain threat models
+
+Collaborate with software and hardware vendors to ensure security capabilities meet our requirements
+
+Minimum qualifications
+
+Hands-on experience with secure boot, measured boot, and attestation technologies (TPM, Intel TXT, AMD SEV, ARM TrustZone)
+
+Strong understanding of cryptographic protocols and hardware security modules
+
+Experience with UEFI/BIOS or embedded firmware security, bootloader hardeni
+
+==========================================================================================
+JOB anthropic/5405548008  [硬件/机构设计|未标注]  Engineering Manager, Hardware Platform Security
+------------------------------------------------------------------------------------------
+About the role
+
+Platform Security Engineering (PSE) sits within Data Center Security Engineering (DCSE). As Anthropic expands beyond traditional cloud providers into owned facilities, colocation, and partner sites, we take on the security responsibilities that cloud providers used to abstract away: firmware integrity, boot chain verification, platform trust, and host hardening. PSE exists so that Anthropic can deploy training and inference workloads to any qualified environment with a demonstrable security posture, including the technical controls behind our AI Safety Level commitments.
+
+We are hiring an engineering manager to lead a group of platform security engineers covering firmware research, OS and kernel hardening, platform trust integration, and server manageability firmware. You will own the roadmap for this group, grow the team, and be accountable for the security posture of the compute platforms Anthropic runs on: hardware roots of trust, secure and measured boot, attestation, firmware supply chain, and the integrity of the hosts that hold model weights on bare-metal infrastructure.
+
+This is a hands-on management role. You will not write most of the code, but you will review designs, make the final call on hard trade-offs, and be able to reason with your engineers from a silicon root of trust through firmware, bootloader, kernel, and host software. You will partner with infrastructure, fleet, and compute teams inside Anthropic, and with silicon vendors, OEMs, and compute providers outside it.
+
+You will report to the Data Center Security Engineering manager.
+
+Key responsibilities
+
+Lead and grow the platform security engineering group: hiring, onboarding, development, performance, and prioritization for full-time engineers, and coordination of contractor and ve
+
+==========================================================================================
+JOB openai/36e30720-0a32-4b7b-8172-e31ad0a20cdc  [硬件/机构设计|5年+]  Hardware Platform Security Architect
+------------------------------------------------------------------------------------------
+About the Role
+
+Trusted Computing and Cryptography is a core security team at OpenAI focused on deploying high-performance cryptography at scale, secure key management, and trusted hardware enclaves—from boot measurements to GPU confidential computation. As a Hardware Platform Security Architect, you’ll own hardware platform security at OpenAI.
+
+In this role, you will:
+
+Co-Architect Secure Silicon: Collaborate with cross-functional silicon teams (Silicon Design, DV, FW) and silicon partners (silicon test facilities, foundries) to develop secure silicon that meets the end-to-end system requirements.
+
+Co-Architect Secure Hardware: Collaborate with hardware vendors and cross-functional teams (kernel, compiler, infra) to design secure hardware that meets performance and security needs.
+
+Co-Architect Secure Systems: Architect and deploy systems using TPM2, Secure Boot, Nitro Enclaves, Intel SGX, AMD-SEV, and other secure hardware technologies.
+
+Drive Innovation: Engage with internal and external partners to align hardware innovations with OpenAI’s trusted computing and cryptographic requirements.
+
+You might thrive in this role if you have:
+
+10+ years of industry experience in hardware security or hardware–software co-design.
+
+Proven expertise in deploying secure hardware systems at scale and integrating secure hardware primitives.
+
+Strong coding skills in Rust and/or C/C++, with proficiency in Python.
+
+Proven ability to collaborate across teams, architect solutions, and debug complex production systems.
+
+A proactive, ownership-driven mindset with a focus on end-to-end problem solving.
+
+Nice to Have
+
+Advanced degree in Computer Architecture, Electrical Engineering, or related fields.
+
+Familiarity with HPC, low-precision computing, and SIMD architectures.
+
+About OpenAI
+
+OpenAI
+
+==========================================================================================
+JOB openai/b9a4a809-a965-4dbe-aeef-6ce1593903dd  [硬件/机构设计|5年+]  Hardware Operations Engineer
+------------------------------------------------------------------------------------------
+About the Role
+
+We are seeking a Hardware Operations Engineer to serve as the technical authority for hardware reliability and fleet health at one of OpenAI’s flagship AI campuses.
+
+This role operates at the intersection of hardware operations, sustaining engineering, and fleet reliability. You will partner closely with Cloud Service Provider operations teams, OpenAI fleet-health engineers, hardware engineering teams, and OEM vendors to identify, diagnose, and resolve hardware issues affecting production systems.
+
+Beyond day-to-day operational support, you will drive root cause investigations, reliability improvement initiatives, lifecycle management programs, and operational readiness efforts. You will help establish hardware maintenance standards, operational procedures, and best practices that scale across future OpenAI infrastructure deployments.
+
+The ideal candidate combines deep hands-on datacenter hardware expertise with strong troubleshooting, failure analysis, and cross-functional leadership skills.
+
+Candidates must be able to sit onsite at our datacenters 5 days per week.
+
+Key Responsibilities
+
+Drive technical triage and resolution of complex hardware failures impacting production systems.
+
+Partner with Fleet Health Engineering to investigate recurring hardware issues, identify failure patterns, and improve fleet reliability.
+
+Lead root cause analysis (RCA) efforts for critical hardware incidents and develop corrective and preventive action plans.
+
+Collaborate with Cloud Service Provider operations teams and OEM vendors to coordinate repairs, replacements, upgrades, and hardware lifecycle activities.
+
+Establish and continuously improve hardware maintenance procedures, operational runbooks, and troubleshooting standards.
+
+Analyze hardware failure trends and ope
+
+==========================================================================================
+JOB anthropic/5397654008  [产品设计/交互|未标注]  Product Designer, Claude Developer Platform
+------------------------------------------------------------------------------------------
+About the role
+
+Design at Anthropic sits at the intersection of craft, research, and product intuition. We're a small team working on products that millions of people use daily—and on interactions that don't have established conventions yet.
+
+Our work shapes how people experience AI: whether Claude feels like a tool or a collaborator, whether it earns trust or erodes it. We partner closely with engineers and researchers, often designing around capabilities that are emerging in real-time. That means staying close to the models, prototyping rapidly, and being comfortable with ambiguity.
+
+We care deeply about craft—the details that make something feel polished and trustworthy—but we ship fast and learn in the open. We'd rather get something in front of users and iterate than wait for perfection.
+
+We're looking for designers who ship fast and stay in motion—people who would rather get something in front of users this week than perfect it for a month. You're excited to question fundamental UI assumptions and invent patterns that feel native to AI, and you're already using tools like Claude Code to extend what you can build. You pay attention to where model capabilities are heading, not just what Claude can do today, and you find ways to keep caring about the pixels, the copy, and the edge cases while shipping quickly.
+
+Read more here for the type of features we build.
+
+Key responsibilities
+
+Collaborate with product managers, engineers, AI researchers and other stakeholders to define product vision, strategy and roadmaps, and play an active role in shipping.
+
+Understand the technical architecture of our products and define primitives for new capabilities.
+
+Define feature areas with exceptional attention to detail and polish, identifying opportunities to improve quality and co
+
+==========================================================================================
+JOB databricks/8854693002  [产品设计/交互|5年+]  Staff Product Designer, Agentic Coding
+------------------------------------------------------------------------------------------
+What you'll do
+
+Own the desktop and mobile experience for live agent sessions end to end - from strategy and interaction models to visual polish and shipped detail. Shape the high-density orchestration workflows on desktop and the lightweight monitoring, review, approval, and intervention moments on mobile.
+
+Design directly in the codebase for well-scoped changes, working alongside engineers to ship real improvements rather than handing off static mocks.
+
+Use prototypes as a primary thinking tool. For large, vague problems, build interactive prototypes to explore, de-risk, and align the team on a direction.
+
+Invent the interaction language for agentic work: real-time multi-agent sessions, watch/co-drive/fork flows, human-in-the-loop approvals, agent status and transparency, error and recovery states, and trust.
+
+Define durable UX principles and interaction frameworks for agent collaboration, approvals, observability, and recovery that other teams reuse across Omnigent surfaces.
+
+Drive cross-platform consistency with a strong, scalable design system spanning desktop and mobile.
+
+Ground decisions in evidence - use research instincts and real usage to pressure-test ideas and know what to build next.
+
+What we're looking for
+
+A builder-designer who works fluently with AI tools. You can make small design changes directly in a codebase, and you use prototypes - and the agents themselves - to explore larger, ambiguous problems. You regularly use AI tools in your own design and build workflow.
+
+A portfolio of strong end-to-end craft - interaction design, visual/UI polish, and design-systems thinking - ideally on developer tools, AI/ML products, enterprise software, or other products for technical users.
+
+Staff-level scope and impact. A track record of shipping complex, high-qual
+
+==========================================================================================
+JOB openai/3813977e-5940-456d-bf5a-16efcdc3a6dc  [产品设计/交互|未标注]  Product Designer, Payments
+------------------------------------------------------------------------------------------
+About the Role
+
+In this role, you’ll lead design for one of OpenAI’s most foundational product areas: the payments and monetization infrastructure that supports our consumer and enterprise products. You’ll partner closely with product, engineering, and cross-functional teams to shape how customers understand, manage, and pay for entirely new kinds of AI usage. Your work will extend beyond traditional checkout and billing. You’ll help define the systems, frameworks, and experiences behind durable pay-as-you-go models, Codex usage, and agentic workflows, translating complex business and technical requirements into intuitive experiences. As a product designer in a highly ambiguous and rapidly evolving space, you’ll influence both product strategy and the underlying infrastructure that OpenAI products depend on.
+
+This role is based in our San Francisco HQ. We offer relocation assistance to new employees.
+
+In this role, you will:
+
+Lead the design direction for foundational payments, billing, and monetization experiences across OpenAI’s consumer and enterprise products.
+
+Design and ship high-quality, end-to-end product experiences, from early systems and interaction concepts to high-fidelity prototypes and production-ready designs.
+
+Shape the infrastructure and product frameworks that support emerging AI usage models, including pay-as-you-go, Codex usage, and agentic work.
+
+Partner closely with engineering, product management, finance, and design peers to define long-term platform strategy, influence the roadmap, and prioritize near-term execution.
+
+Translate complex platform dependencies, financial logic, and technical constraints into clear, trustworthy, and scalable user experiences.
+
+Engage in user research to understand how individuals and organizations evaluate pricing,
+
+==========================================================================================
+JOB openai/d5de4cd0-9c4e-4266-93f2-8c1d5fc4a912  [产品设计/交互|未标注]  Product Designer, Identity and Safety
+------------------------------------------------------------------------------------------
+About the Role
+
+In this role, you’ll lead design for foundational identity experiences across OpenAI’s products. You’ll make permissions, access, risk, and administration feel clear, safe, and genuinely usable—whether someone is securing a personal account, administering access across an enterprise, signing in to another product with ChatGPT, or authorizing an agent to perform sensitive work.
+
+Your work will span established identity challenges and emerging interaction models without established design conventions. You’ll help define how users understand what an agent can access, who or what it is acting on behalf of, and when confirmation or stronger authentication should appear. Working closely with product, engineering, security, privacy, and design, you’ll translate complex policies and technical systems into coherent, trustworthy experiences.
+
+This role is based in our San Francisco HQ. We offer relocation assistance to new employees.
+
+In this role, you will:
+
+Lead the design direction for identity, account security, permissions, and administrative experiences across OpenAI’s consumer and enterprise products.
+
+Design and ship high-quality experiences spanning sign-in, authentication, account recovery, device accounts, privacy, access controls, governance, and remediation.
+
+Define mental models and interaction patterns for human-to-agent and agent-to-agent identity, authorization, and trust.
+
+Help users understand what people, systems, and agents can access or do on their behalf.
+
+Design security checks and confirmation flows that protect sensitive actions while minimizing unnecessary friction.
+
+Partner closely with product management, engineering, security, privacy, and design peers to shape strategy, roadmap, and execution.
+
+Navigate complex roles, policies, depen
+
+==========================================================================================
+JOB anthropic/4610158008  [AI治理/政策/安全|未标注]  [Expression of Interest] Research Engineer / Scientist, Alignment - London
+------------------------------------------------------------------------------------------
+About the role:
+
+You want to build and run elegant and thorough machine learning experiments to help us understand and steer the behavior of powerful AI systems. You care about making AI helpful, honest, and harmless, and are interested in the ways that this could be challenging in the context of human-level capabilities. You could describe yourself as both a scientist and an engineer. As a Research Engineer on Alignment Science, you'll contribute to exploratory experimental research on AI safety, with a focus on risks from powerful future systems (like those we would designate as ASL-3 or ASL-4 under our Responsible Scaling Policy), often in collaboration with other teams including Interpretability, Fine-Tuning, and the Frontier Red Team.
+
+Our blog provides an overview of topics that the Alignment Science team is either currently exploring or has previously explored. For the London team, we are opportunistically hiring for the following research areas:
+
+AI Control: Creating methods to ensure advanced AI systems remain safe and harmless in unfamiliar or adversarial scenarios.
+
+Alignment Stress-testing: Creating model organisms of misalignment to improve our empirical understanding of how alignment failures might arise.
+
+Note: Currently, the team's hub is in San Francisco, so we require all candidates to be based at least 25% in London and travel to San Francisco occasionally. Additionally, we are prioritizing growing our San Francisco teams, so you may not hear back on your application to the London team unless we see an unusually strong fit. For this role, we conduct all interviews in Python.
+
+Representative Projects:
+
+Testing the robustness of our safety techniques by training language models to subvert our safety techniques, and seeing how effective they are at subve
+
+==========================================================================================
+JOB anthropic/5400010008  [AI治理/政策/安全|未标注]  Product Policy Manager, Product Risk
+------------------------------------------------------------------------------------------
+Responsibilities:
+
+Develop and maintain risk assessment frameworks to identify and evaluate potential safety risks associated with new product features and functionality
+
+Conduct and drive comprehensive product safety reviews, covering technical and non technical harms, to inform product launch and safety mitigation strategies 
+
+Collaborate closely with a variety of stakeholders including product and engineering teams and the broader Safeguards team to leverage deep policy, enforcement, and engineering expertise
+
+Analyze the potential for misuse, unintended consequences, and harmful outputs of new model and product capabilities and translate this analysis into mitigations delivery.
+
+Leverage SME risk assessments to inform overall product safety recommendations
+
+Design and run bespoke evaluations for products that require tailored assessment and contribute to our product safety evaluations strategy. 
+
+Craft policy recommendations that strike a balance between enabling innovation and ensuring responsible AI deployment
+
+Stay current on industry trends and emerging risks in AI development to proactively address potential issues
+
+Contribute to regular reports on product policy risks and mitigations for senior leadership
+
+Minimum Requirements:
+
+Have a strong technical background while also feeling equally comfortable explaining highly technical concepts to non-technical stakeholders
+
+Understand safety policies and safety considerations associated with a wide range of product surfaces 
+
+Are adept at prioritizing where, and how, to focus resources for safety mitigations in a high volume launch process
+
+Have conducted risk evaluations of novel products in fast moving organizations 
+
+Demonstrated expertise collaborating with product and engineering teams to integrate safety consi
+
+==========================================================================================
+JOB linear/ea0b5868-6d7a-46fa-99d8-207cd19357a6  [设计工程|未标注]  Design Engineer (Web & Brand)
+------------------------------------------------------------------------------------------
+What you'll do
+
+You will be responsible for building complex and interactive UI web/app experiences
+
+Build beautiful, responsive websites, landing pages, and internal tools
+
+Implement creative animations and interactions in code
+
+Explore visual design in Figma and translate it to web-native experiences
+
+What we're looking for
+
+Eye for good design
+
+Strong frontend engineering skills
+
+Experience building end-to-end websites and landing pages
+
+Experience with React and TypeScript
+
+Experience using agentic coding tools as part of the design process (from exploring ideas to building production-quality interactions)
+
+A portfolio or Twitter profile showcasing a range of technical skills, a creative use of code, and prototyping skills
+
+What we offer
+
+Interesting and challenging work
+
+Work life balance
+
+Competitive salary and equity
+
+Employee-friendly equity terms (extended exercise)
+
+Paid lunch and coffee during work days
+
+Work remotely, no commuting to the office
+
+Paid co-working space/desk at an office
+
+Regular team events and offsites
+
+5 weeks paid vacation
+
+4 months paid parental leave
+
+Learn how we think and work
+
+Part I and Part II of how we redesigned the Linear UI
+
+Read me a story about our mission
+
+Why and how we do work trials Linear blog post
+
+How we use AI in design feature of Linear's design team
+
+Crafting quality that endures Config keynote by our Co-founder & CEO, Karri Saarinen
+
+Building for quality: Our Investment in Linear Accel Series B blog post
+
+==========================================================================================
+JOB openai/6cf91ff5-a811-435c-bf93-f3d958896599  [设计工程|未标注]  RTL Design Engineer – Interconnect & Network Datapath
+------------------------------------------------------------------------------------------
+About the Role
+
+We are looking for a highly experienced, hands-on RTL engineer with deep packet-networking and interconnect expertise to own critical on- and off-chip communication components for our custom AI accelerator platform.
+
+You will drive the microarchitecture and RTL implementation of scalable on-chip fabrics connecting high-bandwidth compute, memory, and I/O subsystems, as well as purpose-built off-chip interfaces and protocols that enable custom computing at scale. The ideal candidate has recently owned production RTL for networking or packet-switched datapaths such as Ethernet switches, NICs, SmartNICs, network accelerators, RDMA/RoCE systems, NoCs, or custom scale-up/scale-out fabrics.
+
+This is a senior engineering role with broad technical ownership and substantial direct RTL work. You will drive designs from requirements and performance analysis through microarchitecture, SystemVerilog implementation, verification closure, physical design convergence, silicon bring-up, and production readiness. You will also plan and oversee the work of junior engineers and help develop productive engineering relationships with external partners.
+
+In this role, you will:
+
+Own the microarchitecture, RTL design, and delivery of major packet-based interconnect and networking components, including NoC fabrics, switches, routers, bridges, protocol adapters, arbiters, queues, schedulers, buffers, and traffic-management logic.
+
+Design mechanisms for routing, arbitration, ordering, flow control, congestion management, quality of service, packet scheduling, buffering, and performance monitoring.
+
+Develop on-chip and off-chip interfaces, protocol bridges, and custom networking protocols or protocol extensions for scale-up and scale-out systems.
+
+Perform substantial direct microarc

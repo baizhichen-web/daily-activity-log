@@ -1,0 +1,30 @@
+{
+  "source": "2026年度国考职位表（官方专题站 bm.scs.gov.cn/kl2026，白纸手动下载）",
+  "fetched_at": "2026-10-04",
+  "keyword_regex": "设计|艺术|美术|视觉|动画|数字媒体|工艺美术",
+  "total_positions": 20714,
+  "total_headcount": 38119,
+  "hit_positions": 380,
+  "hit_headcount": 604,
+  "hit_edu_dist": {
+    "本科或硕士研究生": 49,
+    "硕士研究生及以上": 54,
+    "本科及以上": 121,
+    "仅限硕士研究生": 4,
+    "仅限本科": 151,
+    "仅限大专": 1
+  },
+  "hit_level_dist": {
+    "中央": 11,
+    "省（副省）级": 25,
+    "市（地）级": 211,
+    "县（区）级及以下": 133
+  },
+  "bu_xian": 4,
+  "refined": {
+    "major_contains_design_文样": 126,
+    "arts_whitelist_only_艺术学大类": 108,
+    "named_specific_design_major": 24,
+    "note": "含设计字样126=具体设计专业24+艺术学大类内含设计表述+其他；细分口径见汇报"
+  }
+}

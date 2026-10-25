@@ -1,0 +1,4648 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+
+<!-- 
+	Based on the TYPO3 Bootstrap Package by Benjamin Kott - https://www.bootstrap-package.com/
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2026 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+<link rel="icon" href="/_assets/4b51f00386267395f41e0940abbcd656/Icons/favicon.ico" type="image/vnd.microsoft.icon">
+<title>Educational rules - Design</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="generator" content="Politecnico di Milano">
+<meta name="keywords" content="politecnico di milano">
+<meta name="twitter:card" content="summary">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="google" content="notranslate">
+
+
+<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-51aee970d05f721306251f0e7fc1d587-0ac4e1d64230840dd61682f3685d35ed.css?1784879726" media="all">
+
+
+
+
+<script>
+			const storageName = 'klaro';
+				const translatedButtonTextCookieSettings = 'Customize privacy settings';
+				const cookieSettingsImgPathDefault = '/_assets/f34691673face4b5c642d176b42916a9/Icons/icon_cookie_settings.svg';
+				const cookieSettingsImgPathHover = '/_assets/f34691673face4b5c642d176b42916a9/Icons/icon_cookie_settings-hover.svg';
+				const cookieIconPermanentlyAvailable = '0';
+				const cookieExpiresAfterDays = 365;
+				let allServiceSettings = [];
+				let consenTypeObj = {};
+				let serviceSetting = {};
+				let serviceName = {};
+				let serviceIsTypeOfConsentMode = false;
+		</script>
+
+<script>
+				// Define dataLayer and the gtag function.
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+
+				// Set default consent to 'denied'
+				gtag('consent', 'default', {
+					'ad_storage': 'denied',
+					'analytics_storage': 'denied',
+					'ad_user_data': 'denied',
+					'ad_personalization': 'denied',
+					'functionality_storage': 'denied',
+					'personalization_storage': 'denied',
+					'security_storage': 'granted',
+					'wait_for_update': 500
+				});
+				
+				consenTypeObj = {
+					ad_storage: 2 != 0 ? "denied" : "denied",
+					analytics_storage: 1 != 0 ? "granted" : "denied",
+					ad_user_data: 2 != 0 ? "denied" : "denied",
+					ad_personalization: 2 != 0 ? "denied" : "denied",
+					functionality_storage: 1 != 0 ? "granted" : "denied",
+					personalization_storage: 2 != 0 ? "denied" : "denied",
+					security_storage: 1 != 0 ? "granted" : "granted"
+				};
+			</script>
+
+			
+			
+			
+				<script>
+					gtag('js', new Date());
+					gtag('config', 'G-TNL053NRJ1');
+					//Enable ads_data_redaction by default
+					gtag('set', 'ads_data_redaction', true);
+				</script>
+				<script type="opt-in" data-type="text/javascript" data-name="google-analytics-36">
+					function gtag() { dataLayer.push(arguments); }
+					
+					gtag('consent', 'update', consenTypeObj);
+
+					// Load gtag.js script.
+					var gtagScript = document.createElement('script');
+					gtagScript.async = true;
+					gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-TNL053NRJ1';
+
+					var firstScript = document.getElementsByTagName('script')[0];
+					firstScript.parentNode.insertBefore(gtagScript,firstScript);
+				</script>
+			
+		
+
+		
+			
+		
+	
+<link rel="prev" href="/en/corsi/educational-offer/single-courses"><link rel="next" href="/en/education/course-prospectus-and-programmes"> 
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '11187']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code --> 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNL053NRJ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TNL053NRJ1',{ 'anonymize_ip': true });
+  
+</script><link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="canonical" href="/en/corsi/translate-to-english-regolamenti-didattici">
+
+<link rel="alternate" hreflang="it-IT" href="/formazione/regolamenti-didattici">
+<link rel="alternate" hreflang="en-US" href="/en/corsi/translate-to-english-regolamenti-didattici">
+<link rel="alternate" hreflang="x-default" href="/formazione/regolamenti-didattici">
+<script>NS_CSM_td=276668024;NS_CSM_pd=275116665;NS_CSM_u="/clm10";NS_CSM_col="AAAAAAVtz/dbnPyJivqbZLVIFyIK6lh8lu0PYHXap7n+wiZm2KHeIv9dnz3rExP9aI6npBkKV1S0GKaSIl7AlI2z2ges";</script><script type="text/javascript">function sendTimingInfoInit(){setTimeout(sendTimingInfo,0)}function sendTimingInfo(){var wp=window.performance;if(wp){var c1,c2,t;c1=wp.timing;if(c1){var cm={};cm.ns=c1.navigationStart;if((t=c1.unloadEventStart)>0)cm.us=t;if((t=c1.unloadEventEnd)>0)cm.ue=t;if((t=c1.redirectStart)>0)cm.rs=t;if((t=c1.redirectEnd)>0)cm.re=t;cm.fs=c1.fetchStart;cm.dls=c1.domainLookupStart;cm.dle=c1.domainLookupEnd;cm.cs=c1.connectStart;cm.ce=c1.connectEnd;if((t=c1.secureConnectionStart)>0)cm.scs=t;cm.rqs=c1.requestStart;cm.rss=c1.responseStart;cm.rse=c1.responseEnd;cm.dl=c1.domLoading;cm.di=c1.domInteractive;cm.dcls=c1.domContentLoadedEventStart;cm.dcle=c1.domContentLoadedEventEnd;cm.dc=c1.domComplete;if((t=c1.loadEventStart)>0)cm.ls=t;if((t=c1.loadEventEnd)>0)cm.le=t;cm.tid=NS_CSM_td;cm.pid=NS_CSM_pd;cm.ac=NS_CSM_col;var xhttp=new XMLHttpRequest();if(xhttp){var JSON=JSON||{};JSON.stringify=JSON.stringify||function(ob){var t=typeof(ob);if(t!="object"||ob===null){if(t=="string")ob='"'+ob+'"';return String(ob);}else{var n,v,json=[],arr=(ob&&ob.constructor==Array);for(n in ob){v=ob[n];t=typeof(v);if(t=="string")v='"'+v+'"';else if(t=="object"&&v!==null)v=JSON.stringify(v);json.push((arr?"":'"'+n+'":')+String(v));}return(arr?"[":"{")+String(json)+(arr?"]":"}");}};xhttp.open("POST",NS_CSM_u,true);xhttp.send(JSON.stringify(cm));}}}}if(window.addEventListener)window.addEventListener("load",sendTimingInfoInit,false);else if(window.attachEvent)window.attachEvent("onload",sendTimingInfoInit);else window.onload=sendTimingInfoInit;</script></head>
+<body id="p238" class="page-238 pagelevel-2 language-1 backendlayout-subnavigation_firstlevel layout-default">
+
+
+
+
+<div id="top"></div>
+<div class="body-bg">
+
+    
+
+
+
+    
+
+
+
+
+    <a class="visually-hidden-focusable page-skip-link" href="#page-content">
+        <span>Skip to main content</span>
+    </a>
+    <a class="visually-hidden-focusable page-skip-link" href="#page-footer">
+        <span>Skip to page footer</span>
+    </a>
+    
+            
+
+
+
+
+
+
+<header class="header">
+    <section class="header__pre-header d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                
+                        <div class="header__logo poli col-5 col-md-2">
+                            <a href="https://www.polimi.it/en/" title="Go to PoliMi site">
+                                <img alt="Politecnico di Milano" src="/_assets/4b51f00386267395f41e0940abbcd656/Images/logo.svg" width="131" height="43" />
+                            </a>
+                        </div>
+                    
+
+                <div class="col-7 col-md-10 d-flex align-items-end justify-content-end pr-0 row tools">
+                    
+
+   
+        <ul id="language_menu" class="language-menu">
+            
+                <li class=" ">
+                    
+                            <a href="/formazione/regolamenti-didattici" hreflang="it-IT" title="Italiano">
+                                <span>IT</span>
+                            </a>
+                        
+                </li>
+            
+                <li class="active ">
+                    
+                            <a href="/en/corsi/translate-to-english-regolamenti-didattici" hreflang="en-US" title="English">
+                                <span>EN</span>
+                            </a>
+                        
+                </li>
+            
+        </ul>
+
+
+
+                    
+        <div class="access-cta" xmlns:f="http://www.w3.org/1999/html">
+            
+            <a href="https://www.polimi.it/en/online-services" title="Access Online services"><span>Access Online services</span></a>
+        </div>
+    
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="header__pre-header d-block d-md-none">
+        <div class="container">
+            <div class="row">
+                
+                        <div class="header__logo poli col-10">
+                            <a href="https://www.polimi.it/en/" title="Go to PoliMi site">
+                                <img alt="Politecnico di Milano" src="/_assets/4b51f00386267395f41e0940abbcd656/Images/logo.svg" width="131" height="43" />
+                            </a>
+                        </div>
+                    
+            </div>
+
+        </div>
+    </section>
+    <div class="container">
+        <p class="skip-nav">
+            <a href="#main-content-anchor" title="Skip to Content (Press Enter)">Skip to Content (Press Enter)</a>
+        </p>
+    </div>
+    <section class="header__nav sticky-top position-md-static">
+        <div class="container">
+            <div class="row">
+                <div class="header__logo col-9 col-md-3 col-sm-8">
+                        
+                                
+                                        <a href="/en/" title=" " class="logo2 logotipo">
+                                            <span class="row">School of Design</span>
+                                            <span class="row"></span>
+                                        </a>
+                                    
+
+                            
+                </div>
+
+                <div class="col-3 col-md-9 col-sm-4 d-flex justify-content-end d-md-block pr-0">
+                    <nav class="navbar d-none d-md-flex justify-content-end" aria-label="Main navigation">
+                        
+
+
+
+                        
+
+       <ul class="navbar-nav">
+        
+            
+                    <li class="nav-item">
+                        <button type="button" class="nav-link nav-link-toggle " data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link-text">The School</span>
+                            <span class="nav-link-indicator" aria-hidden="true"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-mega dropdown-menu-mega--114">
+                            <div class="container container-fluid-right">
+                            <div class="row">
+                                
+                                
+                                <div class="col-8 dropdown-menu__left-side">
+                                    <div class="row explore">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4 class="explore__title d-flex">
+                                                        <span>Explore the <em>The School</em></span>
+                                                        <a class="btn btn-outline-primary btn--icon btn-dark" role="button" href="/en/school" title="The School">
+                                                            <span>Learn more</span>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="explore__subtitle small">
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                        
+                                    
+                                    <div class="row dropdown-menu__left-side__links">
+                                        <div class="col-4">
+                                            
+                                                
+                                                    <h6>ORGANIZATION</h6>
+                                                
+                                            
+                                            <ul>
+                                                
+                                                    
+                                                            
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/organization/translate-to-english-presentazione" title="News">Presentation</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/organization/council" title="News">Council</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/organization/programme-boards" title="News">Programme Boards</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/organization/joint-committee" title="News">Joint Committee</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/organization/advisory-board" title="News">Advisory Board</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/organization/translate-to-english-rappresentanti-degli-studenti" title="News">Student Representatives</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                
+                                                                    <h6>INFO &amp; DOCUMENTS</h6>
+                                                                
+                                                                <ul>
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/calls" title="News">Calls</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/info-documents/cultural-project" title="News">Cultural Project</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/info-documents/deans-annual-report" title="News">Dean’s Annual Report</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/info-documents/awards" title="News">Awards</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/info-documents/honorary-graduates" title="News">Honorary Graduates</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/info-documents/honorary-and-emeritus-professors" title="News">Honorary and Emeritus Professors</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                
+                                                                    <h6>DESIGN SYSTEM</h6>
+                                                                
+                                                                <ul>
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/the-design-system" title="News">The Design System</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/school/the-design-system-1" title="News">Collaborate with the School</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-4 dropdown-menu__right-side">
+                                        <div class="row">
+                                            <div class="col-12 dropdown-menu__right-side__section-links">
+                                                <div class="dropdown-menu__right-side__section-links__container">
+                                                    
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Events
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/school/events" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-287"></div>
+                <div class="tx_news_button-next next-287"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-287"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                                                </div>
+                                            </div>
+                                            
+                                                <div class="col-12 dropdown-menu__right-side__section-links">
+                                                    <div class="dropdown-menu__right-side__section-links__container">
+                                                        
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Contacts
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/the-school/contacts" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-1176"></div>
+                <div class="tx_news_button-next next-1176"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-1176"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </li>
+                
+        
+            
+                    <li class="nav-item">
+                        <button type="button" class="nav-link nav-link-toggle active" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link-text">Education</span>
+                            <span class="nav-link-indicator" aria-hidden="true"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-mega dropdown-menu-mega--115">
+                            <div class="container container-fluid-right">
+                            <div class="row">
+                                
+                                
+                                <div class="col-8 dropdown-menu__left-side">
+                                    <div class="row explore">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4 class="explore__title d-flex">
+                                                        <span>Explore the <em>Education</em></span>
+                                                        <a class="btn btn-outline-primary btn--icon btn-dark" role="button" href="/en/education" title="Education">
+                                                            <span>Learn more</span>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="explore__subtitle small">
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                        
+                                    
+                                    <div class="row dropdown-menu__left-side__links">
+                                        <div class="col-4">
+                                            
+                                                
+                                                    <h6>HOW TO ACCESS</h6>
+                                                
+                                            
+                                            <ul>
+                                                
+                                                    
+                                                            
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/how-to-access/admission-to-bachelors-and-masters-degrees" title="News">Admission to Bachelor’s Degrees</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/how-to-access/admission-to-bachelors-and-masters-degrees-1-1" title="News">Polimi students: entry requirements for the Master of Science programme</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/how-to-access/admission-to-bachelors-and-masters-degrees-1" title="News">Admission to Master’s Degrees</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                
+                                                                    <h6>EDUCATIONAL OFFER</h6>
+                                                                
+                                                                <ul>
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/laurea-equivalent-to-bachelor-of-science" title="News">Bachelor of Science</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/laurea-magistrale-equivalent-to-master-of-science" title="News">Master of Science</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/educational-offer/ambassador-programmes" title="News">Interdisciplinary Programmes</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/education/internal-double-degrees" title="News">Internal double degrees</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/educational-offer/single-courses" title="News">Single Courses</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                
+                                                                    <h6>DOCUMENTS</h6>
+                                                                
+                                                                <ul>
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/corsi/translate-to-english-regolamenti-didattici" title="News">Educational rules</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/education/course-prospectus-and-programmes" title="News">Course Prospectus and Programmes</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/education/career-guides" title="News">Career guides</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-4 dropdown-menu__right-side">
+                                        <div class="row">
+                                            <div class="col-12 dropdown-menu__right-side__section-links">
+                                                <div class="dropdown-menu__right-side__section-links__container">
+                                                    
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Specializing Masters
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="https://www.polimi.it/corsi/master-universitari-e-corsi-post-laurea/" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-324"></div>
+                <div class="tx_news_button-next next-324"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-324"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                                                </div>
+                                            </div>
+                                            
+                                                <div class="col-12 dropdown-menu__right-side__section-links">
+                                                    <div class="dropdown-menu__right-side__section-links__container">
+                                                        
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        PhD in Design
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="http://phd.design.polimi.it/" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-325"></div>
+                <div class="tx_news_button-next next-325"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-325"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </li>
+                
+        
+            
+                    <li class="nav-item">
+                        <button type="button" class="nav-link nav-link-toggle " data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link-text">Students</span>
+                            <span class="nav-link-indicator" aria-hidden="true"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-mega dropdown-menu-mega--116">
+                            <div class="container container-fluid-right">
+                            <div class="row">
+                                
+                                
+                                <div class="col-8 dropdown-menu__left-side">
+                                    <div class="row explore">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4 class="explore__title d-flex">
+                                                        <span>Explore Information for <em>Students</em></span>
+                                                        <a class="btn btn-outline-primary btn--icon btn-dark" role="button" href="/en/students" title="Students">
+                                                            <span>Learn more</span>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="explore__subtitle small">
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                        
+                                    
+                                    <div class="row dropdown-menu__left-side__links">
+                                        <div class="col-4">
+                                            
+                                                
+                                                    <h6>CAREER</h6>
+                                                
+                                            
+                                            <ul>
+                                                
+                                                    
+                                                            
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/studenti/carriera/study-plan-and-ofa" title="News">Study Plan and OFA</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/optional-curricular-activities" title="News">Optional Curricular Activities</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/studenti/carriera/curricular-workshop" title="News">Curricular Workshop</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/curricular-internships" title="News">Curricular internships</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/welcome-and-lesson-0" title="News">Welcome, Lesson 0 and training</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="https://www.design.polimi.it/en/the-school/contacts" title="News">Contacts for students</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                
+                                                                    <h6>LECTURES AND EXAMS</h6>
+                                                                
+                                                                <ul>
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/studenti/lezioni-ed-esami/lessons-timetable-calendars-deadlines" title="News">Lessons Timetable, Calendars &amp; Deadlines</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/studenti/lezioni-ed-esami/exams-dates" title="News">Exams Dates</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/bachelors-and-masters-degree-exams" title="News">Bachelor’s and Master’s Degree Exams</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                
+                                                                    <h6>OPPORTUNITIES</h6>
+                                                                
+                                                                <ul>
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/passion-in-action" title="News">Passion in action</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/studenti/tutorato/design-explorer" title="News">Design Explorer</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid" title="News">Scholarships and Graduation Awards</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/tutoring" title="News">Tutoring</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/studenti/disegno-a-design" title="News">Disegno a design</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/services-map" title="News">Services&#039; map</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/students/design-entrepreneurship" title="News">Design &amp; Entrepreneurship</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-4 dropdown-menu__right-side">
+                                        <div class="row">
+                                            <div class="col-12 dropdown-menu__right-side__section-links">
+                                                <div class="dropdown-menu__right-side__section-links__container">
+                                                    
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-6">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Notices
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/students/notices" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-6">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Contacts
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/the-school/contacts" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-985"></div>
+                <div class="tx_news_button-next next-985"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-985"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                                                </div>
+                                            </div>
+                                            
+                                                <div class="col-12 dropdown-menu__right-side__section-links">
+                                                    <div class="dropdown-menu__right-side__section-links__container">
+                                                        
+
+        
+    
+
+        
+    
+
+<div id="c988" class="pt-4 pb-4">
+    
+    
+        
+                <h6 class="accordion-header">
+                    <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footer__502"
+                            aria-expanded="false"
+                            aria-controls="footer__502"
+                    >
+                        Featured
+                    </button>
+                </h6>
+            
+    
+
+    
+    
+        
+
+
+
+        
+    
+        
+                
+    <ul>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.careerservice.polimi.it/it-IT/Home/Index/" class="link--megamenu-external" target="_blank" title="Career Service">Career Service</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://dipartimentodesign.polimi.it/it/laboratori" class="link--megamenu-external" target="_blank" title="Design Labs">Design Labs</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.polifactory.polimi.it" class="link--megamenu-external" target="_blank" title="Polifactory">Polifactory</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.polimi.it/studenti-iscritti/difensore-degli-studenti" class="link--megamenu-external" target="_blank" title="Students’ Ombuds Office">Students’ Ombuds Office</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.biblio.polimi.it" class="link--megamenu-external" target="_blank" title="Libraries">Libraries</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.sport.polimi.it" class="link--megamenu-external" target="_blank" title="Sport Polimi">Sport Polimi</a>
+                </p>
+            </li>
+        
+    </ul>
+
+            
+    
+
+
+    
+
+</div>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </li>
+                
+        
+            
+                    <li class="nav-item">
+                        <button type="button" class="nav-link nav-link-toggle " data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link-text">International area</span>
+                            <span class="nav-link-indicator" aria-hidden="true"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-mega dropdown-menu-mega--117">
+                            <div class="container container-fluid-right">
+                            <div class="row">
+                                
+                                
+                                <div class="col-8 dropdown-menu__left-side">
+                                    <div class="row explore">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4 class="explore__title d-flex">
+                                                        <span>Explore the <em>International area</em></span>
+                                                        <a class="btn btn-outline-primary btn--icon btn-dark" role="button" href="/en/international-area" title="International area">
+                                                            <span>Learn more</span>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="explore__subtitle small">
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                    <div class="row dropdown-menu__left-side__links">
+                                        <div class="col-6">
+                                            
+                                                
+                                                    <h6>INTERNATIONAL MOBILITY</h6>
+                                                
+                                            
+                                            <ul>
+                                                
+                                                    
+                                                            
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/international-area/outgoing-students" title="News">Outgoing Students</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/area-internazionale/international-mobility/incoming-students" title="News">Incoming Students</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                                    
+                                                            
+                                                                    <li>
+                                                                        <p><a href="/en/area-internazionale/collaborazioni-internazionali/international-didactics" title="News">International Didactics</a><span aria-hidden="true"></span></p>
+                                                                    </li>
+                                                                
+                                                        
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-4 dropdown-menu__right-side">
+                                        <div class="row">
+                                            <div class="col-12 dropdown-menu__right-side__section-links">
+                                                <div class="dropdown-menu__right-side__section-links__container">
+                                                    
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        International mobility
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="https://www.polimi.it/en/campuses-and-services/international-mobility" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-1114"></div>
+                <div class="tx_news_button-next next-1114"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-1114"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                                                </div>
+                                            </div>
+                                            
+                                                <div class="col-12 dropdown-menu__right-side__section-links">
+                                                    <div class="dropdown-menu__right-side__section-links__container">
+                                                        
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </li>
+                
+        
+
+        <!-- Search -->
+        <li class="nav-item search">
+            <a
+                    href="/en/search-result"
+                    class="nav-link"
+                    title="Search in this site"
+                    aria-label="Search in this site"
+                    aria-current="false">
+        <span class="nav-link-text">
+            Search in this site
+        </span>
+            </a>
+        </li>
+
+
+
+    </ul>
+
+
+
+                        
+
+
+
+                    </nav>
+                    <button type="button" class="navbar-toggle collapsed d-md-none" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="icon-bar"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="collapse d-md-none header__mobile-container" id="navbarToggleExternalContent">
+
+            
+
+   
+        <ul id="language_menu" class="container language-menu">
+            
+                <li class=" ">
+                    
+                            <a href="/formazione/regolamenti-didattici" hreflang="it-IT" title="Italiano">
+                                <span>IT</span>
+                            </a>
+                        
+                </li>
+            
+                <li class="active ">
+                    
+                            <a href="/en/corsi/translate-to-english-regolamenti-didattici" hreflang="en-US" title="English">
+                                <span>EN</span>
+                            </a>
+                        
+                </li>
+            
+        </ul>
+
+
+
+            
+        <div class="access-cta" xmlns:f="http://www.w3.org/1999/html">
+            
+            <a href="https://www.polimi.it/en/online-services" title="Access Online services"><span>Access Online services</span></a>
+        </div>
+    
+
+
+        <div class="container megamenu__accordion">
+            <section class="row accordion" id="megamenu__accordion">
+                
+    <section class="footer__resources accordion-item">
+        
+            <!-- Search -->
+            <div class="accordion-header-container collapsed  search" data-bs-toggle="collapse" data-bs-target="#megamenu__" aria-expanded="false" aria-controls="megamenu__">
+
+            <a
+                        href="/en/search-result"
+                        class="nav-link"
+                        title="Search in this site"
+                        aria-label="Search in this site"
+                        aria-current="false">
+                        <span class="nav-link-text">
+                        Search in this site
+                        </span>
+                </a>
+            </div>
+        
+        
+            <div class="accordion-header-container collapsed " data-bs-toggle="collapse" data-bs-target="#megamenu__114" aria-expanded="false" aria-controls="megamenu__114">
+                <h6 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#megamenu__114" aria-expanded="false" aria-controls="megamenu__114">
+                        <a href="/en/school" title="The School"><span>The School</span></a>
+                    </button>
+                </h6>
+            </div>
+            <div id="megamenu__114" class="accordion-collapse collapse" data-bs-parent="#megamenu__accordion">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>ORGANIZATION</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/organization/translate-to-english-presentazione" title="Presentation">Presentation</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/organization/council" title="Council">Council</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/organization/programme-boards" title="Programme Boards">Programme Boards</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/organization/joint-committee" title="Joint Committee">Joint Committee</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/organization/advisory-board" title="Advisory Board">Advisory Board</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/organization/translate-to-english-rappresentanti-degli-studenti" title="Student Representatives">Student Representatives</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>INFO &amp; DOCUMENTS</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/calls" title="Calls">Calls</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/info-documents/cultural-project" title="Cultural Project">Cultural Project</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/info-documents/deans-annual-report" title="Dean’s Annual Report">Dean’s Annual Report</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/info-documents/awards" title="Awards">Awards</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/info-documents/honorary-graduates" title="Honorary Graduates">Honorary Graduates</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/info-documents/honorary-and-emeritus-professors" title="Honorary and Emeritus Professors">Honorary and Emeritus Professors</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>DESIGN SYSTEM</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/the-design-system" title="The Design System">The Design System</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/school/the-design-system-1" title="Collaborate with the School">Collaborate with the School</a></p>
+                                    </li>
+                                
+                        
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Events
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/school/events" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-287"></div>
+                <div class="tx_news_button-next next-287"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-287"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                        </div>
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Contacts
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/the-school/contacts" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-1176"></div>
+                <div class="tx_news_button-next next-1176"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-1176"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="accordion-header-container collapsed active" data-bs-toggle="collapse" data-bs-target="#megamenu__115" aria-expanded="false" aria-controls="megamenu__115">
+                <h6 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#megamenu__115" aria-expanded="false" aria-controls="megamenu__115">
+                        <a href="/en/education" title="Education"><span>Education</span></a>
+                    </button>
+                </h6>
+            </div>
+            <div id="megamenu__115" class="accordion-collapse collapse" data-bs-parent="#megamenu__accordion">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>HOW TO ACCESS</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/corsi/how-to-access/admission-to-bachelors-and-masters-degrees" title="Admission to Bachelor’s Degrees">Admission to Bachelor’s Degrees</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/corsi/how-to-access/admission-to-bachelors-and-masters-degrees-1-1" title="Polimi students: entry requirements for the Master of Science programme">Polimi students: entry requirements for the Master of Science programme</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/corsi/how-to-access/admission-to-bachelors-and-masters-degrees-1" title="Admission to Master’s Degrees">Admission to Master’s Degrees</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>EDUCATIONAL OFFER</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/corsi/laurea-equivalent-to-bachelor-of-science" title="Bachelor of Science">Bachelor of Science</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/corsi/laurea-magistrale-equivalent-to-master-of-science" title="Master of Science">Master of Science</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/corsi/educational-offer/ambassador-programmes" title="Interdisciplinary Programmes">Interdisciplinary Programmes</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/education/internal-double-degrees" title="Internal double degrees">Internal double degrees</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/corsi/educational-offer/single-courses" title="Single Courses">Single Courses</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>DOCUMENTS</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item active">
+                                        <p><a href="/en/corsi/translate-to-english-regolamenti-didattici" title="Educational rules">Educational rules</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/education/course-prospectus-and-programmes" title="Course Prospectus and Programmes">Course Prospectus and Programmes</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/education/career-guides" title="Career guides">Career guides</a></p>
+                                    </li>
+                                
+                        
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Specializing Masters
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="https://www.polimi.it/corsi/master-universitari-e-corsi-post-laurea/" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-324"></div>
+                <div class="tx_news_button-next next-324"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-324"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                        </div>
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        PhD in Design
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="http://phd.design.polimi.it/" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-325"></div>
+                <div class="tx_news_button-next next-325"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-325"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="accordion-header-container collapsed " data-bs-toggle="collapse" data-bs-target="#megamenu__116" aria-expanded="false" aria-controls="megamenu__116">
+                <h6 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#megamenu__116" aria-expanded="false" aria-controls="megamenu__116">
+                        <a href="/en/students" title="Students"><span>Students</span></a>
+                    </button>
+                </h6>
+            </div>
+            <div id="megamenu__116" class="accordion-collapse collapse" data-bs-parent="#megamenu__accordion">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>CAREER</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/studenti/carriera/study-plan-and-ofa" title="Study Plan and OFA">Study Plan and OFA</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/optional-curricular-activities" title="Optional Curricular Activities">Optional Curricular Activities</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/studenti/carriera/curricular-workshop" title="Curricular Workshop">Curricular Workshop</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/curricular-internships" title="Curricular internships">Curricular internships</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/welcome-and-lesson-0" title="Welcome, Lesson 0 and training">Welcome, Lesson 0 and training</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="https://www.design.polimi.it/en/the-school/contacts" title="Contacts for students">Contacts for students</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>LECTURES AND EXAMS</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/studenti/lezioni-ed-esami/lessons-timetable-calendars-deadlines" title="Lessons Timetable, Calendars &amp; Deadlines">Lessons Timetable, Calendars &amp; Deadlines</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/studenti/lezioni-ed-esami/exams-dates" title="Exams Dates">Exams Dates</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/bachelors-and-masters-degree-exams" title="Bachelor’s and Master’s Degree Exams">Bachelor’s and Master’s Degree Exams</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>OPPORTUNITIES</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/passion-in-action" title="Passion in action">Passion in action</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/studenti/tutorato/design-explorer" title="Design Explorer">Design Explorer</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid" title="Scholarships and Graduation Awards">Scholarships and Graduation Awards</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/tutoring" title="Tutoring">Tutoring</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/studenti/disegno-a-design" title="Disegno a design">Disegno a design</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/services-map" title="Services&#039; map">Services&#039; map</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/students/design-entrepreneurship" title="Design &amp; Entrepreneurship">Design &amp; Entrepreneurship</a></p>
+                                    </li>
+                                
+                        
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-6">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Notices
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/students/notices" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-6">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        Contacts
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="/en/the-school/contacts" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-985"></div>
+                <div class="tx_news_button-next next-985"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-985"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                        </div>
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+
+        
+    
+
+        
+    
+
+<div id="c988" class="pt-4 pb-4">
+    
+    
+        
+                <h6 class="accordion-header">
+                    <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footer__502"
+                            aria-expanded="false"
+                            aria-controls="footer__502"
+                    >
+                        Featured
+                    </button>
+                </h6>
+            
+    
+
+    
+    
+        
+
+
+
+        
+    
+        
+                
+    <ul>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.careerservice.polimi.it/it-IT/Home/Index/" class="link--megamenu-external" target="_blank" title="Career Service">Career Service</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://dipartimentodesign.polimi.it/it/laboratori" class="link--megamenu-external" target="_blank" title="Design Labs">Design Labs</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.polifactory.polimi.it" class="link--megamenu-external" target="_blank" title="Polifactory">Polifactory</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.polimi.it/studenti-iscritti/difensore-degli-studenti" class="link--megamenu-external" target="_blank" title="Students’ Ombuds Office">Students’ Ombuds Office</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.biblio.polimi.it" class="link--megamenu-external" target="_blank" title="Libraries">Libraries</a>
+                </p>
+            </li>
+        
+            <li>
+                <p class="small">
+                    <a href="https://www.sport.polimi.it" class="link--megamenu-external" target="_blank" title="Sport Polimi">Sport Polimi</a>
+                </p>
+            </li>
+        
+    </ul>
+
+            
+    
+
+
+    
+
+</div>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="accordion-header-container collapsed " data-bs-toggle="collapse" data-bs-target="#megamenu__117" aria-expanded="false" aria-controls="megamenu__117">
+                <h6 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#megamenu__117" aria-expanded="false" aria-controls="megamenu__117">
+                        <a href="/en/international-area" title="International area"><span>International area</span></a>
+                    </button>
+                </h6>
+            </div>
+            <div id="megamenu__117" class="accordion-collapse collapse" data-bs-parent="#megamenu__accordion">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        
+                            
+                                    
+                                        <div class="megamenu__accordion__highlight">
+                                            <li class="list-group-item "><p>INTERNATIONAL MOBILITY</p></li>
+                                        </div>
+                                    
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/international-area/outgoing-students" title="Outgoing Students">Outgoing Students</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/area-internazionale/international-mobility/incoming-students" title="Incoming Students">Incoming Students</a></p>
+                                    </li>
+                                
+                        
+                            
+                                    <li class="list-group-item ">
+                                        <p><a href="/en/area-internazionale/collaborazioni-internazionali/international-didactics" title="International Didactics">International Didactics</a></p>
+                                    </li>
+                                
+                        
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+
+
+
+
+
+
+        
+        
+
+    
+    
+
+    
+
+        
+        
+        
+        
+        <!-- slider su id -->
+        <div
+            
+            class=" ">
+
+            <!-- slider su id -->
+            <div
+                
+                class=" row row--card ">
+                
+                        
+                                
+                            
+                    
+                
+                
+                
+
+                <!-- div class swiper wrapper , solo se layout = 13 -->
+                
+                    
+                        
+                        
+                        <!-- slider :introdotto layout 13 e modifiche codice HTML su classe -->
+                        
+                        
+                                
+                            
+                        
+                                
+                            
+                        
+                                
+                            
+
+
+                            <div class="col-12">
+                                <div class="card card--graphic   card--height-1 card-md--height-1 ">
+                                    
+
+                                            
+                                                    
+    <div class="card-body">
+        
+        <h2 class="card-title">
+        International mobility
+        </h2>
+        
+    </div>
+
+                                                    
+    <div class="card-footer">
+        
+        
+                
+                        
+                    
+            
+
+        
+
+
+        <a href="https://www.polimi.it/en/campuses-and-services/international-mobility" class="btn btn-primary btn--icon btn-dark">
+            
+            <span class="btn-text">
+                
+            </span>
+        </a>
+    </div>
+
+                                                    
+                                                
+                                            
+                                        
+                                </div>
+                            </div>
+
+                    
+                <!-- /div class swiper wrapper , solo se layout = 13 -->
+                
+            </div>
+        <div class="swiper-controls d-flex align-items-center gap-1">
+            <div class="swiper-navigation">
+                <div class="tx_news_button-prev prev-1114"></div>
+                <div class="tx_news_button-next next-1114"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-1114"></div>
+            
+        </div>
+        </div>
+    
+
+
+    
+
+
+                        </div>
+                    </ul>
+                    <ul class="list-group">
+                        <div class="dropdown-menu__right-side__section-links__container">
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        
+        <!-- Lavora con noi -->
+        <div class="accordion-header-container collapsed workwithus">
+            <h6 class="accordion-header">
+                <button class="accordion-button workwithus" type="button">
+                    Work with us
+                </button>
+            </h6>
+        </div>
+    </section>
+
+            </section>
+        </div>
+    </div>
+</header>
+<div class="skip-target">
+    <a id="main-content-anchor"></a>
+</div>
+
+
+
+
+        
+    
+
+    
+
+
+    
+    
+        <nav class="breadcrumb-section" aria-label="Breadcrumb">
+            <div class="container">
+                <p class="visually-hidden" id="breadcrumb">You are here:</p>
+                <ol class="breadcrumb">
+                    
+                        
+                        
+                        <li class="breadcrumb-item">
+                            
+                                    <a class="breadcrumb-link" href="/en/" title="Home">
+                                        
+    <span class="breadcrumb-link-title">
+        
+        <span class="breadcrumb-text">Home</span>
+    </span>
+
+                                    </a>
+                                
+                        </li>
+                    
+                        
+                        
+                        <li class="breadcrumb-item">
+                            
+                                    <a class="breadcrumb-link" href="/en/education" title="Education">
+                                        
+    <span class="breadcrumb-link-title">
+        
+        <span class="breadcrumb-text">Education</span>
+    </span>
+
+                                    </a>
+                                
+                        </li>
+                    
+                        
+                        
+                            
+                        
+                        <li class="breadcrumb-item active" aria-current="page">
+                            
+                                    
+    <span class="breadcrumb-link-title">
+        
+        <span class="breadcrumb-text">Educational rules</span>
+    </span>
+
+                                
+                        </li>
+                    
+                    
+                </ol>
+            </div>
+        </nav>
+    
+
+
+
+
+    <main id="page-content" class="bp-page-content main-section">
+        <!--TYPO3SEARCH_begin-->
+        
+
+    
+
+        
+    
+
+        
+    
+
+        
+        
+    
+<div id="c704" class=" ">
+    
+    
+    
+    
+    
+    
+
+    
+    
+        
+        
+    
+
+    
+    
+            
+        
+
+    <div class="hero hero--page hero--page-second-level ">
+        <div class="hero__background-image">
+            <html data-namespace-typo3-fluid="true">
+
+    
+
+    <picture class="focus-adjust d-block w-100 h-100">
+        
+            
+            
+            
+                
+                
+                
+                
+                
+                
+                
+                        
+                    
+                
+                
+                    
+                        
+                        
+                        
+
+                        
+                        
+                    
+                
+
+                <source data-variant="default"
+                        data-crop="default"
+                        data-width="2560"
+                        data-height="760"
+                        data-focus="{&quot;x&quot;:0.5,&quot;y&quot;:0.1484375}"
+                        media="(min-width: 1400px)" srcset="/fileadmin/_processed_/3/6/csm_scuola_design_desktop_b69c8aaf95.png 1x">
+
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                        
+                    
+                
+                
+                    
+                        
+                        
+                        
+
+                        
+                        
+                    
+                
+
+                <source data-variant="xlarge"
+                        data-crop="default"
+                        data-width="2200"
+                        data-height="653"
+                        data-focus="{&quot;x&quot;:0.5,&quot;y&quot;:0.1484090909090909}"
+                        media="(min-width: 1200px)" srcset="/fileadmin/_processed_/3/6/csm_scuola_design_desktop_6fafba5164.png 1x">
+
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                        
+                    
+                
+                
+                    
+                        
+                        
+                        
+
+                        
+                        
+                    
+                
+
+                <source data-variant="large"
+                        data-crop="default"
+                        data-width="1840"
+                        data-height="546"
+                        data-focus="{&quot;x&quot;:0.5,&quot;y&quot;:0.1483695652173913}"
+                        media="(min-width: 992px)" srcset="/fileadmin/_processed_/3/6/csm_scuola_design_desktop_04beed2c0c.png 1x">
+
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                        
+                    
+                
+                
+                    
+                        
+                        
+                        
+
+                        
+                        
+                    
+                
+
+                <source data-variant="medium"
+                        data-crop="default"
+                        data-width="1360"
+                        data-height="2466"
+                        data-focus="{&quot;x&quot;:0.275750202757502,&quot;y&quot;:0.5}"
+                        media="(min-width: 768px)" srcset="/fileadmin/_processed_/3/6/csm_scuola_design_desktop_2c7c5e3aef.png 1x">
+
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                        
+                    
+                
+                
+                    
+                        
+                        
+                        
+
+                        
+                        
+                    
+                
+
+                <source data-variant="small"
+                        data-crop="default"
+                        data-width="1000"
+                        data-height="1813"
+                        data-focus="{&quot;x&quot;:0.27578599007170435,&quot;y&quot;:0.5}"
+                        media="(min-width: 576px)" srcset="/fileadmin/_processed_/3/6/csm_scuola_design_desktop_6af6dcc291.png 1x">
+
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                        
+                            
+                        
+                    
+                
+                
+                    
+                        
+                        
+                        
+
+                        
+                        
+                    
+                
+
+                <source data-variant="extrasmall"
+                        data-crop="default"
+                        data-width="748"
+                        data-height="1356"
+                        data-focus="{&quot;x&quot;:0.275811209439528,&quot;y&quot;:0.5}"
+                        media="(max-width: 575px)" srcset="/fileadmin/_processed_/3/6/csm_scuola_design_desktop_62a03349c7.png 1x">
+
+                
+            
+        
+
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" loading="lazy" class="w-100 h-100 object-fit-cover">
+    </picture>
+</html>
+
+        </div>
+        <div class="hero__overlay">
+            <div class="hero__overlay__content container">
+                
+                        
+                                <a href="/en/education" class="pre-title">Education</a>
+                            
+                    
+                
+                    <h2 class="title">Educational rules
+&nbsp;</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="section section-default">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12">
+                    
+
+
+
+
+
+
+        
+        
+    
+
+        
+    
+
+
+        <div id="c414" class=" frame frame-default frame-type-didatticascuole_regolamentididattici frame-layout-default frame-size-default frame-height-default frame-background-none frame-space-before-none frame-space-after-none frame-no-backgroundimage">
+            <div class="frame-group-container pt-4 pb-4">
+                <div class="frame-group-inner">
+                    
+
+
+
+                    <div class="frame-container frame-container-default">
+                        <div class="frame-inner">
+                            
+            <a id="c2191"></a>
+            
+
+
+
+            
+
+
+
+            
+
+    
+    
+
+
+	<div class="tx-didattica">
+		
+    <h3>Educational Rules - 2026/2027 - Ord 96/23</h3>
+
+    <!-- se nel plugin viene configurato direttamente il tipo di ordinamento (o viene lasciato tutti) -->
+    
+            
+            <div class="pt-10"></div>
+            <div class="classelaurea h5">
+                 Bachelor of Science
+            </div>
+            <ul class="list-group">
+                
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Interaction Design - ord. 96/23</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1014&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Interior Design - ord. 96/23</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1019&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Product Design - ord. 96/23</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1020&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Communication Design - ord. 96/23</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1021&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Fashion Design - ord. 96/23</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1022&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+        </ul>
+        
+    
+            
+            <div class="pt-10"></div>
+            <div class="classelaurea h5">
+                 Master of Science
+            </div>
+            <ul class="list-group">
+                
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <li class="list-group-item container p-0 m-0">
+                                    <div class="row pt-3">
+                                        <div class="col-8">
+                                            <p class="strong">Design &amp; Engineering - ord. 96/23</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>
+                                                <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1023&amp;lang=EN">
+                                                    Educational Rule
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="list-group-item container p-0 m-0">
+                                    <div class="row pt-3">
+                                        <div class="col-8">
+                                            <p class="strong">Communication Design - ord. 96/23</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>
+                                                <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1024&amp;lang=EN">
+                                                    Educational Rule
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="list-group-item container p-0 m-0">
+                                    <div class="row pt-3">
+                                        <div class="col-8">
+                                            <p class="strong">Design for the Fashion System - ord. 96/23</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>
+                                                <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1025&amp;lang=EN">
+                                                    Educational Rule
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="list-group-item container p-0 m-0">
+                                    <div class="row pt-3">
+                                        <div class="col-8">
+                                            <p class="strong">Digital and Interaction Design - ord. 96/23</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>
+                                                <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1026&amp;lang=EN">
+                                                    Educational Rule
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="list-group-item container p-0 m-0">
+                                    <div class="row pt-3">
+                                        <div class="col-8">
+                                            <p class="strong">Integrated Product Design - ord. 96/23</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>
+                                                <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1027&amp;lang=EN">
+                                                    Educational Rule
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="list-group-item container p-0 m-0">
+                                    <div class="row pt-3">
+                                        <div class="col-8">
+                                            <p class="strong">Interior and Spatial Design - ord. 96/23</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>
+                                                <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1028&amp;lang=EN">
+                                                    Educational Rule
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        
+                            
+                                <li class="list-group-item container p-0 m-0">
+                                    <div class="row pt-3">
+                                        <div class="col-8">
+                                            <p class="strong">Product Service System Design - ord. 96/23</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>
+                                                <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1029&amp;lang=EN">
+                                                    Educational Rule
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        
+                    
+            </ul>
+        
+
+	</div>
+
+
+
+            
+
+
+
+            
+
+
+
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    
+
+
+
+
+
+
+
+
+        
+        
+    
+
+        
+    
+
+
+        <div id="c2190" class=" frame frame-default frame-type-didatticascuole_regolamentididattici frame-layout-default frame-size-default frame-height-default frame-background-none frame-space-before-none frame-space-after-none frame-no-backgroundimage">
+            <div class="frame-group-container pt-4 pb-4">
+                <div class="frame-group-inner">
+                    
+
+
+
+                    <div class="frame-container frame-container-default">
+                        <div class="frame-inner">
+                            
+            <a id="c2192"></a>
+            
+
+
+
+            
+
+
+
+            
+
+    
+    
+
+
+	<div class="tx-didattica">
+		
+    <h3>Educational Rules - 2026/2027 - Ord. 270</h3>
+
+    <!-- se nel plugin viene configurato direttamente il tipo di ordinamento (o viene lasciato tutti) -->
+    
+            
+            <div class="pt-10"></div>
+            <div class="classelaurea h5">
+                 Bachelor of Science
+            </div>
+            <ul class="list-group">
+                
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Interior Design - ord. 270</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1087&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Communication Design - ord. 270</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1088&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Fashion Design - ord. 270</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1089&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                        
+                            <li class="list-group-item container p-0 m-0">
+                                <div class="row pt-3">
+                                    <div class="col-8">
+                                        <p class="strong">Product Design - ord. 270</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="link--external d-flex" target="_blank" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=450&amp;aa=2026&amp;k_corso_la=1090&amp;lang=EN">
+                                            Educational Rule
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+        </ul>
+        
+    
+
+	</div>
+
+
+
+            
+
+
+
+            
+
+
+
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+        <!--TYPO3SEARCH_end-->
+    </main>
+
+    
+<footer class="footer container-fluid bg-base" id="page-footer">
+    <div class="overlay-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- 1 of 2 -->
+                </div>
+                <div class="col">
+                    <!-- 2 of 2 -->
+                </div>
+                <div class="col">
+                    <!-- 3 of 2 -->
+                </div>
+                <div class="col">
+                    <!-- 4 of 2 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="footer__header row">
+            <div class="footer__header__logo col-xs-12 col-md-6">
+                <img src="/_assets/4b51f00386267395f41e0940abbcd656/Images/logo-light.svg" width="131" height="43" alt="" />
+            </div>
+                <div class="footer__header__social col-xs-12 col-md-3">
+        
+        <a href="https://www.instagram.com/school.design.polimi/" title="Instagram" target="_blank" class="social-icon social-icon--instagram"></a>
+        
+        
+        <a href="https://www.facebook.com/polimi/" title="Facebook" target="_blank" class="social-icon social-icon--facebook"></a>
+        
+        
+        <a href="https://x.com/polimi" title="X" target="_blank" class="social-icon social-icon--twitter"></a>
+        
+        
+        <a href="https://www.youtube.com/polimi" title="YouTube" target="_blank" class="social-icon social-icon--youtube"></a>
+        
+        
+        <a href="https://www.linkedin.com/school/polimi/" title="LinkedIn" target="_blank" class="social-icon social-icon--linkedin"></a>
+        
+        
+         <a href="https://www.tiktok.com/@politecnico.di.milano" title="TikTok" target="_blank" class="social-icon social-icon--tiktok"></a>
+        
+    </div>
+            
+
+   
+        <ul id="language_menu_footer" class="language-menu col-xs-12 col-md-3">
+            
+                <li class=" ">
+                    
+                            <a href="/formazione/regolamenti-didattici" hreflang="it-IT" title="Italiano">
+                                <span>IT</span>
+                            </a>
+                        
+                </li>
+            
+                <li class="active ">
+                    
+                            <a href="/en/corsi/translate-to-english-regolamenti-didattici" hreflang="en-US" title="English">
+                                <span>EN</span>
+                            </a>
+                        
+                </li>
+            
+        </ul>
+
+
+
+        </section>
+        <hr class="fullwidth"/>
+        <section class="row accordion" id="footer__accordion">
+            <section class="footer__headquarters g-0 col-xs-12 col-md-6">
+                
+
+        
+    
+
+        
+    
+
+<div id="c328" class="pt-4 pb-4">
+    
+    
+        
+                <h6>The School Campus
+&nbsp;</h6>
+            
+    
+
+    
+    
+        
+
+
+
+        
+    
+        
+                <ul class="list-group">
+                    
+                        <li class="list-group-item">
+                            <p><a class="link--internal" href="https://www.polimi.it/il-politecnico/organizzazione/strutture/poli-territoriali/milano-bovisa" target="_blank" title="Milano Bovisa">Milano Bovisa</a></p>
+                            
+    
+
+
+                        </li>
+                    
+                        <li class="list-group-item">
+                            <p><a class="link--internal" href="https://www.polo-lecco.polimi.it" target="_blank" title="Lecco">Lecco</a></p>
+                            
+    
+
+
+                        </li>
+                    
+                </ul>
+            
+    
+
+
+    
+
+</div>
+
+            </section>
+            <section class="footer__university footer__3 g-0 col-xs-12 col-md-3 accordion-item">
+                
+
+        
+    
+
+        
+    
+
+<div id="c329" class="pt-4 pb-4">
+    
+    
+        
+                <h6 class="accordion-header">
+                    <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footer__3"
+                            aria-expanded="false"
+                            aria-controls="footer__3"
+                    >
+                        Browse the website
+&nbsp;
+                    </button>
+                </h6>
+            
+    
+
+    
+    
+        
+
+
+
+        
+    
+        
+                <div id="footer__3" class="accordion-collapse collapse" data-bs-parent="#footer__accordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="/en/school" title="The School">The School</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="/en/education" title="Education">Education</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="/en/students" title="Students">Students</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="/en/international-area" title="International area">International area</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+    
+
+
+    
+
+</div>
+
+            </section>
+            <section class="footer__highlights footer__4 g-0 col-xs-12 col-md-3 accordion-item">
+                
+
+        
+    
+
+        
+    
+
+<div id="c518" class="pt-4 pb-4">
+    
+    
+        
+                <h6 class="accordion-header">
+                    <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footer__4"
+                            aria-expanded="false"
+                            aria-controls="footer__4"
+                    >
+                        Resources
+                    </button>
+                </h6>
+            
+    
+
+    
+    
+        
+
+
+
+        
+    
+        
+                <div id="footer__4" class="accordion-collapse collapse" data-bs-parent="#footer__accordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://webeep.polimi.it/" title="Webeep">Webeep</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="/en/studenti/lezioni-ed-esami/lessons-timetable-calendars-deadlines" title="Lessons Timetable, Calendars &amp; Deadlines">Lessons Timetable, Calendars &amp; Deadlines</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=156&amp;lang=EN" title="Degree programmes">Degree programmes</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=147&amp;lang=EN" title="Search for classrooms">Search for classrooms</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=167&amp;evn_RICERCAINCARICHI=EVENTO&amp;lang=EN" title="Search for professors">Search for professors</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=126&amp;lang=EN" title="Lecture timetable">Lecture timetable</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=1595&amp;lang=EN" title="Exam sessions">Exam sessions</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+    
+
+
+    
+
+</div>
+
+            </section>
+            <section class="footer__resources g-0 col-xs-12 col-md-6 order-md-1">
+                <div class="col-xs-12 col-md-6 accordion-item">
+                
+                </div>
+                <div class="col-xs-12 col-md-6 accordion-item">
+                
+
+        
+    
+
+        
+    
+
+<div id="c1225" class="pt-4 pb-4">
+    
+    
+        
+                <h6 class="accordion-header">
+                    <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#footer__7"
+                            aria-expanded="false"
+                            aria-controls="footer__7"
+                    >
+                        Contact us
+                    </button>
+                </h6>
+            
+    
+
+    
+    
+        
+
+
+
+        
+    
+        
+                <div id="footer__7" class="accordion-collapse collapse" data-bs-parent="#footer__accordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="/en/the-school/contacts" title="Contacts - School of Design">Contacts - School of Design</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://www.polimi.it/en/the-politecnico/contacts" title="Contacts - PoliMi">Contacts - PoliMi</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <p class="small"><a class="link--internal" href="https://go.polimi.it/rubrica?lang=en" target="_blank" title="Address book">Address book</a></p>
+                                    
+    
+
+
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+    
+
+
+    
+
+</div>
+
+                </div>
+            </section>
+
+            <section class="footer__support-polimi g-0 col-xs-12 col-md-6">
+    <div class="row">
+        <div class="footer__support-polimi__title col-12">
+            
+                <img
+                        loading="lazy"
+                        src="/fileadmin/user_upload/Ricerca/images/hr-excellence/HR_Excellence_in_Research_Logo_Bianco.svg"
+                        width="227"
+                        height="182"
+                        alt="HR excellence logo"
+                >
+            
+        </div>
+    </div>
+</section>
+
+        </section>
+        <hr class="fullwidth"/>
+    </div>
+    <section class="container footer__footer legal col-12 col-md-12 mx-auto">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="footer__footer__copyright">
+                    
+
+
+
+
+
+
+        
+        
+    
+
+        
+    
+
+
+        <div id="c1188" class=" frame frame-default frame-type-text frame-layout-default frame-size-default frame-height-default frame-background-none frame-space-before-none frame-space-after-none frame-no-backgroundimage">
+            <div class="frame-group-container pt-4 pb-4">
+                <div class="frame-group-inner">
+                    
+
+
+
+                    <div class="frame-container frame-container-default">
+                        <div class="frame-inner">
+                            
+            <a id="c1189"></a>
+            
+
+
+
+            
+
+    
+
+
+
+            
+
+    <p>Scuola del Design - Via Candiani 72 - 20158 - Milano - ITALIA</p>
+<p>&nbsp;</p>
+
+
+            
+
+
+
+            
+
+
+
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    
+
+
+                </div>
+            </div>
+            
+        <div class="legal col-12 col-md-6 d-flex flex-row gap-3">
+            <p><a href="https://trasparenza.polimi.it/pagina771_accessibilit-e-catalogo-dei-dati-metadati-e-banche-dati.html" title="Accessibility">Accessibility</a></p>
+            
+                <p><a href="https://www.polimi.it/en/the-politecnico/communication/privacy" title="Privacy Policy">Privacy Policy</a></p>
+            
+            
+            <p><a href="https://trasparenza.polimi.it/" title="Open Administration">Open Administration</a></p>
+        </div>
+    
+
+        </div>
+    </section>
+</footer>
+
+    
+<a class="scroll-top" title="Scroll to top" href="#top">
+    <span class="scroll-top-icon"></span>
+</a>
+
+
+    
+
+
+
+    <button class="back-to-top" title="Go to top" disabled></button>
+</div>
+
+
+<div class="tx-we-cookie-consent"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Privacy settings">
+<div id="klaro"></div>
+
+</div>
+<script src="/typo3temp/assets/compressed/merged-f5808fceba72fa870383f450620f158f-efe2bbbe439b6273e4a82251eae0d1a0.js?1784879726"></script>
+<script src="/typo3temp/assets/compressed/merged-43f662080b527cab84cedde5b20f1da7-b1265ca720d2d49363098ceda104e76d.js?1777892578"></script>
+
+<script type="text/javascript">var klaroConfig = {
+    "acceptAll": true,
+    "additionalClass": "",
+    "cookieDomain": "",
+    "cookieExpiresAfterDays": "365",
+    "default": false,
+    "elementID": "klaro",
+    "groupByPurpose": true,
+    "hideDeclineAll": false,
+    "hideLearnMore": false,
+    "htmlTexts": true,
+    "lang": "en",
+    "mustConsent": false,
+    "poweredBy": "https://consent.websedit.de",
+    "privacyPolicy": "https://www.polimi.it/il-politecnico/comunicazione/privacy",
+    "storageMethod": "cookie",
+    "storageName": "klaro",
+    "stylePrefix": "klaro we_cookie_consent",
+    "testing": false,
+    "consentMode": true,
+    "consentModev2": false,
+    "translations": {
+        "en": {
+            "consentModal": {
+                "title": "Privacy settings",
+                "description": "You can specify your privacy settings below."
+            },
+            "privacyPolicy": {
+                "text": "Detailed information and how you can withdraw your consent at any time can be found in our {privacyPolicy}.",
+                "name": "Privacy policy"
+            },
+            "consentNotice": {
+                "description": "This site uses cookies for statistics and to facilitate navigation through the pages of the site and web applications. More information can be found on the <a href=\"https://www.polimi.it/il-politecnico/comunicazione/privacy\">privacy policy page</a>.",
+                "changeDescription": "Since your last visit there have been changes to the privacy settings. Please update your settings.",
+                "learnMore": "Edit settings"
+            },
+            "contextualConsent": {
+                "acceptOnce": "Yes",
+                "acceptAlways": "Always",
+                "description": "Do you want to load external content supplied by {title}?"
+            },
+            "service": {
+                "disableAll": {
+                    "title": "Accept all",
+                    "description": "You have the right to revoke your consent at any time, either individually or in its entirety. If consents to data processing are revoked, the data that were legally collected up to the revocation can still be processed by the provider."
+                },
+                "optOut": {
+                    "title": "(Opt-Out)",
+                    "description": "This application is loaded by default (but you can disable it)"
+                },
+                "required": {
+                    "title": "(always necessary)",
+                    "description": "This application is always required"
+                },
+                "purpose": "Purpose",
+                "purposes": "Purposes"
+            },
+            "purposes": {
+                "unknown": "Not assigned",
+                "functional": {
+                    "title": "Functional",
+                    "description": ""
+                },
+                "analitici": {
+                    "title": "Analitici",
+                    "description": ""
+                },
+                "tracciamento": {
+                    "title": "Tracciamento",
+                    "description": ""
+                }
+            },
+            "ok": "Accept",
+            "save": "Save settings",
+            "acceptAll": "Accept all",
+            "acceptSelected": "Accept selected",
+            "decline": "Reject",
+            "close": "Close",
+            "openConsent": "Customize privacy settings",
+            "poweredBy": "Provided by websedit"
+        }
+    },
+    "services": [],
+    "purposeOrder": [
+        "functional",
+        "analitici",
+        "tracciamento",
+        "unknown"
+    ]
+}</script><script type="text/javascript">
+    klaroConfig.services.push({
+    		name: 'other-38',
+    title: 'WE Cookie Consent',
+    description: '<p><strong>We Cookie Consent</strong> is a DSGVO/GDPR-compliant consent management solution that ensures transparent and secure use of cookies. Based on Klaro!<br /><strong>Klaro!</strong> is an <strong>open-source cookie consent manager</strong> that allows you to manage user consent in compliance with regulations such as <strong>GDPR (General Data Protection Regulation) </strong>and <strong>DSGVO</strong></p>',
+    default: true,
+    defaultIfNoConsent: true,
+    required: true,
+    optOut: false,
+    translations: {'en':{'title':'WE Cookie Consent'}}, 
+    purposes: ['functional'],
+        cookies: [['Klaro', '/', '']],
+        callback: ConsentApp.consentChanged,
+        ownCallback:'',
+        gtm:{trigger:'',variable:''}
+    });
+</script><script type="text/javascript">
+    klaroConfig.services.push({
+    		name: 'google-analytics-36',
+    title: 'Google Tag',
+    description: '<p>The <strong>Google Tag</strong> script is used to manage user tracking on the website in compliance with privacy regulations, such as <strong>GDPR</strong> and <strong>CCPA</strong>. This script allows you to:</p><ol><li><strong>Collect analytics data</strong> in a manner consistent with user preferences.</li><li><strong>Integrate Google Analytics 4 (GA4)</strong> and other tracking platforms.</li><li><strong>Customise the activation of tags</strong> according to the consent expressed in the cookie banner.</li><li><strong>Ensure compliance with privacy regulations </strong>by automatically blocking tags until the user provides explicit consent.</li><li><strong>Manage tracking with Google Tag Manager (GTM)</strong> for more flexible configuration.</li></ol>',
+    default: true,
+    defaultIfNoConsent: true,
+    required: false,
+    optOut: false,
+    translations: {'en':{'title':'Google Tag'}}, 
+    purposes: ['analitici'],
+        cookies: [['_ga', '/', ''], ['_ga_G-TNL053NRJ1', '/', '']],
+        callback: ConsentApp.consentChanged,
+        ownCallback:'',
+        gtm:{trigger:'',variable:''}
+    });
+</script><script type="text/javascript">
+    klaroConfig.services.push({
+    		name: 'youtube',
+    title: 'Youtube',
+    description: '<p>YouTube uses several cookies to improve user experience and ensure optimal operation of the platform</p>',
+    default: false,
+    defaultIfNoConsent: true,
+    required: false,
+    optOut: true,
+    translations: {'en':{'title':'Youtube'}}, 
+    purposes: ['analitici', 'functional', 'tracciamento'],
+        cookies: [['VISITOR_INFO1_LIVE', '/', ''], ['VISITOR_PRIVACY_METADATA', '/', ''], ['YSC', '/', '']],
+        callback: ConsentApp.consentChanged,
+        ownCallback:'',
+        gtm:{trigger:'',variable:''}
+    });
+</script><script type="text/javascript" src="/_assets/f34691673face4b5c642d176b42916a9/Library/klaro/klaro.js?1765201540"></script>
+</body>
+</html>

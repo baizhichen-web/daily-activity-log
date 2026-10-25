@@ -1,0 +1,83 @@
+SOURCES-线C会话补充.txt — RCA（Royal College of Art）
+补充采集会话：03-培养方案 线 C（国外设计强校）。抓取日期：2026-10-04。
+说明：本目录另有并行会话生成的 `SOURCES.txt`（登记其 22 件原件，其中 7 件 PDF 的 URL 标「待补」）。本文件只登记本会话新增与补齐的 URL。
+
+== 补齐：原 SOURCES.txt 中 7 件 PDF 的 URL（本会话从 programme 页 HTML 的 href 取得） ==
+rca-spec-2026-27-rca-ma-design-products-programme-specification.pdf
+  URL: https://www.rca.ac.uk/documents2/1474/2026-27-rca-ma-design-products-programme-specification.pdf
+  类型: PDF（官方 programme specification）
+  抓取日期: 2026-10-04
+
+rca-spec-2026-27-rca-ma-service-design-programme-specification.pdf
+  URL: https://www.rca.ac.uk/documents2/1470/2026-27-rca-ma-service-design-programme-specification.pdf
+  类型: PDF（官方 programme specification）
+  抓取日期: 2026-10-04
+
+rca-spec-2026-27-rca-mdes-design-futures-programme-specification.pdf
+  URL: https://www.rca.ac.uk/documents2/1471/2026-27-rca-mdes-design-futures-programme-specification.pdf
+  类型: PDF（官方 programme specification）
+  抓取日期: 2026-10-04
+
+rca-spec-2026-27-rca-ma-information-experience-design-programme-specification.pdf
+  URL: https://www.rca.ac.uk/documents2/1479/2026-27-rca-ma-information-experience-design-programme-specification.pdf
+  类型: PDF（官方 programme specification）
+  抓取日期: 2026-10-04
+
+rca-spec-2026-27-rca-ma-intelligent-mobility-programme-specification.pdf
+  URL: https://www.rca.ac.uk/documents2/1473/2026-27-rca-ma-intelligent-mobility-programme-specification.pdf
+  类型: PDF（官方 programme specification）
+  抓取日期: 2026-10-04
+
+rca-spec-2025-26_Programme_Specification__MA__IDE.pdf
+  URL: https://www.rca.ac.uk/documents2/1267/2025-26_Programme_Specification__MA__IDE.pdf
+  类型: PDF（官方 programme specification）
+  抓取日期: 2026-10-04
+
+rca-spec-2026-27-rca-mres-programme-specification-full-time-part-time.pdf
+  URL: https://www.rca.ac.uk/documents2/1482/2026-27-rca-mres-programme-specification-full-time-part-time.pdf
+  类型: PDF（官方 programme specification）
+  抓取日期: 2026-10-04
+
+== 本会话新增：同一 PDF 的本会话副本（内容与上表一致，文件名去前缀） ==
+- 2026-27-RCA-MA-Design-Products-programme-specification.pdf
+- 2026-27-RCA-MA-Service-Design-programme-specification.pdf
+- 2026-27-RCA-MDes-Design-Futures-programme-specification.pdf
+- 2026-27-RCA-MA-Information-Experience-Design-programme-specification.pdf
+- 2026-27-RCA-MA-Intelligent-Mobility-programme-specification.pdf
+- 2026-27-RCA-MRes-programme-specification.pdf
+- 2025-26-RCA-MA-IDE-programme-specification.pdf（图像型，文本层仅 484 字符）
+- 2020-21-RCA-MA-Design-Products-programme-specification.pdf（经 Wayback 取回 4,676 字节无效体）
+
+== 本会话新增：历史版（Wayback Machine） ==
+wayback-2020-09-24-rca-design-products-ma.html
+  原始 URL: https://www.rca.ac.uk/study/programme-finder/design-products-ma/
+  Wayback 完整 URL: https://web.archive.org/web/20200924184414id_/https://www.rca.ac.uk/study/programme-finder/design-products-ma/
+  快照日期: 2020-09-24（CDX 时间戳 20200924184414）
+  文件类型: HTML（2020 年版 Design Products MA 页；Key details 原文 240 credits / 2 year programme）
+  抓取日期: 2026-10-04
+
+wayback-2020-09-24-rca-design-products-ma.txt —— 同上 HTML 的纯文本副产品
+wayback-2020-09-30-rca-service-design-ma.html —— 0 字节（Wayback 返回空体，未取到）
+
+== 本会话新增：提取件 ==
+2026-RCA-设计类硕士-结构化提取-线C会话.md
+  内容：10 个 programme 的 Key details（学分/学制）+ 7 份 spec PDF 的 Programme Structure unit 表 + 机械计数
+  来源：见该文件第 1 节来源块
+  抓取日期: 2026-10-04
+
+== 说明：programme slug 的取得方式 ==
+- RCA programme finder 页为 JS 应用，HTML 内不含 programme 链接；本会话从 `https://www.rca.ac.uk/sitemap.xml`（2,684 条 <loc>）取得 65 个 `/study/programme-finder/<slug>` 根 URL
+
+== 补登记（已生成但有口径限制的件） ==
+2020-21-RCA-MA-Design-Products-programme-specification.pdf
+  原始 URL: https://www.rca.ac.uk/documents2/20/MA_Design_Products_Programme_Specification_2020_21.pdf
+  Wayback 完整 URL: https://web.archive.org/web/2020id_/https://www.rca.ac.uk/documents2/20/MA_Design_Products_Programme_Specification_2020_21.pdf
+  快照日期: 2020 年（Wayback 就近解析）
+  文件类型: PDF；**取回仅 4,676 字节，为无效体，未取到内容**
+  抓取日期: 2026-10-04
+
+== 落盘验收（grep） ==
+- rca-*.html：`Key details` 与 `credits` 均命中 → 非空壳
+- rca-spec-2026-27-*.pdf：`Programme Structure` 命中 → 非空壳
+- rca-spec-2025-26_Programme_Specification__MA__IDE.pdf：`Unit` 命中 0（图像型 PDF，11 页文本层仅 484 字符）
+- wayback-2020-09-24-rca-design-products-ma.html：`240 credits` 命中 1 → 非空壳

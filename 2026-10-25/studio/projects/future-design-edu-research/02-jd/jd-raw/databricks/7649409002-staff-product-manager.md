@@ -1,0 +1,63 @@
+---
+source: Databricks (databricks)
+ats: greenhouse
+tier: overseas-ats
+job_id: 7649409002
+title: "Staff Product Manager"
+department: "Product"
+location: "Amsterdam, Netherlands"
+url: https://databricks.com/company/careers/open-positions/job?gh_jid=7649409002
+updated_at: 2026-09-21T13:22:12-04:00
+published_at: 2024-09-20T13:05:36-04:00
+fetched_at: 2026-09-30T12:49:03+00:00
+---
+
+# Staff Product Manager
+
+P-1345
+
+You will be the Product Manager for the Databricks Runtime team in Amsterdam. The team works at the intersection of query processing, storage, infrastructure and data governance, all key components of the Databricks data intelligence platform. As the Product Manager, you will develop a deep understanding of modern cloud infrastructure, data governance solutions, and open source components, and gather requirements from customers. You will launch features that will impact how customers process petabytes of data every day and make it simpler for them to draw value from their data. 
+
+This role requires coordinating all product activities from vision to implementation, including engaging customers to understand their needs, developing long-term product strategy, defining product roadmaps, working with engineering to build those products, and coordinating with various internal stakeholders (both pre- and post-launch) to ensure product success.
+
+The impact you will have: 
+
+Own the end-to-end product management process
+
+Gather customer requirements, design features and collaborate with engineering to deliver a polished market-ready product
+
+Drive launches with product marketing through blog posts, release notes, webinars
+
+Define and measure OKRs for your products
+
+Drive the prioritization and development of features, measurably reducing the cost and time needed for operating ETL and machine learning workflows.
+
+What we look for:
+
+6+ yrs of experience
+
+Bachelors degree in Computer Science or similar field
+
+Experience in Product Management (inbound, outbound, cross-functional processes)
+
+Technical skills
+
+Solid understanding of cloud infrastructure (AWS, Azure)
+
+Strong data analysis and operationalization skills (SQL, rollups, building operational dashboards)
+
+About Databricks
+
+Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, follow Databricks on LinkedIn, X, YouTube, and Instagram.
+
+Benefits
+
+At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click here.
+
+Our Commitment to Diversity and Inclusion
+
+At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran status, and other protected characteristics.
+
+Compliance
+
+If access to export-controlled technology or source code is required for performance of job duties, it is within Employer's discretion whether to apply for a U.S. government license for such positions, and Employer may decline to proceed with an applicant on this basis alone.

@@ -1,0 +1,37 @@
+---
+blind_id: BC-09
+title: "AI产品经理"
+family: 产品经理
+tier: manual-ai
+seniority: 未标注
+location: "深圳"
+url: https://bonjour.bio/jobs-mapping/jobs/030a577b-c872-4094-b6e6-57f2bbded769
+src_job_id: 20261003-11
+---
+# AI产品经理
+
+# AI产品经理
+
+¥30k – ¥40k/月 · 13薪 深圳 全职 1个月前
+
+职责
+- 从用户数据、真实对话、用户访谈和产品体验中，找到最值得解决的问题，并判断产品优先级；
+- 独立 Owner 核心产品方向，从问题定义、方案探索、验证、上线到数据复盘形成完整闭环；
+- 建立数据驱动的产品工作方式，能够独立完成 retention、cohort、funnel、segmentation、session 等分析；
+- 通过 Prototype、用户测试、A/B Test 等方式快速验证产品假设，减少无效开发；
+- 将产品目标转化为清晰的需求、成功指标、验收标准和体验定义。
+
+能力要求
+- 5 年以上 C 端产品经验，完整负责过产品或核心业务模块；
+- 有优秀的 Product Judgment，能够区分表面现象、真实需求和真正的产品机会；
+- 数据能力扎实，熟练 SQL，能够独立完成常见产品分析；
+- 有较强用户洞察能力，愿意持续看真实用户、真实 Session 和用户反馈；
+- 熟悉实验设计，习惯通过证据验证而不是依赖直觉做产品；
+- 有较强的产品定义和跨团队推动能力；
+- 深度使用 AI 工具，理解 LLM、Agent、Memory、Tool Calling、Latency 等基本机制。
+
+加分项（选填）
+- Consumer AI / AI Companion / 社交 / 内容 / 游戏经验
+- Python / Pandas / Jupyter
+- Subscription、Growth 或海外 C 端产品经验
+- 从 0 到 1 新产品或新品类经验

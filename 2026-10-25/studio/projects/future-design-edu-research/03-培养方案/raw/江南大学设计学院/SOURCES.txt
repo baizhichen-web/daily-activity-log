@@ -1,0 +1,32 @@
+江南大学设计学院 — 原件登记（SOURCES）
+抓取日期：2026-10-04（全部）
+
+[当前版]
+1. jn-2027年硕士研究生招生专业目录-全日制.pdf | application/pdf | URL: https://yz.jiangnan.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1249934898&wbfileid=18215500 | 公告页 https://yz.jiangnan.edu.cn/info/1014/3880.htm（2026-09-21）
+2. jn-2027年硕士研究生招生专业目录-页面-2026-10-04.html | text/html | URL: https://yz.jiangnan.edu.cn/info/1014/3880.htm
+3. jn-2027年硕士研究生招生专业目录-公告页-2026-10-04.html | text/html | URL: https://yz.jiangnan.edu.cn/info/1029/3881.htm
+4. jn-2026年硕士研究生招生专业目录-全日制.pdf | application/pdf | URL: https://yz.jiangnan.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1249934898&wbfileid=14951331 | 公告页 https://yz.jiangnan.edu.cn/info/1014/3691.htm
+5. jn-2026年硕士研究生招生目录-页面-2026-10-04.html | text/html | URL: https://yz.jiangnan.edu.cn/info/1014/3691.htm
+6. jn-2021年硕士研究生招生目录-页面-2026-10-04.html | text/html | URL: https://yz.jiangnan.edu.cn/info/1014/2805.htm
+7. jn-设计135700专业学位-学位点介绍页-2026-10-04.html | text/html | URL: https://sodcn.jiangnan.edu.cn/info/1016/1836.htm
+8. jn-设计学140300学术学位-学位点介绍页-2026-10-04.html | text/html | URL: https://sodcn.jiangnan.edu.cn/info/1016/1839.htm
+9. jn-关于制订修订2026级研究生培养方案的通知-2026-10-04.html | text/html | URL: https://gs.jiangnan.edu.cn/info/1105/2956.htm
+
+[历史版]
+10. jn-2019年硕士研究生招生目录.xls | application/vnd.ms-excel (OLE2/BIFF) | URL: https://yz.jiangnan.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1249934898&wbfileid=2737926 | 公告页 https://yz.jiangnan.edu.cn/info/1014/2285.htm（发布 2018-09-10）| Wayback 快照日期 2018-09-15
+11. jn-2020年硕士研究生招生目录.xls | application/vnd.ms-excel | URL: https://yz.jiangnan.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1249934898&wbfileid=3819837 | 公告页 https://yz.jiangnan.edu.cn/info/1014/2576.htm（发布 2019-09-11）| Wayback 快照日期 2019-10-21
+12. wayback-20180915-jn-2019年硕士研究生招生目录.html | text/html | 快照: http://web.archive.org/web/20180915220408/http://yz.jiangnan.edu.cn:80/info/1014/2285.htm | 快照日期 2018-09-15 | 正文仅含附件名
+13. wayback-20191021-jn-2020年硕士研究生招生目录.html | text/html | 快照: http://web.archive.org/web/20191021190407/http://yz.jiangnan.edu.cn/info/1014/2576.htm | 快照日期 2019-10-21 | 正文仅含附件名
+14. wayback-20161101-jn-博士招生考核日程安排.html | 0 字节 | 快照: http://web.archive.org/web/20161101071448/... | 判为不可用
+15. wayback-20161026-jn-研究生-培养与学位-栏目页.html | 0 字节 | 快照: http://web.archive.org/web/20161026024853/http://sodcn.jiangnan.edu.cn:80/研究生/培养与学位/ | 判为不可用
+16. wayback-20180309-jn-招生目录页-1164.html | 0 字节 | 快照: http://web.archive.org/web/20180309100520/http://yz.jiangnan.edu.cn:80/info/1014/1164.htm | 判为不可用
+17. wayback-20191128-jn-2020年港澳台招生目录.xlsx | xlsx | 快照: http://web.archive.org/web/20191128231135id_/http://yz.jiangnan.edu.cn:80/2020gangaotaimulu.xlsx | 快照日期 2019-11-28 | 港澳台目录，非内地硕士目录
+
+[Wayback CDX 查询记录]
+- url=sodcn.jiangnan.edu.cn&matchType=domain&limit=3000 → 3000 条，2014-10 ~ 2026-05；关键词命中 12 条，无培养方案。
+- url=sod.jiangnan.edu.cn&matchType=domain → 返回 []。
+- url=yz.jiangnan.edu.cn&matchType=domain&from=2017&to=2021&limit=600 → 600 条；首年快照 2017。
+
+[未取到的]
+- 江南大学设计学院硕士培养方案（课程/学分）：公网未查到，见 HISTORY.md。
+- 2018 年招生目录原件：公告页 2018-03-09 快照 0 字节；现网 ionf.jsp 返回无权访问。

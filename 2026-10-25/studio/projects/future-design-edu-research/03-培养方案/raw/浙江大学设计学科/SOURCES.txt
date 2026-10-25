@@ -1,0 +1,90 @@
+# SOURCES.txt — 03-培养方案/raw/浙江大学设计学科/
+
+采集会话：DSH 线 C（院校培养方案）子会话，2026-10-04。
+抓取日期栏统一为 **2026-10-04**（本批次实际抓取日）。Wayback 另记快照日期。
+
+---
+
+## A. 当前版（当前可得的最新版）
+
+### A1. `cst.zju.edu.cn-附件PDF-67d99852.pdf`  ★核心原件
+- 类型：PDF，63 页，10,934,010 字节
+- 完整 URL：http://www.cst.zju.edu.cn/_upload/article/files/ee/ee/4f33484c4f07a0afeccadb209a5f/67d99852-e215-4c42-8d82-8c3616feefec.pdf
+- 站点：浙江大学软件学院（cst.zju.edu.cn）
+- 文档内标题：《浙江大学软件学院 学生手册 2026.9》
+- 内含：第 3.2 节「培养方案」，其中第 27–32 页 = 「2026级085507机械(工业设计工程)全日制硕士培养方案」
+- 抓取日期：2026-10-04
+- 快照日期：无（未取到 Wayback 存档，见 HISTORY.md）
+- 文本层导出：`2026-浙大软件学院-学位分册2026.9-原文文本.txt`（派生件，本会话 PyMuPDF 1.27.2.2 导出，2,922 行）
+
+### A2. `grs.zju.edu.cn-研究生院首页.html`
+- 类型：HTML
+- 完整 URL：http://www.grs.zju.edu.cn/
+- 站点：浙江大学研究生院
+- 抓取日期：2026-10-04
+- 快照日期：无
+- 备注：该域用 web_fetch 抓取失败（TypeError: fetch failed），改用 Node 原生 fetch 成功。首页导航未出现「培养方案」栏目名。
+
+### A3. `grs.zju.edu.cn-附件PDF-1a1a0bbd.pdf`
+- 类型：PDF，42 页，258,021 字节
+- 完整 URL：http://www.grs.zju.edu.cn/_upload/article/files/58/fc/81de9bd14bcdbd529b77f03d1ab6/1a1a0bbd-4914-4e29-909d-42dc64f25744.pdf
+- 文档内标题（原文）：浙江大学印发《浙江大学学术学位博士研究生培养工作规定》《浙江大学学术学位硕士研究生培养工作规定》《浙江大学专业学位博士研究生培养工作规定》《浙江大学专业学位硕士研究生培养工作规定》的通知；发文日期 2022 年 10 月 20 日
+- 抓取日期：2026-10-04
+- 文本层导出：`2022-浙大学位与研究生培养办法(浙大发研2022-40号)-原文文本.txt`
+
+### A4. `design.zju.edu.cn-首页.html`
+- 类型：HTML
+- 完整 URL：https://design.zju.edu.cn/
+- 站点：「浙大设计」聚合落地页（WordPress）
+- 抓取日期：2026-10-04
+- 备注：站内不含培养方案/课程层内容；首页仅外链 4 个设计相关单位：idi.zju.edu.cn（国际设计研究院）、www.cs.zju.edu.cn（计算机科学与技术学院）、www.cst.zju.edu.cn（软件学院）、www.soaa.zju.edu.cn（艺术与考古学院），另有 /guanyunlab/ /bridge /ictd /tiide 等实验室子站。
+
+### A5. `cst.zju.edu.cn-导师团队栏目.html`
+- 类型：HTML
+- 完整 URL：http://www.cst.zju.edu.cn/36219/list.htm
+- 抓取日期：2026-10-04
+- 备注：软件学院导师团队公示栏目（A1 第 33 页正文指向此页）
+
+### A6. `2026-浙江大学085507机械(工业设计工程)硕士-培养方案结构化提取.md`
+- 类型：本会话产出的结构化提取（纯数据层）
+- 依据：A1 第 27–32 页
+
+---
+
+## B. 历史版
+
+### B1. `第三方-freekaoyan-浙江大学2013级130500设计学硕士培养方案.html` + `-原文文本.txt`
+- 类型：HTML（原件 GBK 编码，落盘转 UTF-8）+ 派生文本
+- 完整 URL：http://school.freekaoyan.com/zhejiang/zju/dongtai/20140218/1392732165257253.shtml
+- 站点：免费考研网（第三方转载），页面标注日期 2014-02-18
+- 抓取日期：2026-10-04
+- 快照日期：无（**非** Wayback 快照，**非**浙大官网原件）
+- 可信度：第三方转载；与官方原件逐字一致性未核验
+
+### B2. `第三方-freekaoyan-浙江大学2014级130500设计学硕士培养方案.html` + `-原文文本.txt`
+- 类型：HTML（GBK 原件，落盘转 UTF-8）+ 派生文本
+- 完整 URL：http://school.freekaoyan.com/zhejiang/zju/dongtai/20140218/1392732916257768.shtml
+- 站点：免费考研网（第三方转载），页面标注日期 2014-02-18
+- 抓取日期：2026-10-04
+- 快照日期：无（同上）
+
+### B3. `2013-2014-浙江大学130500设计学硕士-历史版结构化提取.md`
+- 类型：本会话产出的结构化提取（纯数据层）
+- 依据：B1、B2
+
+---
+
+## C. 本目录内未保留的文件（说明）
+
+- 抓取过程中产生的表格机械导出（`_tables_cst.txt`）、临时脚本（`_tmp_dump_tables.py`）、CDX 原始输出（`_wayback-cdx-hits.txt`）均为中间产物，信息已并入 A6/B3 与 HISTORY.md，按协作规范**已删除**，不在院校目录留存。
+- 一份 Wayback 快照（`web.archive.org/web/20251228161903/http://www.cst.zju.edu.cn/工业设计工程（专业学位）`）虽返回 HTTP 200，但内容为「访问地址无效…找不到对应的栏目」，非有效材料，已删除；查询记录见 HISTORY.md。
+- 一份 2012 年 `www.design.zju.edu.cn/redir.php?catalog_id=10` 快照抓取成功但内容实为**浙江大学能源工程学系**（域名复用/CMS 站点串号），非设计学科材料，已删除；查询记录见 HISTORY.md。
+
+---
+
+## D. 通道备注（复现用）
+
+- `web_fetch` 工具：**抓不到** `grs.zju.edu.cn`（TypeError: fetch failed，重试仍失败）。
+- `curl.exe`：https 一律返回 000（schannel 故障）；**http + 代理 127.0.0.1:7897 可用于 web.archive.org**。
+- Node 原生 `fetch`（在 run_code 内）：**可抓 grs.zju.edu.cn 与 https PDF 二进制**，是本批 PDF 原件的实际下载通道。
+- Wayback `web/` 快照端点 2026-10-04 不稳定，多次返回 HTTP 502（重试 3 次才偶得 1 份成功）。

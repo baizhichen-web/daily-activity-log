@@ -1,0 +1,1177 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<title>Manifesti degli Studi</title>
+		<script type='text/javascript'>var jaf_js_LANG = 'IT';</script>
+<link rel="stylesheet" type="text/css" href="//webcommons.polimi.it/webcommons/assets/ateneo2014.css.jsp?v=4&__load_ts=1791067725928" />
+<link rel='stylesheet' href='https://webcommons.polimi.it/webcommons/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css' type='text/css' media='screen' />
+<script src='https://webcommons.polimi.it/webcommons/ajax/libs/jqueryui/1.10.4/ui.js.jsp?lang=EN&amp;tab=yes'></script> 
+<SCRIPT type="text/javascript">
+   $.ajaxSetup ({ /* non mettere in cache le richieste AJAX (server per IE6 e IE7) */
+      cache: false
+   });
+</SCRIPT>
+
+
+<link rel="stylesheet" type="text/css" href="/manifesti/css/custom.css?__load_ts=1791067725928" />
+<link rel="stylesheet" type="text/css" href="/manifesti/css/custom4retrocompat.css?__load_ts=1791067725928" />
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#loading').remove();
+	});	
+</script>
+
+<link type="text/css" href="/manifesti/js/jquery-toastmessage/css/jquery.toastmessage.css?__load_ts=1791067725928" rel="stylesheet"/>		
+<script type="text/javascript" src="/manifesti/js/jquery-toastmessage/jquery.toastmessage.js?__load_ts=1791067725928"></script>
+		
+<script type="text/javascript" src="/manifesti/js/jquery.PrintArea.js?__load_ts=1791067725928"></script>		
+	
+<script type="text/javascript" src="/manifesti/js/jquery.form.js?__load_ts=1791067725928"></script>
+<script type="text/javascript" src="/manifesti/js/getValueFromQueryString.js?__load_ts=1791067725928"></script>
+
+
+<link media="screen" rel="stylesheet" type="text/css" href="/manifesti/css/table-IE.css?__load_ts=1791067725928">
+<link media="screen" rel="stylesheet" type="text/css" href="/manifesti/css/OrarioSlot.css?__load_ts=1791067725928">
+<link media="print" rel="stylesheet" type="text/css" href="/manifesti/css/table-IE-print.css?__load_ts=1791067725928">
+<link media="print" rel="stylesheet" type="text/css" href="/manifesti/css/OrarioSlot.css?__load_ts=1791067725928">
+
+
+<link type="text/css" rel="stylesheet" href="/manifesti/css/dropdown-button.css?__load_ts=1791067725928" />
+
+
+
+
+		
+		
+		<link rel="canonical" href="https://onlineservices.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?evn_DEFAULT=evento&lang=EN" />
+		
+		
+	</head>
+	<body>
+		<div id="jafBodyContainer">
+			<div id="polijPageHeader">
+				<script type='text/javascript'>var jaf_js_LANG = 'IT';</script>
+<table id="poliheader" >
+	<tr>
+		<td class="jaf-text-align-left td-logo-polimi" >
+			<a href="http://www.polimi.it" >
+				<img class="logo-polimi" alt="logo-polimi" src="//webcommons.polimi.it/webcommons/assets/logo_polimi_testo.png" style="border: 0px none"/>
+			</a>
+			<div id="loading">
+				<strong>Loading... <img src='//webcommons.polimi.it/webcommons/assets/loading.gif' alt="" /></strong>
+			</div>
+		</td>
+            <td class="jaf-text-align-center info-DB" >
+		        
+                	
+		        
+            </td>
+			<td class="jaf-text-align-right info-utente" >
+				            
+					
+				
+            </td>
+		</tr>
+</table>
+				
+
+	
+		
+	
+	<div id="policontext">
+		<nav class='nomeApp policontext-link' style="float: left; margin: auto 1em;" >
+			 manifesti
+		</nav>
+		<div class="policontext-link">
+			<nav>
+				
+				
+				
+			</nav>
+		</div>
+		<div class="jaf-float-clear" ></div>
+	</div>
+			</div>
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table style="border-spacing: 0;border-collapse: collapse;" class="TablePage">
+<tr class="TrPage">
+<script type='text/javascript'>var jaf_js_LANG = 'EN';</script>
+
+	
+
+	<td style="width:20%;" class="LeftBar">
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- script per la gestione del carrello orario -->	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function bindLeftbarPerCarrello(){				
+
+				$("#dialog-form-sezioni-orario").hide();
+			
+			    var tmp_func = "";
+
+				$('td.orario_td.no_sezioni>a>img[src *= put]').parent('a').each(function(index) {
+					var aa = '';
+					var kCorsoLa;
+					var kIndir = '';
+					var cInsegn = '';
+					var annoCorso = '';
+					var semestre = '';
+					
+					aa = $.getValueFromQs($(this).attr('href'), 'aa');
+					kCorsoLa = $.getValueFromQs($(this).attr('href'), 'k_corso_la');
+					kIndir = $.getValueFromQs($(this).attr('href'), 'k_indir');
+					cInsegn = $.getValueFromQs($(this).attr('href'), 'codDescr');
+					annoCorso = $.getValueFromQs($(this).attr('href'), 'anno_corso');
+					semestre = $.getValueFromQs($(this).attr('href'), 'semestre');
+
+					
+					 generaUrlCart("cart_add", this.name, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, '');
+					 
+				 });
+
+				$('td.orario_td.no_sezioni>a>img[src *= remove]').parent('a').each(function(index) { 
+					
+					var aa = '';
+					var kCorsoLa;
+					var kIndir = '';
+					var cInsegn = '';
+					var annoCorso = '';
+					var semestre = '';
+					
+					aa = $.getValueFromQs($(this).attr('href'), 'aa');
+					kCorsoLa = $.getValueFromQs($(this).attr('href'), 'k_corso_la');
+					kIndir = $.getValueFromQs($(this).attr('href'), 'k_indir');
+					cInsegn = $.getValueFromQs($(this).attr('href'), 'codDescr');
+					annoCorso = $.getValueFromQs($(this).attr('href'), 'anno_corso');
+					semestre = $.getValueFromQs($(this).attr('href'), 'semestre');
+														
+					generaUrlCart("cart_del", this.name, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, '');
+				 });
+
+
+				$('td.orario_td.con_sezioni>a').each(function(index) {		
+					
+					  var aa = '';
+					  var kCorsoLa;
+					  var kIndir = '';
+					  var cInsegn = '';
+					  var annoCorso = '';
+					  var idItemOfferta = '';
+					  var idGruppo = '';
+					  var idRiga = '';
+					  
+					  aa = $.getValueFromQs($(this).attr('href'), 'aa');
+					  kCorsoLa = $.getValueFromQs($(this).attr('href'), 'k_corso_la');
+					  kIndir = $.getValueFromQs($(this).attr('href'), 'k_indir');
+					  cInsegn = $.getValueFromQs($(this).attr('href'), 'codDescr');
+					  annoCorso = $.getValueFromQs($(this).attr('href'), 'anno_corso');
+					  idItemOfferta = $.getValueFromQs($(this).attr('href'), 'idItemOfferta');
+					  idGruppo = $.getValueFromQs($(this).attr('href'), 'idGruppo');
+					  idRiga = $.getValueFromQs($(this).attr('href'), 'idRiga');
+
+					  tmp_func = "show_sezioni('"+this.name+"', '"+ cInsegn +"', '"+ annoCorso +"', '"+ idItemOfferta +"', '"+ idGruppo +"', '"+ idRiga +"'); return false;";					  				  
+					  var newclick = new Function(tmp_func);
+					  $("a[name='" + this.name + "']").unbind('click');
+					  $("a[name='" + this.name + "']").click(newclick);					  					  					  								  
+				});
+
+
+			//gestione javascript x carrello orario
+
+			$('select[name=sel_semestre]').change(function(){
+				$('#formCarrelloOrario').submit();
+			});
+
+			$('select[name=sel_aa]').change(function(){
+				$('#formCarrelloOrario').submit();
+			});
+
+			
+			$("#idDialogHelpOrario").dialog({
+				autoOpen: false,
+				modal: true,
+				resizable: false,
+				width: 700
+				});
+
+			$("#idHelpOrario").click(function(){
+				$("#idDialogHelpOrario").dialog("open");
+				return false;
+				});
+
+			$("#dialog-form-sezioni-orario").dialog({
+				autoOpen: false,
+				modal: true,
+				resizable: false,
+				height: 300,
+				buttons: {
+					"Add": function() {						
+							var semestre = '';
+							var nomeSezione = '';
+							
+							var valChkSelected = $("input[name='sel_sezione']:checked").val();
+							
+							if(valChkSelected!=''){
+								semestre = valChkSelected.substring(0, valChkSelected.indexOf('_'));
+								nomeSezione = valChkSelected.substring(valChkSelected.indexOf('_')+1);
+							}									
+							
+							cart_add($("input[name='chiaveItemOrarioManifestiNoSezione']").val()
+										, '2026'
+										, '1025'
+										, 'M_1'
+										, $("input[name='c_insegn_sel_sezione']").val()
+										, $("input[name='ac_sel_sezione']").val()
+										, semestre
+										, nomeSezione);						  										               
+							$( this ).dialog("close");										
+					},
+					"Cancel": function() {						
+						$( this ).dialog("close");
+					},
+					"Delete": function(){																										
+						var semestre = '';
+						var nomeSezione = '';
+						
+						var valChkSelected = $("input[name='sel_sezione']:checked").val();
+						
+						if(valChkSelected!=''){
+							semestre = valChkSelected.substring(0, valChkSelected.indexOf('_'));
+							nomeSezione = valChkSelected.substring(valChkSelected.indexOf('_')+1);
+						}
+												
+						cart_del($("input[name='chiaveItemOrarioManifestiNoSezione']").val()
+									, '2026'
+									, '1025'
+									, 'M_1'
+									, $("input[name='c_insegn_sel_sezione']").val()
+									, $("input[name='ac_sel_sezione']").val()
+									, semestre
+									, nomeSezione);
+						
+						$( this ).dialog("close");
+					}
+				},
+				close: function() {	
+							
+				}
+			});
+			
+					
+		}
+
+
+		
+		function generaUrlCart(functionName, chiave, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione){
+			var tmp_func = "";
+
+			tmp_func = functionName+"('"+chiave+"', '"+ aa +"', '"+ kCorsoLa +"', '"+ kIndir +"','"+cInsegn+"', '"+ annoCorso +"', '"+semestre+"','"+nomeSezione+"'); return false;";
+			
+			var newclick = new Function(tmp_func);
+			$("a[name='" + chiave + "']").unbind('click');						
+			$("a[name='" + chiave + "']").click(newclick);										
+			
+			return false;
+		}
+		
+		function cart_add(chiaveOrario, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione)
+		{							
+			cart_call("EVN_ADDCART=EVENTO", chiaveOrario, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione);
+		}
+
+
+		function cart_del(chiaveOrario, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione){
+			cart_call("EVN_DELCART=EVENTO", chiaveOrario, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione);
+		}
+
+		
+		
+		function cart_call(event, chiaveOrario, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione){			
+			
+			$.ajax({url: '/manifesti/manifesti/controller/ManifestoPublic.do?'+event,
+			      data: {aa: aa,
+			    	     k_corso_la: kCorsoLa,
+			    	     k_indir : kIndir,
+			    	     codDescr : cInsegn,
+			    	     ac_ins: annoCorso,
+			    	     semestre : semestre,
+			    	     sezione : nomeSezione,
+		                 lang: 'EN'},
+			      success: function(xml) {
+
+				  //parse xml 
+              	  var success = $(xml).find('success');
+              	  var error = $(xml).find('error'); 
+					  if (success.length > 0)
+					  {
+					  	var num_item = success.find('num-ins-cart').text();
+					  	var name = success.find("desc-ins-add").text();
+
+					  	var msg = 'Your customized schedule contains #numItemOrario/#maxItemOrario courses';
+                        msg = msg.replace("#numItemOrario", num_item);
+                        msg = msg.replace("#maxItemOrario", 15);
+						 
+						$('#info_cart').html('<td class="TextCommand" style="text-align: left;" colspan="10">'+ msg +'</td>');											
+						
+						var messageSuccess = name;
+										
+						if(nomeSezione!= '' ){
+								if(event=="EVN_ADDCART=EVENTO"){									
+									$("a[name='" + chiaveOrario + "']>img").attr('src', '/manifesti/images/cart/zoom.png');
+									toastMessagePopup(messageSuccess, 'success');
+								}else{
+									$("a[name='" + chiaveOrario + "']>img").attr('src', '/manifesti/images/cart/cart_put.png');
+									toastMessagePopup(messageSuccess, 'notice');
+								}
+							}else{				
+									
+							
+							if(event=="EVN_ADDCART=EVENTO"){
+								$("a[name='" + chiaveOrario + "']>img").attr('src', '/manifesti/images/cart/cart_remove.png');
+								generaUrlCart("cart_del", chiaveOrario, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione);
+								
+								
+								
+								toastMessagePopup(messageSuccess, 'success');
+																
+							}else{								
+								$("a[name='" + chiaveOrario + "']>img").attr('src', '/manifesti/images/cart/cart_put.png');
+								generaUrlCart("cart_add", chiaveOrario, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomeSezione);
+																					
+								toastMessagePopup(messageSuccess, 'notice');
+							}
+						}
+					  } else {							 
+						  if(error.length > 0){							  
+						  	toastMessagePopup(error.find('desc-error').text(), 'warning');
+						  }else{
+							  toastMessagePopup('Errore!', 'warning');
+						  }				  											 
+					  }
+					  														
+			      },
+			      error: function(request, status, error) {						    	  
+			    	  toastMessagePopup('Errore di connessione!<br>Connection error!', 'error');	
+				      }
+			     });
+		     			  
+		  return false;
+		}
+
+		/*
+		 tipo: success, notice, warning, error
+		*/
+		function toastMessagePopup(message, tipo){
+			$().toastmessage('showToast', {
+	            text     : message,
+	            sticky   : false,
+	            position : 'top-right',
+	            type     : tipo
+	        });
+
+		}
+
+		function show_sezioni(chiaveOrario, cInsegn, annoCorso, idItemOfferta, idGruppo, idRiga){
+			
+				
+			$.ajax({url: '/manifesti/manifesti/controller/ManifestoPublic.do?evn_showsezioni=evento',
+			      data: {aa: 2026,
+			    	  	 k_cf: 19,
+			    	  	 k_corso_la : 1025,
+			    	  	 k_indir: 'M_1',	
+			    	  	 codDescr : cInsegn,
+			    	  	 ac_ins : annoCorso,
+			    	  	 idItemOfferta : idItemOfferta,
+			    	  	 idGruppo : idGruppo,
+			    	     idRiga: idRiga,
+		                 lang: 'EN'},
+			      success: function(html) {			                	 
+		   			         $("#dialog-form-sezioni-orario").html(html);
+		                	 $("#dialog-form-sezioni-orario").dialog("open");
+		                	 var chkRadioDoc = $("input[name = sel_sezione][checked = checked]");
+							 if(chkRadioDoc.size()>0){
+									if(chkRadioDoc.parent("td").parent("tr").prev("tr").size() > 0){
+										if(chkRadioDoc.parent("td").parent("tr").prev("tr").prev("tr").size() > 0){
+											$("#dialog-form-sezioni-orario").scrollTop($("input[name = sel_sezione][checked = checked]").parent("td").parent("tr").prev("tr").prev("tr").position().top);
+										}
+									}
+							 }								
+			      },
+			      error: function(request, status, error) {alert('err');}
+			     });
+
+            return false;
+		}
+		
+		
+		/*******
+		per scaglioni e box incarico scheda docente
+		********/
+		
+		function refresh_url_box_inc(){
+			$("td[class *= 'orario_td scaglioni'] a>img[src *= 'put']").parent('a').each(function(index) { 					
+				generaUrlCartAdd_box_inc(this.name, $(this).attr('href'));				  					  					  								  
+			 });
+
+			$("td[class *= 'orario_td scaglioni'] a>img[src *= 'remove']").parent('a').each(function(index) { 
+				generaUrlCartDel_box_inc(this.name, $(this).attr('href'));				  					  					  								  
+			 });
+		};	
+		
+		function generaUrlCartAdd_box_inc(chiave, url){		
+			
+			var aa = '';
+			var kCorsoLa;
+			var kIndir = '';
+			var cInsegn = '';
+			var annoCorso = '';
+			var semestre = '';
+			var nomesezione = '';
+				
+			aa = $.getValueFromQs(url, 'aa');
+			kCorsoLa = $.getValueFromQs(url, 'k_corso_la');		
+			kIndir = $.getValueFromQs(url, 'k_indir');
+			cInsegn = $.getValueFromQs(url, 'codDescr');
+			annoCorso = $.getValueFromQs(url, 'anno_corso');
+			semestre = $.getValueFromQs(url, 'semestre'); 
+			nomesezione = $.getValueFromQs(url, 'sezione');
+			
+			generaUrlCart("cart_add", chiave, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomesezione);
+		}
+
+		function generaUrlCartDel_box_inc(chiave, url){
+			
+			var aa = '';
+			var kCorsoLa;
+			var kIndir = '';
+			var cInsegn = '';
+			var annoCorso = '';
+			var semestre = '';
+			var nomesezione = '';
+				
+			aa = $.getValueFromQs(url, 'aa');
+			kCorsoLa = $.getValueFromQs(url, 'k_corso_la');		
+			kIndir = $.getValueFromQs(url, 'k_indir');
+			cInsegn = $.getValueFromQs(url, 'codDescr');
+			annoCorso = $.getValueFromQs(url, 'anno_corso');
+			semestre = $.getValueFromQs(url, 'semestre'); 
+			nomesezione = $.getValueFromQs(url, 'sezione');
+			
+			generaUrlCart("cart_del", chiave, aa, kCorsoLa, kIndir, cInsegn, annoCorso, semestre, nomesezione);
+		}
+
+	</script>
+	
+
+
+
+
+<!-- MANIFESTO -->
+<TABLE class="TableCommand"  style='border-spacing:0; border-collapse:collapse;'><TR><TH class="HeadCommand">Degree programme</TH></TR>
+
+	
+					
+	
+		   
+	       
+		   
+	<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/MostraIndirizziPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI&jaf_currentWFID=main" title="Programme Structure" class="linkFunction">
+	              <div class="polij-function-text-container" >
+	                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+	                    <div class="polij-function-text">Programme Structure</div>
+	             </div>
+	       </a></td></tr>
+	
+	
+	
+		   
+	       
+		
+	<tr><td class="BodyFunction"><a class="linkFunction inattivo">
+	              <div class="polij-function-text-container">
+	                    <div class="polij-function-icon"><i class="fa fa-fw fa-chevron-right"></i></div>
+	                    <div class="polij-function-text">Show/Search Programme</div>
+	             </div>
+	       </a></td></tr>
+				
+	
+		
+		
+	 
+		
+		       
+		 		
+		
+		       
+		       
+			   
+		<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/ManifestoPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_stampa=EVENTO&tipo=PDF&stampaSottoModuli=TRUE&stampaDocenti=TRUE&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI&jaf_currentWFID=main" title="Save Document" class="linkFunction" target="_blank">
+		              <div class="polij-function-text-container" >
+		                    <div class="polij-function-icon"><i class="fa fa-file-pdf-o jaf-red fa-fw"></i></div>
+		                    <div class="polij-function-text">Save Document</div>
+		             </div>
+		       </a></td></tr>
+				  
+			 
+		
+		
+		
+	
+</TABLE>
+
+
+
+<TABLE class="TableCommand"  style='border-spacing:0; border-collapse:collapse;'><TR><TH class="HeadCommand">Degree Programme</TH></TR>
+
+	
+					
+				       
+				       
+					   
+					<tr><td class="BodyFunction"><a href="https://aunicalogin.polimi.it/aunicalogin/getservizio.xml;jsessionid=aaaCHypXy3NSz-J_c9deA?id_servizio=450&aa=2026&k_corso_la=1025&lang=EN" title="Read Degree Programme" class="linkFunction" target="_blank">
+				              <div class="polij-function-text-container" >
+				                    <div class="polij-function-icon"><i class="fa fa-fw fa-external-link"></i></div>
+				                    <div  class="polij-function-text">Read Degree Programme</div>
+				             </div>
+				       </a></td></tr>
+										
+		
+		   
+		
+		
+	       
+	       
+		   
+		<tr><td class="BodyFunction"><a href="https://app.powerbi.com/view;jsessionid=aaaCHypXy3NSz-J_c9deA?r=eyJrIjoiZmVmMjUzNDYtMWVkMS00ZjRiLTg3MmEtYWU0ODBlZTRkMGZhIiwidCI6IjBhMTc3MTJiLTZkZjMtNDI1ZC04MDhlLTMwOWRmMjhhNWVlYiIsImMiOjh9&pageName=ReportSection03ddcddf668bd294f5ac" title="Quantitative data" class="linkFunction" target="_blank">
+	              <div class="polij-function-text-container" >
+	                    <div class="polij-function-icon "><i class="fa fa-fw fa-external-link"></i></div>
+	                    <div  class="polij-function-text">Quantitative data</div>
+	             </div>
+	       </a></td></tr>
+		   
+	   	
+			
+		       
+		       
+			   
+			<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/MostraFacultyPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI&jaf_currentWFID=main" title="Faculty" class="linkFunction">
+	              <div class="polij-function-text-container" >
+                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+                    <div  class="polij-function-text">Faculty</div>
+	             </div>
+		       </a></td></tr>
+		
+		
+			
+				
+			       
+			       
+				   
+				<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/extra/ProgrammiInterdisciplinariPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI&jaf_currentWFID=main" title="Interdisciplinary programs" class="linkFunction">
+		              <div class="polij-function-text-container" >
+	                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+	                    <div  class="polij-function-text">Interdisciplinary programs</div>
+		             </div>
+			       </a></td></tr>
+		
+		   
+			    		   
+						
+			
+			
+		       
+		       
+			   
+			<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/extra/InfrastrutturePublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI&jaf_currentWFID=main" title="Infrastructures" class="linkFunction">
+	              <div class="polij-function-text-container" >
+	                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+	                    <div  class="polij-function-text">Infrastructures</div>
+	             </div>
+		       </a></td></tr>
+				
+		
+		
+		
+		
+		
+  		
+		
+			
+		       
+		       
+			   
+			<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/extra/ScambiInternazionaliPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI&jaf_currentWFID=main" title="International context" class="linkFunction">
+		              <div class="polij-function-text-container" >
+		                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+		                    <div  class="polij-function-text">International context</div>
+		             </div>
+		       </a></td></tr>
+		
+		
+		
+	
+</TABLE>
+
+
+	
+<!-- CARRELLO ORARIO  -->
+
+
+<TABLE class="TableCommand"  style='border-spacing:0; border-collapse:collapse;'><TR><TH class="HeadCommand"><div style="float:left">Customized Schedule</div><div style="float:right"><a id="idHelpOrario" href="/manifesti/manifesti/controller/ManifestoPublic.do?evn_gointrocarrello=evento&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI"><img src="/manifesti/images/help.png" border="0"></a></div></TH></TR>
+	
+	
+	
+		
+		
+	       
+		   
+		<tr><td class="BodyFunction"><a id="info_disable_cart" class="linkFunction inattivo">
+	             Your customized time schedule has been disabled
+	       </a></td></tr>
+		
+		
+		       
+		       
+			   
+		<tr><td class="BodyFunction"><a id="enable_cart" href="/manifesti/manifesti/controller/ManifestoPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_gointrocarrello=evento&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI&jaf_currentWFID=main" title="Enable" class="linkFunction">
+		              <div class="polij-function-text-container" >
+		                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+		                    <div  class="polij-function-text">Enable</div>
+		             </div>
+		       </a></td></tr>
+	 
+</TABLE>
+			
+
+	<style type="text/css">
+
+		
+		.orario_td {
+			display: none;
+		}
+		
+
+		.popup_msg{
+			position: absolute;
+			z-index: 10;
+			width: 172px;
+			height: 102px;
+			text-align: left;
+			color: #000000;
+			font: 0.7em Verdana, Arial;
+			font-weight: bold;
+			background: url(/manifesti/images/cart/bg_image.gif) bottom right no-repeat;
+			display: none;
+		}
+		
+	</style>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			bindLeftbarPerCarrello();
+			
+			$('#print1').click(function() {
+				$('#orarioSinottico').printArea();
+			});
+	
+			$('#print2').click(function() {
+				$('#orarioTestuale').printArea();
+			});		
+	
+		});
+	</script>
+	
+	<div id="idDialogHelpOrario" title="Class schedule planning" style="display:none">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+	ol.listaaa li {padding-bottom: 4px; padding-top: 4px; vertical-align:middle;};
+</style>
+<blockquote>
+	With this function you can construct your weekly calendar of lessons, which is customized on the basis of the courses that you intend to follow.<br /> <strong><span style="text-decoration: underline;">Warning: the personal schedule does not replace the presentation of the study plan!</span></strong> It's an informal tool that can help you better manage the organization of class attendance before the study plan presentation.<br />After the study plan presentation we recommend you to use the <strong>Lecture timetable</strong> service in your Online Services. <br /><br /> To create your customized schedule follow these instructions:
+	<ol class="listaaa">		
+	   
+			<li>Click on the "Enable" link to proceed. You will be asked your surname and first name in order to determine your alphabetic grouping.</li>
+				
+		<li>
+			To add or remove courses from your personal schedule, use the small icons which are found next to the courses:
+			<ul style="margin-left:1.5em; padding-left:1.5em; margin-top:0.3em">
+				<li style="list-style:none"><img src="/manifesti/images/cart/cart_put.png" border="0" style="float:left; margin-right:1em">addition of the course</li>
+		        <li style="list-style:none"><img src="/manifesti/images/cart/cart_remove.png" border="0" style="float:left; margin-right:1em">removal of the course</li>
+		        <li style="list-style:none"><img src="/manifesti/images/cart/zoom.png" border="0" style="float:left; margin-right:1em; margin-bottom:1.5em">selection of the section of the Laboratory of Architecture <br/> (Note: the effective area in which the teaching will be carried out  will be determined after the presentation of the Study Plans)</li>
+			</ul> 
+		</li>
+		<li>
+			The sidebar on the left displays the number of lessons included in schedule. <br> There are also these commands:
+			   <ul style="margin-left:1.5em; padding-left:1.5em; margin-top:0.3em">
+			   	  <li style="list-style:none"><img src="/manifesti/images/cart/cart_go.png" border="0" style="float:left; margin-right:1em">View the schedule: allows the viewing of the weekly synoptic schedule</li>
+			   	  <li style="list-style:none"><img src="/manifesti/images/cart/cart_disabled.png" border="0" style="float:left; margin-right:1em">Delete the schedule: cancels the selections made</li>
+			   </ul>	
+		</li>
+		
+	</ol>
+	
+	When you have finished the entry, you can print the calendar you have made.
+	</blockquote>
+	</div>
+	
+
+<!-- VINCOLI -->
+		
+
+
+<!-- RICERCHE -->
+<TABLE class="TableCommand"  style='border-spacing:0; border-collapse:collapse;'><TR><TH class="HeadCommand">Search</TH></TR>
+
+		
+	
+		
+	    	
+       	
+	   
+ 	<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/ricerche/RicercaPerDocentiPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&lang=EN&jaf_currentWFID=main" title="Search a Lecturer" class="linkFunction">
+              <div class="polij-function-text-container" >
+                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+                    <div class="polij-function-text">Search a Lecturer</div>
+             </div>
+       	</a></td></tr>	
+ 	
+	
+
+	
+		
+	   					 	   
+       
+	   
+ 	<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/ricerche/RicercaPerInsegnamentoPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&lang=EN&jaf_currentWFID=main" title="Search a Course" class="linkFunction">
+              <div class="polij-function-text-container" >
+                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+                    <div class="polij-function-text">Search a Course</div>
+             </div>
+       </a></td></tr>	
+ 	
+	
+		
+	   					 	   
+       
+	   
+ 	<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/ricerche/RicercaPerInsegnamentoVOPublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&lang=EN&jaf_currentWFID=main" title="Search a Course (system prior D.M. n. 509)" class="linkFunction">
+              <div class="polij-function-text-container" >
+                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+                    <div class="polij-function-text">Search a Course (system prior D.M. n. 509)</div>
+             </div>
+       </a></td></tr>
+	
+	
+		
+	   					 	   
+       
+	   
+ 	<tr><td class="BodyFunction"><a href="/manifesti/manifesti/controller/ricerche/RicercaInsegnamentiErogatiInLinguaInglesePublic.do;jsessionid=aaaCHypXy3NSz-J_c9deA?evn_default=EVENTO&aa=2026&lang=EN&jaf_currentWFID=main" title="Search Lessons taught in English" class="linkFunction">
+              <div class="polij-function-text-container" >
+                    <div class="polij-function-icon"><i class="fa fa-fw "></i></div>
+                    <div class="polij-function-text">Search Lessons taught in English</div>
+             </div>
+       </a></td></tr>
+ 	
+</TABLE>
+
+
+
+
+
+
+
+					
+		
+			<BR>
+			<TABLE cellspacing="0" cellpadding="3">   <TBODY><TR>        <TD class="TitleInfoCard">Glossary</TD>   </TR></TBODY></TABLE><TABLE width="100%" class="BoxInfoCard" cellspacing="0" cellpadding="5">  <TBODY><TH colspan="2" class="HeadColumn1" style="text-align:center">Course type (Type)</TH><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Integrated Course</TD></TR><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center">L</TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Laboratory</TD></TR><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Mono-Disciplinary Course</TD></TR><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center">T</TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Traineeship</TD></TR><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center">V</TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Final Examination</TD></TR><TH colspan="2" class="HeadColumn1" style="text-align:center">Option Group</TH><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center">GRP. OPZ.</TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Group of classes to be chosen</TD></TR><TH colspan="2" class="HeadColumn1" style="text-align:center">Language</TH><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="0" align="abs_bottom" src="/manifesti/images/flags/it.png" height="16"></TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Course completely offered in italian</TD></TR><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="0" align="abs_bottom" src="/manifesti/images/flags/en.png" height="16"></TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Course completely offered in english </TD></TR><TR><TD nowrap="nowrap" width="5%" class="ElementInfoCard1" style="text-align:center"><img border="0" align="absbottom" src="/manifesti/images/flags/it.png" height="16">/<img border="0" align="absbottom" src="/manifesti/images/flags/en.png"  height="16"></TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Course offered in italian and english</TD></TR><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center">--</TD><TD width="95%" class="ElementInfoCard2" style="text-align:center">Not available</TD></TR><TH colspan="2" class="HeadColumn1" style="text-align:center">Innovative teaching</TH><TR><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="0" align="abs_bottom" src="/manifesti/images/innovativa.png" height="16"></TD><TD width="95%" class="ElementInfoCard2" style="text-align:left">The credits shown next to this symbol indicate the part of the course CFUs provided with Innovative teaching. <br />These CFUs include: <br />
+<ul>
+<li>Subject taught jointly with companies or organizations</li>
+<li>Blended Learning &amp; Flipped Classroom</li>
+<li>Massive Open Online Courses (MOOC)</li>
+<li>Soft Skills</li>
+</ul></TD></TR>   </TBODY></TABLE> 
+    	
+	   
+	</td>
+
+	
+	<td style="width:80%;" class="CenterBar">
+		
+		 
+
+
+
+
+
+<div class="PageTitleContainer">
+ 	<div class="PageTitle">Show/Search Programme</div>
+ 	
+ 	<div class="PageTitleLang">
+ 		
+	 		<a href="/manifesti/manifesti/controller/ManifestoPublic.do?evn_default=EVENTO&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=IT&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI" title="Italiano" id="link_cambia_lingua">
+	 			<img src="//webcommons.test.polimi.it/webcommons/assets/italiano.gif" alt="Italiano" title="Italiano">
+	 		</a>
+	 	
+ 	</div>
+ 	
+ </div>				
+		 
+		<FORM method="POST" action="/manifesti/manifesti/controller/ManifestoPublic.do"  name="combocds">
+		<script type="text/javascript">function changeOnClick() {document.getElementById( 'idButtonEvento' ).click(); }</script><input type="hidden" name="lang" value="EN"><TABLE width="100%" class="BoxInfoCard" cellspacing="0" cellpadding="5" id="id_combocds">  <TBODY><TR><TD class='ElementInfoCard1 left' width='15%'>Academic Year</TD><TD class='ElementInfoCard2 left' width='15%'><select name="aa" width='100%' STYLE="WIDTH:100%"onchange=changeOnClick()><option value="2026" SELECTED>2026/2027</option><option value="2025" >2025/2026</option><option value="2024" >2024/2025</option><option value="2023" >2023/2024</option><option value="2022" >2022/2023</option><option value="2021" >2021/2022</option></select></TD><TD class='ElementInfoCard1 left' width='15%'>Sede</TD><TD class='ElementInfoCard2 left' colspan='1'width='55%'><select name="sede" width='100%' STYLE="WIDTH:100%"onchange=changeOnClick()><option value="ALL_SEDI" >All campuses</option><option value="CO" >Como (CO)</option><option value="CR" >Cremona (CR)</option><option value="LC" >Lecco (LC)</option><option value="MN" >Mantova (MN)</option><option value="BV" >Milano Bovisa (BV)</option><option value="MI" >Milano Leonardo (MI)</option><option value="PC" >Piacenza (PC)</option></select></TD></TR><TR><TD class='ElementInfoCard1 left' width='15%'>School</TD><TD class='ElementInfoCard2 left' colspan='3'width='85%'><select name="k_cf" width="100%" style="width:100%" onchange=changeOnClick()><option value="222" >School of Architecture Urban Planning Construction Engineering (Arc. Urb. Ing. Cos.)</option><option value="19" SELECTED>School of Design (Design)</option><option value="225" >School of Industrial and Information Engineering (Ing. Ind-Inf)</option><option value="1" >School of Civil, Environmental and Land Management Engineering (Ing. Civ)</option><option value="233" > Graduate School (Spec.)</option></select></TD></TR><TR><TD class='ElementInfoCard1 left' width='15%'>Programme</TD><TD class='ElementInfoCard2 left' colspan='3'width='85%'><select name="k_corso_la" width="100%" style="width:100%" onchange=changeOnClick()><optgroup label="Bachelor of Science degree - ord. 96/23"><option value="1021" >Communication Design (1021)</option><option value="1022" >Fashion Design (1022)</option><option value="1014" >Interaction Design (1014)</option><option value="1019" >Interior Design (1019)</option><option value="1020" >Product Design (1020)</option></optgroup><optgroup label="Master of Science degree - ord. 96/23"><option value="1024" >Communication Design (1024)</option><option value="1023" >Design & Engineering (1023)</option><option value="1025" SELECTED>Design for the Fashion System (1025)</option><option value="1026" >Digital and Interaction Design (1026)</option><option value="1027" >Integrated Product Design (1027)</option><option value="1028" >Interior and Spatial Design (1028)</option><option value="1029" >Product Service System Design (1029)</option></optgroup><optgroup label="Bachelor of Science degree - ord. 270"><option value="1088" >Communication Design (1088)</option><option value="1089" >Fashion Design (1089)</option><option value="1087" >Interior Design (1087)</option><option value="1090" >Product Design (1090)</option></optgroup></select></TD></TR><TR><TD class='ElementInfoCard1 left' width='15%'>Programme Year</TD><TD class='ElementInfoCard2 left' width='15%'><select name="ac_ins" width="100%" style="width:100%" onchange=changeOnClick()><option value="0" SELECTED>All</option><option value="1" >1</option><option value="2" >2</option></select></TD><TD class='ElementInfoCard1 left' width='15%'>Track</TD><TD class='ElementInfoCard2 left' colspan='1'width='55%'><select name="k_indir" style="width: 100%;" style="width:100%" onchange="changeOnClick()"><option value="***" >*** - Non diversificato</option><option value="M_1" SELECTED>M_1 - Fashion 1</option><option value="M_2" >M_2 - Fashion 2</option></SELECT>Campus: Milano Bovisa<br>Language: English</TD></TR><TR><TD NOWRAP="NOWRAP" class="ElementInfoCard2" colspan="1" width="15%"><INPUT id="idButtonEvento" type="submit" name="evn_default" value="Refresh" /></TD><TD class="ElementInfoCard2" colspan="3" id="nested_no_border"><TABLE width="100%"><TR><TD width="2%" class="ElementInfoCard2" style="text-align:left"><input type="checkbox"  onclick="changeOnClick()" name="caricaOffertaComune"   checked="checked"/></TD><TD width="98%" class="ElementInfoCard2" style="text-align:left">Show offer not in common (***)</TD></TR></TABLE></TD></TR>   </TBODY></TABLE> 
+		</FORM>
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		<table style="border-spacing: 0;border-collapse: collapse;" class="BodyInfoCard">
+<tr>
+
+<td class="TitleInfoCard"><span id='infocard_autokey_1-help'> </span>General informations&nbsp;<span id='infocard_autokey_1_apri' class='polij_tasto_apri' style='display:none'>(<a href='#'>Show &gt;&gt;</a>)</span><span id='infocard_autokey_1_chiudi' class='polij_tasto_chiudi'   style='display:none'>(<a href='#'>Hide &lt;&lt;</a>)</span></td>
+</TR>
+</TABLE>
+<TABLE  id="infocard_autokey_1"  class="BoxInfoCard" style='border-spacing: 0;border-collapse: collapse;'>
+
+			<tr>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					School
+				</td>
+				<td colspan="3" rowspan="1" class="ElementInfoCard2 jaf-card-element">
+					
+					
+						
+							Design <a href="http://www.design.polimi.it">http://www.design.polimi.it</a>
+						
+					
+				</td>
+			</tr>
+						
+			<tr>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Dean of the School
+				</td>					
+				<td colspan="3" rowspan="1" class="ElementInfoCard2 jaf-card-element"> 
+				
+					
+							
+							
+							Francesco&nbsp;Zurlo
+						
+					
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Degree level
+				</td>
+				<td colspan="3" rowspan="1" class="ElementInfoCard2 jaf-card-element">
+					
+						Laurea Magistrale (Equivalent To Master Of Science)
+					
+					 - Ordinamento D.M. 1648-1649/23
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Name
+				</td>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard2 jaf-card-element">
+					
+						Design for the Fashion System
+					
+				
+					 (1025)
+				</td>
+							
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Campus
+				</td>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard2 jaf-card-element">
+					Milano Bovisa
+				</td>
+			</tr>
+			
+			<tr>		
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Years of the programme already activated
+				</td>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard2 jaf-card-element">
+					
+						1,2
+					
+				</td>
+				
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Official length of the programme
+				</td>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard2 jaf-card-element">
+					2
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Class of degree
+					
+				</td>
+				
+				<td colspan="3" rowspan="1" class="ElementInfoCard2 jaf-card-element">
+					
+						LM-12 - Design
+				</td>
+			</tr>	
+			
+			<tr>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					
+						Coordinator of the Study programme
+					
+				</td>
+				<td colspan="3" rowspan="1" class="ElementInfoCard2 jaf-card-element"> 
+					
+						<a href="/manifesti/manifesti/controller/ricerche/RicercaPerDocentiPublic.do?EVN_PRODOTTI=evento&lang=EN&k_doc=47247&aa=2026">Giovanni Maria&nbsp;Conti</a>
+					
+				</td>
+			</tr>
+										
+			<tr>
+				<td colspan="1" rowspan="1" style="width: 25%" class="ElementInfoCard1 jaf-card-element">
+					Official language(s)				
+					
+				</td>
+				<td colspan="3" rowspan="1" class="ElementInfoCard2 jaf-card-element">
+					
+					
+							
+								The Laurea Magistrale (equivalent to Master of Science) programme is offered in English but the degree programme meets the requirements of MIUR (Ministry of Education, Universities and Research) note of 11.07.2018 and the CUN opinion of 10.23.2018.
+							
+							
+					
+				</td>
+			</tr>
+
+			
+			
+			
+		</TABLE>
+<script type='text/javascript'>
+$("#infocard_autokey_1").infocard({"initiallyOpen":false})</script> 
+
+
+	
+
+
+		
+		<BR>
+		
+				
+			
+			<table style="border-spacing: 0;border-collapse: collapse;" class="BodyInfoCard">
+				<tbody>
+					<tr>
+						<td class="TitleInfoCard">
+							The Degree Program offers the opportunity to enrich students’ education through interdisciplinary programs designed to integrate and broaden the skills acquired during their academic studies, with the issuance of a certificate upon graduation
+							(<span id="" class="polij_tasto_apri" style="display: inline;"><a href="/manifesti/manifesti/controller/extra/ProgrammiInterdisciplinariPublic.do?evn_default=EVENTO&aa=2026&k_cf=19&k_corso_la=1025&ac_ins=0&k_indir=M_1&lang=EN&tipoCorso=ALL_TIPO_CORSO&caricaOffertaComune=true&semestre=ALL_SEMESTRI" title="Interdisciplinary programs">Show more >></a></span>)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			
+								
+			<TABLE cellspacing="0" cellpadding="3">   <TBODY><TR>        <TD class="TitleInfoCard">1st Year</TD>   </TR></TBODY></TABLE><TABLE width="100%" class="TableDati" cellspacing="0" cellpadding="5" style="border-bottom: none; border-right: none;">  <TBODY><tr><TH width="5%" class="HeadColumn1" style="text-align:center">Code</TH><TH width="10%" class="HeadColumn1" style="text-align:center">SSD SM 639/24</TH><TH width="10%" class="HeadColumn1" style="text-align:center">SSD</TH><TH width="5%" class="HeadColumn1 orario_td" style="text-align:center">Timetable: add and remove</TH><TH colspan="2" width="44%" class="HeadColumn1" style="text-align:center">Course Title</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Num Sec</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Language</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Course location</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Type</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Period</TH><TH width="5%" class="HeadColumn1" style="text-align:center">CFU</TH><TH width="5%" class="HeadColumn1" style="text-align:center">CFU Group</TH></tr><TD colspan="12" class="ElementInfoCard2" style="text-align:left; border-bottom:none; "><div class="cls_nome_item">Corsi a scelta 1° anno / Elective courses 1st year</div></TD><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">054898</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10548981"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054898&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350885&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054898&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350885&caricaOffertaComune=true">ADVANCED USER INTERFACES</a><div class="cls_note" id="id_sottoitem_nota_282446">Teaching Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" rowspan="28" class="ElementInfoCard2" style="text-align:center">6.0<br>(Grp.<BR>Opz.)</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">059640</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10596401"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059640&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350877&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059640&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350877&caricaOffertaComune=true">BRANDING & COMMUNICATION</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063750</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10637501"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063750&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350883&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063750&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350883&caricaOffertaComune=true">DESIGN AND IMPLEMENTATION OF MOBILE APPLICATIONS</a><div class="cls_note" id="id_sottoitem_nota_282444">Teaching Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">059801</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10598011"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059801&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350875&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059801&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350875&caricaOffertaComune=true">DESIGN FOR THE ENHANCEMENT OF CULTURAL HERITAGE</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058161</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IEGE-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/35</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10581611"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058161&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350868&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058161&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350868&caricaOffertaComune=true">DIGITAL INNOVATION FOR CUSTOMER EXPERIENCE DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063751</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">PHYS-03/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">FIS/01</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10637511"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063751&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350884&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063751&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350884&caricaOffertaComune=true">FUNDAMENTALS OF PHOTONICS: THE SCIENCE OF LIGHT</a><div class="cls_note" id="id_sottoitem_nota_282445">Course: Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">055105</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-09/B</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/15</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10551051"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=055105&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350865&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=055105&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350865&caricaOffertaComune=true">LECTURES-LANDSCAPE</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[1.0<img alt="Innovative teaching" title="1.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">054977</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10549771"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054977&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350863&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054977&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=350863&caricaOffertaComune=true">LICENSING E BRAND EXTENSION</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[6.0<img alt="Innovative teaching" title="6.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">064799</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10647991"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064799&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=359651&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064799&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183919&idRiga=359651&caricaOffertaComune=true">VIRTUAL & PHYSICAL PROTOTYPING</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">065002</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10650022"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=065002&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=362701&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=065002&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=362701&caricaOffertaComune=true">AI REDEFINING CREATIVITY IN BUSINESS</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">061596</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10615962"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=061596&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350876&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=061596&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350876&caricaOffertaComune=true">AI-POWERED DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058189</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D<BR>IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13<BR>ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10581892"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058189&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350872&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058189&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350872&caricaOffertaComune=true">DESIGN AND ROBOTICS</a><div class="cls_note" id="id_sottoitem_nota_282433">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">053431</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10534312"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053431&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350860&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053431&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350860&caricaOffertaComune=true">COMMUNICATION DESIGN AND GENDER CULTURE</a><div class="cls_note" id="id_sottoitem_nota_282421">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[4.0<img alt="Innovative teaching" title="4.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">053459</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10534592"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053459&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350859&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053459&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350859&caricaOffertaComune=true">ERASMUS EXPERIENCE</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">059737</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10597372"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059737&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350874&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059737&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350874&caricaOffertaComune=true">EVENT DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">056874</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-01/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/01</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10568742"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056874&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350871&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056874&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350871&caricaOffertaComune=true">FUNDAMENTALS OF ELECTRONICS FOR DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282432">Closed number subject<br/>Course: Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063846</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10638462"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063846&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350879&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063846&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350879&caricaOffertaComune=true">THE MASTERS OF DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058535</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D<BR>IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13<BR>ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10585352"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058535&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350881&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058535&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350881&caricaOffertaComune=true">INCLUSIVE DIGITAL TECHNOLOGIES</a><div class="cls_note" id="id_sottoitem_nota_282442">Teaching Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">053477</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IMAT-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/22</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10534772"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053477&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350858&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053477&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350858&caricaOffertaComune=true">NANOTECHNOLOGY AND FUNCTIONAL MATERIALS FOR DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">064969</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10649692"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064969&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=359966&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064969&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=359966&caricaOffertaComune=true">ORGANIZATIONAL CULTURE DESIGN</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063084</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10630842"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063084&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350888&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063084&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350888&caricaOffertaComune=true">RETAIL STRATEGIES</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063747</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-01/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/01</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10637472"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063747&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350880&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063747&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350880&caricaOffertaComune=true">SMART WEARABLES DESIGN AND PROTOTYPING</a><div class="cls_note" id="id_sottoitem_nota_282441">Teaching Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058399</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10583992"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058399&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350867&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058399&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350867&caricaOffertaComune=true">SUSTAINABILITY STRATEGIES AND DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282428">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">050476</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10504762"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=050476&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350856&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=050476&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350856&caricaOffertaComune=true">TECHNOLOGIES FOR THE FASHION PRODUCT</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058404</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10584042"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058404&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350869&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058404&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350869&caricaOffertaComune=true">TEMPORARY AND INCLUSIVE URBAN SOLUTIONS</a><div class="cls_note" id="id_sottoitem_nota_282430">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">064968</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10649682"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064968&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=359965&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064968&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=359965&caricaOffertaComune=true">THE COMMUNICATIVE POWER OF THE ARTIFACTS</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063843</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***10638432"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063843&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350878&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063843&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350878&caricaOffertaComune=true">VENTURE DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282439">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[6.0<img alt="Innovative teaching" title="6.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063749</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***10637492"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063749&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350882&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063749&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183919&idRiga=350882&caricaOffertaComune=true">WEARABLE SYSTEMS LAB</a><div class="cls_note" id="id_sottoitem_nota_282443">Teaching Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[1.0<img alt="Innovative teaching" title="1.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">055934</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D<BR>CEAR-10/A<BR>INFO-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13<BR>ICAR/17<BR>INF/01</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025M_110559341"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=055934&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183651&idRiga=350237&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=055934&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183651&idRiga=350237&caricaOffertaComune=true">FASHION DESIGN STUDIO</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">L</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">15.0</TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">15.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">056128</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D<BR>INFO-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13<BR>INF/01</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025M_110561282"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056128&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183652&idRiga=350238&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056128&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183652&idRiga=350238&caricaOffertaComune=true">FASHION RETAIL EXPERIENCE</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">L</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">15.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 15.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">15.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063170</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025M_110631701"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063170&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183653&idRiga=350239&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063170&lang=EN&semestre=1&anno_corso=1&idItemOfferta=183653&idRiga=350239&caricaOffertaComune=true">DESIGN FOR BRANDING STRATEGIES</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063502</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025M_110635022"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063502&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183654&idRiga=350240&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063502&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183654&idRiga=350240&caricaOffertaComune=true">WORKSHOP</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063171</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D<BR>SDEA-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13<BR>M-DEA/01</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025M_110631712"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063171&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183655&idRiga=350241&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063171&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183655&idRiga=350241&caricaOffertaComune=true">TRENDS RESEARCH AND DESIGN DIRECTIONS</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">096158</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IMAT-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/22</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025M_110961582"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=096158&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183656&idRiga=350242&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=096158&lang=EN&semestre=2&anno_corso=1&idItemOfferta=183656&idRiga=350242&caricaOffertaComune=true">FASHION MATERIALS AND TECHNOLOGIES</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr>   </TBODY></TABLE><br><br><TABLE cellspacing="0" cellpadding="3">   <TBODY><TR>        <TD class="TitleInfoCard">2nd Year</TD>   </TR></TBODY></TABLE><TABLE width="100%" class="TableDati" cellspacing="0" cellpadding="5" style="border-bottom: none; border-right: none;">  <TBODY><tr><TH width="5%" class="HeadColumn1" style="text-align:center">Code</TH><TH width="10%" class="HeadColumn1" style="text-align:center">SSD SM 639/24</TH><TH width="10%" class="HeadColumn1" style="text-align:center">SSD</TH><TH width="5%" class="HeadColumn1 orario_td" style="text-align:center">Timetable: add and remove</TH><TH colspan="2" width="44%" class="HeadColumn1" style="text-align:center">Course Title</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Num Sec</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Language</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Course location</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Type</TH><TH width="5%" class="HeadColumn1" style="text-align:center">Period</TH><TH width="5%" class="HeadColumn1" style="text-align:center">CFU</TH><TH width="5%" class="HeadColumn1" style="text-align:center">CFU Group</TH></tr><TD colspan="12" class="ElementInfoCard2" style="text-align:left; border-bottom:none; "><div class="cls_nome_item">Design management/Leadership ITA/ENG</div></TD><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">065091</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ECON-07/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">SECS-P/08</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20650911"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=065091&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183924&idRiga=362711&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=065091&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183924&idRiga=362711&caricaOffertaComune=true">DESIGN MANAGEMENT FOR FASHION</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" rowspan="2" class="ElementInfoCard2" style="text-align:center">6.0<br>(Grp.<BR>Opz.)</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063166</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IEGE-01/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-IND/35</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20631661"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063166&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183924&idRiga=350894&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063166&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183924&idRiga=350894&caricaOffertaComune=true">LEADERSHIP & INNOVATION STRATEGIES</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><TD colspan="12" class="ElementInfoCard2" style="text-align:left; border-bottom:none; "><div class="cls_nome_item">DESIGN FOR THE FASHION SYSTEM </div></TD><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063173</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20631731"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063173&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183925&idRiga=350896&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063173&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183925&idRiga=350896&caricaOffertaComune=true">DESIGN FOR THE FASHION SYSTEM - FASHION CRAFT</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">L</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">18.0</TD><TD nowrap="nowrap" width="5%" rowspan="3" class="ElementInfoCard2" style="text-align:center">18.0<br>(Grp.<BR>Opz.)</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063172</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20631721"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063172&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183925&idRiga=350895&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063172&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183925&idRiga=350895&caricaOffertaComune=true">DESIGN FOR THE FASHION SYSTEM - FASHION TECH</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">L</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">18.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">064448</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20644481"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064448&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183925&idRiga=351649&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064448&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183925&idRiga=351649&caricaOffertaComune=true">FINAL DESIGN STUDIO SWT + PROFESSIONAL WORKSHOP SWT</a><div class="cls_note" id="id_sottoitem_nota_283125">Teaching Interdisciplinary Programme in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">L</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">18.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><TD colspan="12" class="ElementInfoCard2" style="text-align:left; border-bottom:none; "><div class="cls_nome_item">Corsi a scelta 2° anno /Elective courses 2st year</div></TD><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">054898</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20548981"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054898&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359156&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054898&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359156&caricaOffertaComune=true">ADVANCED USER INTERFACES</a><div class="cls_note" id="id_sottoitem_nota_288141">Teaching Interdisciplinary Programme in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" rowspan="28" class="ElementInfoCard2" style="text-align:center">6.0<br>(Grp.<BR>Opz.)</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">059640</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20596401"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059640&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350919&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059640&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350919&caricaOffertaComune=true">BRANDING & COMMUNICATION</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063750</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20637501"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063750&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359155&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063750&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359155&caricaOffertaComune=true">DESIGN AND IMPLEMENTATION OF MOBILE APPLICATIONS</a><div class="cls_note" id="id_sottoitem_nota_288140">Teaching Interdisciplinary Programme in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">059801</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20598011"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059801&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350917&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059801&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350917&caricaOffertaComune=true">DESIGN FOR THE ENHANCEMENT OF CULTURAL HERITAGE</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058161</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IEGE-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/35</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20581611"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058161&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350910&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058161&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350910&caricaOffertaComune=true">DIGITAL INNOVATION FOR CUSTOMER EXPERIENCE DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063751</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">PHYS-03/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">FIS/01</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20637511"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063751&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359157&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063751&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359157&caricaOffertaComune=true">FUNDAMENTALS OF PHOTONICS: THE SCIENCE OF LIGHT</a><div class="cls_note" id="id_sottoitem_nota_288142">Course: Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">055105</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-09/B</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/15</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20551051"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=055105&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350901&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=055105&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350901&caricaOffertaComune=true">LECTURES-LANDSCAPE</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[1.0<img alt="Innovative teaching" title="1.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">054977</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20549771"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054977&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350903&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054977&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=350903&caricaOffertaComune=true">LICENSING E BRAND EXTENSION</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[6.0<img alt="Innovative teaching" title="6.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">064799</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20647991"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064799&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359652&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064799&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183926&idRiga=359652&caricaOffertaComune=true">VIRTUAL & PHYSICAL PROTOTYPING</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">065002</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20650022"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=065002&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=362702&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=065002&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=362702&caricaOffertaComune=true">AI REDEFINING CREATIVITY IN BUSINESS</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">061596</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20615962"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=061596&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350918&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=061596&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350918&caricaOffertaComune=true">AI-POWERED DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058189</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D<BR>IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13<BR>ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20581892"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058189&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350914&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058189&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350914&caricaOffertaComune=true">DESIGN AND ROBOTICS</a><div class="cls_note" id="id_sottoitem_nota_282475">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">053431</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20534312"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053431&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350897&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053431&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350897&caricaOffertaComune=true">COMMUNICATION DESIGN AND GENDER CULTURE</a><div class="cls_note" id="id_sottoitem_nota_282458">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[4.0<img alt="Innovative teaching" title="4.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">053749</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20537492"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053749&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350899&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053749&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350899&caricaOffertaComune=true">ERASMUS EXPERIENCE</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">059737</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20597372"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059737&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350916&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059737&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350916&caricaOffertaComune=true">EVENT DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">056874</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-01/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/01</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20568742"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056874&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350913&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056874&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350913&caricaOffertaComune=true">FUNDAMENTALS OF ELECTRONICS FOR DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282474">Closed number subject<br/>Course: Interdisciplinary Program in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063846</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20638462"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063846&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350921&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063846&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350921&caricaOffertaComune=true">THE MASTERS OF DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058535</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D<BR>IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13<BR>ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20585352"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058535&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359153&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058535&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359153&caricaOffertaComune=true">INCLUSIVE DIGITAL TECHNOLOGIES</a><div class="cls_note" id="id_sottoitem_nota_288138">Teaching Interdisciplinary Programme in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">053477</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IMAT-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/22</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20534772"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053477&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350904&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053477&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350904&caricaOffertaComune=true">NANOTECHNOLOGY AND FUNCTIONAL MATERIALS FOR DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/it.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">064969</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20649692"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064969&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359968&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064969&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359968&caricaOffertaComune=true">ORGANIZATIONAL CULTURE DESIGN</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063084</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20630842"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063084&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350924&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063084&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350924&caricaOffertaComune=true">RETAIL STRATEGIES</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063747</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-01/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/01</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20637472"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063747&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359152&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063747&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359152&caricaOffertaComune=true">SMART WEARABLES DESIGN AND PROTOTYPING</a><div class="cls_note" id="id_sottoitem_nota_288137">Teaching Interdisciplinary Programme in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058399</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20583992"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058399&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350909&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058399&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350909&caricaOffertaComune=true">SUSTAINABILITY STRATEGIES AND DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282470">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">050476</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20504762"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=050476&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350900&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=050476&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350900&caricaOffertaComune=true">TECHNOLOGIES FOR THE FASHION PRODUCT</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058404</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20584042"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058404&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350911&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058404&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350911&caricaOffertaComune=true">TEMPORARY AND INCLUSIVE URBAN SOLUTIONS</a><div class="cls_note" id="id_sottoitem_nota_282472">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">064968</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20649682"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064968&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359967&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=064968&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359967&caricaOffertaComune=true">THE COMMUNICATIVE POWER OF THE ARTIFACTS</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063843</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20638432"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063843&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350920&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063843&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=350920&caricaOffertaComune=true">VENTURE DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282481">Closed number subject</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[6.0<img alt="Innovative teaching" title="6.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">063749</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20637492"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063749&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359154&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063749&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183926&idRiga=359154&caricaOffertaComune=true">WEARABLE SYSTEMS LAB</a><div class="cls_note" id="id_sottoitem_nota_288139">Teaching Interdisciplinary Programme in Smart Wearable Technologies</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[1.0<img alt="Innovative teaching" title="1.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">053731</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20537311"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053731&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183927&idRiga=350925&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053731&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183927&idRiga=350925&caricaOffertaComune=true">INTERNSHIP - 1 SEMESTER</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">T</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">14.0</TD><TD nowrap="nowrap" width="5%" rowspan="2" class="ElementInfoCard2" style="text-align:center">14.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">053732</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">--</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20537322"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053732&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183927&idRiga=350926&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=053732&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183927&idRiga=350926&caricaOffertaComune=true">INTERNSHIP - 2 SEMESTER</a></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">T</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">14.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><TD colspan="12" class="ElementInfoCard2" style="text-align:left; border-bottom:none; "><div class="cls_nome_item">Insegnamenti Ambassador Smart Infrastructures e Green Technologies - Tabella B</div></TD><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">099929</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IIND-04/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/16</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20999291"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=099929&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350933&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=099929&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350933&caricaOffertaComune=true">ADDITIVE MANUFACTURING</a><div class="cls_note" id="id_sottoitem_nota_282494">Closed number subject<br/>Ambassador Smart infrastructures Tabella B</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" rowspan="14" class="ElementInfoCard2" style="text-align:center">8.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">054898</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20548981"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054898&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350932&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=054898&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350932&caricaOffertaComune=true">ADVANCED USER INTERFACES</a><div class="cls_note" id="id_sottoitem_nota_282493">Ambassador Smart infrastructures Tabella B</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058226</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IEGE-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/35</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20582261"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058226&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350927&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058226&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350927&caricaOffertaComune=true">CIRCULAR ECONOMY BUSINESS MODELS</a><div class="cls_note" id="id_sottoitem_nota_282488">Ambassador Green Technologies Table B</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058227</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IEGE-01/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-IND/35</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20582271"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058227&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350928&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058227&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350928&caricaOffertaComune=true">COLLABORATIVE INNOVATION FOR SUSTAINABILITY AND IMPACT</a><div class="cls_note" id="id_sottoitem_nota_282489">Ambassador Green Technologies Table B</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">062692</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IIND-03/B</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/15</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20626921"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=062692&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350941&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=062692&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350941&caricaOffertaComune=true">INTELLECTUAL PROPERTY AND PATENTS IN INNOVATION</a><div class="cls_note" id="id_sottoitem_nota_282502">Teaching Ambassador Green Technologies Table B</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058230</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IEGE-01/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-IND/35</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20582301"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058230&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350929&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058230&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183928&idRiga=350929&caricaOffertaComune=true">MANAGEMENT FOR SUSTAINABILITY AND IMPACT</a><div class="cls_note" id="id_sottoitem_nota_282490">Ambassador Green Technologies Table B</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">063862</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-08/D<BR>IINF-05/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/13<BR>ING-INF/05</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20638622"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063862&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350943&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=063862&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350943&caricaOffertaComune=true">COMPUTATIONAL VISUAL DESIGN. ALGORITHMIC, GENERATIVE AND AI-BASED DESIGN PRACTICES</a><div class="cls_note" id="id_sottoitem_nota_282504">Teaching Ambassador Smart infrastructures Table B</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058189</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D<BR>IINF-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13<BR>ING-INF/05</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20581892"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058189&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350935&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058189&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350935&caricaOffertaComune=true">DESIGN AND ROBOTICS</a><div class="cls_note" id="id_sottoitem_nota_282496">Closed number subject<br/>Ambassador Smart infrastructures Tabella B</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058229</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ECON-01/A<BR>IEGE-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-IND/35<BR>SECS-P/01</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20582292"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058229&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350931&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058229&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350931&caricaOffertaComune=true">DEVELOPMENT ECONOMICS</a><div class="cls_note" id="id_sottoitem_nota_282492">Closed number subject<br/>Ambassador Green Technologies Table B</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">8.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058198</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IIND-05/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-IND/17</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20581982"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058198&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350934&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058198&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350934&caricaOffertaComune=true">DIGITAL BUSINESS</a><div class="cls_note" id="id_sottoitem_nota_282495">Ambassador Smart infrastructures Tabella B</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[2.0<img alt="Innovative teaching" title="2.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">056874</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IINF-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-INF/01</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20568742"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056874&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350938&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=056874&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350938&caricaOffertaComune=true">FUNDAMENTALS OF ELECTRONICS FOR DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282499">Closed number subject<br/>Teaching Ambassador Smart Table B and Interdisciplinary Program in Smart Wearable Technologieses Tabella B</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">059535</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">IINF-03/A</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ING-INF/03</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20595352"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059535&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350940&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059535&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350940&caricaOffertaComune=true">INTERNET OF THINGS</a><div class="cls_note" id="id_sottoitem_nota_282501">Ambassador Smart infrastructures Tabella B</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">MI</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0<div style=" white-space: nowrap;">[1.0<img alt="Innovative teaching" title="1.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">058195</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">IINF-05/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ING-INF/05</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20581952"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058195&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350937&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058195&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350937&caricaOffertaComune=true">MULTIDISCIPLINARY PROJECT</a><div class="cls_note" id="id_sottoitem_nota_282498">Closed number subject<br/>Ambassador Smart infrastructures Tabella B</div></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0<div style=" white-space: nowrap;">[1.0<img alt="Innovative teaching" title="1.0 of 6.0 CFUs are provided with Innovative Teaching" src="/manifesti/images/innovativa.png" border="none" height="14px" style="margin-left:0.5em;cursor:help;vertical-align:middle;">]</div></TD></tr><tr><TD width="5%" class="ElementInfoCard1" style="text-align:center">058399</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">CEAR-08/D</TD><TD width="10%" class="ElementInfoCard1" style="text-align:center">ICAR/13</TD><TD width="5%" class="ElementInfoCard1 orario_td no_sezioni" style="text-align:center"><a name="20261025***20583992"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058399&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350930&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard1" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=058399&lang=EN&semestre=2&anno_corso=2&idItemOfferta=183928&idRiga=350930&caricaOffertaComune=true">SUSTAINABILITY STRATEGIES AND DESIGN</a><div class="cls_note" id="id_sottoitem_nota_282491">Closed number subject<br/>Ambassador Green Technologies Table B</div></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">M</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">2nd sem</TD><TD width="5%" class="ElementInfoCard1" style="text-align:center">6.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">052947</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025***20529471"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=052947&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183929&idRiga=350945&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=052947&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183929&idRiga=350945&caricaOffertaComune=true">FINAL EXAMINATION - 1 SEM</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">--</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">V</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">10.0</TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">10.0</TD></tr><TR><TD colspan=13 bgcolor= #e5eaef style="font-size:0.1em; height: 2px; padding:1px "></TD></TR><tr><TD width="5%" class="ElementInfoCard2" style="text-align:center">059369</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">CEAR-10/A<BR>IBIO-01/A</TD><TD width="10%" class="ElementInfoCard2" style="text-align:center">ICAR/17<BR>ING-INF/06</TD><TD width="5%" class="ElementInfoCard2 orario_td no_sezioni" style="text-align:center"><a name="20261025M_120593691"href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059369&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183657&idRiga=350243&caricaOffertaComune=true"><img style="vertical-align:middle" src="/manifesti/images/cart/cart_put.png" border="none" height="16"></a></TD><TD colspan="3" width="44%" class="ElementInfoCard2" style="text-align:left"><a href="/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2026&k_cf=19&k_corso_la=1025&k_indir=M_1&codDescr=059369&lang=EN&semestre=1&anno_corso=2&idItemOfferta=183657&idRiga=350243&caricaOffertaComune=true">DIGITAL FASHION EXPERIENCE DESIGN</a></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center"><img border="none" height="16" src="/manifesti/images/flag_collection/gb.png"></TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">BV</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">I</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">1st sem</TD><TD width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD><TD nowrap="nowrap" width="5%" class="ElementInfoCard2" style="text-align:center">6.0</TD></tr>   </TBODY></TABLE>		
+									
+			 
+			
+		
+			
+			
+  		     
+		  
+	
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dialog-form-sezioni-orario" title="Select the section of interest">
+
+
+	</div>
+		
+		
+		
+	</td>
+	
+	
+	
+	
+</tr></table>
+
+			
+
+                
+		
+		
+		
+		
+	
+    
+
+
+<table class="polifooter">
+	<tfoot class="tfoot-tablePage">
+    	<tr>
+    		<td >
+    			<div class="jaf-text-align-left">
+	   				 manifesti v. 3.15.0 / 3.15.0
+	   			</div>
+    		</td>
+    		<td>
+    			<div class="jaf-text-align-center">
+					Area Servizi ICT
+    			</div>
+    		</td>
+    		<td>
+    			<div class="jaf-text-align-right" id="div-tfoot-tablePage-centerBar">
+    				04/10/2026
+    			</div>
+    		</td>
+	   	</tr>
+    </tfoot>
+</table>
+		</div>
+	</body>
+</html>

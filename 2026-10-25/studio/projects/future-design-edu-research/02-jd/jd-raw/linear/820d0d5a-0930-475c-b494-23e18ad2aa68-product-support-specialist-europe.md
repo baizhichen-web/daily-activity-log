@@ -1,0 +1,91 @@
+---
+source: Linear (linear)
+ats: ashby
+tier: overseas-ats
+job_id: 820d0d5a-0930-475c-b494-23e18ad2aa68
+title: "Product Support Specialist, Europe"
+department: "Customer Experience"
+location: "Europe"
+url: https://jobs.ashbyhq.com/linear/820d0d5a-0930-475c-b494-23e18ad2aa68
+updated_at: 2026-09-10T15:44:21.164+00:00
+published_at: 2026-09-10T15:44:21.164+00:00
+fetched_at: 2026-09-30T12:54:35+00:00
+---
+
+# Product Support Specialist, Europe
+
+At Linear, we're building the product development system for teams and agents. AI is fundamentally changing how software gets built, and we’re shaping the tools this new era requires.
+
+Founded in 2019, Linear has become the platform of choice for more than 40,000 companies (including OpenAI, Coinbase, and Ramp) to plan, build, and ship their products. Today, our team is distributed across North America, Europe, and Australia, and we’re continuing to grow internationally. What unites us is relentless focus, fast execution, and a deep care for software craftsmanship.
+
+Over the past years, Linear has experienced incredible organic growth and has become an instrumental tool for many of the world’s best product teams. We believe customer support should always feel like an extension of that experience. As a Product Support Specialist at Linear, you’ll contribute to the future of our product by surfacing customer feedback and insights, contributing to our technical documentation, and engaging a technical customer community via social channels.
+
+Location & work mode
+
+Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in Europe. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.
+
+What you’ll do
+
+Support customers in end-to-end engagement, including onboarding, account setup, debugging issues, feature and integration discovery
+
+Investigate and resolve inbound customer issues reported through all communication channels, including email, Slack, Twitter, and Reddit
+
+Partner with our engineering team to document and reproduce bugs
+
+Surface trends and insights from customer feedback to the team at large to inform product choices
+
+Lead select strategic projects to improve the support experience, internal knowledge sharing, and product operations
+
+Requirements
+
+Currently based in Europe.
+
+Passion about technology, quality, and Linear’s mission
+
+Excellent communication and customer service skills and experience working with a technical or engineering user base. Ability to adapt your communication approach to non-technical users.
+
+Experience troubleshooting technical issues, including APIs and integration setups. Ability to reproduce bugs with Linear and our integrations in various environments (different browsers, Windows, Mac, Mobile).
+
+Familiarity with SQL, Javascript, APIs, and GitHub is a plus. If you don’t have direct experience in these areas, curiosity to learn more is desirable as well. Please note that this is not a product engineering role.
+
+What we offer
+
+We're a small, focused team that cares deeply about the quality of our work and the people we do it with. Here's what you can expect:
+
+Competitive salary and equity
+
+Employee-friendly equity terms including extended exercise windows
+
+Daily meal and coffee stipend on every workday
+
+Paid co-working space or desk
+
+Health coverage (based on country requirements)
+
+5 weeks paid vacation, plus local statutory holidays
+
+4 months paid parental leave
+
+Paid month off after 4 years & every 2 years thereafter
+
+Regular team events and off-sites
+
+Remote-first with no required commute
+
+Learn how we think and work
+
+A story about our mission: Read Me
+
+Building our teams: Why and how we do work trials at Linear
+
+How we work: Designing remote work at Linear
+
+How Linear uses Linear: How our Customer Experience team works in Linear
+
+A video series: Conversations on Quality
+
+Our recent Tender Offer
+
+Linear is an equal opportunity employer. We do not discriminate based on race, color, religion, gender identity or expression, sexual orientation, national origin, age, disability, veteran status, or any other protected characteristic under applicable law.
+
+A note on recruitment fraud: all official Linear hiring communication comes from an @linear.app email address, and all open roles are listed at linear.app/careers. We never ask candidates for payment or financial information. Suspicious messages can be reported to security@linear.app.

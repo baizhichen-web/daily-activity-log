@@ -1,0 +1,32 @@
+RCA 原始件登记（自动生成，可复核）
+生成会话：线 C 培养方案会话　生成日期：2026-10-04
+抓取日期：2026-10-04（Wayback 快照另注快照时间戳）
+生成规则：URL 取自 HTML 的 canonical/og:url，或同目录页面里指向该 PDF 的 href；文件名含 wayback-YYYY-MM-DD 的从文件名取时间戳。
+**抽不到 URL 的一律标「URL 待补」，不用推测填**——需由采集会话补全。
+
+| 文件 | 类型 | 原始 URL / 快照时间戳 | 字节 |
+|---|---|---|---|
+| `RCA-培养方案逐门提取.md` | 原件 | **URL 待补** | 14119 |
+| `rca-artificial-intelligence-digital-art-ma-mfa.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/artificial-intelligence-digital-art-ma-mfa/ | 337154 |
+| `rca-design-futures-ma.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/design-futures-ma/ | 390310 |
+| `rca-design-mphil-phd.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/design-mphil-phd/ | 361524 |
+| `rca-design-products-ma-mdes.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/design-products-ma-mdes/ | 444873 |
+| `rca-healthcare-design-mres.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/healthcare-design-mres/ | 310746 |
+| `rca-information-experience-design-ma.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/information-experience-design-ma/ | 406231 |
+| `rca-innovation-design-engineering-ma-msc.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/innovation-design-engineering-ma-msc/ | 398978 |
+| `rca-intelligent-mobility-ma-mdes.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/intelligent-mobility-ma-mdes/ | 410840 |
+| `rca-mres-rca.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/mres-rca/ | 364730 |
+| `rca-programme-finder-taught-masters.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/ | 241716 |
+| `rca-programme-finder.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/ | 241716 |
+| `rca-school-communication-design.html` | 原件 | https://www.rca.ac.uk/study/schools/school-of-communication-and-design/ | 439661 |
+| `rca-school-design.html` | 原件 | https://www.rca.ac.uk/study/schools/school-of-communication-and-design/ | 439683 |
+| `rca-service-design-ma.html` | 原件 | https://www.rca.ac.uk/study/programme-finder/service-design-ma/ | 411665 |
+| `rca-spec-2025-26_Programme_Specification__MA__IDE.pdf` | 原件 | **URL 待补** | 2858430 |
+| `rca-spec-2026-27-rca-ma-design-products-programme-specification.pdf` | 原件 | **URL 待补** | 269141 |
+| `rca-spec-2026-27-rca-ma-information-experience-design-programme-specification.pdf` | 原件 | **URL 待补** | 286740 |
+| `rca-spec-2026-27-rca-ma-intelligent-mobility-programme-specification.pdf` | 原件 | **URL 待补** | 289962 |
+| `rca-spec-2026-27-rca-ma-service-design-programme-specification.pdf` | 原件 | **URL 待补** | 235950 |
+| `rca-spec-2026-27-rca-mdes-design-futures-programme-specification.pdf` | 原件 | **URL 待补** | 501532 |
+| `rca-spec-2026-27-rca-mres-programme-specification-full-time-part-time.pdf` | 原件 | **URL 待补** | 297132 |
+
+统计：原件 22 件，自动补到 URL 的 14 件。

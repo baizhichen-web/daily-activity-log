@@ -1,0 +1,312 @@
+{
+ "BC-01": {
+  "src_job_id": "3813977e-5940-456d-bf5a-16efcdc3a6dc",
+  "title": "Product Designer, Payments",
+  "family": "产品设计/交互",
+  "tier": "overseas-ats",
+  "abilities": [
+   {
+    "code": "B1",
+    "level": "要求"
+   },
+   {
+    "code": "D1",
+    "level": "要求"
+   },
+   {
+    "code": "C1",
+    "level": "要求"
+   },
+   {
+    "code": "E1",
+    "level": "要求"
+   },
+   {
+    "code": "A2",
+    "level": "要求"
+   },
+   {
+    "code": "G1",
+    "level": "要求"
+   },
+   {
+    "code": "E2",
+    "level": "要求"
+   }
+  ]
+ },
+ "BC-02": {
+  "src_job_id": "4609736005",
+  "title": "AI Product Manager (Coding/Multimodal)",
+  "family": "产品经理",
+  "tier": "overseas-ats",
+  "abilities": [
+   {
+    "code": "E2",
+    "level": "要求"
+   },
+   {
+    "code": "D1",
+    "level": "要求"
+   },
+   {
+    "code": "A2",
+    "level": "要求"
+   },
+   {
+    "code": "B3",
+    "level": "要求"
+   }
+  ]
+ },
+ "BC-03": {
+  "src_job_id": "8015848002",
+  "title": "AI Engineer, FDE (Forward Deployed Engineer)",
+  "family": "前线部署",
+  "tier": "overseas-ats",
+  "abilities": [
+   {
+    "code": "A2",
+    "level": "要求"
+   },
+   {
+    "code": "D3",
+    "level": "要求"
+   },
+   {
+    "code": "A3",
+    "level": "要求"
+   },
+   {
+    "code": "E3",
+    "level": "要求"
+   },
+   {
+    "code": "E2",
+    "level": "要求"
+   },
+   {
+    "code": "C2",
+    "level": "要求"
+   },
+   {
+    "code": "G2",
+    "level": "要求"
+   }
+  ]
+ },
+ "BC-04": {
+  "src_job_id": "1c516e9f-c97d-4a40-8529-9871dac615a5",
+  "title": "Research Engineer / Research Scientist- Personal AGI (Post Training)",
+  "family": "研究工程",
+  "tier": "overseas-ats",
+  "abilities": [
+   {
+    "code": "D1",
+    "level": "要求"
+   },
+   {
+    "code": "B2",
+    "level": "要求"
+   },
+   {
+    "code": "E2",
+    "level": "要求"
+   }
+  ]
+ },
+ "BC-05": {
+  "src_job_id": "6cf91ff5-a811-435c-bf93-f3d958896599",
+  "title": "RTL Design Engineer – Interconnect & Network Datapath",
+  "family": "设计工程",
+  "tier": "overseas-ats",
+  "abilities": [
+   {
+    "code": "D1",
+    "level": "要求"
+   },
+   {
+    "code": "E2",
+    "level": "要求"
+   }
+  ]
+ },
+ "BC-06": {
+  "src_job_id": "36e30720-0a32-4b7b-8172-e31ad0a20cdc",
+  "title": "Hardware Platform Security Architect",
+  "family": "硬件/机构设计",
+  "tier": "overseas-ats",
+  "abilities": [
+   {
+    "code": "F2",
+    "level": "要求"
+   },
+   {
+    "code": "E2",
+    "level": "要求"
+   }
+  ]
+ },
+ "BC-07": {
+  "src_job_id": "20261003-01",
+  "title": "AI 产品实习生",
+  "family": "产品经理",
+  "tier": "manual-sme",
+  "abilities": [
+   {
+    "code": "A2",
+    "level": "要求",
+    "evidence": "协助收集业务部门使用 AI 平台的需求、反馈和问题，整理需求清单并跟进处理进度"
+   },
+   {
+    "code": "D3",
+    "level": "要求",
+    "evidence": "维护用户答疑、常见问题及操作指引；协助组织 AI 培训、实操活动及运营推广（职责 2 与 5 两处命中）"
+   },
+   {
+    "code": "B3",
+    "level": "要求",
+    "evidence": "参与平台功能测试、问题反馈和效果验证，协助整理 Bug、异常信息及优化建议"
+   },
+   {
+    "code": "C2",
+    "level": "加分",
+    "evidence": "有 ChatGPT／Claude／Workbuddy／豆包工作台/Coze／Dify 等深度使用经验者优先；职责 4 参与知识库、智能体配置"
+   },
+   {
+    "code": "G2",
+    "level": "要求",
+    "evidence": "对人工智能、数字化工具感兴趣，愿意学习并实践 AI 应用"
+   }
+  ]
+ },
+ "BC-08": {
+  "src_job_id": "20261003-08",
+  "title": "产品经理实习生",
+  "family": "产品经理",
+  "tier": "manual-cn",
+  "abilities": [
+   {
+    "code": "A2",
+    "level": "要求",
+    "evidence": "需求调研与分析，收集和对接客户反馈；用户验收与体验评估"
+   },
+   {
+    "code": "B3",
+    "level": "要求",
+    "evidence": "产品数据监控与分析，输出产品优化建议"
+   },
+   {
+    "code": "D1",
+    "level": "要求",
+    "evidence": "跟进产品开发进度，推动功能上线"
+   },
+   {
+    "code": "E2",
+    "level": "要求",
+    "evidence": "协调设计、研发、测试等团队"
+   },
+   {
+    "code": "H2",
+    "level": "要求",
+    "evidence": "体验评估（轻度）"
+   }
+  ]
+ },
+ "BC-09": {
+  "src_job_id": "20261003-11",
+  "title": "AI产品经理",
+  "family": "产品经理",
+  "tier": "manual-ai",
+  "abilities": [
+   {
+    "code": "A1",
+    "level": "要求",
+    "evidence": "从用户数据、真实对话、用户访谈和产品体验中，找到最值得解决的问题，并判断产品优先级"
+   },
+   {
+    "code": "A2",
+    "level": "要求",
+    "evidence": "愿意持续看真实用户、真实 Session 和用户反馈"
+   },
+   {
+    "code": "B2",
+    "level": "要求",
+    "evidence": "独立完成 retention、cohort、funnel、segmentation、session 等分析；将产品目标转化为清晰的需求、成功指标、验收标准"
+   },
+   {
+    "code": "B3",
+    "level": "要求",
+    "evidence": "Product Judgment：区分表面现象、真实需求和真正的产品机会"
+   },
+   {
+    "code": "C1",
+    "level": "要求",
+    "evidence": "深度使用 AI 工具，理解 LLM、Agent、Memory、Tool Calling、Latency 等基本机制（机制级理解写进要求）"
+   },
+   {
+    "code": "C2",
+    "level": "要求",
+    "evidence": "通过 Prototype、用户测试、A/B Test 等方式快速验证产品假设"
+   },
+   {
+    "code": "D1",
+    "level": "要求",
+    "evidence": "独立 Owner 核心产品方向，从问题定义、方案探索、验证、上线到数据复盘形成完整闭环"
+   },
+   {
+    "code": "E2",
+    "level": "要求",
+    "evidence": "较强的产品定义和跨团队推动能力"
+   },
+   {
+    "code": "G1",
+    "level": "要求",
+    "evidence": "习惯通过证据验证而不是依赖直觉做产品"
+   }
+  ]
+ },
+ "BC-10": {
+  "src_job_id": "20261003-14",
+  "title": "整机产品研发负责人",
+  "family": "其他",
+  "tier": "manual-ai",
+  "abilities": [
+   {
+    "code": "A1",
+    "level": "要求",
+    "evidence": "将客户相对模糊的产品设想梳理为功能、硬件、软件、接口、通信、结构、测试及交付要求（教科书级A1）；能将零散的客户表达整理为结构化技术需求"
+   },
+   {
+    "code": "A2",
+    "level": "要求",
+    "evidence": "能够面向客户进行需求访谈、技术交流和方案澄清"
+   },
+   {
+    "code": "A3",
+    "level": "要求",
+    "evidence": "理解客户从产品设想、研发验证、样机开发到量产导入的需求（硬件全流程）"
+   },
+   {
+    "code": "C1",
+    "level": "要求",
+    "evidence": "对项目进行初步技术评估，包括可行性、技术模块、人员配置、开发周期及主要风险"
+   },
+   {
+    "code": "C3",
+    "level": "要求",
+    "evidence": "参与项目初评和报价智能体建设，沉淀项目判断标准、模板及知识库（把组织判断沉淀成智能体）"
+   },
+   {
+    "code": "D1",
+    "level": "要求",
+    "evidence": "跟进需求确认、方案报价、研发立项、样机测试及交付等关键节点"
+   },
+   {
+    "code": "E2",
+    "level": "要求",
+    "evidence": "协调客户、业务、硬件、软件、结构、供应链及生产团队"
+   }
+  ]
+ }
+}

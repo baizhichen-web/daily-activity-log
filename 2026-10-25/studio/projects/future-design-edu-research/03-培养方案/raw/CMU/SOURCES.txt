@@ -1,0 +1,128 @@
+SOURCES.txt — CMU（Carnegie Mellon University）
+采集会话：03-培养方案 线 C（国外综合院校）
+抓取日期（全部）：2026-10-04
+抓取工具：run_code 内 Node fetch（https 直连）；Wayback 快照用 curl.exe -x http://127.0.0.1:7897
+
+== 当前版（2026-10-04 抓取） ==
+cmu-design-mdes-design-interactions.html
+  URL: https://design.cmu.edu/about-our-programs/masters-degrees/master-design-design-interactions
+  类型: HTML 200；MDes in Design for Interactions，逐学期课程表（19 行含 units）
+  抓取日期: 2026-10-04
+
+cmu-design-master-arts-design.html
+  URL: https://design.cmu.edu/about-our-programs/masters-degrees/master-arts-design
+  类型: HTML 200；MA in Design，逐学期课程表 + MPS 说明
+  抓取日期: 2026-10-04
+
+cmu-design-masters-degrees.html
+  URL: https://design.cmu.edu/about-our-programs/masters-degrees
+  类型: HTML 200；School of Design 硕士总览
+  抓取日期: 2026-10-04
+
+cmu-design-masters-faqs.html
+  URL: https://design.cmu.edu/faqs-program/masters-programs-faqs
+  类型: HTML 200；硕士项目 FAQ
+  抓取日期: 2026-10-04
+
+cmu-hcii-mhci.html
+  URL: https://www.hcii.cmu.edu/academics/mhci
+  类型: HTML 200；MHCI 项目页
+  抓取日期: 2026-10-04
+
+cmu-hcii-mhci-curriculum.html
+  URL: https://www.hcii.cmu.edu/academics/mhci/curriculum
+  类型: HTML 200；MHCI 7 门核心课逐门清单
+  抓取日期: 2026-10-04
+
+cmu-hcii-mhci-electives.html
+  URL: https://www.hcii.cmu.edu/academics/mhci/electives
+  类型: HTML 200；MHCI 选修规则（4 门）
+  抓取日期: 2026-10-04
+
+cmu-hcii-mhci-sample-study-plans.html
+  URL: https://www.hcii.cmu.edu/academics/mhci/sample-study-plans
+  类型: HTML 200；MHCI 三学期排课样例
+  抓取日期: 2026-10-04
+
+cmu-hcii-mhci-admissions.html
+  URL: https://www.hcii.cmu.edu/academics/mhci/admissions
+  类型: HTML 200；MHCI 招生页
+  抓取日期: 2026-10-04
+
+cmu-hcii-mhci-capstone.html
+  URL: https://www.hcii.cmu.edu/academics/mhci/capstone-project
+  类型: HTML 200；Capstone 项目页
+  抓取日期: 2026-10-04
+
+cmu-hcii-masters-programs.html
+  URL: https://www.hcii.cmu.edu/academics/masters-programs
+  类型: HTML 200；HCII 全部硕士项目总览
+  抓取日期: 2026-10-04
+
+cmu-hcii-mhci-advanced-study.html
+  URL: https://www.hcii.cmu.edu/academics/mhci-advanced-study
+  类型: HTML 200；MHCI-Advanced Study 项目页
+  抓取日期: 2026-10-04
+
+cmu-hcii-msle.html
+  URL: https://www.hcii.cmu.edu/academics/msle
+  类型: HTML 200；MSLE 项目页
+  抓取日期: 2026-10-04
+
+cmu-hcii-home.html
+  URL: https://www.hcii.cmu.edu/
+  类型: HTML 200；HCII 首页
+  抓取日期: 2026-10-04
+
+== 失败/不存在路径（已尝试，勿重试） ==
+- https://design.cmu.edu/graduate/programs → 404（2026-10-04）
+- https://design.cmu.edu/graduate/masters → 404
+- https://design.cmu.edu/academics/mdes → 404
+- https://www.hcii.cmu.edu/academics/mdes → 404（HCII 无 MDes 项目页）
+- https://www.hcii.cmu.edu/academics/hci-courses → 404
+
+== 历史版（Wayback Machine） ==
+wayback-2019-06-19-cmu-design-home.html
+  原始 URL: https://design.cmu.edu/
+  Wayback 完整 URL: https://web.archive.org/web/20190619163100id_/https://design.cmu.edu/
+  快照日期: 2019-06-19（CDX 时间戳 20190619163100）
+  文件类型: HTML；School of Design 2019 首页（导航含 Programs & Degrees / Master's Degrees）
+  抓取日期: 2026-10-04
+
+wayback-2019-06-19-cmu-design-programs-grad.html
+  原始 URL: https://design.cmu.edu/programs/grad
+  Wayback 完整 URL: https://web.archive.org/web/20190619163100id_/https://design.cmu.edu/programs/grad
+  快照日期: 2019-06-19（CDX 时间戳 20190619163100）
+  文件类型: HTML；2019 年设计学院「Graduate Program」页，含 MA/MPS/MDes/PhD 四路径原文
+  抓取日期: 2026-10-04
+
+wayback-2019-06-19-cmu-design-programs-grad.txt
+  原始 URL: 同上的纯文本副产品
+  Wayback 完整 URL: https://web.archive.org/web/20190619163100id_/同上的纯文本副产品
+  快照日期: 2019-06-19（CDX 时间戳 20190619163100）
+  文件类型: TXT
+  抓取日期: 2026-10-04
+
+wayback-2019-06-20-cmu-hcii-mhci.html
+  原始 URL: https://hcii.cmu.edu/academics/mhci
+  Wayback 完整 URL: https://web.archive.org/web/20190620135700id_/https://hcii.cmu.edu/academics/mhci
+  快照日期: 2019-06-20（CDX 时间戳 20190620135700）
+  文件类型: HTML；2019 年 MHCI 项目页（含「700+ 校友」原文与当时 HCII 硕士项目清单）
+  抓取日期: 2026-10-04
+
+wayback-2019-06-20-cmu-hcii-mhci.txt
+  原始 URL: 同上的纯文本副产品
+  Wayback 完整 URL: https://web.archive.org/web/20190620135700id_/同上的纯文本副产品
+  快照日期: 2019-06-20（CDX 时间戳 20190620135700）
+  文件类型: TXT
+  抓取日期: 2026-10-04
+
+== 额外尝试（未取到） ==
+- design.cmu.edu 域名级 CDX（matchType=domain，collapse=urlkey，limit=150，from=2018&to=2020）：只有 150 条被 limit 截断的结果，未见 /programs/grad 之外的独立 MDes 课程页
+- 2019 年 design.cmu.edu/programs-degrees/masters-degrees 与 hcii.cmu.edu/academics/mhci/core-curriculum：CDX/available 均无快照（archived_snapshots 为空）
+- CMU MDes 现路径（design.cmu.edu/about-our-programs/masters-degrees/master-design-design-interactions）最早快照为 2024-04-14，**2018-2020 无此路径快照**
+
+== 落盘验收（grep） ==
+- cmu-design-mdes-design-interactions.html：`units` 命中 19 处（逐学期课程行）→ 非空壳
+- cmu-hcii-mhci-curriculum.html：`05-6` 课程号命中 7 门核心课 → 非空壳
+- wayback-2019-06-19-cmu-design-programs-grad.html：`MDes|MPS|Master` 命中多处 → 非空壳

@@ -1,0 +1,27 @@
+湖南大学设计艺术学院 — 原件登记（SOURCES）
+抓取日期：2026-10-04（全部）
+
+[当前版 — 学院官网「教学 → 学位与专业」]
+1. hnu-设计学140300学术学位硕士研究生培养方案-2026-09-23.html | text/html | URL: https://design.hnu.edu.cn/info/1010/9336.htm | 页面发布日期 2026-09-23 | 含完整课程表
+2. hnu-设计135700专业学位硕士研究生培养方案-2026-09-23.html | text/html | URL: https://design.hnu.edu.cn/info/1010/9337.htm | 2026-09-23 | 含完整课程表
+3. hnu-设计学学术学位博士研究生培养方案-2026-09-23.html | text/html | URL: https://design.hnu.edu.cn/info/1010/9335.htm | 2026-09-23 | 未在本批提取展开
+4. hnu-设计专业学位博士研究生培养方案-2026-09-23.html | text/html | URL: https://design.hnu.edu.cn/info/1010/9338.htm | 2026-09-23 | 未在本批提取展开
+5. hnu-学位与专业-栏目页-2026-10-04.html | text/html | URL: https://design.hnu.edu.cn/jx/xwyzy.htm | 栏目页，列出上述 4 份 + 本科 2 份
+6. hnu-研究生课程-栏目页第1页-2026-10-04.html | text/html | URL: https://design.hnu.edu.cn/jx/yjskc.htm | 研究生课程栏目第 1 页（课程介绍页，非培养方案）
+
+[历史版 — Wayback 快照]
+7. wayback-20190121-hnu-学位与专业-2520.html | text/html | 快照: http://web.archive.org/web/20190121044450/http://design.hnu.edu.cn:80/info/1010/2520.htm | 快照日期 2019-01-21 | 页面标注 2013-02-25 | 设计学硕士(学术型)，含 29 行课程表
+8. wayback-20210420-hnu-学位与专业-2517.html | text/html | 快照: http://web.archive.org/web/20210420041132/http://design.hnu.edu.cn/info/1010/2517.htm | 快照日期 2021-04-20 | 页面标注 2010-09-11 | 艺术硕士MFA，含 31 行课程表
+9. wayback-20210420-hnu-学位与专业-2523.html | text/html | 快照: http://web.archive.org/web/20210420043723/http://design.hnu.edu.cn/info/1010/2523.htm | 快照日期 2021-04-20 | 页面标注 2013-02-25 | 设计学博士，含 4 行课程表
+10. wayback-20181023-hnu-学位与专业-2524.html | text/html | 快照: http://web.archive.org/web/20181023100748/http://design.hnu.edu.cn:80/info/1010/2524.htm | 快照日期 2018-10-23 | 页面标注 2012-03-28 | 工业设计本科(工学)，无课程表
+11. wayback-20200920-hnu-研究生课程-栏目页.html | text/html | 快照: http://web.archive.org/web/20200920114121/http://design.hnu.edu.cn/jx/yjskc.htm | 快照日期 2020-09-20 | 课程介绍栏目
+12. wayback-20200920-hnu-学位与专业-栏目页.html | text/html | 快照: http://web.archive.org/web/20200920120518/http://design.hnu.edu.cn/jx/xwyzy.htm | 快照日期 2020-09-20 | 空壳（关键词命中 课程=2）
+
+[Wayback CDX 查询记录]
+- url=design.hnu.edu.cn&matchType=domain&limit=150 → 有数据；域名首快照 20140618204709。
+- url=design.hnu.edu.cn/info/1010/*&limit=300 → 16 个唯一 URL；其中 2517/2520/2523/2524 为 2018-2021 快照，7686-7689/8775/9335-9338 为 2024-2026。
+- url=design.hnu.edu.cn/jx/xwyzy.htm&limit=300 → 最早 20200920120518。
+- url=gra.hnu.edu.cn&matchType=domain&limit=3000 → 3000 条（2015-2026），路径集中于 /info/1050/、/info/1075/ 等，未筛出「培养方案」标题页。
+
+[未取到的]
+- 2014-2017 年的培养方案页：CDX 中未见 /info/1010/ 更早条目。

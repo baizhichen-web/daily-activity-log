@@ -1,0 +1,42 @@
+{
+  "$comment": "EN 内容允许出现的 CJK 白名单（工程票 #12）。判定=字符集覆盖+子串在场双条件：含 CJK 的值必须①每个 CJK 字符都落在该文件条目的字符并集内 ②值中至少出现一条白名单子串。新增中文进 EN 内容时必须在此登记并写 why；file 相对 content/。",
+  "entries": [
+    { "file": "resume.en.yml", "s": "　", "why": "全角空格：获奖条目里日期与奖项名之间的对齐分隔（与中文版同版式）" },
+
+    { "file": "writing/geren-zizhuan.yml", "s": "《忏悔录》", "why": "书名原文（卢梭 Confessions，英文行文保留中文书名）" },
+    { "file": "writing/geren-zizhuan.yml", "s": "《深泽直人》", "why": "书名原文" },
+    { "file": "writing/geren-zizhuan.yml", "s": "《设计的生态学》", "why": "书名原文" },
+    { "file": "writing/geren-zizhuan.yml", "s": "北京师范大学未来设计学院", "why": "校名原文（正文叙事里的在读单位）" },
+    { "file": "writing/geren-zizhuan.yml", "s": "《好运设计》", "why": "书名原文（史铁生篇名）" },
+
+    { "file": "writing/kaishi-xiezuo.yml", "s": "【", "why": "引用编号括号（文内注释用【2】样式，与中文版一致）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "】", "why": "引用编号括号右半" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《三体》", "why": "书名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《基地》", "why": "书名原文（阿西莫夫）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《呼吸》", "why": "篇名原文（特德·姜 Exhalation）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《纳瓦尔宝典》", "why": "书名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《一千零一夜》", "why": "书名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《阿甘正传》", "why": "影名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《宝绘堂记》", "why": "篇名原文（苏轼）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《庄子·外篇·天地》", "why": "典籍篇目原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《越绝书·内经·九术》", "why": "典籍篇目原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《越绝书·内经九术》", "why": "典籍篇目原文（同前条，此处在文中不带间隔点）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《道德经》", "why": "典籍名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《周易·坤卦》", "why": "典籍篇目原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《贞观政要·卷一·君道》", "why": "典籍篇目原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《资治通鉴·唐纪八》", "why": "典籍篇目原文（出处括注「亦见」）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "（亦见《资治通鉴·唐纪八》）", "why": "出处括注整段（全角括号随文放行）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "亦见", "why": "出处括注连接用语" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《中庸》", "why": "典籍名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《礼记》", "why": "典籍名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《史记》", "why": "典籍名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《论语集注》", "why": "典籍名原文（朱熹集注）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《仲尼弟子列传》", "why": "典籍篇目原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《探索充满未知的洞》", "why": "作品名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "《张小珺商业访谈录》", "why": "节目名原文" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "一席少年", "why": "演讲节目名原文（图注）" },
+    { "file": "writing/kaishi-xiezuo.yml", "s": "张司机在路上", "why": "小红书创作者账号名原文（图注）" },
+
+    { "file": "writing/shunde-lvxing.yml", "s": "圆周旅迹", "why": "应用名原文（票 #1 有意保留，无官方英文名）" }
+  ]
+}

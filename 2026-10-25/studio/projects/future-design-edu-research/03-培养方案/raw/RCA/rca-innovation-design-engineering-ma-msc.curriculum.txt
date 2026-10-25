@@ -1,0 +1,41 @@
+id="curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+More details on what you'll study.
+Find out what you'll cover in this programme.
+What you'll cover
+Programme stucture
+The two-year IDE programme consists of three phases, each characterising the overall nature of the content and learning at each phase.
+Phase 1: Foundations
+(Terms 1 & 2) is concerned with students gaining confidence and exploring the IDE transdisciplinary landscape and toolbox building.
+Phase 2: Consolidation
+(Terms 3 & 4) is during the summer and the transition period with students working independently, developing their individual and professional agency.
+Phase 3: Mastery
+(Terms 5 & 6) is the final period for students to develop significant agency in their own areas of interest and emerging professional pathways, creating a substantial springboard into next steps for ventures, research and careers – and lasting impact.
+Phase 1: Terms 1 & 2
+Phase 1 is made up of a series of units:
+IDE Fundamentals
+;
+Transdisciplinary
+Practices
+;
+Cyber Physical Systems
+;
+Regenerative Materials
+;
+Structures & Aesthetics
+; and
+Impact
+.
+Each of these units focuses on a particular aspect of innovation, design and engineering and involves practice, as well as research activities within the development of products, services, systems, campaigns and experiences, and in exploring broader societal challenges.
+In each unit, you will undertake a design-led project to a brief - sometimes set and sometimes of your own devising. Emphasis is placed on generating imaginative ideas, development and validation through testing prototypes, simulation and gaining feedback from expert stakeholders such as potential end users, designers, engineers and entrepreneurs.
+Phase 2: Terms 3 & 4
+Phase 2 comprises two units,
+Sustainable Systems
+and
+Agency & Implementation
+, and is about professional consolidation. During phase 2 you will develop your individual and professional agency, identity and pathways through engagement with organisations, your own ventures or within research fields. Phase 2 culminates in you defining and planning your team and individual projects for Phase 3.
+Phase 3: Terms 5 & 6
+Phase 3 includes a series of units to strengthen your professional agency, leadership, knowledge and skills. Phase 3 includes a team-based project, individual projects and an elective module. The elective modules enable you to develop specialisms in particular areas of interest to you. The thematic areas you choose to explore in your team and individual projects can be diverse and are supported by a broad range of expert tutors.
+Learning environment
+You will also learn from your fellow students, and they will learn from you. Each year a global cohort of students from diverse backgrounds, careers and life experiences joins our community. Peer-to-peer learning is a vital part of the RCA experience and this range of perspectives enriches students, igniting new ways of thinking and sparking innovation.
+Outside of campus experience, you will have opportunities to explore London and immerse yourself in Europe's creative and cultural capital.
+<div class="tabs__panel tabs__panel--hidden js-tab-panel"

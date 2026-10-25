@@ -1,0 +1,608 @@
+
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="http://xxgk.cafa.edu.cn:80/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>央美官网_信息公开_首页</title>
+<link href="ref/css/zymyIndex.css" rel="stylesheet" type="text/css" />
+
+<link href="ref/css/zymyhome.css" rel="stylesheet" type="text/css" />
+<link href="ref/css/zymyhome1.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="ref/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="ref/js/zymyHomeTongJiTu.js"></script>
+<script type="text/javascript" src="ref/js/echarts.js"></script>
+
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript">
+var buMenName = ["学校办"]
+var buMenQuantity = [2]
+var lanMuName = ["基本信息","招生考试信息","财务、资产及收费信息","人事师资信息","教学质量信息","学生管理服务信息","学风建设信息","学位、学科信息","对外交流与合作信息","其他"]
+var lanMuQuantity = [2,0,0,0,0,0,0,0,0,0]
+var BuMenYeatTongJi = [{"name":"学校办","quantity":2,"month01":null,"month02":null,"month03":null,"month04":null,"month05":null,"month06":null,"month07":null,"month08":null,"month09":null,"month10":null,"month11":null,"month12":null}]
+</script>
+
+</head>
+<body>
+
+
+
+ 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="http://xxgk.cafa.edu.cn:80/">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta name="description" content="衡阳市县一体化公共服务平台">
+	<meta name="author" content="ESRI China @ 2015">
+    <title>央美官网_信息公开_首页</title>
+    	<!-- Bootstrap core CSS -->
+	<link href="ref/zymscss/bootstrap.css" rel="stylesheet">
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="ref/zymscss/font-awesome.css">
+	<!-- animate CSS -->
+	<link href="ref/zymscss/animate.css" rel="stylesheet">
+	<!-- mCustomScrollbar CSS -->
+	<link rel="stylesheet" href="ref/zymscss/jquery.css">
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome-ie7.css">
+	<![endif]-->
+	<!-- Custom styles for this template -->
+	<link href="ref/zymscss/base.css" rel="stylesheet">
+	<link href="ref/zymscss/componts.css" rel="stylesheet">
+	<link href="ref/zymscss/home.css" rel="stylesheet">
+	<link href="ref/css/zymyIndex.css" rel="stylesheet" type="text/css" />
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="ref/js/info.js"></script>
+	<script type="text/javascript" src="ref/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="ref/js/script.js"></script>
+<!-- <script src="js/main.js" data-requiremodule="application/main" data-requirecontext="_" async charset="utf-8" type="text/javascript"></script>
+<script src="js/ajaxUtil.js" data-requiremodule="utils/ajaxUtil" data-requirecontext="_" async charset="utf-8" type="text/javascript"></script>
+<script src="js/common.js" data-requiremodule="utils/common" data-requirecontext="_" async charset="utf-8" type="text/javascript"></script> -->
+<script type="text/javascript">
+   
+	$(document).ready(function(){
+		
+		$(".search").click(function(){
+			if($(".keys").val() !== ''){
+			   var s_value = $(".keys").val();
+			   var rge = /^[\u4E00-\u9FA5]+$/;
+			   if (rge.test(s_value)){
+				   $(document.forms[0]).attr("action","info/keyword.search");
+					 $(document.forms[0]).submit();
+			   }
+			}
+		});
+	});
+   
+    
+</script>
+  </head>
+<body>
+  	<nav class="navbar navbar-blue navbar-fixed-top">
+		<div class="container">
+			<div class="logo_tagline">
+				<div class="row-fluid">
+					<div class="col-md-12 col-xs-12 col-sm-12">
+						<div class="logo">
+							<a href="info/home">
+								<img  src="ref/images/logo1.png">
+								<span class="navbar-brand-text">信息公开网</span>
+							</a>
+						</div>
+						<div class="tagline">
+						<div class="login">
+						  <form action="" method="post" style="margin-right: 10px;">
+							 <input name="name" type="text" placeholder="输入关键词" onfocus="this.placeholder=''" onblur="this.placeholder='输入关键词'" autocomplete="off"  class="keys" />
+							 <input value="搜索" class="search"/>
+						  </form>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-dropdown">
+				<li class="dropdown">
+					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                      统计
+						<!-- <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> -->
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<div class="media" data-href="index.html">
+								<div class="media-left media-middle" style="display: block;">
+									<a href="info/1582.deptStats" style="display: block;">部门统计</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="media" data-href="index.html">
+								<div class="media-left media-middle" style="display: block;">
+									<a href="info/1582.columnStats" style="display: block;">栏目统计</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="used" style="display: inline-block;margin-left:110px;margin-top: 30px;font-size: 15px;letter-spacing: 0.1em;">
+			    <a href="http://www.cafa.com.cn/2014xxgk/" target="_blank" style="color: #ff5a69;">
+			                  旧版网站入口
+			    </a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="info/home">首页</a>
+                </li>
+                
+                    <li class="nav-item">
+                       <a href="info/xxgkgzzd1580.html">信息公开规章制度</a>
+                    </li>
+                
+                    <li class="nav-item">
+                       <a href="info/xxgkzn1581.html">信息公开指南</a>
+                    </li>
+                
+                    <li class="nav-item">
+                       <a href="info/xxgksx1582.html">信息公开事项</a>
+                    </li>
+                
+                    <li class="nav-item">
+                       <a href="info/xxgksq1583.html">信息公开申请</a>
+                    </li>
+                
+                    <li class="nav-item">
+                       <a href="info/xzzq1584.html">下载专区</a>
+                    </li>
+                
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+</nav>
+</body>
+</html>
+
+
+<div style="padding: 80px 0px 0px 0px;">
+<div style="height: 300px;width: 1170px;padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;">
+  <!--美院新闻  -->
+  <div class="yx-rotaion" style="float: left;width: 49%;margin-right: 10px;">
+         <div class="news-column-title">
+             <span></span>
+             <a href="http://www.cafa.edu.cn/info/?c=9" target="_blank"><span>新闻</span></a>
+             <a href="http://www.cafa.edu.cn/info/?c=9" target="_blank">MORE</a>
+         </div>
+        <div class="news-content-title news-content-box">
+                    <ul class="">
+                        <li>
+                            <div class="news-content-wrap">
+                                <a href="http://www.cafa.edu.cn/info/?c=9" target="_blank">
+                                    <div >
+                                        <img src="ref/images/news8.jpg">
+                                    </div>
+                                    <span>习近平总书记出席越中友谊宫落成移交仪式，范迪安院长汇报介绍壁画艺术创作</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-content-wrap">
+                                <a href="http://www.cafa.edu.cn/info/?c=9" target="_blank">
+                                    <div >
+                                        <img src="ref/images/news8.jpg">
+                                    </div>
+                                    <span>习近平总书记出席越中友谊宫落成移交仪式，范迪安院长汇报介绍壁画艺术创作</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-content-wrap">
+                                <a href="http://www.cafa.edu.cn/info/?c=9" target="_blank">
+                                    <div >
+                                        <img src="ref/images/news8.jpg">
+                                    </div>
+                                    <span>习近平总书记出席越中友谊宫落成移交仪式，范迪安院长汇报介绍壁画艺术创作</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+  </div>
+
+
+<!--信息公开受理-->
+    <div id="main02" >
+        <div class="main_inners">
+            <div class="content02">
+                <div class="xxgksl">
+                    <div class="title">
+                        <img src="ref/images/service_list_bg02.png" style="width: 40px;;float: left; margin: 0px 10px;">
+                        <h3>信息公开受理</h3>
+                        <div class="clear"></div>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:void(0)">部门：中央美术学院信息公开办公室</a></li>
+                        <li><a href="javascript:void(0)">地址：北京市朝阳区花家地南街8号</a></li>
+                        <li><a href="javascript:void(0)">电话：010 — 64771000</a></li>
+                        <li><a href="javascript:void(0)">传真：010 — 64771000</a></li>
+                        <li><a href="javascript:void(0)">邮箱：</a></li>
+                        <li><a href="javascript:void(0)">邮编：100102</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!--监督投诉处理  -->
+     <div id="main02" >
+        <div class="main_inners">
+            <div class="content02">
+                <div class="xxgksl">
+                    <div class="title">
+                        <img src="ref/images/service_list_bg02.png" style="width: 40px;;float: left; margin: 0px 10px;">
+                        <h3>监督投诉处理</h3>
+                        <div class="clear"></div>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:void(0)">部门：中央美术学院信息公开办公室</a></li>
+                        <li><a href="javascript:void(0)">地址：北京市朝阳区花家地南街8号</a></li>
+                        <li><a href="javascript:void(0)">电话：010 — 64771000</a></li>
+                        <li><a href="javascript:void(0)">传真：010 — 64771000</a></li>
+                        <li><a href="javascript:void(0)">邮箱：</a></li>
+                        <li><a href="javascript:void(0)">邮编：100102</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!---->
+<div class="clear-area" style="padding-top: 24px;padding-bottom: 0px;margin-bottom: 0px;">
+  <div class="container">
+    <div class="row">
+      <div class="tabbable tabclear">
+        <div class="tab-content">
+          <div class="tab-pane active fade in" id="tabvet">
+            <div class="container-fluid" style="text-align: center;">
+              <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 thumbnail" style="margin-bottom: 0px;margin-right: 9px;position: relative;height: 60px;background: #6bccef;">
+			     <a href="info/xxgksx1582.newInfo" target="_blank">
+				   <p class="thumbnail-label text-overflow">最新信息公开</p>
+			     </a>
+			   </div>
+			   <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 thumbnail" style="margin-bottom: 0px;margin-right: 9px;position: relative;height: 60px;background: #6bccef;">
+			     <a href="http://www.cafa.edu.cn/info/?c=8" target="_blank">
+				   <p class="thumbnail-label text-overflow">招生导览</p>
+			     </a>
+			   </div>
+               
+                  
+	                  <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 thumbnail" style="margin-bottom: 0px;margin-right: 9px;padding-right: 0px;position: relative;height: 60px;background: #6bccef;">
+					    <a href="info/xxgksx1582/1613.htm">
+					      <p class="thumbnail-label text-overflow">信息公开年度报告</p>
+					    </a>
+				      </div>
+			      
+               
+               <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 thumbnail" style="margin-bottom: 0px;margin-right: 9px;padding-right: 0px;position: relative;height: 60px;background: #6bccef;">
+			     <a href="http://museum.cafa.com.cn/cn" target="_blank">
+				   <p class="thumbnail-label text-overflow">美术馆</p>
+			     </a>
+			   </div>
+			  
+			   
+			  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--信息公开事项区域  -->
+<div class="clear-area" style="padding-top:0px;">
+  <div class="container">
+	<div class="row" style="margin-left: 0px;margin-right: 0px;">
+	  <div class="leader">
+		<h3>信息公开事项</h3>
+	  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1590.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/2800839c9b954192964de4cbeda7e45f.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">基本信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1591.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/c8260a3dbf0c4fe7b31bbc6606861be3.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">招生考试信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1592.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/abd98791389b45f99f953c61f57db5d4.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">财务、资产及收费信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1593.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/c1b18272e024409f95505b50f1fe1b17.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">人事师资信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1685.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/2d137744d67d4669a27b57a949bafc82.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">教学质量信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1694.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/52c3e867b2eb4b9b9466ee28156e531f.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">学生管理服务信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1699.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/f62ba43544f84767aa024489c6cd509b.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">学风建设信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1703.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/49f80bb3931241ac8ecf972e893147b3.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">学位、学科信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1708.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/897b684576844edc91385973597ad138.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">对外交流与合作信息</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+		   <div class="col-md-6 col-xs-6 col-sm-6 cloud-item">
+		    <a href="info/xxgksx1582/1711.html">
+			  <div class="media center-block">
+				<div class="media-left">
+				  <img class="media-object" src="http://xxgk.cafa.edu.cn/uploadFiles/uploadImgs/20180205/c87b168153db4a008f76887213a61104.png"style="width: 70px; height: 70px;">
+				</div>
+				<div class="media-body">
+				  <h4 class="media-heading">其他</h4>
+				</div>
+			  </div>
+			</a>
+		  </div>
+	  
+	</div>
+  </div>
+</div>
+
+
+<div style="height: 330px;background: #6c6f78;margin: 0px 0px 20px 0px;">
+<div class="xxtj">
+
+ <!--部门排名  -->
+  <div style="float: left;">
+    <div class="title">
+        <h3 style="padding: 10px 0px 0px 40px;float: left;">部门排名</h3>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="ranking">
+      <ul>
+            <li >
+              <span class="rank" style="background: #ff1c61;margin: 3px 40px 0px 0px;">1</span>
+              <span>学校办</span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;">2</span>
+            </li>
+            <li >
+              <span class="rank" style="background: #ff1c61;margin: 3px 40px 0px 0px;">2</span>
+              <span ></span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;"></span>
+            </li>
+            <li >
+              <span class="rank" style="background: #ff1c61;margin: 3px 40px 0px 0px;">3</span>
+              <span></span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;"></span>
+            </li>
+            <li >
+              <span class="rank" style="margin: 3px 40px 0px 0px;">4</span>
+              <span></span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;"></span>
+            </li>
+            <li >
+              <span class="rank" style="margin: 3px 40px 0px 0px;">5</span>
+              <span></span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;"></span>
+            </li>
+      </ul>
+    </div>
+   </div>
+   
+   <!--栏目排名  -->
+   <div style="float: left; width:28%;   margin: 0px 10px 0px 0px;">
+    <div class="title">
+        <h3 style="padding: 10px 0px 0px 40px;float: left;">栏目排名</h3>
+        <div class="clear"></div>
+    </div>
+    <div class="ranking">
+      <ul>
+            <li >
+              <span class="rank" style="background: #ff1c61;margin: 3px 40px 0px 0px;">1</span>
+              <span>基本信息</span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;">2</span>
+            </li>
+            <li >
+              <span class="rank" style="background: #ff1c61;margin: 3px 40px 0px 0px;">2</span>
+              <span>招生考试信息</span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;">0</span>
+            </li>
+            <li >
+              <span class="rank" style="background: #ff1c61;margin: 3px 40px 0px 0px;">3</span>
+              <span>财务、资产及收费信息</span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;">0</span>
+            </li>
+            <li >
+              <span class="rank" style="margin: 3px 40px 0px 0px;">4</span>
+              <span>人事师资信息</span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;">0</span>
+            </li>
+            <li >
+              <span class="rank" style="margin: 3px 40px 0px 0px;">5</span>
+              <span>教学质量信息</span>
+              <span style="float: right;margin: 0;width: 10%;text-align: center;">0</span>
+            </li>
+      </ul>
+    </div>
+  </div>    
+    <!-- 部门年统计图 -->
+    <div id="buMenYearTuBiao" style="width: 54%;;float: left;height: 330px;"></div>
+</div>
+</div>
+
+<!--部门当月统计  -->
+<div id="buMenTuBiao" style="width:100%;height:345px;margin: 0px 0px 40px 0px;"></div>
+
+<!--栏目当月统计  -->
+<div id="lanMuTuBiao" style="width:100%;height:345px;margin: 0px 0px 40px 0px;"></div>
+
+
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base href="http://xxgk.cafa.edu.cn:80/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>央美官网_信息公开_首页</title>
+<link href="ref/css/zymyIndex.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<!--底部-->
+<div id="footer">
+	<div class="footer_inner">
+    	<div class="footer_l">
+        	<h5>相关链接</h5>
+            <ul class="footer_link">
+                <li><a href="http://www.cafa.edu.cn/"  target="_Blank">中央美术学院官网</a></li>
+                <li><a href="http://www.moe.edu.cn/jyb_xxgk/"  target="_Blank">教育部信息公开</a></li>
+                <li><a href="http://zfxxgk.beijing.gov.cn/"  target="_Blank">北京市信息公开网</a></li>
+                <li><a href="http://www.gov.cn/xxgk/pub/govpublic/"  target="_Blank">中华人民共和国中央人民政府信息公开网</a></li>
+            </ul>
+        </div>
+    	<div class="footer_r">
+        	<h5>美院媒体</h5>
+            <ul class="meiti">
+                <li><a href="#"><img src="ref/images/wechat_icon.png" />相关微信公共号</a></li>
+            </ul>
+            <ul class="xgwechat">
+                <li><a><img src="ref/images/QR_code1.jpg" /><p>中央美术学院官方微信</p></a></li>
+                <li><a><img src="ref/images/QR code2.jpg" /><p>中央美院美术馆</p></a></li>
+                <li><a><img src="ref/images/QR code3.jpg" /><p>中央美院艺讯网</p></a></li>
+                <li><a><img src="ref/images/QR code4.jpg" /><p>中央美院学生工作</p></a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div> 
+</body>
+</html>
+</body>
+</html>
