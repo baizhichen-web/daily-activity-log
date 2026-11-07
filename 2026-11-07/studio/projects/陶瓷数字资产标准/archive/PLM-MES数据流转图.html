@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PLM → MES：设计—制造数字化连接的数据流转</title>
+<style>
+  :root { color-scheme: light dark;
+    --background: light-dark(#ffffff, #16181a);
+    --foreground: light-dark(#1f2328, #e8ebee);
+    --card: light-dark(#ffffff, #1d2023);
+    --muted: light-dark(#f2f3f5, #23272b);
+    --muted-foreground: light-dark(#5c6670, #9aa4ad);
+    --border: light-dark(#d9dde1, #33383d);
+    --blue: light-dark(#2563eb, #4f8bf7);
+    --green: light-dark(#2f7d4f, #4caf7d);
+    --yellow: light-dark(#c28a12, #d9a92f);
+    --red: light-dark(#c0392b, #e0604f);
+    --primary-foreground: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 28px 24px 40px; background: var(--background); color: var(--foreground);
+         font: 14px/1.5 "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif; }
+  .wrap { max-width: 1020px; margin: 0 auto; }
+  .text-small { font-size: 12px; }
+  .text-muted { color: var(--muted-foreground); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div id="plm-mes-flow">
+  <h2>PLM → MES：设计—制造数字化连接的数据流转</h2>
+  <div class="text-small text-muted" style="margin-bottom:8px">对照通用智能制造集成架构（参考图已存档 raw/）；着色为桌面调研判定，待企业访谈实证。</div>
+  <svg viewBox="0 0 960 560" role="img" aria-labelledby="pmf-title pmf-desc" style="width:100%;height:auto;display:block">
+    <title id="pmf-title">PLM 到 MES 的数据流转与交接数据包覆盖状态</title>
+    <desc id="pmf-desc">左侧 PLM 与设计侧应携带数据，经工艺路线、工艺参数、图纸、作业指导书、变更通知五类内容流向中间的 MES；中间面板显示六组二十二项交接数据的覆盖状态；右侧与下方为 ERP、WMS、SCADA、PLC、APS 上下文系统。</desc>
+    <defs>
+      <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--blue)"></path>
+      </marker>
+      <marker id="arr-mut" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--muted-foreground)"></path>
+      </marker>
+    </defs>
+
+    <!-- context: WMS -->
+    <rect x="380" y="14" width="150" height="42" rx="6" fill="var(--muted)"></rect>
+    <text x="455" y="40" text-anchor="middle" font-size="12" fill="var(--muted-foreground)">WMS · 物料出入库作业</text>
+    <path d="M500,56 L585,68" stroke="var(--muted-foreground)" stroke-width="1.4" marker-end="url(#arr-mut)" fill="none"></path>
+
+    <!-- context: ERP -->
+    <rect x="850" y="70" width="95" height="158" rx="8" fill="var(--muted)"></rect>
+    <text x="897" y="92" text-anchor="middle" font-size="13" font-weight="500" fill="var(--muted-foreground)">ERP</text>
+    <text x="858" y="114" font-size="11" fill="var(--muted-foreground)">财务/成本</text>
+    <text x="858" y="133" font-size="11" fill="var(--muted-foreground)">销售管理</text>
+    <text x="858" y="152" font-size="11" fill="var(--muted-foreground)">采购管理</text>
+    <text x="858" y="171" font-size="11" fill="var(--muted-foreground)">库存管理</text>
+    <text x="858" y="190" font-size="11" fill="var(--muted-foreground)">MPS/MRP 计划</text>
+    <text x="858" y="209" font-size="11" fill="var(--muted-foreground)">生产管理</text>
+    <line x1="812" y1="150" x2="846" y2="150" stroke="var(--muted-foreground)" stroke-width="1.4" marker-start="url(#arr-mut)" marker-end="url(#arr-mut)">
+      <title>工单实绩与物料清单</title>
+    </line>
+
+    <!-- PLM -->
+    <rect x="20" y="70" width="220" height="180" rx="8" fill="none" stroke="var(--border)"></rect>
+    <rect x="20" y="70" width="220" height="34" rx="8" fill="var(--blue)"></rect>
+    <rect x="20" y="90" width="220" height="14" fill="var(--blue)"></rect>
+    <text x="130" y="92" text-anchor="middle" font-size="15" font-weight="500" fill="var(--primary-foreground)">PLM</text>
+    <text x="36" y="130" font-size="12.5" fill="var(--foreground)">产品 BOM</text>
+    <text x="36" y="154" font-size="12.5" fill="var(--foreground)">图文档管理</text>
+    <text x="36" y="178" font-size="12.5" fill="var(--foreground)">变更管理</text>
+    <text x="36" y="202" font-size="12.5" fill="var(--foreground)">研发项目管理</text>
+    <text x="36" y="232" font-size="11" fill="var(--muted-foreground)">设计端：数字原生的花色/器型文件</text>
+
+    <!-- 设计侧附加卡 -->
+    <rect x="20" y="270" width="220" height="96" rx="8" fill="none" stroke="var(--border)" stroke-dasharray="5 4"></rect>
+    <text x="36" y="292" font-size="11" fill="var(--muted-foreground)">设计侧应携带（本标准新增）</text>
+    <text x="36" y="314" font-size="12" fill="var(--foreground)">设计编号与版本 · 权利状态</text>
+    <text x="36" y="336" font-size="12" fill="var(--foreground)">花型源文件 · 保密等级</text>
+    <path d="M240,318 H266" stroke="var(--border)" stroke-width="1.4" stroke-dasharray="5 4" fill="none"></path>
+
+    <!-- MES -->
+    <rect x="560" y="70" width="250" height="250" rx="8" fill="none" stroke="var(--border)"></rect>
+    <rect x="560" y="70" width="250" height="34" rx="8" fill="var(--green)"></rect>
+    <rect x="560" y="90" width="250" height="14" fill="var(--green)"></rect>
+    <text x="685" y="92" text-anchor="middle" font-size="15" font-weight="500" fill="var(--primary-foreground)">MES</text>
+    <text x="576" y="130" font-size="12.5" fill="var(--foreground)">基础数据与生产建模</text>
+    <text x="576" y="154" font-size="12.5" fill="var(--foreground)">排程调度</text>
+    <text x="576" y="178" font-size="12.5" fill="var(--foreground)">生产执行与现场管理</text>
+    <text x="576" y="202" font-size="12.5" fill="var(--foreground)">物料管理</text>
+    <text x="576" y="226" font-size="12.5" fill="var(--foreground)">质量管理</text>
+    <text x="576" y="250" font-size="12.5" fill="var(--foreground)">设备与资源管理</text>
+    <text x="576" y="274" font-size="12.5" fill="var(--foreground)">人员管理</text>
+    <text x="576" y="302" font-size="11" fill="var(--muted-foreground)">制造端：蒙娜丽莎等已实现订单→排程→执行</text>
+
+    <!-- 主通道：PLM -> MES -->
+    <path d="M240,160 H266" stroke="var(--blue)" stroke-width="3" fill="none"></path>
+    <path d="M540,160 H554" stroke="var(--blue)" stroke-width="3" marker-end="url(#arr-blue)" fill="none"></path>
+    <rect x="270" y="96" width="270" height="116" rx="8" fill="var(--muted)"></rect>
+    <text x="284" y="116" font-size="11" fill="var(--muted-foreground)">PLM → MES 传递内容（参考架构图）</text>
+    <text x="284" y="136" font-size="12.5" fill="var(--foreground)">① 工艺路线</text>
+    <text x="284" y="155" font-size="12.5" fill="var(--foreground)">② 工艺参数</text>
+    <text x="284" y="174" font-size="12.5" fill="var(--foreground)">③ 图纸（花型源文件 / 3D 模型）</text>
+    <text x="284" y="193" font-size="12.5" fill="var(--foreground)">④ 作业指导书</text>
+    <text x="284" y="212" font-size="12.5" fill="var(--foreground)">⑤ 变更通知</text>
+
+    <!-- 交接数据包面板 -->
+    <rect x="270" y="232" width="272" height="224" rx="8" fill="none" stroke="var(--border)"></rect>
+    <text x="284" y="256" font-size="12.5" font-weight="500" fill="var(--foreground)">设计—制造交接数据包（6 组 22 项）</text>
+
+    <text x="284" y="284" font-size="12" fill="var(--foreground)">A 设计与权利 <tspan fill="var(--muted-foreground)" font-size="11">5 项</tspan></text>
+    <rect x="436" y="273" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="454" y="273" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="472" y="273" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="490" y="273" width="13" height="13" rx="2" fill="var(--red)"></rect>
+    <rect x="508" y="273" width="13" height="13" rx="2" fill="var(--red)"></rect>
+
+    <text x="284" y="314" font-size="12" fill="var(--foreground)">B 色彩与印花 <tspan fill="var(--muted-foreground)" font-size="11">5 项</tspan></text>
+    <rect x="436" y="303" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="454" y="303" width="13" height="13" rx="2" fill="var(--green)"></rect>
+    <rect x="472" y="303" width="13" height="13" rx="2" fill="var(--green)"></rect>
+    <rect x="490" y="303" width="13" height="13" rx="2" fill="var(--red)"></rect>
+    <rect x="508" y="303" width="13" height="13" rx="2" fill="var(--red)"></rect>
+
+    <text x="284" y="344" font-size="12" fill="var(--foreground)">C 造型与模具 <tspan fill="var(--muted-foreground)" font-size="11">4 项</tspan></text>
+    <rect x="436" y="333" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="454" y="333" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="472" y="333" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="490" y="333" width="13" height="13" rx="2" fill="var(--red)"></rect>
+
+    <text x="284" y="374" font-size="12" fill="var(--foreground)">D 工艺与 BOM <tspan fill="var(--muted-foreground)" font-size="11">3 项</tspan></text>
+    <rect x="436" y="363" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="454" y="363" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <rect x="472" y="363" width="13" height="13" rx="2" fill="var(--red)"></rect>
+
+    <text x="284" y="404" font-size="12" fill="var(--foreground)">E 打样与验证 <tspan fill="var(--muted-foreground)" font-size="11">3 项</tspan></text>
+    <rect x="436" y="393" width="13" height="13" rx="2" fill="var(--red)"></rect>
+    <rect x="454" y="393" width="13" height="13" rx="2" fill="var(--red)"></rect>
+    <rect x="472" y="393" width="13" height="13" rx="2" fill="var(--red)"></rect>
+
+    <text x="284" y="434" font-size="12" fill="var(--foreground)">F 变更与追溯 <tspan fill="var(--muted-foreground)" font-size="11">2 项</tspan></text>
+    <rect x="436" y="423" width="13" height="13" rx="2" fill="var(--red)"></rect>
+    <rect x="454" y="423" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+
+    <!-- context: SCADA / PLC / APS -->
+    <rect x="20" y="390" width="220" height="64" rx="8" fill="var(--muted)"></rect>
+    <text x="36" y="414" font-size="11.5" fill="var(--muted-foreground)">SCADA · 设备状态监控</text>
+    <text x="36" y="436" font-size="11.5" fill="var(--muted-foreground)">工艺与运行数据采集</text>
+    <rect x="270" y="390" width="130" height="64" rx="8" fill="var(--muted)"></rect>
+    <text x="286" y="414" font-size="11.5" fill="var(--muted-foreground)">设备 PLC / 产线 DCS</text>
+    <text x="286" y="436" font-size="11.5" fill="var(--muted-foreground)">设备控制</text>
+    <rect x="850" y="390" width="95" height="64" rx="8" fill="var(--muted)"></rect>
+    <text x="897" y="412" text-anchor="middle" font-size="12" font-weight="500" fill="var(--muted-foreground)">APS</text>
+    <text x="897" y="432" text-anchor="middle" font-size="11" fill="var(--muted-foreground)">高级排程/调度</text>
+
+    <path d="M240,410 H400 V300 H552" stroke="var(--muted-foreground)" stroke-width="1.4" marker-end="url(#arr-mut)" fill="none">
+      <title>SCADA 向 MES 提供设备状态与运行参数</title>
+    </path>
+    <text x="300" y="402" font-size="11" fill="var(--muted-foreground)">设备状态 · 运行参数</text>
+    <path d="M880,390 V345 H818" stroke="var(--muted-foreground)" stroke-width="1.4" marker-end="url(#arr-mut)" fill="none">
+      <title>APS 向 MES 下达生产工单</title>
+    </path>
+    <text x="888" y="360" font-size="11" fill="var(--muted-foreground)">生产工单</text>
+
+    <!-- legend -->
+    <rect x="270" y="478" width="13" height="13" rx="2" fill="var(--green)"></rect>
+    <text x="290" y="489" font-size="11" fill="var(--muted-foreground)">已被系统管理 · 2 项</text>
+    <rect x="450" y="478" width="13" height="13" rx="2" fill="var(--yellow)"></rect>
+    <text x="470" y="489" font-size="11" fill="var(--muted-foreground)">部分覆盖 · 12 项</text>
+    <rect x="620" y="478" width="13" height="13" rx="2" fill="var(--red)"></rect>
+    <text x="640" y="489" font-size="11" fill="var(--muted-foreground)">纸质/微信/经验 · 8 项</text>
+
+    <!-- callout -->
+    <rect x="20" y="508" width="920" height="34" rx="6" fill="var(--muted)"></rect>
+    <text x="480" y="530" text-anchor="middle" font-size="12.5" font-weight="500" fill="var(--foreground)">本标准的位置：把 PLM→MES 这条箭头补齐——交接数据包每项要求「版本＋责任人＋判定结果」</text>
+  </svg>
+</div>
+
+</div>
+</body>
+</html>
